@@ -1,0 +1,9 @@
+{
+  "enabled": true,
+  "provider": "openai_compatible",
+  "model": "gpt-4o-mini",
+  "maxTokens": 900,
+  "temperature": 0.4,
+  "ragWeeks": 4,
+  "maxRagWords": 2000
+}

@@ -1,0 +1,31 @@
+{
+  "name": "management-layer",
+  "version": "1.0.0",
+  "description": "The Management Layer - How technology is actually led",
+  "main": "dist/main.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "generate": "node dist/main.js",
+    "dev": "tsc && node dist/main.js",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "engineering-management",
+    "tech-leadership",
+    "newsletter"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "rss-parser": "^3.13.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "date": "2025-12-31",
+  "title": "The Management Layer — 2025-12-31",
+  "counts": {
+    "articles": 7,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "553dc5899b6791a80cc591977fe3a72d",
+      "title": "The performative trap of public recognition",
+      "url": "https://leaddev.com/culture/the-performative-trap-of-public-recognition",
+      "source": "LeadDev",
+      "publishedAt": "2025-12-31T11:16:00.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "9d200d2b3fa32ce0848217d6e993289b",
+      "title": "Agentic AI, MCP, and spec-driven development: Top blog posts of 2025",
+      "url": "https://github.blog/developer-skills/agentic-ai-mcp-and-spec-driven-development-top-blog-posts-of-2025/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2025-12-30T17:20:10.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "be9b736157805b910a3a41011053efcc",
+      "title": "Put an end to being the “go-to” engineer",
+      "url": "https://leaddev.com/culture/put-end-being-go-to-engineer",
+      "source": "LeadDev",
+      "publishedAt": "2025-12-30T10:14:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "6bcc844ab8570509663c0dd55b470cec",
+      "title": "AI-assisted coding and unsanctioned tools headline 2026’s biggest security risks",
+      "url": "https://leaddev.com/ai/ai-assisted-coding-and-unsanctioned-tools-headline-2026s-biggest-security-risks",
+      "source": "LeadDev",
+      "publishedAt": "2025-12-30T08:31:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "7b8fef5d0d5c8480f39a29a27925c4a3",
+      "title": "How engineering leaders can better leverage AI in 2026",
+      "url": "https://leaddev.com/ai/how-engineering-leaders-can-better-leverage-ai-in-2026",
+      "source": "LeadDev",
+      "publishedAt": "2025-12-29T08:20:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "ec78ac32e8a3c9c3d3362c36c987515c",
+      "title": "Bugs that survive the heat of continuous fuzzing",
+      "url": "https://github.blog/security/vulnerability-research/bugs-that-survive-the-heat-of-continuous-fuzzing/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2025-12-29T22:01:14.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "ed77e2c8e9a91b1c4ee3b0bff8eae265",
+      "title": "WRAP up your backlog with GitHub Copilot coding agent",
+      "url": "https://github.blog/ai-and-ml/github-copilot/wrap-up-your-backlog-with-github-copilot-coding-agent/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2025-12-26T17:56:38.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "553dc5899b6791a80cc591977fe3a72d",
+      "title": "The performative trap of public recognition",
+      "url": "https://leaddev.com/culture/the-performative-trap-of-public-recognition",
+      "source": "LeadDev",
+      "publishedAt": "2025-12-31T11:16:00.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "9d200d2b3fa32ce0848217d6e993289b",
+      "title": "Agentic AI, MCP, and spec-driven development: Top blog posts of 2025",
+      "url": "https://github.blog/developer-skills/agentic-ai-mcp-and-spec-driven-development-top-blog-posts-of-2025/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2025-12-30T17:20:10.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "be9b736157805b910a3a41011053efcc",
+      "title": "Put an end to being the “go-to” engineer",
+      "url": "https://leaddev.com/culture/put-end-being-go-to-engineer",
+      "source": "LeadDev",
+      "publishedAt": "2025-12-30T10:14:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "6bcc844ab8570509663c0dd55b470cec",
+      "title": "AI-assisted coding and unsanctioned tools headline 2026’s biggest security risks",
+      "url": "https://leaddev.com/ai/ai-assisted-coding-and-unsanctioned-tools-headline-2026s-biggest-security-risks",
+      "source": "LeadDev",
+      "publishedAt": "2025-12-30T08:31:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "7b8fef5d0d5c8480f39a29a27925c4a3",
+      "title": "How engineering leaders can better leverage AI in 2026",
+      "url": "https://leaddev.com/ai/how-engineering-leaders-can-better-leverage-ai-in-2026",
+      "source": "LeadDev",
+      "publishedAt": "2025-12-29T08:20:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "ec78ac32e8a3c9c3d3362c36c987515c",
+      "title": "Bugs that survive the heat of continuous fuzzing",
+      "url": "https://github.blog/security/vulnerability-research/bugs-that-survive-the-heat-of-continuous-fuzzing/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2025-12-29T22:01:14.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "ed77e2c8e9a91b1c4ee3b0bff8eae265",
+      "title": "WRAP up your backlog with GitHub Copilot coding agent",
+      "url": "https://github.blog/ai-and-ml/github-copilot/wrap-up-your-backlog-with-github-copilot-coding-agent/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2025-12-26T17:56:38.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Questa settimana sono stati analizzati 7 articoli e 0 discussioni Reddit da 17 fonti diverse. I contenuti raccolti coprono tematiche di leadership tecnologica, engineering management e organizzazione dei team di sviluppo.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "Crescente attenzione a developer productivity e delivery metrics",
+      "Discussioni su ownership e decision making distribuito",
+      "Focus su reliability e incident response"
+    ],
+    "divergences": [
+      "Le discussioni Reddit tendono a enfatizzare aspetti operativi quotidiani",
+      "Gli articoli editoriali privilegiano visioni strategiche di lungo periodo",
+      "Differenze di prospettiva tra individual contributor e manager"
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2025-12-31.management-layer.md",
+    "telegram": "telegram/2025-12-31.management-layer.telegram.md",
+    "json": "data/2025-12-31.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}

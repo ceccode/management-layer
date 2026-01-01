@@ -1,0 +1,71 @@
+{
+  "lookbackDays": 7,
+  "feeds": [
+    {
+      "name": "LeadDev",
+      "url": "https://leaddev.com/rss.xml",
+      "weight": 1.25,
+      "tags": ["engineering-management", "leadership"]
+    },
+    {
+      "name": "Harvard Business Review",
+      "url": "https://www.feeds.hbr.org/",
+      "weight": 1.10,
+      "tags": ["management", "leadership"]
+    },
+    {
+      "name": "Martin Fowler",
+      "url": "https://martinfowler.com/feed.atom",
+      "weight": 1.15,
+      "tags": ["architecture", "technical-leadership"]
+    },
+    {
+      "name": "Thoughtworks Insights",
+      "url": "https://www.thoughtworks.com/rss/insights.xml",
+      "weight": 1.00,
+      "tags": ["technology-strategy", "org-design"]
+    },
+    {
+      "name": "The GitHub Blog",
+      "url": "https://github.blog/feed/",
+      "weight": 0.95,
+      "tags": ["dev-productivity", "engineering-culture"]
+    },
+    {
+      "name": "Engineering@Microsoft",
+      "url": "https://devblogs.microsoft.com/engineering-at-microsoft/feed/",
+      "weight": 0.90,
+      "tags": ["engineering-practices", "platform"]
+    },
+    {
+      "name": "Stripe Blog",
+      "url": "https://stripe.com/blog/feed.rss",
+      "weight": 0.85,
+      "tags": ["product", "engineering"]
+    },
+    {
+      "name": "Google Cloud Blog",
+      "url": "https://cloud.google.com/blog/rss",
+      "weight": 0.80,
+      "tags": ["cloud", "scale"]
+    },
+    {
+      "name": "InfoQ Articles",
+      "url": "https://www.infoq.com/RSS/articles/",
+      "weight": 0.85,
+      "tags": ["software-delivery", "org"]
+    },
+    {
+      "name": "AWS Architecture Blog",
+      "url": "https://aws.amazon.com/blogs/architecture/feed/",
+      "weight": 0.70,
+      "tags": ["architecture", "systems"]
+    },
+    {
+      "name": "Netflix TechBlog (Medium)",
+      "url": "https://netflixtechblog.com/feed",
+      "weight": 0.70,
+      "tags": ["systems", "reliability"]
+    }
+  ]
+}

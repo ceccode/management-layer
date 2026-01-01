@@ -1,0 +1,51 @@
+{
+  "generated_at_utc": "2025-12-31T16:10:05.076Z",
+  "version": 1,
+  "latest": {
+    "date": "2025-12-31",
+    "paths": {
+      "markdown": "reports/2025-12-31.management-layer.md",
+      "telegram": "telegram/2025-12-31.management-layer.telegram.md",
+      "json": "data/2025-12-31.management-layer.json"
+    }
+  },
+  "reports": [
+    {
+      "date": "2025-12-31",
+      "title": "The Management Layer — 2025-12-31",
+      "paths": {
+        "markdown": "reports/2025-12-31.management-layer.md",
+        "telegram": "telegram/2025-12-31.management-layer.telegram.md",
+        "json": "data/2025-12-31.management-layer.json"
+      },
+      "excerpt": "Questa settimana sono stati analizzati 7 articoli e 0 discussioni Reddit da 17 fonti diverse. I contenuti raccolti coprono tematiche di leadership tecnologica, engineering management e organizzazio...",
+      "topLinks": [
+        {
+          "title": "The performative trap of public recognition",
+          "url": "https://leaddev.com/culture/the-performative-trap-of-public-recognition",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Agentic AI, MCP, and spec-driven development: Top blog posts of 2025",
+          "url": "https://github.blog/developer-skills/agentic-ai-mcp-and-spec-driven-development-top-blog-posts-of-2025/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "Put an end to being the “go-to” engineer",
+          "url": "https://leaddev.com/culture/put-end-being-go-to-engineer",
+          "source": "LeadDev"
+        },
+        {
+          "title": "AI-assisted coding and unsanctioned tools headline 2026’s biggest security risks",
+          "url": "https://leaddev.com/ai/ai-assisted-coding-and-unsanctioned-tools-headline-2026s-biggest-security-risks",
+          "source": "LeadDev"
+        },
+        {
+          "title": "How engineering leaders can better leverage AI in 2026",
+          "url": "https://leaddev.com/ai/how-engineering-leaders-can-better-leverage-ai-in-2026",
+          "source": "LeadDev"
+        }
+      ]
+    }
+  ]
+}

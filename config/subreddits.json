@@ -1,0 +1,37 @@
+{
+  "enabled": true,
+  "limitPerSubreddit": 25,
+  "sortModes": ["top_week", "hot"],
+  "subreddits": [
+    {
+      "name": "EngineeringManagement",
+      "weight": 1.30,
+      "tags": ["engineering-management"]
+    },
+    {
+      "name": "ExperiencedDevs",
+      "weight": 1.15,
+      "tags": ["career", "seniority", "leadership"]
+    },
+    {
+      "name": "cto",
+      "weight": 1.10,
+      "tags": ["cto", "strategy"]
+    },
+    {
+      "name": "leadership",
+      "weight": 0.95,
+      "tags": ["leadership"]
+    },
+    {
+      "name": "devops",
+      "weight": 0.85,
+      "tags": ["operations", "reliability"]
+    },
+    {
+      "name": "startups",
+      "weight": 0.70,
+      "tags": ["founders", "scale"]
+    }
+  ]
+}
