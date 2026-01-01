@@ -2,11 +2,11 @@
 
 **How technology is actually led**
 
-A weekly automated report aggregating high-signal content on leadership, engineering management, and tech organizations. Combines editorial content from RSS feeds with community discussions from Reddit, analyzed through LLM to identify patterns and weak signals.
+A weekly automated report aggregating high-signal content on leadership, engineering management, and tech organizations from curated RSS feeds, analyzed through LLM to identify patterns and weak signals.
 
 ## Features
 
-- **Multi-source aggregation**: RSS feeds from curated editorial sources + Reddit discussions
+- **Editorial source aggregation**: RSS feeds from 11 curated high-quality sources
 - **Deterministic scoring**: Recency, keyword matching, and engagement-based ranking
 - **RAG-powered analysis**: Historical context from previous reports
 - **Italian editorial content**: LLM-generated analysis in Italian (non-prescriptive, analytical)
@@ -36,20 +36,15 @@ Copy the environment example:
 cp .env.example .env
 ```
 
-Edit `.env` and add your credentials (all optional):
+Edit `.env` and add your credentials (optional):
 
 ```bash
-# Reddit API (optional - if missing, RSS-only mode)
-REDDIT_CLIENT_ID=your_client_id
-REDDIT_CLIENT_SECRET=your_client_secret
-REDDIT_USERNAME=your_username
-REDDIT_PASSWORD=your_password
-REDDIT_USER_AGENT=ManagementLayer/1.0
-
 # LLM API (optional - if missing, fallback to deterministic content)
 LLM_API_KEY=your_openai_api_key
 LLM_API_URL=https://api.openai.com/v1/chat/completions
 ```
+
+**Note**: Reddit API access is currently disabled due to Reddit's restrictive API policies. The application works excellently with RSS feeds only.
 
 ### Build and Run
 
@@ -63,10 +58,7 @@ npm run generate
 # Generate report for specific date
 npm run generate -- --date 2024-12-31
 
-# Generate without Reddit
-npm run generate -- --no-reddit
-
-# Generate without LLM
+# Generate without LLM (deterministic fallback)
 npm run generate -- --no-llm
 
 # Custom RAG lookback (default 4 weeks)
@@ -94,18 +86,11 @@ Reports are generated in:
 
 Add secrets in **Settings** → **Secrets and variables** → **Actions**:
 
-**For Reddit** (optional):
-- `REDDIT_CLIENT_ID`
-- `REDDIT_CLIENT_SECRET`
-- `REDDIT_USERNAME`
-- `REDDIT_PASSWORD`
-- `REDDIT_USER_AGENT`
-
 **For LLM** (optional):
 - `LLM_API_KEY`
 - `LLM_API_URL`
 
-If secrets are not configured, the workflow will run in RSS-only mode with fallback content.
+If not configured, the workflow will use deterministic fallback content.
 
 ### 3. Trigger
 
@@ -159,14 +144,6 @@ reports/              # Archive (optional)
 - AWS Architecture Blog
 - Netflix TechBlog
 
-### Reddit Communities (6 subreddits)
-- r/EngineeringManagement
-- r/ExperiencedDevs
-- r/cto
-- r/leadership
-- r/devops
-- r/startups
-
 ## Customization
 
 ### Add/Remove Sources
@@ -206,10 +183,11 @@ Edit `config/llm.json`:
 - Easy to archive and query
 - Transparent and auditable
 
-### Why RSS + Reddit?
-- RSS: Editorial quality, expert perspectives
-- Reddit: Community discussions, practitioner viewpoints
-- Combination provides balance between strategic and operational
+### Why RSS-focused?
+- Editorial quality and expert perspectives
+- Curated sources from respected publications
+- Stable, reliable feed infrastructure
+- No API access restrictions or rate limits
 
 ### Why Italian for LLM Output?
 - Target audience: Italian tech leaders
@@ -223,11 +201,11 @@ Edit `config/llm.json`:
 
 ## Limitations
 
-- Sample limited to configured sources
-- RSS-dependent (feeds can break)
-- Reddit reflects English-speaking tech communities
+- Sample limited to configured RSS sources
+- RSS-dependent (feeds can break, but pipeline continues gracefully)
 - LLM analysis may contain subjective interpretations
 - Weekly cadence may miss fast-moving topics
+- Focus on editorial content (no community discussion data)
 
 ## Disclaimer
 

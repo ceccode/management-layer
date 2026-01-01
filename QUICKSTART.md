@@ -21,20 +21,17 @@ Open `public/index.html` in your browser to see the generated report.
 
 ## Add API Keys (Optional)
 
-To enable Reddit and LLM features:
+To enable LLM features:
 
 1. Copy `.env.example` to `.env`
-2. Add your credentials:
-   - Reddit: Get credentials from https://www.reddit.com/prefs/apps
-   - LLM: Use your OpenAI API key or compatible endpoint
+2. Add your LLM credentials (OpenAI API key or compatible endpoint)
 
 ## Deploy to GitHub Pages
 
 1. Push your repo to GitHub
 2. Go to Settings → Pages → Source: GitHub Actions
-3. Add secrets (Settings → Secrets and variables → Actions):
+3. (Optional) Add LLM secret: Settings → Secrets and variables → Actions
    - `LLM_API_KEY`
-   - Reddit credentials (if needed)
 4. Run workflow manually or wait for Monday 7 AM UTC
 
 ## Common Commands
@@ -68,11 +65,7 @@ npm run clean && npm run build
 
 **LLM not working?**
 - Check `LLM_API_KEY` in `.env`
-- Pipeline will fall back to deterministic content
-
-**Reddit not working?**
-- Check Reddit credentials in `.env`
-- Pipeline will continue with RSS-only
+- Pipeline will fall back to deterministic content (this is normal)
 
 ## Project Structure
 

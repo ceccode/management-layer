@@ -1,6 +1,23 @@
 node_modules/
 dist/
 .env
+.env.local
+.env*.local
 *.log
 .DS_Store
 rag/rag_context.txt
+
+# Sensitive files
+**/secrets/
+**/*secret*
+**/*credential*
+**/*password*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
