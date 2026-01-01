@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2025-12-31T16:10:05.076Z",
+  "generated_at_utc": "2026-01-01T16:50:08.080Z",
   "version": 1,
   "latest": {
-    "date": "2025-12-31",
+    "date": "2026-01-01",
     "paths": {
-      "markdown": "reports/2025-12-31.management-layer.md",
-      "telegram": "telegram/2025-12-31.management-layer.telegram.md",
-      "json": "data/2025-12-31.management-layer.json"
+      "markdown": "reports/2026-01-01.management-layer.md",
+      "telegram": "telegram/2026-01-01.management-layer.telegram.md",
+      "json": "data/2026-01-01.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-01-01",
+      "title": "The Management Layer — 2026-01-01",
+      "paths": {
+        "markdown": "reports/2026-01-01.management-layer.md",
+        "telegram": "telegram/2026-01-01.management-layer.telegram.md",
+        "json": "data/2026-01-01.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 1 gennaio 2026, sono stati analizzati 8 articoli provenienti da 17 fonti, con un focus predominante su leadership ingegneristica e gestione dei team. I contenuti evidenziano ten...",
+      "topLinks": [
+        {
+          "title": "5 uncomfortable predictions for engineering leaders in 2026",
+          "url": "https://leaddev.com/leadership/5-uncomfortable-predictions-for-engineering-leaders-in-2026",
+          "source": "LeadDev"
+        },
+        {
+          "title": "The performative trap of public recognition",
+          "url": "https://leaddev.com/culture/the-performative-trap-of-public-recognition",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Put an end to being the “go-to” engineer",
+          "url": "https://leaddev.com/culture/put-end-being-go-to-engineer",
+          "source": "LeadDev"
+        },
+        {
+          "title": "AI-assisted coding and unsanctioned tools headline 2026’s biggest security risks",
+          "url": "https://leaddev.com/ai/ai-assisted-coding-and-unsanctioned-tools-headline-2026s-biggest-security-risks",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Agentic AI, MCP, and spec-driven development: Top blog posts of 2025",
+          "url": "https://github.blog/developer-skills/agentic-ai-mcp-and-spec-driven-development-top-blog-posts-of-2025/",
+          "source": "The GitHub Blog"
+        }
+      ]
+    },
     {
       "date": "2025-12-31",
       "title": "The Management Layer — 2025-12-31",
