@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-01-01T16:50:08.080Z",
+  "generated_at_utc": "2026-01-05T07:12:56.461Z",
   "version": 1,
   "latest": {
-    "date": "2026-01-01",
+    "date": "2026-01-05",
     "paths": {
-      "markdown": "reports/2026-01-01.management-layer.md",
-      "telegram": "telegram/2026-01-01.management-layer.telegram.md",
-      "json": "data/2026-01-01.management-layer.json"
+      "markdown": "reports/2026-01-05.management-layer.md",
+      "telegram": "telegram/2026-01-05.management-layer.telegram.md",
+      "json": "data/2026-01-05.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-01-05",
+      "title": "The Management Layer — 2026-01-05",
+      "paths": {
+        "markdown": "reports/2026-01-05.management-layer.md",
+        "telegram": "telegram/2026-01-05.management-layer.telegram.md",
+        "json": "data/2026-01-05.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 5 gennaio 2026, sono stati analizzati 7 articoli provenienti da 17 fonti, con un focus predominante su previsioni e dinamiche emergenti nella leadership ingegneristica. I conten...",
+      "topLinks": [
+        {
+          "title": "5 uncomfortable predictions for engineering leaders in 2026",
+          "url": "https://leaddev.com/leadership/5-uncomfortable-predictions-for-engineering-leaders-in-2026",
+          "source": "LeadDev"
+        },
+        {
+          "title": "The performative trap of public recognition",
+          "url": "https://leaddev.com/culture/the-performative-trap-of-public-recognition",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Put an end to being the “go-to” engineer",
+          "url": "https://leaddev.com/culture/put-end-being-go-to-engineer",
+          "source": "LeadDev"
+        },
+        {
+          "title": "AI-assisted coding and unsanctioned tools headline 2026’s biggest security risks",
+          "url": "https://leaddev.com/ai/ai-assisted-coding-and-unsanctioned-tools-headline-2026s-biggest-security-risks",
+          "source": "LeadDev"
+        },
+        {
+          "title": "How engineering leaders can better leverage AI in 2026",
+          "url": "https://leaddev.com/ai/how-engineering-leaders-can-better-leverage-ai-in-2026",
+          "source": "LeadDev"
+        }
+      ]
+    },
     {
       "date": "2026-01-01",
       "title": "The Management Layer — 2026-01-01",
