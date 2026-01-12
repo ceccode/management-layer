@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-01-05T07:12:56.461Z",
+  "generated_at_utc": "2026-01-12T07:11:58.605Z",
   "version": 1,
   "latest": {
-    "date": "2026-01-05",
+    "date": "2026-01-12",
     "paths": {
-      "markdown": "reports/2026-01-05.management-layer.md",
-      "telegram": "telegram/2026-01-05.management-layer.telegram.md",
-      "json": "data/2026-01-05.management-layer.json"
+      "markdown": "reports/2026-01-12.management-layer.md",
+      "telegram": "telegram/2026-01-12.management-layer.telegram.md",
+      "json": "data/2026-01-12.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-01-12",
+      "title": "The Management Layer — 2026-01-12",
+      "paths": {
+        "markdown": "reports/2026-01-12.management-layer.md",
+        "telegram": "telegram/2026-01-12.management-layer.telegram.md",
+        "json": "data/2026-01-12.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 12 gennaio 2026, sono stati analizzati 10 articoli provenienti da 17 fonti, con un focus predominante sulle innovazioni tecnologiche e le loro implicazioni nella gestione ingegn...",
+      "topLinks": [
+        {
+          "title": "Why GPT-5.2 and Opus 4.5 are a leap forward for coding",
+          "url": "https://leaddev.com/ai/why-gpt-5-2-and-opus-4-5-are-a-leap-forward-for-coding",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Light waves, rising tides, and drifting ships: Game Off 2025 winners",
+          "url": "https://github.blog/open-source/gaming/light-waves-rising-tides-and-drifting-ships-game-off-2025-winners/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "Why AI is both the problem and the cure for legacy code",
+          "url": "https://leaddev.com/ai/why-ai-both-problem-cure-legacy-code",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Your first team is the key to org-wide efficiency",
+          "url": "https://leaddev.com/leadership/your-first-team-key-org-wide-efficiency",
+          "source": "LeadDev"
+        },
+        {
+          "title": "My favorite musical discoveries of 2025",
+          "url": "https://martinfowler.com/articles/2025-music.html",
+          "source": "Martin Fowler"
+        }
+      ]
+    },
     {
       "date": "2026-01-05",
       "title": "The Management Layer — 2026-01-05",
