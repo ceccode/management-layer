@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-01-19T07:13:46.626Z",
+  "generated_at_utc": "2026-01-26T07:12:39.949Z",
   "version": 1,
   "latest": {
-    "date": "2026-01-19",
+    "date": "2026-01-26",
     "paths": {
-      "markdown": "reports/2026-01-19.management-layer.md",
-      "telegram": "telegram/2026-01-19.management-layer.telegram.md",
-      "json": "data/2026-01-19.management-layer.json"
+      "markdown": "reports/2026-01-26.management-layer.md",
+      "telegram": "telegram/2026-01-26.management-layer.telegram.md",
+      "json": "data/2026-01-26.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-01-26",
+      "title": "The Management Layer — 2026-01-26",
+      "paths": {
+        "markdown": "reports/2026-01-26.management-layer.md",
+        "telegram": "telegram/2026-01-26.management-layer.telegram.md",
+        "json": "data/2026-01-26.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 26 gennaio 2026, sono stati analizzati 10 articoli provenienti da 17 fonti, con un focus predominante sulle strategie di integrazione dell'IA nei processi di sviluppo e sulle im...",
+      "topLinks": [
+        {
+          "title": "Interviewing tactics for a post-LLM world",
+          "url": "https://leaddev.com/ai/interviewing-tactics-post-llm-world",
+          "source": "LeadDev"
+        },
+        {
+          "title": "AI doesn’t create great developers, it amplifies them",
+          "url": "https://leaddev.com/ai/ai-doesnt-create-great-developers-it-amplifies-them",
+          "source": "LeadDev"
+        },
+        {
+          "title": "The 3 tenets of a usable vision",
+          "url": "https://leaddev.com/leadership/3-tenets-usable-vision",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Fragments: January 22",
+          "url": "https://martinfowler.com/fragments/2026-01-22.html",
+          "source": "Martin Fowler"
+        },
+        {
+          "title": "Conversation: LLMs and the what/how loop",
+          "url": "https://martinfowler.com/articles/convo-what-how.html",
+          "source": "Martin Fowler"
+        }
+      ]
+    },
     {
       "date": "2026-01-19",
       "title": "The Management Layer — 2026-01-19",

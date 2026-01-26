@@ -1,0 +1,302 @@
+{
+  "date": "2026-01-26",
+  "title": "The Management Layer — 2026-01-26",
+  "counts": {
+    "articles": 10,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "7c436a213125332f4e2cad6757f24ca8",
+      "title": "Interviewing tactics for a post-LLM world",
+      "url": "https://leaddev.com/ai/interviewing-tactics-post-llm-world",
+      "source": "LeadDev",
+      "publishedAt": "2026-01-21T09:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "63f5159b3f4dd3bec104089d567bb198",
+      "title": "AI doesn’t create great developers, it amplifies them",
+      "url": "https://leaddev.com/ai/ai-doesnt-create-great-developers-it-amplifies-them",
+      "source": "LeadDev",
+      "publishedAt": "2026-01-20T08:41:34.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "2c96e96d80d0ab1b62d1987ad9c02939",
+      "title": "The 3 tenets of a usable vision",
+      "url": "https://leaddev.com/leadership/3-tenets-usable-vision",
+      "source": "LeadDev",
+      "publishedAt": "2026-01-19T09:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "2cb3912478868b01bfda73631ffef7c4",
+      "title": "Fragments: January 22",
+      "url": "https://martinfowler.com/fragments/2026-01-22.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-01-22T14:30:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "eeefdd214fd19bdb9114207fc298f764",
+      "title": "Conversation: LLMs and the what/how loop",
+      "url": "https://martinfowler.com/articles/convo-what-how.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-01-21T14:40:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "f6c72d6cc54832b871ab06a35b8c267d",
+      "title": "Build an agent into any app with the GitHub Copilot SDK",
+      "url": "https://github.blog/news-insights/company-news/build-an-agent-into-any-app-with-the-github-copilot-sdk/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-01-22T15:01:44.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "e5dace5a29079ba4403550000347e4be",
+      "title": "A cheat sheet to slash commands in GitHub Copilot CLI",
+      "url": "https://github.blog/ai-and-ml/github-copilot/a-cheat-sheet-to-slash-commands-in-github-copilot-cli/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-01-21T17:09:10.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "730b92d1c55c0bb8dfd0b0ef71d70041",
+      "title": "AI-supported vulnerability triage with the GitHub Security Lab Taskflow Agent",
+      "url": "https://github.blog/security/ai-supported-vulnerability-triage-with-the-github-security-lab-taskflow-agent/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-01-20T19:52:50.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "1c104d72410d08cd33bbbe0c9160b310",
+      "title": "Context windows, Plan agent, and TDD: What I learned building a countdown app with GitHub Copilot",
+      "url": "https://github.blog/developer-skills/application-development/context-windows-plan-agent-and-tdd-what-i-learned-building-a-countdown-app-with-github-copilot/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-01-20T17:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "b07c21ba0de3bb3ffd921260e078c8f6",
+      "title": "Metronome + Stripe: Building the future of billing",
+      "url": "https://stripe.com/blog/metronome-stripe-building-the-future-of-billing",
+      "source": "Stripe Blog",
+      "publishedAt": "2026-01-23T00:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "product",
+        "engineering"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "7c436a213125332f4e2cad6757f24ca8",
+      "title": "Interviewing tactics for a post-LLM world",
+      "url": "https://leaddev.com/ai/interviewing-tactics-post-llm-world",
+      "source": "LeadDev",
+      "publishedAt": "2026-01-21T09:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "63f5159b3f4dd3bec104089d567bb198",
+      "title": "AI doesn’t create great developers, it amplifies them",
+      "url": "https://leaddev.com/ai/ai-doesnt-create-great-developers-it-amplifies-them",
+      "source": "LeadDev",
+      "publishedAt": "2026-01-20T08:41:34.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "2c96e96d80d0ab1b62d1987ad9c02939",
+      "title": "The 3 tenets of a usable vision",
+      "url": "https://leaddev.com/leadership/3-tenets-usable-vision",
+      "source": "LeadDev",
+      "publishedAt": "2026-01-19T09:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "2cb3912478868b01bfda73631ffef7c4",
+      "title": "Fragments: January 22",
+      "url": "https://martinfowler.com/fragments/2026-01-22.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-01-22T14:30:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "eeefdd214fd19bdb9114207fc298f764",
+      "title": "Conversation: LLMs and the what/how loop",
+      "url": "https://martinfowler.com/articles/convo-what-how.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-01-21T14:40:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "f6c72d6cc54832b871ab06a35b8c267d",
+      "title": "Build an agent into any app with the GitHub Copilot SDK",
+      "url": "https://github.blog/news-insights/company-news/build-an-agent-into-any-app-with-the-github-copilot-sdk/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-01-22T15:01:44.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "e5dace5a29079ba4403550000347e4be",
+      "title": "A cheat sheet to slash commands in GitHub Copilot CLI",
+      "url": "https://github.blog/ai-and-ml/github-copilot/a-cheat-sheet-to-slash-commands-in-github-copilot-cli/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-01-21T17:09:10.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "730b92d1c55c0bb8dfd0b0ef71d70041",
+      "title": "AI-supported vulnerability triage with the GitHub Security Lab Taskflow Agent",
+      "url": "https://github.blog/security/ai-supported-vulnerability-triage-with-the-github-security-lab-taskflow-agent/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-01-20T19:52:50.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "1c104d72410d08cd33bbbe0c9160b310",
+      "title": "Context windows, Plan agent, and TDD: What I learned building a countdown app with GitHub Copilot",
+      "url": "https://github.blog/developer-skills/application-development/context-windows-plan-agent-and-tdd-what-i-learned-building-a-countdown-app-with-github-copilot/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-01-20T17:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "b07c21ba0de3bb3ffd921260e078c8f6",
+      "title": "Metronome + Stripe: Building the future of billing",
+      "url": "https://stripe.com/blog/metronome-stripe-building-the-future-of-billing",
+      "source": "Stripe Blog",
+      "publishedAt": "2026-01-23T00:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "product",
+        "engineering"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 26 gennaio 2026, sono stati analizzati 10 articoli provenienti da 17 fonti, con un focus predominante sulle strategie di integrazione dell'IA nei processi di sviluppo e sulle implicazioni per la leadership ingegneristica. I contenuti evidenziano tensioni tra l'adozione di strumenti basati su IA e la necessità di mantenere standard di qualità e produttività. Si osservano anche discussioni relative alla governance degli strumenti IA e alla preparazione organizzativa per affrontare le sfide emergenti.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "La continua evoluzione degli strumenti IA potrebbe richiedere un aggiornamento costante delle competenze e delle pratiche di sviluppo.",
+      "L'attenzione crescente sulla governance degli strumenti IA potrebbe portare a nuove normative o best practices nel settore.",
+      "Le dinamiche di cambiamento nelle metriche di performance potrebbero influenzare le strategie di gestione e le aspettative di produttività."
+    ],
+    "divergences": [
+      "Gli articoli si concentrano maggiormente sulle implicazioni strategiche dell'IA, mentre l'assenza di discussioni su Reddit suggerisce una mancanza di confronto su tali temi.",
+      "Le pubblicazioni evidenziano la necessità di formazione e governance, ma non emergono conversazioni parallele nella comunità online, indicando un possibile gap di comunicazione.",
+      "Le tensioni legate alla qualità del codice e alla produttività sono discusse negli articoli, mentre su Reddit non si riscontrano opinioni o esperienze condivise su queste problematiche."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-01-26.management-layer.md",
+    "telegram": "telegram/2026-01-26.management-layer.telegram.md",
+    "json": "data/2026-01-26.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}
