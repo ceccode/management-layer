@@ -1,0 +1,302 @@
+{
+  "date": "2026-02-02",
+  "title": "The Management Layer — 2026-02-02",
+  "counts": {
+    "articles": 17,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "c566afc0b251e01bce6b508cf2b1eaa0",
+      "title": "Sovereign failover – Design for digital sovereignty using the AWS European Sovereign Cloud",
+      "url": "https://aws.amazon.com/blogs/architecture/sovereign-failover-design-for-digital-sovereignty-using-the-aws-european-sovereign-cloud/",
+      "source": "AWS Architecture Blog",
+      "publishedAt": "2026-01-30T19:09:35.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "architecture",
+        "systems"
+      ]
+    },
+    {
+      "id": "f7a0aef472b495bdb6297365db6b1932",
+      "title": "Shipping nano updates in the AI era",
+      "url": "https://leaddev.com/ai/shipping-nano-updates-ai-era",
+      "source": "LeadDev",
+      "publishedAt": "2026-01-30T01:34:53.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "0d85dab2a9c34b54cacee878d7b175cf",
+      "title": "Who wants to be an engineering manager anyway?",
+      "url": "https://leaddev.com/management/why-would-anyone-be-an-engineering-manager-in-2026",
+      "source": "LeadDev",
+      "publishedAt": "2026-01-29T11:54:38.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "d3eb9ede3ceaa7fc737352c5399f799b",
+      "title": "How to find a tribe of mentors",
+      "url": "https://leaddev.com/career-development/how-find-tribe-mentors",
+      "source": "LeadDev",
+      "publishedAt": "2026-01-27T23:34:10.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "c31da03e9f8635524a994057f235c1fc",
+      "title": "Meet the tech workers taking a stand against ICE",
+      "url": "https://leaddev.com/culture/meet-the-tech-workers-taking-a-stand-against-ice",
+      "source": "LeadDev",
+      "publishedAt": "2026-01-27T16:32:24.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "3e95d37e2a2276c02a042697483a8880",
+      "title": "Using AI to improve developer onboarding",
+      "url": "https://leaddev.com/hiring/does-ai-improve-developer-onboarding",
+      "source": "LeadDev",
+      "publishedAt": "2026-01-27T09:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "be3601eaf46f4c49cc10737f9cc666fe",
+      "title": "Ageism is squeezing everyone out of tech jobs",
+      "url": "https://leaddev.com/hiring/ageism-running-rampant-tech-hiring",
+      "source": "LeadDev",
+      "publishedAt": "2026-01-26T09:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "8b41abec402603d6fc5f4b1df3ab31c4",
+      "title": "Bliki: Excessive Bold",
+      "url": "https://martinfowler.com/bliki/ExcessiveBold.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-01-28T14:20:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "d2217bb6c1910515b65a9f3b7b86405b",
+      "title": "Assessing internal quality while coding with an agent",
+      "url": "https://martinfowler.com/articles/exploring-gen-ai/ccmenu-quality.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-01-27T15:50:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "9f24a53881cde15b7c8bb8f98277575b",
+      "title": "From pixels to characters: The engineering behind GitHub Copilot CLI’s animated ASCII banner",
+      "url": "https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-01-28T17:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "c566afc0b251e01bce6b508cf2b1eaa0",
+      "title": "Sovereign failover – Design for digital sovereignty using the AWS European Sovereign Cloud",
+      "url": "https://aws.amazon.com/blogs/architecture/sovereign-failover-design-for-digital-sovereignty-using-the-aws-european-sovereign-cloud/",
+      "source": "AWS Architecture Blog",
+      "publishedAt": "2026-01-30T19:09:35.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "architecture",
+        "systems"
+      ]
+    },
+    {
+      "id": "f7a0aef472b495bdb6297365db6b1932",
+      "title": "Shipping nano updates in the AI era",
+      "url": "https://leaddev.com/ai/shipping-nano-updates-ai-era",
+      "source": "LeadDev",
+      "publishedAt": "2026-01-30T01:34:53.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "0d85dab2a9c34b54cacee878d7b175cf",
+      "title": "Who wants to be an engineering manager anyway?",
+      "url": "https://leaddev.com/management/why-would-anyone-be-an-engineering-manager-in-2026",
+      "source": "LeadDev",
+      "publishedAt": "2026-01-29T11:54:38.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "d3eb9ede3ceaa7fc737352c5399f799b",
+      "title": "How to find a tribe of mentors",
+      "url": "https://leaddev.com/career-development/how-find-tribe-mentors",
+      "source": "LeadDev",
+      "publishedAt": "2026-01-27T23:34:10.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "c31da03e9f8635524a994057f235c1fc",
+      "title": "Meet the tech workers taking a stand against ICE",
+      "url": "https://leaddev.com/culture/meet-the-tech-workers-taking-a-stand-against-ice",
+      "source": "LeadDev",
+      "publishedAt": "2026-01-27T16:32:24.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "3e95d37e2a2276c02a042697483a8880",
+      "title": "Using AI to improve developer onboarding",
+      "url": "https://leaddev.com/hiring/does-ai-improve-developer-onboarding",
+      "source": "LeadDev",
+      "publishedAt": "2026-01-27T09:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "be3601eaf46f4c49cc10737f9cc666fe",
+      "title": "Ageism is squeezing everyone out of tech jobs",
+      "url": "https://leaddev.com/hiring/ageism-running-rampant-tech-hiring",
+      "source": "LeadDev",
+      "publishedAt": "2026-01-26T09:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "8b41abec402603d6fc5f4b1df3ab31c4",
+      "title": "Bliki: Excessive Bold",
+      "url": "https://martinfowler.com/bliki/ExcessiveBold.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-01-28T14:20:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "d2217bb6c1910515b65a9f3b7b86405b",
+      "title": "Assessing internal quality while coding with an agent",
+      "url": "https://martinfowler.com/articles/exploring-gen-ai/ccmenu-quality.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-01-27T15:50:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "9f24a53881cde15b7c8bb8f98277575b",
+      "title": "From pixels to characters: The engineering behind GitHub Copilot CLI’s animated ASCII banner",
+      "url": "https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-01-28T17:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 2 febbraio 2026, sono stati analizzati 17 articoli, con un focus significativo sull'integrazione della tecnologia cloud e sull'uso dell'IA nei processi di sviluppo. I contenuti evidenziano tensioni tra le esigenze di sovranità digitale e le pratiche di sviluppo agili. Emergenze relative all'adozione di strumenti AI e alle dinamiche di onboarding dei nuovi sviluppatori sono state centrali, suggerendo una necessità di adattamento alle nuove tecnologie e alle aspettative di qualità.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'adozione di architetture cloud che rispettano la sovranità digitale potrebbe influenzare le strategie di sviluppo e le scelte tecnologiche delle aziende.",
+      "Le pratiche di rilascio software in mini aggiornamenti potrebbero portare a una revisione delle metriche di qualità e performance.",
+      "La crescente attenzione verso l'inclusività nel settore tech potrebbe stimolare nuove iniziative e politiche aziendali, necessitando un monitoraggio costante."
+    ],
+    "divergences": [
+      "Gli articoli tendono a focalizzarsi su innovazioni e best practices, mentre la mancanza di discussioni su Reddit suggerisce una scarsità di interazione e feedback pratici da parte della comunità.",
+      "Le tematiche di sovranità digitale e inclusività non sembrano suscitare un dibattito attivo su Reddit, evidenziando una possibile disconnessione tra le preoccupazioni editoriali e le esperienze degli utenti.",
+      "Le discussioni sulle implicazioni pratiche dell'IA nello sviluppo software sono limitate su Reddit, suggerendo che le opinioni della comunità potrebbero non essere sufficientemente rappresentate."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-02-02.management-layer.md",
+    "telegram": "telegram/2026-02-02.management-layer.telegram.md",
+    "json": "data/2026-02-02.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}

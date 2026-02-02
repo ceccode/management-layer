@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-01-26T07:12:39.949Z",
+  "generated_at_utc": "2026-02-02T07:26:17.014Z",
   "version": 1,
   "latest": {
-    "date": "2026-01-26",
+    "date": "2026-02-02",
     "paths": {
-      "markdown": "reports/2026-01-26.management-layer.md",
-      "telegram": "telegram/2026-01-26.management-layer.telegram.md",
-      "json": "data/2026-01-26.management-layer.json"
+      "markdown": "reports/2026-02-02.management-layer.md",
+      "telegram": "telegram/2026-02-02.management-layer.telegram.md",
+      "json": "data/2026-02-02.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-02-02",
+      "title": "The Management Layer — 2026-02-02",
+      "paths": {
+        "markdown": "reports/2026-02-02.management-layer.md",
+        "telegram": "telegram/2026-02-02.management-layer.telegram.md",
+        "json": "data/2026-02-02.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 2 febbraio 2026, sono stati analizzati 17 articoli, con un focus significativo sull'integrazione della tecnologia cloud e sull'uso dell'IA nei processi di sviluppo. I contenuti ...",
+      "topLinks": [
+        {
+          "title": "Sovereign failover – Design for digital sovereignty using the AWS European Sovereign Cloud",
+          "url": "https://aws.amazon.com/blogs/architecture/sovereign-failover-design-for-digital-sovereignty-using-the-aws-european-sovereign-cloud/",
+          "source": "AWS Architecture Blog"
+        },
+        {
+          "title": "Shipping nano updates in the AI era",
+          "url": "https://leaddev.com/ai/shipping-nano-updates-ai-era",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Who wants to be an engineering manager anyway?",
+          "url": "https://leaddev.com/management/why-would-anyone-be-an-engineering-manager-in-2026",
+          "source": "LeadDev"
+        },
+        {
+          "title": "How to find a tribe of mentors",
+          "url": "https://leaddev.com/career-development/how-find-tribe-mentors",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Meet the tech workers taking a stand against ICE",
+          "url": "https://leaddev.com/culture/meet-the-tech-workers-taking-a-stand-against-ice",
+          "source": "LeadDev"
+        }
+      ]
+    },
     {
       "date": "2026-01-26",
       "title": "The Management Layer — 2026-01-26",
