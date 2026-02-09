@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-02-02T07:26:17.014Z",
+  "generated_at_utc": "2026-02-09T07:28:52.384Z",
   "version": 1,
   "latest": {
-    "date": "2026-02-02",
+    "date": "2026-02-09",
     "paths": {
-      "markdown": "reports/2026-02-02.management-layer.md",
-      "telegram": "telegram/2026-02-02.management-layer.telegram.md",
-      "json": "data/2026-02-02.management-layer.json"
+      "markdown": "reports/2026-02-09.management-layer.md",
+      "telegram": "telegram/2026-02-09.management-layer.telegram.md",
+      "json": "data/2026-02-09.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-02-09",
+      "title": "The Management Layer — 2026-02-09",
+      "paths": {
+        "markdown": "reports/2026-02-09.management-layer.md",
+        "telegram": "telegram/2026-02-09.management-layer.telegram.md",
+        "json": "data/2026-02-09.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 9 febbraio 2026, sono stati analizzati 14 articoli, con un focus sulle dinamiche di onboarding e sull'integrazione di strumenti AI nei processi di sviluppo. I contenuti evidenzi...",
+      "topLinks": [
+        {
+          "title": "What 7 years as a contractor taught me about onboarding",
+          "url": "https://leaddev.com/communication/what-7-years-as-a-contractor-taught-me-about-onboarding",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Pinterest fires two engineers for building layoff-tracking tool",
+          "url": "https://leaddev.com/ai/pinterest-fires-two-engineers-for-building-layoff-tracking-tool",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Why Microsoft engineers are using Claude Code",
+          "url": "https://leaddev.com/ai/why-microsoft-engineers-are-using-claude-code",
+          "source": "LeadDev"
+        },
+        {
+          "title": "What Tailwind teaches us about open source in the age of AI",
+          "url": "https://leaddev.com/ai/what-tailwind-teaches-us-about-open-source-in-the-age-of-ai",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Why your API golden paths aren’t being used",
+          "url": "https://leaddev.com/technical-direction/why-your-api-golden-paths-arent-being-used",
+          "source": "LeadDev"
+        }
+      ]
+    },
     {
       "date": "2026-02-02",
       "title": "The Management Layer — 2026-02-02",

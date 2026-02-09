@@ -1,0 +1,302 @@
+{
+  "date": "2026-02-09",
+  "title": "The Management Layer — 2026-02-09",
+  "counts": {
+    "articles": 14,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "9fbba49eaf72a8c4388da749fc67060f",
+      "title": "What 7 years as a contractor taught me about onboarding",
+      "url": "https://leaddev.com/communication/what-7-years-as-a-contractor-taught-me-about-onboarding",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-03T08:50:00.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "31ac0c2020d653d30785045cfaa4f88f",
+      "title": "Pinterest fires two engineers for building layoff-tracking tool",
+      "url": "https://leaddev.com/ai/pinterest-fires-two-engineers-for-building-layoff-tracking-tool",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-05T16:13:19.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "128a4f9f14647c68c0b0e5075dbaeb4f",
+      "title": "Why Microsoft engineers are using Claude Code",
+      "url": "https://leaddev.com/ai/why-microsoft-engineers-are-using-claude-code",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-04T12:14:56.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "9b26e676430f5e1c06beb439ec756eac",
+      "title": "What Tailwind teaches us about open source in the age of AI",
+      "url": "https://leaddev.com/ai/what-tailwind-teaches-us-about-open-source-in-the-age-of-ai",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-03T09:41:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "192d11a32c40ba8c4a2b6bf51d890674",
+      "title": "Why your API golden paths aren’t being used",
+      "url": "https://leaddev.com/technical-direction/why-your-api-golden-paths-arent-being-used",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-02T10:50:58.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "db035caa4edaf47cd7e231e893ef67a2",
+      "title": "Context Engineering for Coding Agents",
+      "url": "https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-02-05T15:36:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "94013ef98857d605e649d6de5b37593d",
+      "title": "Fragments: February  4",
+      "url": "https://martinfowler.com/fragments/2026-02-04.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-02-04T17:56:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "9b31c40af2db797335ec376aab2bb932",
+      "title": "Manufacturing: From legacy to AI platforms",
+      "url": "https://www.thoughtworks.com/insights/blog/platforms/from-legacy-to-ai-platforms-manufacturing",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-02-03T00:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    },
+    {
+      "id": "fc2239b1c799cdd28ac004aab6809df7",
+      "title": "Continuous AI in practice: What developers can automate today with agentic CI",
+      "url": "https://github.blog/ai-and-ml/generative-ai/continuous-ai-in-practice-what-developers-can-automate-today-with-agentic-ci/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-02-05T17:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "b065ce914cd8e2e5f3117441da2fa6cb",
+      "title": "Pick your agent: Use Claude and Codex on Agent HQ",
+      "url": "https://github.blog/news-insights/company-news/pick-your-agent-use-claude-and-codex-on-agent-hq/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-02-04T17:00:19.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "9fbba49eaf72a8c4388da749fc67060f",
+      "title": "What 7 years as a contractor taught me about onboarding",
+      "url": "https://leaddev.com/communication/what-7-years-as-a-contractor-taught-me-about-onboarding",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-03T08:50:00.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "31ac0c2020d653d30785045cfaa4f88f",
+      "title": "Pinterest fires two engineers for building layoff-tracking tool",
+      "url": "https://leaddev.com/ai/pinterest-fires-two-engineers-for-building-layoff-tracking-tool",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-05T16:13:19.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "128a4f9f14647c68c0b0e5075dbaeb4f",
+      "title": "Why Microsoft engineers are using Claude Code",
+      "url": "https://leaddev.com/ai/why-microsoft-engineers-are-using-claude-code",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-04T12:14:56.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "9b26e676430f5e1c06beb439ec756eac",
+      "title": "What Tailwind teaches us about open source in the age of AI",
+      "url": "https://leaddev.com/ai/what-tailwind-teaches-us-about-open-source-in-the-age-of-ai",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-03T09:41:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "192d11a32c40ba8c4a2b6bf51d890674",
+      "title": "Why your API golden paths aren’t being used",
+      "url": "https://leaddev.com/technical-direction/why-your-api-golden-paths-arent-being-used",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-02T10:50:58.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "db035caa4edaf47cd7e231e893ef67a2",
+      "title": "Context Engineering for Coding Agents",
+      "url": "https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-02-05T15:36:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "94013ef98857d605e649d6de5b37593d",
+      "title": "Fragments: February  4",
+      "url": "https://martinfowler.com/fragments/2026-02-04.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-02-04T17:56:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "9b31c40af2db797335ec376aab2bb932",
+      "title": "Manufacturing: From legacy to AI platforms",
+      "url": "https://www.thoughtworks.com/insights/blog/platforms/from-legacy-to-ai-platforms-manufacturing",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-02-03T00:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    },
+    {
+      "id": "fc2239b1c799cdd28ac004aab6809df7",
+      "title": "Continuous AI in practice: What developers can automate today with agentic CI",
+      "url": "https://github.blog/ai-and-ml/generative-ai/continuous-ai-in-practice-what-developers-can-automate-today-with-agentic-ci/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-02-05T17:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "b065ce914cd8e2e5f3117441da2fa6cb",
+      "title": "Pick your agent: Use Claude and Codex on Agent HQ",
+      "url": "https://github.blog/news-insights/company-news/pick-your-agent-use-claude-and-codex-on-agent-hq/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-02-04T17:00:19.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 9 febbraio 2026, sono stati analizzati 14 articoli, con un focus sulle dinamiche di onboarding e sull'integrazione di strumenti AI nei processi di sviluppo. I contenuti evidenziano tensioni tra le pratiche di onboarding tradizionali e le nuove esigenze create dall'adozione di tecnologie avanzate. Inoltre, si osservano reazioni significative alle politiche aziendali riguardanti la trasparenza e l'uso di strumenti di monitoraggio, come evidenziato dal caso di Pinterest.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'evoluzione delle pratiche di onboarding potrebbe influenzare le strategie di assunzione e la retention dei talenti nel settore tech.",
+      "Le reazioni aziendali a incidenti come quello di Pinterest potrebbero portare a una maggiore attenzione alle politiche di trasparenza e responsabilità nell'uso degli strumenti di monitoraggio.",
+      "Le dinamiche di adozione delle architetture API potrebbero rivelare opportunità per migliorare l'efficienza e la qualità del software."
+    ],
+    "divergences": [
+      "Gli articoli tendono a focalizzarsi su casi specifici di aziende, mentre le discussioni su Reddit mostrano una maggiore attenzione alle esperienze individuali dei professionisti nel settore.",
+      "Le analisi degli articoli evidenziano le implicazioni etiche delle politiche aziendali, mentre le conversazioni su Reddit si concentrano più sulle pratiche quotidiane e sulle sfide operative.",
+      "Mentre gli articoli offrono una visione macro delle tendenze, le discussioni su Reddit tendono a esplorare le micro-dinamiche e le esperienze personali legate all'adozione di nuove tecnologie."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-02-09.management-layer.md",
+    "telegram": "telegram/2026-02-09.management-layer.telegram.md",
+    "json": "data/2026-02-09.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}
