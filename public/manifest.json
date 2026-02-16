@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-02-09T07:28:52.384Z",
+  "generated_at_utc": "2026-02-16T07:28:12.699Z",
   "version": 1,
   "latest": {
-    "date": "2026-02-09",
+    "date": "2026-02-16",
     "paths": {
-      "markdown": "reports/2026-02-09.management-layer.md",
-      "telegram": "telegram/2026-02-09.management-layer.telegram.md",
-      "json": "data/2026-02-09.management-layer.json"
+      "markdown": "reports/2026-02-16.management-layer.md",
+      "telegram": "telegram/2026-02-16.management-layer.telegram.md",
+      "json": "data/2026-02-16.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-02-16",
+      "title": "The Management Layer — 2026-02-16",
+      "paths": {
+        "markdown": "reports/2026-02-16.management-layer.md",
+        "telegram": "telegram/2026-02-16.management-layer.telegram.md",
+        "json": "data/2026-02-16.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 16 febbraio 2026, sono stati analizzati 11 articoli, con un focus sulle dinamiche di automazione nei processi di sviluppo e sull'impatto dell'intelligenza artificiale (IA) sulle...",
+      "topLinks": [
+        {
+          "title": "Fragments: February 13",
+          "url": "https://martinfowler.com/fragments/2026-02-13.html",
+          "source": "Martin Fowler"
+        },
+        {
+          "title": "Automate repository tasks with GitHub Agentic Workflows",
+          "url": "https://github.blog/ai-and-ml/automate-repository-tasks-with-github-agentic-workflows/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "Orchestrate a team of agents to reduce on-call burden",
+          "url": "https://leaddev.com/software-quality/orchestrate-a-team-of-agents-to-reduce-on-call-burden",
+          "source": "LeadDev"
+        },
+        {
+          "title": "How to build engineering teams in the AI era",
+          "url": "https://leaddev.com/communication/how-to-build-engineering-teams-in-the-ai-era",
+          "source": "LeadDev"
+        },
+        {
+          "title": "‘Infinite agent code’ is coming to break your monorepos",
+          "url": "https://leaddev.com/technical-direction/infinite-agent-code-is-coming-to-break-your-monorepos",
+          "source": "LeadDev"
+        }
+      ]
+    },
     {
       "date": "2026-02-09",
       "title": "The Management Layer — 2026-02-09",

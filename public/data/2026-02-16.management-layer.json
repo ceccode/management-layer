@@ -1,0 +1,302 @@
+{
+  "date": "2026-02-16",
+  "title": "The Management Layer — 2026-02-16",
+  "counts": {
+    "articles": 11,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "2a3cc9a13fda3592186e4605361f48c7",
+      "title": "Fragments: February 13",
+      "url": "https://martinfowler.com/fragments/2026-02-13.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-02-13T15:45:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "91df09eb5a9f662a62dc66bd76a5b84e",
+      "title": "Automate repository tasks with GitHub Agentic Workflows",
+      "url": "https://github.blog/ai-and-ml/automate-repository-tasks-with-github-agentic-workflows/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-02-13T14:00:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "6905ea9e5cbeb0cfe3dfe4de6e923733",
+      "title": "Orchestrate a team of agents to reduce on-call burden",
+      "url": "https://leaddev.com/software-quality/orchestrate-a-team-of-agents-to-reduce-on-call-burden",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-10T11:18:08.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "c7e6063c9afdd60df3a6d1c2e3cc9373",
+      "title": "How to build engineering teams in the AI era",
+      "url": "https://leaddev.com/communication/how-to-build-engineering-teams-in-the-ai-era",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-11T13:20:57.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "0d163096b38170e9d62942847af06a06",
+      "title": "‘Infinite agent code’ is coming to break your monorepos",
+      "url": "https://leaddev.com/technical-direction/infinite-agent-code-is-coming-to-break-your-monorepos",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-10T08:23:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "0ead144d8acc7fc732c40f20293f9781",
+      "title": "Your AI champions are the key to engineering adoption",
+      "url": "https://leaddev.com/ai/ai-champions-are-the-key-to-engineering-adoption",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-09T12:27:56.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "d2f88e05c282411f7a1551e2754ec79d",
+      "title": "AI skepticism is a quiet career killer",
+      "url": "https://leaddev.com/career-development/ai-skepticism-is-a-quiet-career-killer",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-09T08:53:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "60c108a0811ca71f756d687697414ac8",
+      "title": "Fragments: February  9",
+      "url": "https://martinfowler.com/fragments/2026-02-09.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-02-09T19:32:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "bd87ff4329187db1d8a1acbddc27b2d3",
+      "title": "Welcome to the Eternal September of open source. Here’s what we plan to do for maintainers.",
+      "url": "https://github.blog/open-source/maintainers/welcome-to-the-eternal-september-of-open-source-heres-what-we-plan-to-do-for-maintainers/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-02-12T20:14:11.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "00ad5d11fb26b87a4b9f1b9d280945ef",
+      "title": "GitHub availability report: January 2026",
+      "url": "https://github.blog/news-insights/company-news/github-availability-report-january-2026/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-02-11T23:12:34.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "2a3cc9a13fda3592186e4605361f48c7",
+      "title": "Fragments: February 13",
+      "url": "https://martinfowler.com/fragments/2026-02-13.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-02-13T15:45:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "91df09eb5a9f662a62dc66bd76a5b84e",
+      "title": "Automate repository tasks with GitHub Agentic Workflows",
+      "url": "https://github.blog/ai-and-ml/automate-repository-tasks-with-github-agentic-workflows/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-02-13T14:00:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "6905ea9e5cbeb0cfe3dfe4de6e923733",
+      "title": "Orchestrate a team of agents to reduce on-call burden",
+      "url": "https://leaddev.com/software-quality/orchestrate-a-team-of-agents-to-reduce-on-call-burden",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-10T11:18:08.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "c7e6063c9afdd60df3a6d1c2e3cc9373",
+      "title": "How to build engineering teams in the AI era",
+      "url": "https://leaddev.com/communication/how-to-build-engineering-teams-in-the-ai-era",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-11T13:20:57.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "0d163096b38170e9d62942847af06a06",
+      "title": "‘Infinite agent code’ is coming to break your monorepos",
+      "url": "https://leaddev.com/technical-direction/infinite-agent-code-is-coming-to-break-your-monorepos",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-10T08:23:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "0ead144d8acc7fc732c40f20293f9781",
+      "title": "Your AI champions are the key to engineering adoption",
+      "url": "https://leaddev.com/ai/ai-champions-are-the-key-to-engineering-adoption",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-09T12:27:56.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "d2f88e05c282411f7a1551e2754ec79d",
+      "title": "AI skepticism is a quiet career killer",
+      "url": "https://leaddev.com/career-development/ai-skepticism-is-a-quiet-career-killer",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-09T08:53:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "60c108a0811ca71f756d687697414ac8",
+      "title": "Fragments: February  9",
+      "url": "https://martinfowler.com/fragments/2026-02-09.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-02-09T19:32:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "bd87ff4329187db1d8a1acbddc27b2d3",
+      "title": "Welcome to the Eternal September of open source. Here’s what we plan to do for maintainers.",
+      "url": "https://github.blog/open-source/maintainers/welcome-to-the-eternal-september-of-open-source-heres-what-we-plan-to-do-for-maintainers/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-02-12T20:14:11.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "00ad5d11fb26b87a4b9f1b9d280945ef",
+      "title": "GitHub availability report: January 2026",
+      "url": "https://github.blog/news-insights/company-news/github-availability-report-january-2026/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-02-11T23:12:34.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 16 febbraio 2026, sono stati analizzati 11 articoli, con un focus sulle dinamiche di automazione nei processi di sviluppo e sull'impatto dell'intelligenza artificiale (IA) sulle pratiche ingegneristiche. I contenuti evidenziano tensioni tra l'adozione di strumenti automatizzati e la necessità di mantenere standard di qualità e controllo. Si osservano anche discussioni sull'importanza dei \"champion\" dell'IA all'interno delle organizzazioni per facilitare l'adozione tecnologica.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'evoluzione delle pratiche di automazione potrebbe influenzare le strategie di gestione del personale e le aspettative di performance.",
+      "L'interesse crescente per i \"champion\" dell'IA potrebbe indicare un cambiamento nella cultura aziendale verso una maggiore inclusività e partecipazione.",
+      "Le dinamiche legate all'adozione di architetture software flessibili potrebbero aprire nuove opportunità per migliorare l'efficienza e la qualità del software."
+    ],
+    "divergences": [
+      "Gli articoli tendono a enfatizzare l'importanza dell'automazione come strumento per migliorare l'efficienza, mentre le discussioni su Reddit possono esprimere preoccupazioni riguardo alla qualità del lavoro e alla perdita di controllo.",
+      "Mentre gli articoli promuovono l'adozione dell'IA come un passo necessario, le conversazioni su Reddit possono riflettere scetticismi e resistenze culturali all'interno delle organizzazioni.",
+      "Gli articoli descrivono le architetture software emergenti come opportunità, mentre le discussioni su Reddit potrebbero mettere in evidenza le sfide pratiche e le complessità associate a tali cambiamenti."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-02-16.management-layer.md",
+    "telegram": "telegram/2026-02-16.management-layer.telegram.md",
+    "json": "data/2026-02-16.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}
