@@ -1,0 +1,302 @@
+{
+  "date": "2026-02-23",
+  "title": "The Management Layer — 2026-02-23",
+  "counts": {
+    "articles": 13,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "a2b3f3811a3d62a173054b5e64f9f486",
+      "title": "How AI is reshaping developer choice (and Octoverse data proves it)",
+      "url": "https://github.blog/ai-and-ml/generative-ai/how-ai-is-reshaping-developer-choice-and-octoverse-data-proves-it/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-02-19T17:00:00.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "c3a7f45f0221d64ea77c9c3645a88407",
+      "title": "Amazon alone is responsible for 52% of tech layoffs in 2026 so far",
+      "url": "https://leaddev.com/ai/amazon-alone-is-responsible-for-52-of-tech-layoffs-in-2026-so-far",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-18T12:43:49.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "8356a7b54ff1982ceaf493803b3d891e",
+      "title": "Nobody knows what programming will look like in two years",
+      "url": "https://leaddev.com/ai/nobody-knows-what-programming-will-look-like-in-two-years",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-18T10:42:08.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "99aacbb5efdaeae0f24d1b0ef4addfca",
+      "title": "Open source has a big AI slop problem",
+      "url": "https://leaddev.com/software-quality/open-source-has-a-big-ai-slop-problem",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-17T10:38:59.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "88aa2af2a4a019d39d5b262997d76a91",
+      "title": "The hidden costs of tech support",
+      "url": "https://leaddev.com/software-quality/the-hidden-costs-of-tech-support",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-17T08:58:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "39f2db19295f756c8c31ff5800e3dd46",
+      "title": "A leader’s blueprint for scaling systems",
+      "url": "https://leaddev.com/technical-direction/a-leaders-blueprint-for-scaling-systems",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-16T08:46:21.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "6a936776963f2dc74d31985c699d5426",
+      "title": "Fragments: February 19",
+      "url": "https://martinfowler.com/fragments/2026-02-19.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-02-19T14:42:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "6cc8497e70cd1d0a5b46ce61a288f7b0",
+      "title": "Bliki: Host Leadership",
+      "url": "https://martinfowler.com/bliki/HostLeadership.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-02-19T13:57:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "dd1ff19e7c29a65bdf7178f3d1b6d53b",
+      "title": "Fragments: February 18",
+      "url": "https://martinfowler.com/fragments/2026-02-18.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-02-18T15:53:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "91c9341aeec2c7d9cbc8bd2f267e60a8",
+      "title": "Bliki: Agentic Email",
+      "url": "https://martinfowler.com/bliki/AgenticEmail.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-02-17T15:39:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "a2b3f3811a3d62a173054b5e64f9f486",
+      "title": "How AI is reshaping developer choice (and Octoverse data proves it)",
+      "url": "https://github.blog/ai-and-ml/generative-ai/how-ai-is-reshaping-developer-choice-and-octoverse-data-proves-it/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-02-19T17:00:00.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "c3a7f45f0221d64ea77c9c3645a88407",
+      "title": "Amazon alone is responsible for 52% of tech layoffs in 2026 so far",
+      "url": "https://leaddev.com/ai/amazon-alone-is-responsible-for-52-of-tech-layoffs-in-2026-so-far",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-18T12:43:49.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "8356a7b54ff1982ceaf493803b3d891e",
+      "title": "Nobody knows what programming will look like in two years",
+      "url": "https://leaddev.com/ai/nobody-knows-what-programming-will-look-like-in-two-years",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-18T10:42:08.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "99aacbb5efdaeae0f24d1b0ef4addfca",
+      "title": "Open source has a big AI slop problem",
+      "url": "https://leaddev.com/software-quality/open-source-has-a-big-ai-slop-problem",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-17T10:38:59.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "88aa2af2a4a019d39d5b262997d76a91",
+      "title": "The hidden costs of tech support",
+      "url": "https://leaddev.com/software-quality/the-hidden-costs-of-tech-support",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-17T08:58:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "39f2db19295f756c8c31ff5800e3dd46",
+      "title": "A leader’s blueprint for scaling systems",
+      "url": "https://leaddev.com/technical-direction/a-leaders-blueprint-for-scaling-systems",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-16T08:46:21.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "6a936776963f2dc74d31985c699d5426",
+      "title": "Fragments: February 19",
+      "url": "https://martinfowler.com/fragments/2026-02-19.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-02-19T14:42:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "6cc8497e70cd1d0a5b46ce61a288f7b0",
+      "title": "Bliki: Host Leadership",
+      "url": "https://martinfowler.com/bliki/HostLeadership.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-02-19T13:57:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "dd1ff19e7c29a65bdf7178f3d1b6d53b",
+      "title": "Fragments: February 18",
+      "url": "https://martinfowler.com/fragments/2026-02-18.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-02-18T15:53:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "91c9341aeec2c7d9cbc8bd2f267e60a8",
+      "title": "Bliki: Agentic Email",
+      "url": "https://martinfowler.com/bliki/AgenticEmail.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-02-17T15:39:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 23 febbraio 2026, sono stati analizzati 13 articoli, con un focus sull'impatto dell'intelligenza artificiale (IA) sulle scelte dei programmatori e sulle dinamiche del mercato del lavoro tecnologico. I contenuti evidenziano tensioni tra l'adozione di strumenti AI e le conseguenze occupazionali, come dimostrato dai significativi licenziamenti nel settore. Inoltre, si osserva una crescente preoccupazione per i problemi legati all'open source e alla qualità del supporto tecnico.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "La crescente integrazione dell'IA nei processi di sviluppo potrebbe portare a una revisione delle competenze richieste nel settore.",
+      "Le reazioni alle politiche di licenziamento potrebbero influenzare le strategie di comunicazione interna e la cultura aziendale.",
+      "Le problematiche legate all'open source e al supporto tecnico potrebbero stimolare discussioni su governance e responsabilità nella gestione del software."
+    ],
+    "divergences": [
+      "Gli articoli tendono a concentrarsi sulle implicazioni economiche e occupazionali, mentre le discussioni Reddit potrebbero enfatizzare le esperienze personali dei programmatori.",
+      "Le analisi di mercato degli articoli si focalizzano su dati quantitativi, mentre le conversazioni su Reddit potrebbero riflettere preoccupazioni qualitative riguardo alla cultura aziendale.",
+      "Mentre gli articoli evidenziano le sfide legate all'adozione dell'IA, le discussioni Reddit potrebbero esplorare le reazioni individuali e le esperienze pratiche con questi strumenti."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-02-23.management-layer.md",
+    "telegram": "telegram/2026-02-23.management-layer.telegram.md",
+    "json": "data/2026-02-23.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}

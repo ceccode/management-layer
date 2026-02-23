@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-02-16T07:28:12.699Z",
+  "generated_at_utc": "2026-02-23T07:28:12.147Z",
   "version": 1,
   "latest": {
-    "date": "2026-02-16",
+    "date": "2026-02-23",
     "paths": {
-      "markdown": "reports/2026-02-16.management-layer.md",
-      "telegram": "telegram/2026-02-16.management-layer.telegram.md",
-      "json": "data/2026-02-16.management-layer.json"
+      "markdown": "reports/2026-02-23.management-layer.md",
+      "telegram": "telegram/2026-02-23.management-layer.telegram.md",
+      "json": "data/2026-02-23.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-02-23",
+      "title": "The Management Layer — 2026-02-23",
+      "paths": {
+        "markdown": "reports/2026-02-23.management-layer.md",
+        "telegram": "telegram/2026-02-23.management-layer.telegram.md",
+        "json": "data/2026-02-23.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 23 febbraio 2026, sono stati analizzati 13 articoli, con un focus sull'impatto dell'intelligenza artificiale (IA) sulle scelte dei programmatori e sulle dinamiche del mercato de...",
+      "topLinks": [
+        {
+          "title": "How AI is reshaping developer choice (and Octoverse data proves it)",
+          "url": "https://github.blog/ai-and-ml/generative-ai/how-ai-is-reshaping-developer-choice-and-octoverse-data-proves-it/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "Amazon alone is responsible for 52% of tech layoffs in 2026 so far",
+          "url": "https://leaddev.com/ai/amazon-alone-is-responsible-for-52-of-tech-layoffs-in-2026-so-far",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Nobody knows what programming will look like in two years",
+          "url": "https://leaddev.com/ai/nobody-knows-what-programming-will-look-like-in-two-years",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Open source has a big AI slop problem",
+          "url": "https://leaddev.com/software-quality/open-source-has-a-big-ai-slop-problem",
+          "source": "LeadDev"
+        },
+        {
+          "title": "The hidden costs of tech support",
+          "url": "https://leaddev.com/software-quality/the-hidden-costs-of-tech-support",
+          "source": "LeadDev"
+        }
+      ]
+    },
     {
       "date": "2026-02-16",
       "title": "The Management Layer — 2026-02-16",
