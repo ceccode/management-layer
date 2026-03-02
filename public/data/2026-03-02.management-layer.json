@@ -1,0 +1,302 @@
+{
+  "date": "2026-03-02",
+  "title": "The Management Layer — 2026-03-02",
+  "counts": {
+    "articles": 16,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "d56f380961829e5ff043e2add9cb2a7b",
+      "title": "Block’s massive AI-driven layoff is a warning",
+      "url": "https://leaddev.com/ai/blocks-40-ai-driven-layoff-is-a-warning",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-27T14:02:35.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "baa8bd040735d566b9653ac8467ac585",
+      "title": "How to justify AI investments",
+      "url": "https://leaddev.com/ai/how-to-justify-ai-investments",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-27T08:50:23.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "3bff1c9c86c812a1f525773a6b8bc4a5",
+      "title": "From idea to pull request: A practical guide to building with GitHub Copilot CLI",
+      "url": "https://github.blog/ai-and-ml/github-copilot/from-idea-to-pull-request-a-practical-guide-to-building-with-github-copilot-cli/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-02-27T16:00:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "b1b6b9c25e31e6789a198734f8f20dc2",
+      "title": "Engineering and algorithmic interventions for multimodal post-training at Microsoft scale",
+      "url": "https://devblogs.microsoft.com/engineering-at-microsoft/engineering-and-algorithmic-interventions-for-multimodal-post-training-at-microsoft-scale/",
+      "source": "Engineering@Microsoft",
+      "publishedAt": "2026-02-27T18:05:59.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "engineering-practices",
+        "platform"
+      ]
+    },
+    {
+      "id": "c1345e05de6053d19de33bfc22c06049",
+      "title": "High-profile AWS outages highlight the risks of AI agents",
+      "url": "https://leaddev.com/ai/high-profile-aws-outages-highlight-the-risks-of-ai-agents",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-26T12:24:47.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "cabe7f94c899e27eadbebde368a6b381",
+      "title": "Create space to experiment with AI in your team",
+      "url": "https://leaddev.com/ai/create-space-to-experiment-with-ai-in-your-team",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-26T09:32:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "923cc1c2061931d76f57d0f422f544ae",
+      "title": "Separating AI hype from engineering reality",
+      "url": "https://leaddev.com/ai/separating-ai-hype-from-engineering-reality",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-24T16:31:17.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "7f45b91d4620de86d2689468ad05d238",
+      "title": "3 tactics for leading a team through uncertainty",
+      "url": "https://leaddev.com/leadership/3-tactics-for-leading-a-team-through-uncertainty",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-23T10:02:31.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "b529f69de09522be29f516dfe362a176",
+      "title": "Fragments: February 25",
+      "url": "https://martinfowler.com/fragments/2026-02-25.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-02-25T14:56:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "e64ece54763da3f34f5facf8dfc4da1c",
+      "title": "Knowledge Priming",
+      "url": "https://martinfowler.com/articles/reduce-friction-ai/knowledge-priming.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-02-24T14:40:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "d56f380961829e5ff043e2add9cb2a7b",
+      "title": "Block’s massive AI-driven layoff is a warning",
+      "url": "https://leaddev.com/ai/blocks-40-ai-driven-layoff-is-a-warning",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-27T14:02:35.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "baa8bd040735d566b9653ac8467ac585",
+      "title": "How to justify AI investments",
+      "url": "https://leaddev.com/ai/how-to-justify-ai-investments",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-27T08:50:23.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "3bff1c9c86c812a1f525773a6b8bc4a5",
+      "title": "From idea to pull request: A practical guide to building with GitHub Copilot CLI",
+      "url": "https://github.blog/ai-and-ml/github-copilot/from-idea-to-pull-request-a-practical-guide-to-building-with-github-copilot-cli/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-02-27T16:00:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "b1b6b9c25e31e6789a198734f8f20dc2",
+      "title": "Engineering and algorithmic interventions for multimodal post-training at Microsoft scale",
+      "url": "https://devblogs.microsoft.com/engineering-at-microsoft/engineering-and-algorithmic-interventions-for-multimodal-post-training-at-microsoft-scale/",
+      "source": "Engineering@Microsoft",
+      "publishedAt": "2026-02-27T18:05:59.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "engineering-practices",
+        "platform"
+      ]
+    },
+    {
+      "id": "c1345e05de6053d19de33bfc22c06049",
+      "title": "High-profile AWS outages highlight the risks of AI agents",
+      "url": "https://leaddev.com/ai/high-profile-aws-outages-highlight-the-risks-of-ai-agents",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-26T12:24:47.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "cabe7f94c899e27eadbebde368a6b381",
+      "title": "Create space to experiment with AI in your team",
+      "url": "https://leaddev.com/ai/create-space-to-experiment-with-ai-in-your-team",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-26T09:32:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "923cc1c2061931d76f57d0f422f544ae",
+      "title": "Separating AI hype from engineering reality",
+      "url": "https://leaddev.com/ai/separating-ai-hype-from-engineering-reality",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-24T16:31:17.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "7f45b91d4620de86d2689468ad05d238",
+      "title": "3 tactics for leading a team through uncertainty",
+      "url": "https://leaddev.com/leadership/3-tactics-for-leading-a-team-through-uncertainty",
+      "source": "LeadDev",
+      "publishedAt": "2026-02-23T10:02:31.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "b529f69de09522be29f516dfe362a176",
+      "title": "Fragments: February 25",
+      "url": "https://martinfowler.com/fragments/2026-02-25.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-02-25T14:56:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "e64ece54763da3f34f5facf8dfc4da1c",
+      "title": "Knowledge Priming",
+      "url": "https://martinfowler.com/articles/reduce-friction-ai/knowledge-priming.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-02-24T14:40:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 2 marzo 2026, sono stati analizzati 16 articoli, con un focus predominante sull'impatto dell'intelligenza artificiale (IA) sulle dinamiche lavorative e sull'infrastruttura tecnologica. I contenuti evidenziano tensioni tra l'adozione di strumenti IA e le conseguenze occupazionali, come dimostrato dai recenti licenziamenti. Inoltre, si osserva una crescente necessità di distinguere tra l'hype attorno all'IA e la sua applicabilità pratica nel contesto ingegneristico.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'evoluzione delle competenze richieste nel settore tech potrebbe influenzare le strategie di assunzione e formazione.",
+      "La crescente attenzione verso i rischi associati all'IA potrebbe portare a una revisione delle politiche di sicurezza e gestione del rischio nelle aziende.",
+      "Le dinamiche di governance nel software open source potrebbero stimolare nuove iniziative per migliorare la qualità e la sostenibilità delle tecnologie utilizzate."
+    ],
+    "divergences": [
+      "Gli articoli tendono a focalizzarsi sui rischi e sulle sfide dell'IA, mentre le discussioni su Reddit non sembrano riflettere una preoccupazione simile, suggerendo una differente percezione del tema.",
+      "La narrativa sugli investimenti in IA è più cauta negli articoli, mentre su Reddit si osserva un entusiasmo maggiore per le potenzialità dell'IA, evidenziando una divergenza di opinioni.",
+      "Le problematiche legate all'open source vengono trattate in modo più tecnico negli articoli, mentre le discussioni su Reddit sembrano concentrarsi su esperienze personali e opinioni soggettive."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-03-02.management-layer.md",
+    "telegram": "telegram/2026-03-02.management-layer.telegram.md",
+    "json": "data/2026-03-02.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}

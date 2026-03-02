@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-02-23T07:28:12.147Z",
+  "generated_at_utc": "2026-03-02T07:24:49.000Z",
   "version": 1,
   "latest": {
-    "date": "2026-02-23",
+    "date": "2026-03-02",
     "paths": {
-      "markdown": "reports/2026-02-23.management-layer.md",
-      "telegram": "telegram/2026-02-23.management-layer.telegram.md",
-      "json": "data/2026-02-23.management-layer.json"
+      "markdown": "reports/2026-03-02.management-layer.md",
+      "telegram": "telegram/2026-03-02.management-layer.telegram.md",
+      "json": "data/2026-03-02.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-03-02",
+      "title": "The Management Layer — 2026-03-02",
+      "paths": {
+        "markdown": "reports/2026-03-02.management-layer.md",
+        "telegram": "telegram/2026-03-02.management-layer.telegram.md",
+        "json": "data/2026-03-02.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 2 marzo 2026, sono stati analizzati 16 articoli, con un focus predominante sull'impatto dell'intelligenza artificiale (IA) sulle dinamiche lavorative e sull'infrastruttura tecno...",
+      "topLinks": [
+        {
+          "title": "Block’s massive AI-driven layoff is a warning",
+          "url": "https://leaddev.com/ai/blocks-40-ai-driven-layoff-is-a-warning",
+          "source": "LeadDev"
+        },
+        {
+          "title": "How to justify AI investments",
+          "url": "https://leaddev.com/ai/how-to-justify-ai-investments",
+          "source": "LeadDev"
+        },
+        {
+          "title": "From idea to pull request: A practical guide to building with GitHub Copilot CLI",
+          "url": "https://github.blog/ai-and-ml/github-copilot/from-idea-to-pull-request-a-practical-guide-to-building-with-github-copilot-cli/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "Engineering and algorithmic interventions for multimodal post-training at Microsoft scale",
+          "url": "https://devblogs.microsoft.com/engineering-at-microsoft/engineering-and-algorithmic-interventions-for-multimodal-post-training-at-microsoft-scale/",
+          "source": "Engineering@Microsoft"
+        },
+        {
+          "title": "High-profile AWS outages highlight the risks of AI agents",
+          "url": "https://leaddev.com/ai/high-profile-aws-outages-highlight-the-risks-of-ai-agents",
+          "source": "LeadDev"
+        }
+      ]
+    },
     {
       "date": "2026-02-23",
       "title": "The Management Layer — 2026-02-23",
