@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-03-02T07:24:49.000Z",
+  "generated_at_utc": "2026-03-09T07:26:02.660Z",
   "version": 1,
   "latest": {
-    "date": "2026-03-02",
+    "date": "2026-03-09",
     "paths": {
-      "markdown": "reports/2026-03-02.management-layer.md",
-      "telegram": "telegram/2026-03-02.management-layer.telegram.md",
-      "json": "data/2026-03-02.management-layer.json"
+      "markdown": "reports/2026-03-09.management-layer.md",
+      "telegram": "telegram/2026-03-09.management-layer.telegram.md",
+      "json": "data/2026-03-09.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-03-09",
+      "title": "The Management Layer — 2026-03-09",
+      "paths": {
+        "markdown": "reports/2026-03-09.management-layer.md",
+        "telegram": "telegram/2026-03-09.management-layer.telegram.md",
+        "json": "data/2026-03-09.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 9 marzo 2026, sono stati analizzati 18 articoli, con un focus sull'adozione dell'intelligenza artificiale (IA) e sulle dinamiche di gestione dei team ingegneristici. I contenuti...",
+      "topLinks": [
+        {
+          "title": "AI adoption has to be driven from the top",
+          "url": "https://leaddev.com/ai/ai-adoption-has-to-be-driven-from-the-top",
+          "source": "LeadDev"
+        },
+        {
+          "title": "How to scan for vulnerabilities with GitHub Security Lab’s open source AI-powered framework",
+          "url": "https://github.blog/security/how-to-scan-for-vulnerabilities-with-github-security-labs-open-source-ai-powered-framework/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "Designing human-agent engineering teams",
+          "url": "https://leaddev.com/ai/designing-human-agent-engineering-teams",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Meta’s new AI unit takes flat management structures to the extreme",
+          "url": "https://leaddev.com/ai/metas-new-ai-unit-takes-flat-management-structures-to-the-extreme",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Moltbook is the agent security wake-up call for engineering leaders",
+          "url": "https://leaddev.com/ai/moltbook-is-the-agent-security-wake-up-call-for-engineering-leaders",
+          "source": "LeadDev"
+        }
+      ]
+    },
     {
       "date": "2026-03-02",
       "title": "The Management Layer — 2026-03-02",

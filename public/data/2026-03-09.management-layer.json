@@ -1,0 +1,302 @@
+{
+  "date": "2026-03-09",
+  "title": "The Management Layer — 2026-03-09",
+  "counts": {
+    "articles": 18,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "cef25e4a1f4cd3c68151786ff2226190",
+      "title": "AI adoption has to be driven from the top",
+      "url": "https://leaddev.com/ai/ai-adoption-has-to-be-driven-from-the-top",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-09T06:59:00.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "df174638106725984adf629c1b590338",
+      "title": "How to scan for vulnerabilities with GitHub Security Lab’s open source AI-powered framework",
+      "url": "https://github.blog/security/how-to-scan-for-vulnerabilities-with-github-security-labs-open-source-ai-powered-framework/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-03-06T21:09:04.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "d3fdbcc1712862add38247b9152889c7",
+      "title": "Designing human-agent engineering teams",
+      "url": "https://leaddev.com/ai/designing-human-agent-engineering-teams",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-05T11:58:45.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "411cdb0a09be029be39b4a09126b6a4d",
+      "title": "Meta’s new AI unit takes flat management structures to the extreme",
+      "url": "https://leaddev.com/ai/metas-new-ai-unit-takes-flat-management-structures-to-the-extreme",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-05T09:58:35.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "eb119d6f53ee74e5c013136a8d583dc5",
+      "title": "Moltbook is the agent security wake-up call for engineering leaders",
+      "url": "https://leaddev.com/ai/moltbook-is-the-agent-security-wake-up-call-for-engineering-leaders",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-04T14:38:18.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "69cd499c754fa599df3b0d93773b734c",
+      "title": "How I got a performance-driven team to care about security",
+      "url": "https://leaddev.com/software-quality/how-i-got-a-performance-driven-team-to-care-about-security",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-04T09:23:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "a583561a2ea98b621f4752a4ea38154f",
+      "title": "You can’t verify all the AI-generated code",
+      "url": "https://leaddev.com/ai/you-cant-verify-all-the-ai-generated-code",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-03T08:47:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "6278538f43b3b9f456b6611650e1a936",
+      "title": "What is context engineering?",
+      "url": "https://leaddev.com/ai/what-is-context-engineering",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-02T09:41:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "1eb44a956a3aedf5e753c9d5a726bef9",
+      "title": "Ideological Resistance to Patents, Followed by Reluctant                Pragmatism",
+      "url": "https://martinfowler.com/articles/patents-reluctant-pragmatism.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-03-05T13:54:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "2c0030ead1f0f2f37a5c6dfd38a003b4",
+      "title": "Humans and Agents in Software Engineering Loops",
+      "url": "https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-03-04T05:42:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "cef25e4a1f4cd3c68151786ff2226190",
+      "title": "AI adoption has to be driven from the top",
+      "url": "https://leaddev.com/ai/ai-adoption-has-to-be-driven-from-the-top",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-09T06:59:00.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "df174638106725984adf629c1b590338",
+      "title": "How to scan for vulnerabilities with GitHub Security Lab’s open source AI-powered framework",
+      "url": "https://github.blog/security/how-to-scan-for-vulnerabilities-with-github-security-labs-open-source-ai-powered-framework/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-03-06T21:09:04.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "d3fdbcc1712862add38247b9152889c7",
+      "title": "Designing human-agent engineering teams",
+      "url": "https://leaddev.com/ai/designing-human-agent-engineering-teams",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-05T11:58:45.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "411cdb0a09be029be39b4a09126b6a4d",
+      "title": "Meta’s new AI unit takes flat management structures to the extreme",
+      "url": "https://leaddev.com/ai/metas-new-ai-unit-takes-flat-management-structures-to-the-extreme",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-05T09:58:35.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "eb119d6f53ee74e5c013136a8d583dc5",
+      "title": "Moltbook is the agent security wake-up call for engineering leaders",
+      "url": "https://leaddev.com/ai/moltbook-is-the-agent-security-wake-up-call-for-engineering-leaders",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-04T14:38:18.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "69cd499c754fa599df3b0d93773b734c",
+      "title": "How I got a performance-driven team to care about security",
+      "url": "https://leaddev.com/software-quality/how-i-got-a-performance-driven-team-to-care-about-security",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-04T09:23:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "a583561a2ea98b621f4752a4ea38154f",
+      "title": "You can’t verify all the AI-generated code",
+      "url": "https://leaddev.com/ai/you-cant-verify-all-the-ai-generated-code",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-03T08:47:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "6278538f43b3b9f456b6611650e1a936",
+      "title": "What is context engineering?",
+      "url": "https://leaddev.com/ai/what-is-context-engineering",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-02T09:41:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "1eb44a956a3aedf5e753c9d5a726bef9",
+      "title": "Ideological Resistance to Patents, Followed by Reluctant                Pragmatism",
+      "url": "https://martinfowler.com/articles/patents-reluctant-pragmatism.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-03-05T13:54:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "2c0030ead1f0f2f37a5c6dfd38a003b4",
+      "title": "Humans and Agents in Software Engineering Loops",
+      "url": "https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-03-04T05:42:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 9 marzo 2026, sono stati analizzati 18 articoli, con un focus sull'adozione dell'intelligenza artificiale (IA) e sulle dinamiche di gestione dei team ingegneristici. I contenuti evidenziano tensioni tra la necessità di una guida dall'alto per l'adozione dell'IA e le sfide pratiche legate alla sicurezza e alla qualità del codice generato. Emergono anche discussioni sulla struttura organizzativa e sull'interazione tra esseri umani e agenti intelligenti nei processi di sviluppo.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'evoluzione delle politiche di sicurezza informatica potrebbe influenzare le scelte strategiche delle aziende riguardo all'adozione dell'IA.",
+      "La crescente attenzione verso le strutture organizzative piatte potrebbe portare a cambiamenti nei modelli di leadership e nelle dinamiche di team.",
+      "La necessità di verificare la qualità del codice generato dall'IA potrebbe stimolare nuove pratiche di governance e responsabilità nel settore tech."
+    ],
+    "divergences": [
+      "Gli articoli tendono a enfatizzare la necessità di leadership e guida dall'alto, mentre le discussioni su Reddit mostrano una maggiore attenzione alle esperienze individuali dei programmatori con l'IA.",
+      "Mentre gli articoli analizzano le sfide di sicurezza in modo tecnico, le conversazioni su Reddit si concentrano più sulle preoccupazioni etiche e sulle implicazioni sociali dell'uso dell'IA.",
+      "Gli articoli propongono una visione più strutturata delle dinamiche di team, mentre le discussioni su Reddit evidenziano esperienze pratiche e casi studio reali di interazione tra esseri umani e agenti intelligenti."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-03-09.management-layer.md",
+    "telegram": "telegram/2026-03-09.management-layer.telegram.md",
+    "json": "data/2026-03-09.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}
