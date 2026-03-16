@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-03-09T07:26:02.660Z",
+  "generated_at_utc": "2026-03-16T07:35:15.492Z",
   "version": 1,
   "latest": {
-    "date": "2026-03-09",
+    "date": "2026-03-16",
     "paths": {
-      "markdown": "reports/2026-03-09.management-layer.md",
-      "telegram": "telegram/2026-03-09.management-layer.telegram.md",
-      "json": "data/2026-03-09.management-layer.json"
+      "markdown": "reports/2026-03-16.management-layer.md",
+      "telegram": "telegram/2026-03-16.management-layer.telegram.md",
+      "json": "data/2026-03-16.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-03-16",
+      "title": "The Management Layer — 2026-03-16",
+      "paths": {
+        "markdown": "reports/2026-03-16.management-layer.md",
+        "telegram": "telegram/2026-03-16.management-layer.telegram.md",
+        "json": "data/2026-03-16.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 16 marzo 2026, sono stati analizzati 16 articoli, con un focus sull'impatto dell'intelligenza artificiale (IA) sul mercato del lavoro tecnologico e sulle dinamiche interne delle...",
+      "topLinks": [
+        {
+          "title": "Atlassian cuts 1,600 jobs as AI reshapes tech skills",
+          "url": "https://leaddev.com/ai/atlassian-cuts-1600-jobs-as-ai-reshapes-tech-skills",
+          "source": "LeadDev"
+        },
+        {
+          "title": "AI-generated code passes far more automated tests than human",
+          "url": "https://leaddev.com/software-quality/ai-generated-code-passes-far-more-automated-tests-than-human",
+          "source": "LeadDev"
+        },
+        {
+          "title": "The era of “AI as text” is over. Execution is the new interface.",
+          "url": "https://github.blog/ai-and-ml/github-copilot/the-era-of-ai-as-text-is-over-execution-is-the-new-interface/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "A model for growing the next generation of developers",
+          "url": "https://leaddev.com/career-development/a-model-for-growing-the-next-generation-of-developers",
+          "source": "LeadDev"
+        },
+        {
+          "title": "The staff+ playbook for derisking big decisions",
+          "url": "https://leaddev.com/leadership/derisking-the-big-decisions-a-playbook-for-staff-engineers",
+          "source": "LeadDev"
+        }
+      ]
+    },
     {
       "date": "2026-03-09",
       "title": "The Management Layer — 2026-03-09",

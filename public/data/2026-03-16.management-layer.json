@@ -1,0 +1,302 @@
+{
+  "date": "2026-03-16",
+  "title": "The Management Layer — 2026-03-16",
+  "counts": {
+    "articles": 16,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "82a836cc9870de528280050a9b5b1ce3",
+      "title": "Atlassian cuts 1,600 jobs as AI reshapes tech skills",
+      "url": "https://leaddev.com/ai/atlassian-cuts-1600-jobs-as-ai-reshapes-tech-skills",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-13T13:45:03.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "e917240e0a6ef03033ead9c938c78585",
+      "title": "AI-generated code passes far more automated tests than human",
+      "url": "https://leaddev.com/software-quality/ai-generated-code-passes-far-more-automated-tests-than-human",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-13T13:17:32.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "0bbe718a092b99277b06c556f83cf7fd",
+      "title": "The era of “AI as text” is over. Execution is the new interface.",
+      "url": "https://github.blog/ai-and-ml/github-copilot/the-era-of-ai-as-text-is-over-execution-is-the-new-interface/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-03-10T20:16:01.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "e227cb78494f2c7593f1331e79c4ef40",
+      "title": "A model for growing the next generation of developers",
+      "url": "https://leaddev.com/career-development/a-model-for-growing-the-next-generation-of-developers",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-12T08:05:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "042af4eda2f3bbec4cf46cbb4a941944",
+      "title": "The staff+ playbook for derisking big decisions",
+      "url": "https://leaddev.com/leadership/derisking-the-big-decisions-a-playbook-for-staff-engineers",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-11T09:23:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "c3dc13ccbe2c52b98479123ba2198b98",
+      "title": "AI is helping your boss code again",
+      "url": "https://leaddev.com/ai/ai-is-helping-your-boss-code-again",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-10T08:30:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "0b2821b91a2c750b1b5a75ef5c2f2af8",
+      "title": "64% of female developers say AI is accelerating their careers",
+      "url": "https://leaddev.com/ai/64-of-female-developers-say-ai-is-accelerating-their-careers",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-09T13:34:24.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "31397f096f759306ea739a40f8bc5af6",
+      "title": "Fragments: March 10",
+      "url": "https://martinfowler.com/fragments/2026-03-10.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-03-10T17:50:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "fa516c1c90dad551f3d81998e4d89158",
+      "title": "Getting to 82% Renewables: How AI secures our energy future",
+      "url": "https://www.thoughtworks.com/insights/articles/how-ai-secures-our-energy-future",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-03-11T00:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    },
+    {
+      "id": "23a785a7824a734b43bac27607f59051",
+      "title": "Turning the tide: Overcoming the platform challenge of low developer adoption",
+      "url": "https://www.thoughtworks.com/insights/blog/platforms/platform-engineering-challenges--a-guide-to-overcoming-an-inadeq/turning-the-tide--overcoming-the-platform-challenge-of-low-devel",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-03-10T00:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "82a836cc9870de528280050a9b5b1ce3",
+      "title": "Atlassian cuts 1,600 jobs as AI reshapes tech skills",
+      "url": "https://leaddev.com/ai/atlassian-cuts-1600-jobs-as-ai-reshapes-tech-skills",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-13T13:45:03.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "e917240e0a6ef03033ead9c938c78585",
+      "title": "AI-generated code passes far more automated tests than human",
+      "url": "https://leaddev.com/software-quality/ai-generated-code-passes-far-more-automated-tests-than-human",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-13T13:17:32.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "0bbe718a092b99277b06c556f83cf7fd",
+      "title": "The era of “AI as text” is over. Execution is the new interface.",
+      "url": "https://github.blog/ai-and-ml/github-copilot/the-era-of-ai-as-text-is-over-execution-is-the-new-interface/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-03-10T20:16:01.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "e227cb78494f2c7593f1331e79c4ef40",
+      "title": "A model for growing the next generation of developers",
+      "url": "https://leaddev.com/career-development/a-model-for-growing-the-next-generation-of-developers",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-12T08:05:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "042af4eda2f3bbec4cf46cbb4a941944",
+      "title": "The staff+ playbook for derisking big decisions",
+      "url": "https://leaddev.com/leadership/derisking-the-big-decisions-a-playbook-for-staff-engineers",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-11T09:23:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "c3dc13ccbe2c52b98479123ba2198b98",
+      "title": "AI is helping your boss code again",
+      "url": "https://leaddev.com/ai/ai-is-helping-your-boss-code-again",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-10T08:30:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "0b2821b91a2c750b1b5a75ef5c2f2af8",
+      "title": "64% of female developers say AI is accelerating their careers",
+      "url": "https://leaddev.com/ai/64-of-female-developers-say-ai-is-accelerating-their-careers",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-09T13:34:24.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "31397f096f759306ea739a40f8bc5af6",
+      "title": "Fragments: March 10",
+      "url": "https://martinfowler.com/fragments/2026-03-10.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-03-10T17:50:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "fa516c1c90dad551f3d81998e4d89158",
+      "title": "Getting to 82% Renewables: How AI secures our energy future",
+      "url": "https://www.thoughtworks.com/insights/articles/how-ai-secures-our-energy-future",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-03-11T00:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    },
+    {
+      "id": "23a785a7824a734b43bac27607f59051",
+      "title": "Turning the tide: Overcoming the platform challenge of low developer adoption",
+      "url": "https://www.thoughtworks.com/insights/blog/platforms/platform-engineering-challenges--a-guide-to-overcoming-an-inadeq/turning-the-tide--overcoming-the-platform-challenge-of-low-devel",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-03-10T00:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 16 marzo 2026, sono stati analizzati 16 articoli, con un focus sull'impatto dell'intelligenza artificiale (IA) sul mercato del lavoro tecnologico e sulle dinamiche interne delle organizzazioni. I contenuti evidenziano tensioni tra l'adozione dell'IA e la sicurezza occupazionale, con un aumento dei licenziamenti in alcune aziende. Si osserva anche un crescente interesse per le competenze richieste ai programmatori e per le pratiche di governance relative all'uso dell'IA nel codice.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'evoluzione delle politiche di assunzione potrebbe riflettere una maggiore attenzione verso le competenze legate all'IA e alla gestione dei dati.",
+      "Le reazioni alle ristrutturazioni aziendali potrebbero influenzare la cultura organizzativa e le strategie di retention del talento.",
+      "L'adozione di pratiche di governance per il codice generato dall'IA potrebbe portare a un cambiamento nelle dinamiche di responsabilità tra sviluppatori e management."
+    ],
+    "divergences": [
+      "Gli articoli tendono a focalizzarsi sugli impatti macroeconomici dell'IA, mentre le discussioni su Reddit si concentrano maggiormente sulle esperienze personali dei programmatori.",
+      "Le fonti analizzate evidenziano un consenso sulla necessità di nuove competenze, mentre le conversazioni su Reddit mostrano una varietà di opinioni sulle sfide pratiche associate all'adozione dell'IA.",
+      "Gli articoli suggeriscono un futuro incerto per i posti di lavoro, mentre le discussioni su Reddit tendono a esplorare soluzioni pratiche e adattamenti individuali."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-03-16.management-layer.md",
+    "telegram": "telegram/2026-03-16.management-layer.telegram.md",
+    "json": "data/2026-03-16.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}
