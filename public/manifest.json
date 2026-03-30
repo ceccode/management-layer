@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-03-16T07:35:15.492Z",
+  "generated_at_utc": "2026-03-30T07:36:51.978Z",
   "version": 1,
   "latest": {
-    "date": "2026-03-16",
+    "date": "2026-03-30",
     "paths": {
-      "markdown": "reports/2026-03-16.management-layer.md",
-      "telegram": "telegram/2026-03-16.management-layer.telegram.md",
-      "json": "data/2026-03-16.management-layer.json"
+      "markdown": "reports/2026-03-30.management-layer.md",
+      "telegram": "telegram/2026-03-30.management-layer.telegram.md",
+      "json": "data/2026-03-30.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-03-30",
+      "title": "The Management Layer — 2026-03-30",
+      "paths": {
+        "markdown": "reports/2026-03-30.management-layer.md",
+        "telegram": "telegram/2026-03-30.management-layer.telegram.md",
+        "json": "data/2026-03-30.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 30 marzo 2026, sono stati analizzati 19 articoli, con un'attenzione particolare all'adozione degli strumenti di coding basati su intelligenza artificiale (IA) e alle implicazion...",
+      "topLinks": [
+        {
+          "title": "Choosing a new AI-coding tool? Here’s what to look for",
+          "url": "https://leaddev.com/ai/choosing-a-new-ai-coding-tool-heres-what-to-look-for",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Squarespace redraws the boundaries of platform engineering",
+          "url": "https://leaddev.com/ai/squarespace-is-redrawing-the-boundaries-of-platform-engineering",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Your AI-coding tools buying checklist for 2026",
+          "url": "https://leaddev.com/ai/your-ai-coding-tools-buying-checklist-for-2026",
+          "source": "LeadDev"
+        },
+        {
+          "title": "The latest tech layoffs have all the hallmarks of AI washing",
+          "url": "https://leaddev.com/ai/the-latest-rounds-of-tech-layoffs-have-all-the-hallmarks-of-ai-washing",
+          "source": "LeadDev"
+        },
+        {
+          "title": "The struggle to prove AI productivity gains",
+          "url": "https://leaddev.com/ai/the-struggle-to-prove-ai-productivity-gains",
+          "source": "LeadDev"
+        }
+      ]
+    },
     {
       "date": "2026-03-16",
       "title": "The Management Layer — 2026-03-16",

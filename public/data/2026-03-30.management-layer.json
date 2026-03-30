@@ -1,0 +1,302 @@
+{
+  "date": "2026-03-30",
+  "title": "The Management Layer — 2026-03-30",
+  "counts": {
+    "articles": 19,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "22d95af3059a9f77fa5739fffee946ec",
+      "title": "Choosing a new AI-coding tool? Here’s what to look for",
+      "url": "https://leaddev.com/ai/choosing-a-new-ai-coding-tool-heres-what-to-look-for",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-27T10:55:08.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "6a4f23c17f75c648c7ec0355121a0d55",
+      "title": "Squarespace redraws the boundaries of platform engineering",
+      "url": "https://leaddev.com/ai/squarespace-is-redrawing-the-boundaries-of-platform-engineering",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-27T08:30:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "b38fd0e047d6013cac1b6047399723ab",
+      "title": "Your AI-coding tools buying checklist for 2026",
+      "url": "https://leaddev.com/ai/your-ai-coding-tools-buying-checklist-for-2026",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-26T10:58:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "16d81163c433abf21f0f093009a250b6",
+      "title": "The latest tech layoffs have all the hallmarks of AI washing",
+      "url": "https://leaddev.com/ai/the-latest-rounds-of-tech-layoffs-have-all-the-hallmarks-of-ai-washing",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-26T07:38:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "dfa02ef7499b7b36da99f5c089259899",
+      "title": "The struggle to prove AI productivity gains",
+      "url": "https://leaddev.com/ai/the-struggle-to-prove-ai-productivity-gains",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-25T10:35:38.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "568289ad3b8bdcdb20261a1fb759fbf7",
+      "title": "Can you trust the spec? The risky future of agent-compiled software",
+      "url": "https://leaddev.com/ai/can-you-trust-the-spec-the-risky-future-of-agent-compiled-software",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-25T10:22:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "f05950474cbcf053b5b14af9441d58ac",
+      "title": "The best AI-coding tools in 2026",
+      "url": "https://leaddev.com/ai/best-ai-coding-assistants",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-25T09:10:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "08657946d41c69b5367f1349b72c6aed",
+      "title": "Your team’s AI prompts are code. Treat them like it",
+      "url": "https://leaddev.com/ai/your-teams-ai-prompts-are-code-treat-them-like-it",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-24T08:10:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "f8921559fdf7db04573a2c956adb2b23",
+      "title": "Managing the AI-driven developer identity crisis",
+      "url": "https://leaddev.com/ai/managing-the-ai-driven-developer-identity-crisis",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-23T11:10:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "fb7a5227104a569fbfa8bb10cfc98c87",
+      "title": "Fragments: March 26",
+      "url": "https://martinfowler.com/fragments/2026-03-26.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-03-26T17:11:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "22d95af3059a9f77fa5739fffee946ec",
+      "title": "Choosing a new AI-coding tool? Here’s what to look for",
+      "url": "https://leaddev.com/ai/choosing-a-new-ai-coding-tool-heres-what-to-look-for",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-27T10:55:08.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "6a4f23c17f75c648c7ec0355121a0d55",
+      "title": "Squarespace redraws the boundaries of platform engineering",
+      "url": "https://leaddev.com/ai/squarespace-is-redrawing-the-boundaries-of-platform-engineering",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-27T08:30:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "b38fd0e047d6013cac1b6047399723ab",
+      "title": "Your AI-coding tools buying checklist for 2026",
+      "url": "https://leaddev.com/ai/your-ai-coding-tools-buying-checklist-for-2026",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-26T10:58:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "16d81163c433abf21f0f093009a250b6",
+      "title": "The latest tech layoffs have all the hallmarks of AI washing",
+      "url": "https://leaddev.com/ai/the-latest-rounds-of-tech-layoffs-have-all-the-hallmarks-of-ai-washing",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-26T07:38:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "dfa02ef7499b7b36da99f5c089259899",
+      "title": "The struggle to prove AI productivity gains",
+      "url": "https://leaddev.com/ai/the-struggle-to-prove-ai-productivity-gains",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-25T10:35:38.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "568289ad3b8bdcdb20261a1fb759fbf7",
+      "title": "Can you trust the spec? The risky future of agent-compiled software",
+      "url": "https://leaddev.com/ai/can-you-trust-the-spec-the-risky-future-of-agent-compiled-software",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-25T10:22:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "f05950474cbcf053b5b14af9441d58ac",
+      "title": "The best AI-coding tools in 2026",
+      "url": "https://leaddev.com/ai/best-ai-coding-assistants",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-25T09:10:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "08657946d41c69b5367f1349b72c6aed",
+      "title": "Your team’s AI prompts are code. Treat them like it",
+      "url": "https://leaddev.com/ai/your-teams-ai-prompts-are-code-treat-them-like-it",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-24T08:10:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "f8921559fdf7db04573a2c956adb2b23",
+      "title": "Managing the AI-driven developer identity crisis",
+      "url": "https://leaddev.com/ai/managing-the-ai-driven-developer-identity-crisis",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-23T11:10:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "fb7a5227104a569fbfa8bb10cfc98c87",
+      "title": "Fragments: March 26",
+      "url": "https://martinfowler.com/fragments/2026-03-26.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-03-26T17:11:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 30 marzo 2026, sono stati analizzati 19 articoli, con un'attenzione particolare all'adozione degli strumenti di coding basati su intelligenza artificiale (IA) e alle implicazioni per le organizzazioni tecnologiche. I contenuti evidenziano tensioni tra l'innovazione tecnologica e la necessità di governance, nonché le sfide legate alla fiducia e alla qualità del codice generato. Si osserva anche un crescente dibattito sull'identità professionale degli sviluppatori in un contesto sempre più influenzato dall'IA.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'evoluzione delle pratiche di assunzione potrebbe riflettere una crescente enfasi sulle competenze legate all'IA e alla governance del codice.",
+      "Le reazioni alle nuove politiche di governance potrebbero influenzare la cultura organizzativa e la fiducia tra team di sviluppo e management.",
+      "La continua evoluzione degli strumenti di coding IA potrebbe portare a un cambiamento nei modelli di leadership e nelle aspettative professionali."
+    ],
+    "divergences": [
+      "Gli articoli tendono a focalizzarsi su aspetti pratici e tecnici dell'adozione dell'IA, mentre le discussioni su Reddit potrebbero enfatizzare esperienze personali e preoccupazioni etiche.",
+      "I contenuti analizzati mostrano una visione più ottimistica riguardo ai potenziali guadagni di produttività, mentre le conversazioni su Reddit potrebbero riflettere scetticismo e preoccupazioni per la sicurezza occupazionale.",
+      "La governance del codice generato dall'IA è trattata come un tema emergente negli articoli, mentre nei forum potrebbero prevalere discussioni su esperienze dirette e problematiche quotidiane."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-03-30.management-layer.md",
+    "telegram": "telegram/2026-03-30.management-layer.telegram.md",
+    "json": "data/2026-03-30.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}
