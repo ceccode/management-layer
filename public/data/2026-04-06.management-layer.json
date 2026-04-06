@@ -1,0 +1,302 @@
+{
+  "date": "2026-04-06",
+  "title": "The Management Layer — 2026-04-06",
+  "counts": {
+    "articles": 19,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "c871f595b457fd16b3a962f997a640b7",
+      "title": "The uphill climb of making diff lines performant",
+      "url": "https://github.blog/engineering/architecture-optimization/the-uphill-climb-of-making-diff-lines-performant/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-04-03T16:00:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "3be21182fdfb71f0cd1338bbdf03315e",
+      "title": "Axios hack exposes AI-coding’s dependency problem",
+      "url": "https://leaddev.com/ai/axios-hack-exposes-ai-codings-dependency-problem",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-02T09:26:56.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "95afd8ad322807835353636f5c6ead24",
+      "title": "Software engineering leaders need a shopkeeper mentality",
+      "url": "https://leaddev.com/career-development/software-engineering-leaders-need-a-shopkeeper-mentality",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-02T07:03:28.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "947940a4a16791ad87e18251893da140",
+      "title": "Why AI isn’t writing most of your code (yet)",
+      "url": "https://leaddev.com/ai/why-ai-isnt-writing-most-of-your-code-yet",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-01T09:15:36.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "886f323277e923b21d196917c9c355fb",
+      "title": "Tech leads are overwhelmed. Here’s how to take back control",
+      "url": "https://leaddev.com/leadership/tech-leads-are-overwhelmed-heres-how-to-take-back-control",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-01T07:14:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "f13fc5a0a0ad144e1158f4d7e95c3654",
+      "title": "3 ways to bounce back from sudden team cuts",
+      "url": "https://leaddev.com/hiring/3-ways-to-bounce-back-from-sudden-team-cuts",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-31T09:38:17.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "20abaebe57abe08ab01fc8eb31662ca4",
+      "title": "The reality of being a distinguished engineer",
+      "url": "https://leaddev.com/career-development/the-reality-of-being-a-distinguished-engineer",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-31T07:09:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "c1c3e573f0193a9fbb2c62de854a570f",
+      "title": "‘Addictive’ agentic coding has developers losing sleep",
+      "url": "https://leaddev.com/ai/addictive-agentic-coding-has-developers-losing-sleep",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-30T11:00:37.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "2bf9f3b6b3058e5340bd085fa3ff78db",
+      "title": "Fragments: April  2",
+      "url": "https://martinfowler.com/fragments/2026-04-02.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-04-02T16:42:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "deb1715f9503b055d18f02b90101429c",
+      "title": "Harness engineering for coding agent users",
+      "url": "https://martinfowler.com/articles/harness-engineering.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-04-02T13:10:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "c871f595b457fd16b3a962f997a640b7",
+      "title": "The uphill climb of making diff lines performant",
+      "url": "https://github.blog/engineering/architecture-optimization/the-uphill-climb-of-making-diff-lines-performant/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-04-03T16:00:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "3be21182fdfb71f0cd1338bbdf03315e",
+      "title": "Axios hack exposes AI-coding’s dependency problem",
+      "url": "https://leaddev.com/ai/axios-hack-exposes-ai-codings-dependency-problem",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-02T09:26:56.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "95afd8ad322807835353636f5c6ead24",
+      "title": "Software engineering leaders need a shopkeeper mentality",
+      "url": "https://leaddev.com/career-development/software-engineering-leaders-need-a-shopkeeper-mentality",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-02T07:03:28.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "947940a4a16791ad87e18251893da140",
+      "title": "Why AI isn’t writing most of your code (yet)",
+      "url": "https://leaddev.com/ai/why-ai-isnt-writing-most-of-your-code-yet",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-01T09:15:36.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "886f323277e923b21d196917c9c355fb",
+      "title": "Tech leads are overwhelmed. Here’s how to take back control",
+      "url": "https://leaddev.com/leadership/tech-leads-are-overwhelmed-heres-how-to-take-back-control",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-01T07:14:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "f13fc5a0a0ad144e1158f4d7e95c3654",
+      "title": "3 ways to bounce back from sudden team cuts",
+      "url": "https://leaddev.com/hiring/3-ways-to-bounce-back-from-sudden-team-cuts",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-31T09:38:17.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "20abaebe57abe08ab01fc8eb31662ca4",
+      "title": "The reality of being a distinguished engineer",
+      "url": "https://leaddev.com/career-development/the-reality-of-being-a-distinguished-engineer",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-31T07:09:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "c1c3e573f0193a9fbb2c62de854a570f",
+      "title": "‘Addictive’ agentic coding has developers losing sleep",
+      "url": "https://leaddev.com/ai/addictive-agentic-coding-has-developers-losing-sleep",
+      "source": "LeadDev",
+      "publishedAt": "2026-03-30T11:00:37.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "2bf9f3b6b3058e5340bd085fa3ff78db",
+      "title": "Fragments: April  2",
+      "url": "https://martinfowler.com/fragments/2026-04-02.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-04-02T16:42:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "deb1715f9503b055d18f02b90101429c",
+      "title": "Harness engineering for coding agent users",
+      "url": "https://martinfowler.com/articles/harness-engineering.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-04-02T13:10:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 6 aprile 2026, sono stati analizzati 19 articoli, con un focus sull'interazione tra intelligenza artificiale (IA) e pratiche di sviluppo software. I contenuti evidenziano tensioni tra l'adozione di strumenti IA e le implicazioni per la qualità del codice e la governance. Inoltre, si osserva un crescente interesse per il benessere degli sviluppatori in un contesto di lavoro sempre più influenzato da tecnologie \"addictive\". La figura del leader tecnico emerge come cruciale per navigare queste sfide.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'adozione di pratiche di governance per il codice generato dall'IA potrebbe stimolare un cambiamento nelle responsabilità tra sviluppatori e management.",
+      "L'attenzione crescente verso il benessere degli sviluppatori potrebbe influenzare le politiche aziendali e le pratiche di assunzione.",
+      "Le reazioni alle nuove tecnologie di coding potrebbero indicare un cambiamento nelle aspettative professionali e nei modelli di leadership."
+    ],
+    "divergences": [
+      "Gli articoli tendono a enfatizzare le sfide tecniche e di governance legate all'IA, mentre le discussioni su Reddit si concentrano maggiormente sull'impatto umano e culturale di queste tecnologie.",
+      "Mentre gli articoli propongono una visione strategica della leadership, le conversazioni su Reddit evidenziano esperienze personali e preoccupazioni quotidiane degli sviluppatori.",
+      "Gli articoli analizzano le dinamiche di qualità del codice, mentre le discussioni su Reddit si focalizzano più sulle esperienze dirette con strumenti di coding IA e il loro impatto sulla vita lavorativa."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-04-06.management-layer.md",
+    "telegram": "telegram/2026-04-06.management-layer.telegram.md",
+    "json": "data/2026-04-06.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}

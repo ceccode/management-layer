@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-03-30T07:36:51.978Z",
+  "generated_at_utc": "2026-04-06T07:36:55.817Z",
   "version": 1,
   "latest": {
-    "date": "2026-03-30",
+    "date": "2026-04-06",
     "paths": {
-      "markdown": "reports/2026-03-30.management-layer.md",
-      "telegram": "telegram/2026-03-30.management-layer.telegram.md",
-      "json": "data/2026-03-30.management-layer.json"
+      "markdown": "reports/2026-04-06.management-layer.md",
+      "telegram": "telegram/2026-04-06.management-layer.telegram.md",
+      "json": "data/2026-04-06.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-04-06",
+      "title": "The Management Layer — 2026-04-06",
+      "paths": {
+        "markdown": "reports/2026-04-06.management-layer.md",
+        "telegram": "telegram/2026-04-06.management-layer.telegram.md",
+        "json": "data/2026-04-06.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 6 aprile 2026, sono stati analizzati 19 articoli, con un focus sull'interazione tra intelligenza artificiale (IA) e pratiche di sviluppo software. I contenuti evidenziano tensio...",
+      "topLinks": [
+        {
+          "title": "The uphill climb of making diff lines performant",
+          "url": "https://github.blog/engineering/architecture-optimization/the-uphill-climb-of-making-diff-lines-performant/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "Axios hack exposes AI-coding’s dependency problem",
+          "url": "https://leaddev.com/ai/axios-hack-exposes-ai-codings-dependency-problem",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Software engineering leaders need a shopkeeper mentality",
+          "url": "https://leaddev.com/career-development/software-engineering-leaders-need-a-shopkeeper-mentality",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Why AI isn’t writing most of your code (yet)",
+          "url": "https://leaddev.com/ai/why-ai-isnt-writing-most-of-your-code-yet",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Tech leads are overwhelmed. Here’s how to take back control",
+          "url": "https://leaddev.com/leadership/tech-leads-are-overwhelmed-heres-how-to-take-back-control",
+          "source": "LeadDev"
+        }
+      ]
+    },
     {
       "date": "2026-03-30",
       "title": "The Management Layer — 2026-03-30",
