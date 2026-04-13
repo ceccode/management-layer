@@ -1,0 +1,302 @@
+{
+  "date": "2026-04-13",
+  "title": "The Management Layer — 2026-04-13",
+  "counts": {
+    "articles": 19,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "59d520c734879e46c58eda6b9ad314cf",
+      "title": "Alan Turing play in Cambridge MA",
+      "url": "https://martinfowler.com/articles/202604-turing.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-04-11T13:01:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "2af08a30778d8d3814a33fc58f04e1bc",
+      "title": "GitHub Copilot CLI for Beginners: Getting started with GitHub Copilot CLI",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-getting-started-with-github-copilot-cli/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-04-10T16:00:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "47e3e9b41b873e923d9824d25586db9a",
+      "title": "Shipping faster, thinking less? The AI code verification trap",
+      "url": "https://leaddev.com/ai/shipping-faster-thinking-less-the-ai-code-verification-trap",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-09T10:18:34.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "c6906b14fb2c21db11204ce8f4bbf2dc",
+      "title": "AI has us asking, does (team) size still matter?",
+      "url": "https://leaddev.com/management/ai-has-us-asking-does-team-size-still-matter",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-09T09:25:53.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "6fdbec36e4740359db15680201c74b85",
+      "title": "We cut our vendor dependency and built our own destiny",
+      "url": "https://leaddev.com/technical-direction/we-ditched-our-vendor-and-built-our-own-destiny",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-08T07:25:27.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "f7af040971754cb277fa8763577dfcb3",
+      "title": "The AI skills gap is real (but it’s not what you think)",
+      "url": "https://leaddev.com/ai/the-ai-skills-gap-is-real-but-its-not-what-you-think",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-07T10:01:37.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "130ed5abbb7eb4329062e668b03470b6",
+      "title": "The reality of being a tech lead",
+      "url": "https://leaddev.com/leadership/being-tech-lead-doesnt-mean-having-all-answers",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-07T09:24:12.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "3f9e47644df79f6173832a405790cd29",
+      "title": "Fragments: April  9",
+      "url": "https://martinfowler.com/fragments/2026-04-09.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-04-09T13:23:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "6b5f5cfc192a1622c4671ecbe7d2d8c3",
+      "title": "Feedback Flywheel",
+      "url": "https://martinfowler.com/articles/reduce-friction-ai/feedback-flywheel.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-04-08T13:28:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "b809d06124cebdcd6af0c915943e7062",
+      "title": "Principles of Mechanical Sympathy",
+      "url": "https://martinfowler.com/articles/mechanical-sympathy-principles.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-04-07T13:39:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "59d520c734879e46c58eda6b9ad314cf",
+      "title": "Alan Turing play in Cambridge MA",
+      "url": "https://martinfowler.com/articles/202604-turing.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-04-11T13:01:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "2af08a30778d8d3814a33fc58f04e1bc",
+      "title": "GitHub Copilot CLI for Beginners: Getting started with GitHub Copilot CLI",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-getting-started-with-github-copilot-cli/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-04-10T16:00:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "47e3e9b41b873e923d9824d25586db9a",
+      "title": "Shipping faster, thinking less? The AI code verification trap",
+      "url": "https://leaddev.com/ai/shipping-faster-thinking-less-the-ai-code-verification-trap",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-09T10:18:34.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "c6906b14fb2c21db11204ce8f4bbf2dc",
+      "title": "AI has us asking, does (team) size still matter?",
+      "url": "https://leaddev.com/management/ai-has-us-asking-does-team-size-still-matter",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-09T09:25:53.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "6fdbec36e4740359db15680201c74b85",
+      "title": "We cut our vendor dependency and built our own destiny",
+      "url": "https://leaddev.com/technical-direction/we-ditched-our-vendor-and-built-our-own-destiny",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-08T07:25:27.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "f7af040971754cb277fa8763577dfcb3",
+      "title": "The AI skills gap is real (but it’s not what you think)",
+      "url": "https://leaddev.com/ai/the-ai-skills-gap-is-real-but-its-not-what-you-think",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-07T10:01:37.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "130ed5abbb7eb4329062e668b03470b6",
+      "title": "The reality of being a tech lead",
+      "url": "https://leaddev.com/leadership/being-tech-lead-doesnt-mean-having-all-answers",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-07T09:24:12.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "3f9e47644df79f6173832a405790cd29",
+      "title": "Fragments: April  9",
+      "url": "https://martinfowler.com/fragments/2026-04-09.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-04-09T13:23:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "6b5f5cfc192a1622c4671ecbe7d2d8c3",
+      "title": "Feedback Flywheel",
+      "url": "https://martinfowler.com/articles/reduce-friction-ai/feedback-flywheel.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-04-08T13:28:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "b809d06124cebdcd6af0c915943e7062",
+      "title": "Principles of Mechanical Sympathy",
+      "url": "https://martinfowler.com/articles/mechanical-sympathy-principles.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-04-07T13:39:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 13 aprile 2026, sono stati analizzati 19 articoli, con un focus sull'interazione tra intelligenza artificiale (IA) e pratiche di sviluppo software. I contenuti evidenziano tensioni tra l'adozione di strumenti IA e le implicazioni per la qualità del codice, la governance e il benessere degli sviluppatori. La figura del leader tecnico emerge come cruciale per navigare queste sfide, mentre si osserva un crescente dibattito sull'impatto delle nuove tecnologie sulle dinamiche di team e sulle aspettative professionali.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'adozione di pratiche di governance per il codice generato dall'IA potrebbe influenzare le responsabilità tra sviluppatori e management.",
+      "L'attenzione verso il benessere degli sviluppatori potrebbe portare a cambiamenti nelle politiche di assunzione e nelle pratiche di lavoro.",
+      "Le reazioni alle nuove tecnologie di coding potrebbero indicare un cambiamento nelle aspettative professionali e nei modelli di leadership."
+    ],
+    "divergences": [
+      "Gli articoli tendono a concentrarsi sulle implicazioni tecniche e organizzative dell'IA, mentre le discussioni su Reddit riflettono più preoccupazioni personali e esperienziali degli sviluppatori.",
+      "Mentre gli articoli evidenziano la governance e la qualità del codice, le conversazioni su Reddit spesso si focalizzano sull'impatto dell'IA sulla sicurezza occupazionale e sul futuro delle professioni tech.",
+      "Negli articoli, la figura del leader tecnico è vista come un facilitatore del cambiamento, mentre su Reddit emerge una critica alla mancanza di supporto da parte della leadership nelle transizioni verso l'uso dell'IA."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-04-13.management-layer.md",
+    "telegram": "telegram/2026-04-13.management-layer.telegram.md",
+    "json": "data/2026-04-13.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}

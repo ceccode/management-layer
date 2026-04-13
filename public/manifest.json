@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-04-06T07:36:55.817Z",
+  "generated_at_utc": "2026-04-13T07:39:04.974Z",
   "version": 1,
   "latest": {
-    "date": "2026-04-06",
+    "date": "2026-04-13",
     "paths": {
-      "markdown": "reports/2026-04-06.management-layer.md",
-      "telegram": "telegram/2026-04-06.management-layer.telegram.md",
-      "json": "data/2026-04-06.management-layer.json"
+      "markdown": "reports/2026-04-13.management-layer.md",
+      "telegram": "telegram/2026-04-13.management-layer.telegram.md",
+      "json": "data/2026-04-13.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-04-13",
+      "title": "The Management Layer — 2026-04-13",
+      "paths": {
+        "markdown": "reports/2026-04-13.management-layer.md",
+        "telegram": "telegram/2026-04-13.management-layer.telegram.md",
+        "json": "data/2026-04-13.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 13 aprile 2026, sono stati analizzati 19 articoli, con un focus sull'interazione tra intelligenza artificiale (IA) e pratiche di sviluppo software. I contenuti evidenziano tensi...",
+      "topLinks": [
+        {
+          "title": "Alan Turing play in Cambridge MA",
+          "url": "https://martinfowler.com/articles/202604-turing.html",
+          "source": "Martin Fowler"
+        },
+        {
+          "title": "GitHub Copilot CLI for Beginners: Getting started with GitHub Copilot CLI",
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-getting-started-with-github-copilot-cli/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "Shipping faster, thinking less? The AI code verification trap",
+          "url": "https://leaddev.com/ai/shipping-faster-thinking-less-the-ai-code-verification-trap",
+          "source": "LeadDev"
+        },
+        {
+          "title": "AI has us asking, does (team) size still matter?",
+          "url": "https://leaddev.com/management/ai-has-us-asking-does-team-size-still-matter",
+          "source": "LeadDev"
+        },
+        {
+          "title": "We cut our vendor dependency and built our own destiny",
+          "url": "https://leaddev.com/technical-direction/we-ditched-our-vendor-and-built-our-own-destiny",
+          "source": "LeadDev"
+        }
+      ]
+    },
     {
       "date": "2026-04-06",
       "title": "The Management Layer — 2026-04-06",
