@@ -1,0 +1,302 @@
+{
+  "date": "2026-05-04",
+  "title": "The Management Layer — 2026-05-04",
+  "counts": {
+    "articles": 15,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "653029204c5b2c90acd55a6fc2018657",
+      "title": "Securing the git push pipeline: Responding to a critical remote code execution vulnerability",
+      "url": "https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-04-28T15:30:00.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "1649b7d33c49b79fab019dccb09376c6",
+      "title": "How Cloudflare rebuilt Next.js in a weekend",
+      "url": "https://leaddev.com/ai/how-cloudflare-rebuilt-next-js-in-a-weekend",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-01T07:27:37.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "d55e46805d2a4f84ca849ceb6546d193",
+      "title": "6 software engineering buzzwords you need to stop using",
+      "url": "https://leaddev.com/leadership/6-software-engineering-buzzwords-you-need-to-stop-using",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-30T07:08:50.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "5a61ac53b5121c0b210f90374dea29e4",
+      "title": "Your AI-coding budget just got a lot more complicated",
+      "url": "https://leaddev.com/ai/your-ai-coding-budget-just-got-a-lot-more-complicated",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-29T08:28:53.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "0089dfb558d4a61accd87422b77ddac9",
+      "title": "How Anthropic’s silence fueled a Claude Code trust crisis",
+      "url": "https://leaddev.com/ai/how-anthropics-silence-fueled-a-claude-code-trust-crisis",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-28T15:53:49.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "f151310d249e0e267b260172f51ddff2",
+      "title": "5 ways to operationalize generative AI in legacy systems",
+      "url": "https://leaddev.com/ai/5-ways-to-operationalize-generative-ai-in-legacy-systems",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-28T07:03:44.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "dee92510327d0c665e0f104e990fda30",
+      "title": "Fragments: April 29",
+      "url": "https://martinfowler.com/fragments/2026-04-29.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-04-29T13:23:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "4b7125aab76b72e22ae15902908b5b52",
+      "title": "Structured-Prompt-Driven Development (SPDD)",
+      "url": "https://martinfowler.com/articles/structured-prompt-driven/",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-04-28T13:02:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "68ab0aef53abbc8dc67cc58108c63d8e",
+      "title": "GitHub Copilot CLI for Beginners: Interactive v. non-interactive mode",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-interactive-v-non-interactive-mode/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-04-30T16:09:02.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "6444d3441d6fd22621cab72b4ab9b6af",
+      "title": "GitHub for Beginners: Getting started with Markdown",
+      "url": "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-markdown/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-04-28T18:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "653029204c5b2c90acd55a6fc2018657",
+      "title": "Securing the git push pipeline: Responding to a critical remote code execution vulnerability",
+      "url": "https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-04-28T15:30:00.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "1649b7d33c49b79fab019dccb09376c6",
+      "title": "How Cloudflare rebuilt Next.js in a weekend",
+      "url": "https://leaddev.com/ai/how-cloudflare-rebuilt-next-js-in-a-weekend",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-01T07:27:37.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "d55e46805d2a4f84ca849ceb6546d193",
+      "title": "6 software engineering buzzwords you need to stop using",
+      "url": "https://leaddev.com/leadership/6-software-engineering-buzzwords-you-need-to-stop-using",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-30T07:08:50.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "5a61ac53b5121c0b210f90374dea29e4",
+      "title": "Your AI-coding budget just got a lot more complicated",
+      "url": "https://leaddev.com/ai/your-ai-coding-budget-just-got-a-lot-more-complicated",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-29T08:28:53.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "0089dfb558d4a61accd87422b77ddac9",
+      "title": "How Anthropic’s silence fueled a Claude Code trust crisis",
+      "url": "https://leaddev.com/ai/how-anthropics-silence-fueled-a-claude-code-trust-crisis",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-28T15:53:49.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "f151310d249e0e267b260172f51ddff2",
+      "title": "5 ways to operationalize generative AI in legacy systems",
+      "url": "https://leaddev.com/ai/5-ways-to-operationalize-generative-ai-in-legacy-systems",
+      "source": "LeadDev",
+      "publishedAt": "2026-04-28T07:03:44.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "dee92510327d0c665e0f104e990fda30",
+      "title": "Fragments: April 29",
+      "url": "https://martinfowler.com/fragments/2026-04-29.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-04-29T13:23:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "4b7125aab76b72e22ae15902908b5b52",
+      "title": "Structured-Prompt-Driven Development (SPDD)",
+      "url": "https://martinfowler.com/articles/structured-prompt-driven/",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-04-28T13:02:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "68ab0aef53abbc8dc67cc58108c63d8e",
+      "title": "GitHub Copilot CLI for Beginners: Interactive v. non-interactive mode",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-interactive-v-non-interactive-mode/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-04-30T16:09:02.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "6444d3441d6fd22621cab72b4ab9b6af",
+      "title": "GitHub for Beginners: Getting started with Markdown",
+      "url": "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-markdown/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-04-28T18:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 4 maggio 2026, sono stati analizzati 15 articoli, con un focus sull'interazione tra pratiche di sviluppo software e nuove tecnologie, in particolare l'intelligenza artificiale. I contenuti evidenziano tensioni legate alla sicurezza del codice, all'adozione di strumenti innovativi e alla gestione delle aspettative professionali. L'emergere di pratiche di governance per il codice generato dall'IA si conferma un tema cruciale, così come la necessità di riflessioni sulle competenze richieste agli sviluppatori in un contesto in evoluzione.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'adozione di pratiche di governance per il codice generato dall'IA potrebbe modificare le responsabilità tra sviluppatori e management.",
+      "Le reazioni alle vulnerabilità di sicurezza potrebbero influenzare le politiche aziendali e le pratiche di assunzione.",
+      "L'attenzione verso il benessere degli sviluppatori potrebbe portare a cambiamenti nelle dinamiche di team e nelle aspettative professionali."
+    ],
+    "divergences": [
+      "Gli articoli si concentrano principalmente sulle implicazioni tecniche e di governance, mentre le discussioni su Reddit tendono a focalizzarsi su esperienze personali e opinioni soggettive.",
+      "Le fonti analizzate evidenziano un approccio più orientato alla soluzione dei problemi, mentre le discussioni su Reddit possono riflettere frustrazioni e preoccupazioni degli sviluppatori.",
+      "Mentre gli articoli propongono casi studio e best practices, le conversazioni su Reddit spesso si concentrano su critiche e dubbi riguardo all'implementazione di nuove tecnologie."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-05-04.management-layer.md",
+    "telegram": "telegram/2026-05-04.management-layer.telegram.md",
+    "json": "data/2026-05-04.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}

@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-04-13T07:39:04.974Z",
+  "generated_at_utc": "2026-05-04T07:59:19.273Z",
   "version": 1,
   "latest": {
-    "date": "2026-04-13",
+    "date": "2026-05-04",
     "paths": {
-      "markdown": "reports/2026-04-13.management-layer.md",
-      "telegram": "telegram/2026-04-13.management-layer.telegram.md",
-      "json": "data/2026-04-13.management-layer.json"
+      "markdown": "reports/2026-05-04.management-layer.md",
+      "telegram": "telegram/2026-05-04.management-layer.telegram.md",
+      "json": "data/2026-05-04.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-05-04",
+      "title": "The Management Layer — 2026-05-04",
+      "paths": {
+        "markdown": "reports/2026-05-04.management-layer.md",
+        "telegram": "telegram/2026-05-04.management-layer.telegram.md",
+        "json": "data/2026-05-04.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 4 maggio 2026, sono stati analizzati 15 articoli, con un focus sull'interazione tra pratiche di sviluppo software e nuove tecnologie, in particolare l'intelligenza artificiale. ...",
+      "topLinks": [
+        {
+          "title": "Securing the git push pipeline: Responding to a critical remote code execution vulnerability",
+          "url": "https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "How Cloudflare rebuilt Next.js in a weekend",
+          "url": "https://leaddev.com/ai/how-cloudflare-rebuilt-next-js-in-a-weekend",
+          "source": "LeadDev"
+        },
+        {
+          "title": "6 software engineering buzzwords you need to stop using",
+          "url": "https://leaddev.com/leadership/6-software-engineering-buzzwords-you-need-to-stop-using",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Your AI-coding budget just got a lot more complicated",
+          "url": "https://leaddev.com/ai/your-ai-coding-budget-just-got-a-lot-more-complicated",
+          "source": "LeadDev"
+        },
+        {
+          "title": "How Anthropic’s silence fueled a Claude Code trust crisis",
+          "url": "https://leaddev.com/ai/how-anthropics-silence-fueled-a-claude-code-trust-crisis",
+          "source": "LeadDev"
+        }
+      ]
+    },
     {
       "date": "2026-04-13",
       "title": "The Management Layer — 2026-04-13",
