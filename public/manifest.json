@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-05-04T07:59:19.273Z",
+  "generated_at_utc": "2026-05-11T08:13:27.490Z",
   "version": 1,
   "latest": {
-    "date": "2026-05-04",
+    "date": "2026-05-11",
     "paths": {
-      "markdown": "reports/2026-05-04.management-layer.md",
-      "telegram": "telegram/2026-05-04.management-layer.telegram.md",
-      "json": "data/2026-05-04.management-layer.json"
+      "markdown": "reports/2026-05-11.management-layer.md",
+      "telegram": "telegram/2026-05-11.management-layer.telegram.md",
+      "json": "data/2026-05-11.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-05-11",
+      "title": "The Management Layer — 2026-05-11",
+      "paths": {
+        "markdown": "reports/2026-05-11.management-layer.md",
+        "telegram": "telegram/2026-05-11.management-layer.telegram.md",
+        "json": "data/2026-05-11.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 11 maggio 2026, sono stati analizzati 18 articoli, con un focus sull'interazione tra pratiche di sviluppo software e governance in un contesto di crescente adozione dell'intelli...",
+      "topLinks": [
+        {
+          "title": "Why age assurance laws matter for developers",
+          "url": "https://github.blog/news-insights/policy-news-and-insights/why-age-assurance-laws-matter-for-developers/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "How researchers are using GitHub Innovation Graph data to reveal the “digital complexity” of nations",
+          "url": "https://github.blog/news-insights/policy-news-and-insights/how-researchers-are-using-github-innovation-graph-data-to-reveal-the-digital-complexity-of-nations/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "What’s gone wrong at GitHub?",
+          "url": "https://leaddev.com/software-quality/whats-gone-wrong-at-github",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Frontier AI models haemorrhage sensitive data",
+          "url": "https://leaddev.com/ai/frontier-ai-models-haemorrhage-sensitive-data",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Coinbase flattens management and trims workforce in AI-driven restructure",
+          "url": "https://leaddev.com/ai/coinbase-flattens-management-and-trims-workforce-in-ai-driven-restructure",
+          "source": "LeadDev"
+        }
+      ]
+    },
     {
       "date": "2026-05-04",
       "title": "The Management Layer — 2026-05-04",

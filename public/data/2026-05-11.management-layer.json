@@ -1,0 +1,302 @@
+{
+  "date": "2026-05-11",
+  "title": "The Management Layer — 2026-05-11",
+  "counts": {
+    "articles": 18,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "b3f69f37cbee157c9170ea8cc0088124",
+      "title": "Why age assurance laws matter for developers",
+      "url": "https://github.blog/news-insights/policy-news-and-insights/why-age-assurance-laws-matter-for-developers/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-05-08T16:30:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "3f92fc4a55f83b4cea91eded1dcf1fc8",
+      "title": "How researchers are using GitHub Innovation Graph data to reveal the “digital complexity” of nations",
+      "url": "https://github.blog/news-insights/policy-news-and-insights/how-researchers-are-using-github-innovation-graph-data-to-reveal-the-digital-complexity-of-nations/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-05-08T15:00:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "8ee909ce7b11b25511f013ebcbe58ac5",
+      "title": "What’s gone wrong at GitHub?",
+      "url": "https://leaddev.com/software-quality/whats-gone-wrong-at-github",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-07T11:30:47.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "79ca9fa1d9cfa2beaccde4daf31cdbff",
+      "title": "Frontier AI models haemorrhage sensitive data",
+      "url": "https://leaddev.com/ai/frontier-ai-models-haemorrhage-sensitive-data",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-07T08:45:54.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "1d1bf441999e5a9a382cd60bbb7475b3",
+      "title": "Coinbase flattens management and trims workforce in AI-driven restructure",
+      "url": "https://leaddev.com/ai/coinbase-flattens-management-and-trims-workforce-in-ai-driven-restructure",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-06T14:44:59.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "b8a3709c0f26222eec4032f2c2b9d242",
+      "title": "Think the technical interview is dead? Think again",
+      "url": "https://leaddev.com/hiring/think-the-technical-interview-is-dead-think-again",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-06T11:10:59.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "3a2e71f0b41bdcb4cc30c3a680f44df1",
+      "title": "DORA metrics are lying to you and AI is making it worse",
+      "url": "https://leaddev.com/reporting/dora-metrics-are-lying-to-you-and-ai-is-making-it-worse",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-06T07:09:36.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "dc8a4f6d98f5ad3f39d7a844876b64e1",
+      "title": "The reality of being a senior engineering manager",
+      "url": "https://leaddev.com/career-development/the-reality-of-being-a-senior-engineering-manager",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-05T10:49:36.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "57c2aed13ba322939c74ebf7f7dc9597",
+      "title": "What 16 years of software engineering taught me about growth",
+      "url": "https://leaddev.com/career-development/what-16-years-of-software-engineering-taught-me-about-growth",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-05T07:22:21.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "19e6c1e4478b2c2d03fd85c7ca1d9072",
+      "title": "Fragments: May  5",
+      "url": "https://martinfowler.com/fragments/2026-05-05.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-05-05T16:23:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "b3f69f37cbee157c9170ea8cc0088124",
+      "title": "Why age assurance laws matter for developers",
+      "url": "https://github.blog/news-insights/policy-news-and-insights/why-age-assurance-laws-matter-for-developers/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-05-08T16:30:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "3f92fc4a55f83b4cea91eded1dcf1fc8",
+      "title": "How researchers are using GitHub Innovation Graph data to reveal the “digital complexity” of nations",
+      "url": "https://github.blog/news-insights/policy-news-and-insights/how-researchers-are-using-github-innovation-graph-data-to-reveal-the-digital-complexity-of-nations/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-05-08T15:00:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "8ee909ce7b11b25511f013ebcbe58ac5",
+      "title": "What’s gone wrong at GitHub?",
+      "url": "https://leaddev.com/software-quality/whats-gone-wrong-at-github",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-07T11:30:47.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "79ca9fa1d9cfa2beaccde4daf31cdbff",
+      "title": "Frontier AI models haemorrhage sensitive data",
+      "url": "https://leaddev.com/ai/frontier-ai-models-haemorrhage-sensitive-data",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-07T08:45:54.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "1d1bf441999e5a9a382cd60bbb7475b3",
+      "title": "Coinbase flattens management and trims workforce in AI-driven restructure",
+      "url": "https://leaddev.com/ai/coinbase-flattens-management-and-trims-workforce-in-ai-driven-restructure",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-06T14:44:59.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "b8a3709c0f26222eec4032f2c2b9d242",
+      "title": "Think the technical interview is dead? Think again",
+      "url": "https://leaddev.com/hiring/think-the-technical-interview-is-dead-think-again",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-06T11:10:59.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "3a2e71f0b41bdcb4cc30c3a680f44df1",
+      "title": "DORA metrics are lying to you and AI is making it worse",
+      "url": "https://leaddev.com/reporting/dora-metrics-are-lying-to-you-and-ai-is-making-it-worse",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-06T07:09:36.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "dc8a4f6d98f5ad3f39d7a844876b64e1",
+      "title": "The reality of being a senior engineering manager",
+      "url": "https://leaddev.com/career-development/the-reality-of-being-a-senior-engineering-manager",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-05T10:49:36.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "57c2aed13ba322939c74ebf7f7dc9597",
+      "title": "What 16 years of software engineering taught me about growth",
+      "url": "https://leaddev.com/career-development/what-16-years-of-software-engineering-taught-me-about-growth",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-05T07:22:21.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "19e6c1e4478b2c2d03fd85c7ca1d9072",
+      "title": "Fragments: May  5",
+      "url": "https://martinfowler.com/fragments/2026-05-05.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-05-05T16:23:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 11 maggio 2026, sono stati analizzati 18 articoli, con un focus sull'interazione tra pratiche di sviluppo software e governance in un contesto di crescente adozione dell'intelligenza artificiale. I contenuti evidenziano tensioni riguardanti la sicurezza dei dati, la qualità del codice generato dall'IA e le implicazioni per la gestione delle risorse umane. Si osserva un crescente dibattito sulla responsabilità dei leader tecnici nel garantire una governance adeguata e nel promuovere il benessere degli sviluppatori.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'evoluzione delle pratiche di governance per il codice generato dall'IA potrebbe riflettere un cambiamento nelle responsabilità tra sviluppatori e management.",
+      "Le reazioni alle vulnerabilità di sicurezza potrebbero influenzare le politiche di assunzione e le pratiche di lavoro all'interno delle aziende tecnologiche.",
+      "L'attenzione crescente verso il benessere degli sviluppatori potrebbe portare a un ripensamento delle dinamiche di team e delle aspettative professionali."
+    ],
+    "divergences": [
+      "Gli articoli tendono a enfatizzare le implicazioni pratiche della governance del codice generato dall'IA, mentre le discussioni su Reddit mostrano una maggiore preoccupazione per le esperienze personali degli sviluppatori.",
+      "Mentre gli articoli analizzano le metriche di performance in modo critico, le conversazioni su Reddit si concentrano più sulle esperienze quotidiane e sulle sfide pratiche nel lavoro con strumenti di IA.",
+      "Le analisi sui cambiamenti nelle dinamiche di team sono più strutturate negli articoli, mentre su Reddit emergono narrazioni più personali e soggettive riguardo al benessere degli sviluppatori."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-05-11.management-layer.md",
+    "telegram": "telegram/2026-05-11.management-layer.telegram.md",
+    "json": "data/2026-05-11.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}
