@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-05-11T08:13:27.490Z",
+  "generated_at_utc": "2026-05-18T08:24:56.104Z",
   "version": 1,
   "latest": {
-    "date": "2026-05-11",
+    "date": "2026-05-18",
     "paths": {
-      "markdown": "reports/2026-05-11.management-layer.md",
-      "telegram": "telegram/2026-05-11.management-layer.telegram.md",
-      "json": "data/2026-05-11.management-layer.json"
+      "markdown": "reports/2026-05-18.management-layer.md",
+      "telegram": "telegram/2026-05-18.management-layer.telegram.md",
+      "json": "data/2026-05-18.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-05-18",
+      "title": "The Management Layer — 2026-05-18",
+      "paths": {
+        "markdown": "reports/2026-05-18.management-layer.md",
+        "telegram": "telegram/2026-05-18.management-layer.telegram.md",
+        "json": "data/2026-05-18.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 18 maggio 2026, sono stati analizzati 19 articoli, con un focus sull'interazione tra pratiche di sviluppo software e l'adozione di tecnologie emergenti, in particolare l'intelli...",
+      "topLinks": [
+        {
+          "title": "An engineer’s guide to Model Context Protocol (MCP)",
+          "url": "https://leaddev.com/ai/an-engineers-guide-to-model-context-protocol-mcp",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Building a general-purpose accessibility agent—and what we learned in the process",
+          "url": "https://github.blog/ai-and-ml/github-copilot/building-a-general-purpose-accessibility-agent-and-what-we-learned-in-the-process/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "Raising the bar: Quality, shared responsibility, and the future of GitHub’s bug bounty program",
+          "url": "https://github.blog/security/raising-the-bar-quality-shared-responsibility-and-the-future-of-githubs-bug-bounty-program/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "How LLMs became Walmart’s on-call engineer",
+          "url": "https://leaddev.com/ai/how-llms-became-walmarts-on-call-engineer",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Streaming CloudWatch metrics to VPC-based OpenTelemetry collectors using Lambda",
+          "url": "https://aws.amazon.com/blogs/architecture/streaming-cloudwatch-metrics-to-vpc-based-opentelemetry-collectors-using-lambda/",
+          "source": "AWS Architecture Blog"
+        }
+      ]
+    },
     {
       "date": "2026-05-11",
       "title": "The Management Layer — 2026-05-11",
