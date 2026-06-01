@@ -1,0 +1,302 @@
+{
+  "date": "2026-06-01",
+  "title": "The Management Layer — 2026-06-01",
+  "counts": {
+    "articles": 13,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "f042aadee172efdc4a13b10561d78d89",
+      "title": "PR reviews were already broken. AI made it worse",
+      "url": "https://leaddev.com/ai/pr-reviews-were-already-broken-ai-made-it-worse",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-01T08:23:19.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "9e55e4299cee6b416c5e2e77a1856f5d",
+      "title": "Claude Code creator says developers will become builders. Do they agree?",
+      "url": "https://leaddev.com/software-quality/claude-code-creator-says-developers-will-become-builders-do-they-agree",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-29T09:35:07.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "bc4f54954645548f901a7f7f2c728c2b",
+      "title": "Inside Bloomberg’s flat engineering culture",
+      "url": "https://leaddev.com/career-development/inside-bloombergs-flat-engineering-culture",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-28T10:24:41.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "2e8de6a09428d9b3080e41efbe847ef7",
+      "title": "When to kill a software project",
+      "url": "https://leaddev.com/leadership/when-to-kill-a-software-project",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-28T07:17:27.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "29bacb1c3fab51e0d1e557410836d60d",
+      "title": "The reality of being a principal engineer",
+      "url": "https://leaddev.com/career-development/reality-being-principal-engineer",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-27T07:36:55.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "72c6d14bd382bea5be714e21941b220a",
+      "title": "Translate tech debt into business risk",
+      "url": "https://leaddev.com/technical-direction/translate-tech-debt-into-business-risk",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-26T07:52:55.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "b886340418159bc5eeed6474ca79f52f",
+      "title": "Fragments: May 27",
+      "url": "https://martinfowler.com/fragments/2026-05-27.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-05-27T19:40:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "1b6db10f351cb8c1a1cb734f265006ec",
+      "title": "The test suite as a regression sensor",
+      "url": "https://martinfowler.com/articles/sensors-for-coding-agents.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-05-27T15:01:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "fedb9d041ac82d5a84c5a66cccff8d4a",
+      "title": "The VibeSec Reckoning",
+      "url": "https://martinfowler.com/articles/vibesec-reckoning.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-05-27T14:03:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "03785b801d6427f3a4915455a9d938fe",
+      "title": "Still a developer. Just outside. Our latest GitHub Shop collection is here.",
+      "url": "https://github.blog/news-insights/company-news/still-a-developer-just-outside-our-latest-github-shop-collection-is-here/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-05-28T18:18:43.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "f042aadee172efdc4a13b10561d78d89",
+      "title": "PR reviews were already broken. AI made it worse",
+      "url": "https://leaddev.com/ai/pr-reviews-were-already-broken-ai-made-it-worse",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-01T08:23:19.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "9e55e4299cee6b416c5e2e77a1856f5d",
+      "title": "Claude Code creator says developers will become builders. Do they agree?",
+      "url": "https://leaddev.com/software-quality/claude-code-creator-says-developers-will-become-builders-do-they-agree",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-29T09:35:07.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "bc4f54954645548f901a7f7f2c728c2b",
+      "title": "Inside Bloomberg’s flat engineering culture",
+      "url": "https://leaddev.com/career-development/inside-bloombergs-flat-engineering-culture",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-28T10:24:41.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "2e8de6a09428d9b3080e41efbe847ef7",
+      "title": "When to kill a software project",
+      "url": "https://leaddev.com/leadership/when-to-kill-a-software-project",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-28T07:17:27.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "29bacb1c3fab51e0d1e557410836d60d",
+      "title": "The reality of being a principal engineer",
+      "url": "https://leaddev.com/career-development/reality-being-principal-engineer",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-27T07:36:55.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "72c6d14bd382bea5be714e21941b220a",
+      "title": "Translate tech debt into business risk",
+      "url": "https://leaddev.com/technical-direction/translate-tech-debt-into-business-risk",
+      "source": "LeadDev",
+      "publishedAt": "2026-05-26T07:52:55.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "b886340418159bc5eeed6474ca79f52f",
+      "title": "Fragments: May 27",
+      "url": "https://martinfowler.com/fragments/2026-05-27.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-05-27T19:40:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "1b6db10f351cb8c1a1cb734f265006ec",
+      "title": "The test suite as a regression sensor",
+      "url": "https://martinfowler.com/articles/sensors-for-coding-agents.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-05-27T15:01:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "fedb9d041ac82d5a84c5a66cccff8d4a",
+      "title": "The VibeSec Reckoning",
+      "url": "https://martinfowler.com/articles/vibesec-reckoning.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-05-27T14:03:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "03785b801d6427f3a4915455a9d938fe",
+      "title": "Still a developer. Just outside. Our latest GitHub Shop collection is here.",
+      "url": "https://github.blog/news-insights/company-news/still-a-developer-just-outside-our-latest-github-shop-collection-is-here/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-05-28T18:18:43.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 1 giugno 2026, sono stati analizzati 13 articoli, con un focus sull'impatto dell'IA nelle pratiche di sviluppo software e sulla governance del codice. I contenuti evidenziano tensioni relative alla qualità del codice generato dall'IA e alle nuove dinamiche di team all'interno delle organizzazioni tecnologiche. Si osserva una crescente preoccupazione per il ruolo degli engineering manager nel bilanciare l'innovazione tecnologica con la responsabilità della qualità e della sicurezza del software.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'evoluzione delle pratiche di governance per il codice generato dall'IA potrebbe indicare un cambiamento nelle responsabilità tra sviluppatori e management.",
+      "Le reazioni alle vulnerabilità di sicurezza potrebbero influenzare le politiche aziendali e le pratiche di assunzione, specialmente in contesti di crescente adozione dell'IA.",
+      "L'attenzione crescente verso il benessere degli sviluppatori potrebbe portare a un ripensamento delle dinamiche di team e delle aspettative professionali, influenzando le strategie di retention."
+    ],
+    "divergences": [
+      "Gli articoli tendono a focalizzarsi su aspetti tecnici e di governance, mentre le discussioni su Reddit potrebbero enfatizzare esperienze personali e opinioni soggettive.",
+      "Mentre gli articoli analizzano le implicazioni organizzative dell'IA, le discussioni su Reddit potrebbero riflettere preoccupazioni più immediate e pratiche da parte degli sviluppatori.",
+      "Le narrazioni degli articoli si concentrano su tendenze e pratiche emergenti, mentre le conversazioni su Reddit potrebbero evidenziare tensioni quotidiane e sfide pratiche nel lavoro di sviluppo."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-06-01.management-layer.md",
+    "telegram": "telegram/2026-06-01.management-layer.telegram.md",
+    "json": "data/2026-06-01.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}

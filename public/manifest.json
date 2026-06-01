@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-05-18T08:24:56.104Z",
+  "generated_at_utc": "2026-06-01T08:54:13.586Z",
   "version": 1,
   "latest": {
-    "date": "2026-05-18",
+    "date": "2026-06-01",
     "paths": {
-      "markdown": "reports/2026-05-18.management-layer.md",
-      "telegram": "telegram/2026-05-18.management-layer.telegram.md",
-      "json": "data/2026-05-18.management-layer.json"
+      "markdown": "reports/2026-06-01.management-layer.md",
+      "telegram": "telegram/2026-06-01.management-layer.telegram.md",
+      "json": "data/2026-06-01.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-06-01",
+      "title": "The Management Layer — 2026-06-01",
+      "paths": {
+        "markdown": "reports/2026-06-01.management-layer.md",
+        "telegram": "telegram/2026-06-01.management-layer.telegram.md",
+        "json": "data/2026-06-01.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 1 giugno 2026, sono stati analizzati 13 articoli, con un focus sull'impatto dell'IA nelle pratiche di sviluppo software e sulla governance del codice. I contenuti evidenziano te...",
+      "topLinks": [
+        {
+          "title": "PR reviews were already broken. AI made it worse",
+          "url": "https://leaddev.com/ai/pr-reviews-were-already-broken-ai-made-it-worse",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Claude Code creator says developers will become builders. Do they agree?",
+          "url": "https://leaddev.com/software-quality/claude-code-creator-says-developers-will-become-builders-do-they-agree",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Inside Bloomberg’s flat engineering culture",
+          "url": "https://leaddev.com/career-development/inside-bloombergs-flat-engineering-culture",
+          "source": "LeadDev"
+        },
+        {
+          "title": "When to kill a software project",
+          "url": "https://leaddev.com/leadership/when-to-kill-a-software-project",
+          "source": "LeadDev"
+        },
+        {
+          "title": "The reality of being a principal engineer",
+          "url": "https://leaddev.com/career-development/reality-being-principal-engineer",
+          "source": "LeadDev"
+        }
+      ]
+    },
     {
       "date": "2026-05-18",
       "title": "The Management Layer — 2026-05-18",
