@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-06-01T08:54:13.586Z",
+  "generated_at_utc": "2026-06-15T09:11:59.628Z",
   "version": 1,
   "latest": {
-    "date": "2026-06-01",
+    "date": "2026-06-15",
     "paths": {
-      "markdown": "reports/2026-06-01.management-layer.md",
-      "telegram": "telegram/2026-06-01.management-layer.telegram.md",
-      "json": "data/2026-06-01.management-layer.json"
+      "markdown": "reports/2026-06-15.management-layer.md",
+      "telegram": "telegram/2026-06-15.management-layer.telegram.md",
+      "json": "data/2026-06-15.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-06-15",
+      "title": "The Management Layer — 2026-06-15",
+      "paths": {
+        "markdown": "reports/2026-06-15.management-layer.md",
+        "telegram": "telegram/2026-06-15.management-layer.telegram.md",
+        "json": "data/2026-06-15.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 15 giugno 2026, sono stati analizzati 13 articoli, con un focus sull'impatto dell'intelligenza artificiale nelle pratiche di sviluppo software e sulle nuove dinamiche di team. I...",
+      "topLinks": [
+        {
+          "title": "Your AI agent just blamed the network team. Now what?",
+          "url": "https://leaddev.com/ai/your-ai-agent-just-blamed-the-network-team-now-what",
+          "source": "LeadDev"
+        },
+        {
+          "title": "How we made GitHub Copilot CLI more selective about delegation",
+          "url": "https://github.blog/ai-and-ml/how-we-made-github-copilot-cli-more-selective-about-delegation/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "AI isn’t making developers more productive – it’s making them busier",
+          "url": "https://leaddev.com/ai/ai-isnt-making-developers-more-productive-its-making-them-busier",
+          "source": "LeadDev"
+        },
+        {
+          "title": "The AI talent story everyone is missing",
+          "url": "https://leaddev.com/ai/the-ai-talent-story-everyone-is-missing",
+          "source": "LeadDev"
+        },
+        {
+          "title": "The engineering manager role is splitting in two",
+          "url": "https://leaddev.com/career-development/the-engineering-manager-role-is-splitting-in-two",
+          "source": "LeadDev"
+        }
+      ]
+    },
     {
       "date": "2026-06-01",
       "title": "The Management Layer — 2026-06-01",

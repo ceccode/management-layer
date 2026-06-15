@@ -1,0 +1,302 @@
+{
+  "date": "2026-06-15",
+  "title": "The Management Layer — 2026-06-15",
+  "counts": {
+    "articles": 13,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "541b63d2d2a824585d7d532bdfd33458",
+      "title": "Your AI agent just blamed the network team. Now what?",
+      "url": "https://leaddev.com/ai/your-ai-agent-just-blamed-the-network-team-now-what",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-15T07:28:53.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "3732101e9caa80ff77147a94df107b0b",
+      "title": "How we made GitHub Copilot CLI more selective about delegation",
+      "url": "https://github.blog/ai-and-ml/how-we-made-github-copilot-cli-more-selective-about-delegation/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-12T22:26:23.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "4ef2763aaf08d320d98e331f72de7668",
+      "title": "AI isn’t making developers more productive – it’s making them busier",
+      "url": "https://leaddev.com/ai/ai-isnt-making-developers-more-productive-its-making-them-busier",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-11T08:28:08.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "87abf6460cc1ff981f8fb8d73126e6ed",
+      "title": "The AI talent story everyone is missing",
+      "url": "https://leaddev.com/ai/the-ai-talent-story-everyone-is-missing",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-10T06:56:03.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "a4ad589ba168ab58b626f2d958e9cd0d",
+      "title": "The engineering manager role is splitting in two",
+      "url": "https://leaddev.com/career-development/the-engineering-manager-role-is-splitting-in-two",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-09T07:14:44.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "32a4db3c27ad85220e6e7174829080cf",
+      "title": "GitHub availability report: May 2026",
+      "url": "https://github.blog/news-insights/company-news/github-availability-report-may-2026/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-11T21:30:15.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "47e8d8a1cf1bb8669d24f514e3737fb6",
+      "title": "Making secret scanning more trustworthy: Reducing false positives at scale",
+      "url": "https://github.blog/security/making-secret-scanning-more-trustworthy-reducing-false-positives-at-scale/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-11T16:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "67436fa23ed657318f5a90592a5e9a77",
+      "title": "Give GitHub Copilot CLI real code intelligence with language servers",
+      "url": "https://github.blog/ai-and-ml/github-copilot/give-github-copilot-cli-real-code-intelligence-with-language-servers/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-10T16:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "a1f4adcef110d6944bfb6804062e1367",
+      "title": "From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI",
+      "url": "https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-09T16:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "16ccccb429449d0f817a9da8c7581cec",
+      "title": "GitHub for Beginners: Answers to some common questions",
+      "url": "https://github.blog/developer-skills/github/github-for-beginners-answers-to-some-common-questions/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-08T16:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "541b63d2d2a824585d7d532bdfd33458",
+      "title": "Your AI agent just blamed the network team. Now what?",
+      "url": "https://leaddev.com/ai/your-ai-agent-just-blamed-the-network-team-now-what",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-15T07:28:53.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "3732101e9caa80ff77147a94df107b0b",
+      "title": "How we made GitHub Copilot CLI more selective about delegation",
+      "url": "https://github.blog/ai-and-ml/how-we-made-github-copilot-cli-more-selective-about-delegation/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-12T22:26:23.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "4ef2763aaf08d320d98e331f72de7668",
+      "title": "AI isn’t making developers more productive – it’s making them busier",
+      "url": "https://leaddev.com/ai/ai-isnt-making-developers-more-productive-its-making-them-busier",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-11T08:28:08.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "87abf6460cc1ff981f8fb8d73126e6ed",
+      "title": "The AI talent story everyone is missing",
+      "url": "https://leaddev.com/ai/the-ai-talent-story-everyone-is-missing",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-10T06:56:03.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "a4ad589ba168ab58b626f2d958e9cd0d",
+      "title": "The engineering manager role is splitting in two",
+      "url": "https://leaddev.com/career-development/the-engineering-manager-role-is-splitting-in-two",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-09T07:14:44.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "32a4db3c27ad85220e6e7174829080cf",
+      "title": "GitHub availability report: May 2026",
+      "url": "https://github.blog/news-insights/company-news/github-availability-report-may-2026/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-11T21:30:15.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "47e8d8a1cf1bb8669d24f514e3737fb6",
+      "title": "Making secret scanning more trustworthy: Reducing false positives at scale",
+      "url": "https://github.blog/security/making-secret-scanning-more-trustworthy-reducing-false-positives-at-scale/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-11T16:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "67436fa23ed657318f5a90592a5e9a77",
+      "title": "Give GitHub Copilot CLI real code intelligence with language servers",
+      "url": "https://github.blog/ai-and-ml/github-copilot/give-github-copilot-cli-real-code-intelligence-with-language-servers/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-10T16:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "a1f4adcef110d6944bfb6804062e1367",
+      "title": "From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI",
+      "url": "https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-09T16:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "16ccccb429449d0f817a9da8c7581cec",
+      "title": "GitHub for Beginners: Answers to some common questions",
+      "url": "https://github.blog/developer-skills/github/github-for-beginners-answers-to-some-common-questions/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-08T16:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 15 giugno 2026, sono stati analizzati 13 articoli, con un focus sull'impatto dell'intelligenza artificiale nelle pratiche di sviluppo software e sulle nuove dinamiche di team. I contenuti evidenziano tensioni tra l'innovazione tecnologica e la qualità del codice, nonché un'evoluzione nel ruolo degli engineering manager, che si trovano a dover bilanciare le aspettative di produttività con la responsabilità della governance del software.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'evoluzione delle pratiche di governance per il codice generato dall'IA potrebbe indicare un cambiamento nelle responsabilità tra sviluppatori e management.",
+      "Le reazioni alle problematiche di produttività legate all'IA potrebbero influenzare le politiche aziendali e le pratiche di assunzione.",
+      "L'attenzione crescente verso il benessere degli sviluppatori potrebbe portare a un ripensamento delle dinamiche di team e delle aspettative professionali."
+    ],
+    "divergences": [
+      "Gli articoli tendono a focalizzarsi sulle sfide tecniche e organizzative legate all'IA, mentre le discussioni su Reddit potrebbero enfatizzare esperienze personali e opinioni soggettive degli sviluppatori.",
+      "Mentre gli articoli analizzano le implicazioni di governance e responsabilità, le conversazioni su Reddit potrebbero riflettere una maggiore preoccupazione per il carico di lavoro e il benessere individuale.",
+      "Gli articoli evidenziano tendenze emergenti nel ruolo degli engineering manager, mentre le discussioni su Reddit potrebbero non cogliere appieno queste evoluzioni, concentrandosi invece su problemi immediati e pratici."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-06-15.management-layer.md",
+    "telegram": "telegram/2026-06-15.management-layer.telegram.md",
+    "json": "data/2026-06-15.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}
