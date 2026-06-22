@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-06-15T09:11:59.628Z",
+  "generated_at_utc": "2026-06-22T09:05:49.250Z",
   "version": 1,
   "latest": {
-    "date": "2026-06-15",
+    "date": "2026-06-22",
     "paths": {
-      "markdown": "reports/2026-06-15.management-layer.md",
-      "telegram": "telegram/2026-06-15.management-layer.telegram.md",
-      "json": "data/2026-06-15.management-layer.json"
+      "markdown": "reports/2026-06-22.management-layer.md",
+      "telegram": "telegram/2026-06-22.management-layer.telegram.md",
+      "json": "data/2026-06-22.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-06-22",
+      "title": "The Management Layer — 2026-06-22",
+      "paths": {
+        "markdown": "reports/2026-06-22.management-layer.md",
+        "telegram": "telegram/2026-06-22.management-layer.telegram.md",
+        "json": "data/2026-06-22.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 22 giugno 2026, sono stati analizzati 15 articoli, con un focus sull'impatto dell'intelligenza artificiale nelle pratiche di sviluppo software e sulla governance del codice. I c...",
+      "topLinks": [
+        {
+          "title": "How to stay technical as an engineering manager",
+          "url": "https://leaddev.com/career-development/how-to-stay-technical-as-an-engineering-manager",
+          "source": "LeadDev"
+        },
+        {
+          "title": "How we built an internal data analytics agent",
+          "url": "https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "AI coding creates two kinds of debt. You’re only measuring one",
+          "url": "https://leaddev.com/ai/ai-coding-creates-two-kinds-of-debt-youre-only-measuring-one",
+          "source": "LeadDev"
+        },
+        {
+          "title": "AI models can disappear overnight. Is your engineering team built to survive it?",
+          "url": "https://leaddev.com/ai/ai-models-can-disappear-overnight-is-your-engineering-team-built-to-survive-it",
+          "source": "LeadDev"
+        },
+        {
+          "title": "The 8 software engineering metrics AI broke",
+          "url": "https://leaddev.com/ai/the-8-software-engineering-metrics-ai-broke",
+          "source": "LeadDev"
+        }
+      ]
+    },
     {
       "date": "2026-06-15",
       "title": "The Management Layer — 2026-06-15",

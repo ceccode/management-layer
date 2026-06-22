@@ -1,0 +1,302 @@
+{
+  "date": "2026-06-22",
+  "title": "The Management Layer — 2026-06-22",
+  "counts": {
+    "articles": 15,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "b7c26fd49a46143361e92df0855f1c4f",
+      "title": "How to stay technical as an engineering manager",
+      "url": "https://leaddev.com/career-development/how-to-stay-technical-as-an-engineering-manager",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-22T07:25:33.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "7339e5de8ac48c0a7d55769010174aa2",
+      "title": "How we built an internal data analytics agent",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-19T16:00:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "a5160362c273c4e1ad703b0221f6f5f7",
+      "title": "AI coding creates two kinds of debt. You’re only measuring one",
+      "url": "https://leaddev.com/ai/ai-coding-creates-two-kinds-of-debt-youre-only-measuring-one",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-18T07:02:17.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "566be6fa067cb7cb45e960d9ff3936fc",
+      "title": "AI models can disappear overnight. Is your engineering team built to survive it?",
+      "url": "https://leaddev.com/ai/ai-models-can-disappear-overnight-is-your-engineering-team-built-to-survive-it",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-17T07:47:31.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "43eee2d1041c848e2c0e58035e48b1b8",
+      "title": "The 8 software engineering metrics AI broke",
+      "url": "https://leaddev.com/ai/the-8-software-engineering-metrics-ai-broke",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-16T07:11:57.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "65411946b238acf3fdad4c918b3e7942",
+      "title": "Building Reliable Agentic AI Systems",
+      "url": "https://martinfowler.com/articles/reliable-llm-bayer.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-06-16T12:11:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "7541175c4b955536cbf7faba840e48bd",
+      "title": "Fragments: June 16",
+      "url": "https://martinfowler.com/fragments/2026-06-16.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-06-16T06:44:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "af5b66d8418f4d969027a0a7c5972076",
+      "title": "How pull request limits are cutting down the noise",
+      "url": "https://github.blog/open-source/maintainers/how-pull-request-limits-are-cutting-down-the-noise/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-18T16:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "c34b6e15668620c0b0c924362858d8be",
+      "title": "Getting more from each token: How Copilot improves context handling and model routing",
+      "url": "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-17T19:41:46.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "51ed7c9b72786c4450d31808dfdf4f76",
+      "title": "What are git worktrees, and why should I use them?",
+      "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-16T20:58:54.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "b7c26fd49a46143361e92df0855f1c4f",
+      "title": "How to stay technical as an engineering manager",
+      "url": "https://leaddev.com/career-development/how-to-stay-technical-as-an-engineering-manager",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-22T07:25:33.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "7339e5de8ac48c0a7d55769010174aa2",
+      "title": "How we built an internal data analytics agent",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-19T16:00:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "a5160362c273c4e1ad703b0221f6f5f7",
+      "title": "AI coding creates two kinds of debt. You’re only measuring one",
+      "url": "https://leaddev.com/ai/ai-coding-creates-two-kinds-of-debt-youre-only-measuring-one",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-18T07:02:17.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "566be6fa067cb7cb45e960d9ff3936fc",
+      "title": "AI models can disappear overnight. Is your engineering team built to survive it?",
+      "url": "https://leaddev.com/ai/ai-models-can-disappear-overnight-is-your-engineering-team-built-to-survive-it",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-17T07:47:31.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "43eee2d1041c848e2c0e58035e48b1b8",
+      "title": "The 8 software engineering metrics AI broke",
+      "url": "https://leaddev.com/ai/the-8-software-engineering-metrics-ai-broke",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-16T07:11:57.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "65411946b238acf3fdad4c918b3e7942",
+      "title": "Building Reliable Agentic AI Systems",
+      "url": "https://martinfowler.com/articles/reliable-llm-bayer.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-06-16T12:11:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "7541175c4b955536cbf7faba840e48bd",
+      "title": "Fragments: June 16",
+      "url": "https://martinfowler.com/fragments/2026-06-16.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-06-16T06:44:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "af5b66d8418f4d969027a0a7c5972076",
+      "title": "How pull request limits are cutting down the noise",
+      "url": "https://github.blog/open-source/maintainers/how-pull-request-limits-are-cutting-down-the-noise/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-18T16:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "c34b6e15668620c0b0c924362858d8be",
+      "title": "Getting more from each token: How Copilot improves context handling and model routing",
+      "url": "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-17T19:41:46.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "51ed7c9b72786c4450d31808dfdf4f76",
+      "title": "What are git worktrees, and why should I use them?",
+      "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-16T20:58:54.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 22 giugno 2026, sono stati analizzati 15 articoli, con un focus sull'impatto dell'intelligenza artificiale nelle pratiche di sviluppo software e sulla governance del codice. I contenuti evidenziano tensioni tra l'adozione di tecnologie emergenti e la qualità del codice, nonché la necessità di rivedere le dinamiche di team e le responsabilità degli engineering manager. Si osserva un crescente interesse verso le metriche di produttività e l'affidabilità dei sistemi basati su IA.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'evoluzione delle pratiche di governance per il codice generato dall'IA potrebbe riflettere un cambiamento nelle responsabilità tra sviluppatori e management.",
+      "Le reazioni alle problematiche di produttività legate all'IA potrebbero influenzare le politiche aziendali e le pratiche di assunzione.",
+      "L'attenzione crescente verso il benessere degli sviluppatori potrebbe portare a un ripensamento delle dinamiche di team e delle aspettative professionali."
+    ],
+    "divergences": [
+      "Gli articoli tendono a focalizzarsi sulle implicazioni tecniche e sulla governance, mentre le discussioni Reddit potrebbero esplorare più le esperienze personali e le percezioni degli sviluppatori.",
+      "Le fonti analizzate evidenziano un'analisi più strutturata delle metriche di produttività, mentre le conversazioni su Reddit potrebbero enfatizzare le preoccupazioni pratiche e immediate.",
+      "I contenuti raccolti mostrano un interesse per la governance del codice, mentre le discussioni online potrebbero riflettere una maggiore attenzione alle sfide quotidiane dei team di sviluppo."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-06-22.management-layer.md",
+    "telegram": "telegram/2026-06-22.management-layer.telegram.md",
+    "json": "data/2026-06-22.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}
