@@ -1,0 +1,302 @@
+{
+  "date": "2026-06-29",
+  "title": "The Management Layer — 2026-06-29",
+  "counts": {
+    "articles": 17,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "9eed6660edbe15d886f0f684a28e603c",
+      "title": "How to prepare for your engineering manager interview",
+      "url": "https://leaddev.com/career-development/how-to-prepare-for-your-engineering-manager-interview",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-29T08:00:00.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "c434d4496b401494dcff519f27944483",
+      "title": "GitHub and UNDP team up to advance development priorities in Ghana with open source",
+      "url": "https://github.blog/open-source/social-impact/github-and-undp-team-up-to-advance-development-priorities-in-ghana-with-open-source/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-26T16:53:57.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "70268f7669cff0f7c14b8221d959b58e",
+      "title": "Transitioning as a Hubber",
+      "url": "https://github.blog/developer-skills/career-growth/transitioning-as-a-hubber/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-26T12:00:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "7a5163b935b4f07014a0ad4a9aa51a3d",
+      "title": "AI-coding agents are now the default. What comes next?",
+      "url": "https://leaddev.com/ai/ai-coding-agents-are-now-the-default-what-comes-next",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-25T07:27:01.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "b2106f402c18e3e1dd450c18057703e1",
+      "title": "Killing a project is every engineering leader’s hardest call",
+      "url": "https://leaddev.com/leadership/killing-a-project-is-every-engineering-leaders-hardest-call",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-24T07:30:15.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "8a7ae9c1748a7690f23d4435eeb0b7b9",
+      "title": "Engineering managers ditch cloud AI for local LLMs",
+      "url": "https://leaddev.com/ai/engineering-managers-ditch-cloud-ai-for-local-llms",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-23T09:48:20.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "67d357dc2876567604b09d8a15a8bd3a",
+      "title": "You can vibe code a demo, but what about a product?",
+      "url": "https://leaddev.com/ai/you-can-vibe-code-a-demo-you-cant-vibe-code-a-product",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-23T07:00:14.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "dea755c57fc08d4f520f6945b2a26f05",
+      "title": "Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks",
+      "url": "https://github.blog/ai-and-ml/github-copilot/evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harness-across-models-and-tasks/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-25T22:59:45.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "6b78510f73627cd5f900df9482c29081",
+      "title": "I automated my job (and it made me a better leader)",
+      "url": "https://github.blog/developer-skills/github/i-automated-my-job-and-it-made-me-a-better-leader/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-23T16:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "41e4c4008a87c45c6e20ca4b09e5d805",
+      "title": "GitHub joins coalition advocating for fixes to California AI Transparency Act to protect open source",
+      "url": "https://github.blog/news-insights/policy-news-and-insights/github-joins-coalition-advocating-for-fixes-to-california-ai-transparency-act-to-protect-open-source/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-23T15:48:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "9eed6660edbe15d886f0f684a28e603c",
+      "title": "How to prepare for your engineering manager interview",
+      "url": "https://leaddev.com/career-development/how-to-prepare-for-your-engineering-manager-interview",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-29T08:00:00.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "c434d4496b401494dcff519f27944483",
+      "title": "GitHub and UNDP team up to advance development priorities in Ghana with open source",
+      "url": "https://github.blog/open-source/social-impact/github-and-undp-team-up-to-advance-development-priorities-in-ghana-with-open-source/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-26T16:53:57.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "70268f7669cff0f7c14b8221d959b58e",
+      "title": "Transitioning as a Hubber",
+      "url": "https://github.blog/developer-skills/career-growth/transitioning-as-a-hubber/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-26T12:00:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "7a5163b935b4f07014a0ad4a9aa51a3d",
+      "title": "AI-coding agents are now the default. What comes next?",
+      "url": "https://leaddev.com/ai/ai-coding-agents-are-now-the-default-what-comes-next",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-25T07:27:01.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "b2106f402c18e3e1dd450c18057703e1",
+      "title": "Killing a project is every engineering leader’s hardest call",
+      "url": "https://leaddev.com/leadership/killing-a-project-is-every-engineering-leaders-hardest-call",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-24T07:30:15.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "8a7ae9c1748a7690f23d4435eeb0b7b9",
+      "title": "Engineering managers ditch cloud AI for local LLMs",
+      "url": "https://leaddev.com/ai/engineering-managers-ditch-cloud-ai-for-local-llms",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-23T09:48:20.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "67d357dc2876567604b09d8a15a8bd3a",
+      "title": "You can vibe code a demo, but what about a product?",
+      "url": "https://leaddev.com/ai/you-can-vibe-code-a-demo-you-cant-vibe-code-a-product",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-23T07:00:14.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "dea755c57fc08d4f520f6945b2a26f05",
+      "title": "Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks",
+      "url": "https://github.blog/ai-and-ml/github-copilot/evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harness-across-models-and-tasks/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-25T22:59:45.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "6b78510f73627cd5f900df9482c29081",
+      "title": "I automated my job (and it made me a better leader)",
+      "url": "https://github.blog/developer-skills/github/i-automated-my-job-and-it-made-me-a-better-leader/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-23T16:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "41e4c4008a87c45c6e20ca4b09e5d805",
+      "title": "GitHub joins coalition advocating for fixes to California AI Transparency Act to protect open source",
+      "url": "https://github.blog/news-insights/policy-news-and-insights/github-joins-coalition-advocating-for-fixes-to-california-ai-transparency-act-to-protect-open-source/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-23T15:48:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 29 giugno 2026, sono stati analizzati 17 articoli, con un focus sull'interazione tra intelligenza artificiale e pratiche di sviluppo software. I contenuti evidenziano tensioni relative all'adozione di agenti di codifica basati su IA e alle sfide nella governance del codice. Si osserva un crescente interesse verso la gestione dei progetti e le decisioni critiche, come la cancellazione di progetti, che richiedono un equilibrio tra innovazione e qualità.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'evoluzione delle pratiche di governance per il codice generato dall'IA potrebbe riflettere un cambiamento nelle responsabilità tra sviluppatori e management.",
+      "Le reazioni alle problematiche di qualità legate all'IA potrebbero influenzare le politiche aziendali e le pratiche di assunzione.",
+      "L'attenzione crescente verso le decisioni strategiche nella gestione dei progetti potrebbe portare a una ristrutturazione delle dinamiche di team e delle aspettative professionali."
+    ],
+    "divergences": [
+      "Gli articoli si concentrano su aspetti tecnici e strategici dell'adozione di IA, mentre discussioni su Reddit potrebbero evidenziare esperienze personali e opinioni soggettive.",
+      "Mentre gli articoli analizzano le implicazioni della governance del codice, le conversazioni su Reddit potrebbero riflettere preoccupazioni pratiche e quotidiane degli sviluppatori.",
+      "Le decisioni critiche nella gestione dei progetti sono esplorate in modo analitico negli articoli, mentre su Reddit potrebbero emergere narrazioni più emotive e contestualizzate."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-06-29.management-layer.md",
+    "telegram": "telegram/2026-06-29.management-layer.telegram.md",
+    "json": "data/2026-06-29.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}
