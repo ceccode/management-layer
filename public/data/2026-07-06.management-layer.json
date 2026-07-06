@@ -1,0 +1,302 @@
+{
+  "date": "2026-07-06",
+  "title": "The Management Layer — 2026-07-06",
+  "counts": {
+    "articles": 13,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "04e93fc0da1bcb63fdc12cb8f001f9f0",
+      "title": "AI productivity is burning out your best engineers",
+      "url": "https://leaddev.com/ai/ai-productivity-is-burning-out-your-best-engineers",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-06T07:24:56.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "237f740c1234d247e839f0cb6966ea73",
+      "title": "Why your AI bill is bigger than it should be",
+      "url": "https://leaddev.com/ai/why-your-ai-bill-is-bigger-than-it-should-be",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-01T08:02:02.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "8b48f76eed0c010ac17147ecb2b1ef67",
+      "title": "AI-generated code sparks production confidence crisis",
+      "url": "https://leaddev.com/ai/ai-generated-code-sparks-production-confidence-crisis",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-30T12:59:08.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "e87f9e3d1b012fd4f7f301e91fe7836f",
+      "title": "AI coding is addictive. Engineers are paying the price",
+      "url": "https://leaddev.com/ai/ai-coding-is-addictive-engineers-are-paying-the-price",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-30T07:47:36.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "a53319620c8eca3748adccb668c5b0ae",
+      "title": "How GitHub used secret scanning to reach inbox zero",
+      "url": "https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-07-02T16:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "c5a5ebb9355d5774b02253dc0ca473d0",
+      "title": "6 security settings every GitHub maintainer should enable this week",
+      "url": "https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-07-01T15:59:29.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "c0828ac27e745cdfad16de365ebdb760",
+      "title": "How GitHub maintains compliance for open source dependencies",
+      "url": "https://github.blog/enterprise-software/governance-and-compliance/how-github-maintains-compliance-for-open-source-dependencies/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-30T17:28:16.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "f9e2f74cd2a8c973796e9b746b382178",
+      "title": "Highlights from Git 2.55",
+      "url": "https://github.blog/open-source/git/highlights-from-git-2-55/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-29T17:25:25.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "5031f81328f5e0d77085102c79467e0c",
+      "title": "Inside the Advisory Database and what happens when vulnerability volume breaks records",
+      "url": "https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-29T16:10:20.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "2a3ba45e13e6d3b92f6014d5e77a355b",
+      "title": "Lessons learned from scaling to 1 million Lambda functions",
+      "url": "https://aws.amazon.com/blogs/architecture/lessons-learned-from-scaling-to-1-million-lambda-functions/",
+      "source": "AWS Architecture Blog",
+      "publishedAt": "2026-06-29T17:21:05.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "systems"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "04e93fc0da1bcb63fdc12cb8f001f9f0",
+      "title": "AI productivity is burning out your best engineers",
+      "url": "https://leaddev.com/ai/ai-productivity-is-burning-out-your-best-engineers",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-06T07:24:56.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "237f740c1234d247e839f0cb6966ea73",
+      "title": "Why your AI bill is bigger than it should be",
+      "url": "https://leaddev.com/ai/why-your-ai-bill-is-bigger-than-it-should-be",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-01T08:02:02.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "8b48f76eed0c010ac17147ecb2b1ef67",
+      "title": "AI-generated code sparks production confidence crisis",
+      "url": "https://leaddev.com/ai/ai-generated-code-sparks-production-confidence-crisis",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-30T12:59:08.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "e87f9e3d1b012fd4f7f301e91fe7836f",
+      "title": "AI coding is addictive. Engineers are paying the price",
+      "url": "https://leaddev.com/ai/ai-coding-is-addictive-engineers-are-paying-the-price",
+      "source": "LeadDev",
+      "publishedAt": "2026-06-30T07:47:36.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "a53319620c8eca3748adccb668c5b0ae",
+      "title": "How GitHub used secret scanning to reach inbox zero",
+      "url": "https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-07-02T16:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "c5a5ebb9355d5774b02253dc0ca473d0",
+      "title": "6 security settings every GitHub maintainer should enable this week",
+      "url": "https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-07-01T15:59:29.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "c0828ac27e745cdfad16de365ebdb760",
+      "title": "How GitHub maintains compliance for open source dependencies",
+      "url": "https://github.blog/enterprise-software/governance-and-compliance/how-github-maintains-compliance-for-open-source-dependencies/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-30T17:28:16.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "f9e2f74cd2a8c973796e9b746b382178",
+      "title": "Highlights from Git 2.55",
+      "url": "https://github.blog/open-source/git/highlights-from-git-2-55/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-29T17:25:25.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "5031f81328f5e0d77085102c79467e0c",
+      "title": "Inside the Advisory Database and what happens when vulnerability volume breaks records",
+      "url": "https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-06-29T16:10:20.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "2a3ba45e13e6d3b92f6014d5e77a355b",
+      "title": "Lessons learned from scaling to 1 million Lambda functions",
+      "url": "https://aws.amazon.com/blogs/architecture/lessons-learned-from-scaling-to-1-million-lambda-functions/",
+      "source": "AWS Architecture Blog",
+      "publishedAt": "2026-06-29T17:21:05.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "systems"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 6 luglio 2026, sono stati analizzati 13 articoli, con un focus sull'impatto dell'intelligenza artificiale nelle pratiche di sviluppo software. I contenuti evidenziano tensioni emergenti legate alla produttività degli ingegneri e alla qualità del codice generato dall'IA. Si osserva una crescente preoccupazione per l'equilibrio tra l'adozione di tecnologie innovative e la gestione delle risorse umane, con implicazioni significative per i ruoli di leadership tecnica.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'evoluzione delle pratiche di governance per il codice generato dall'IA potrebbe riflettere un cambiamento nelle responsabilità tra sviluppatori e management.",
+      "Le reazioni alle problematiche di qualità legate all'IA potrebbero influenzare le politiche aziendali e le pratiche di assunzione.",
+      "L'attenzione crescente verso il benessere degli sviluppatori potrebbe portare a un ripensamento delle dinamiche di team e delle aspettative professionali."
+    ],
+    "divergences": [
+      "Gli articoli si concentrano principalmente sulle conseguenze negative dell'adozione dell'IA, mentre le discussioni su Reddit tendono a esplorare anche opportunità e vantaggi.",
+      "Le fonti analizzate evidenziano una crisi di fiducia nella produttività, mentre le conversazioni su Reddit mostrano una certa resilienza tra gli ingegneri, che cercano di adattarsi alle nuove tecnologie.",
+      "Gli articoli sottolineano la necessità di governance, mentre le discussioni su Reddit tendono a riflettere una maggiore apertura verso l'innovazione e l'esplorazione di nuove pratiche."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-07-06.management-layer.md",
+    "telegram": "telegram/2026-07-06.management-layer.telegram.md",
+    "json": "data/2026-07-06.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}

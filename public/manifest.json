@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-06-29T08:41:16.651Z",
+  "generated_at_utc": "2026-07-06T08:34:00.178Z",
   "version": 1,
   "latest": {
-    "date": "2026-06-29",
+    "date": "2026-07-06",
     "paths": {
-      "markdown": "reports/2026-06-29.management-layer.md",
-      "telegram": "telegram/2026-06-29.management-layer.telegram.md",
-      "json": "data/2026-06-29.management-layer.json"
+      "markdown": "reports/2026-07-06.management-layer.md",
+      "telegram": "telegram/2026-07-06.management-layer.telegram.md",
+      "json": "data/2026-07-06.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-07-06",
+      "title": "The Management Layer — 2026-07-06",
+      "paths": {
+        "markdown": "reports/2026-07-06.management-layer.md",
+        "telegram": "telegram/2026-07-06.management-layer.telegram.md",
+        "json": "data/2026-07-06.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 6 luglio 2026, sono stati analizzati 13 articoli, con un focus sull'impatto dell'intelligenza artificiale nelle pratiche di sviluppo software. I contenuti evidenziano tensioni e...",
+      "topLinks": [
+        {
+          "title": "AI productivity is burning out your best engineers",
+          "url": "https://leaddev.com/ai/ai-productivity-is-burning-out-your-best-engineers",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Why your AI bill is bigger than it should be",
+          "url": "https://leaddev.com/ai/why-your-ai-bill-is-bigger-than-it-should-be",
+          "source": "LeadDev"
+        },
+        {
+          "title": "AI-generated code sparks production confidence crisis",
+          "url": "https://leaddev.com/ai/ai-generated-code-sparks-production-confidence-crisis",
+          "source": "LeadDev"
+        },
+        {
+          "title": "AI coding is addictive. Engineers are paying the price",
+          "url": "https://leaddev.com/ai/ai-coding-is-addictive-engineers-are-paying-the-price",
+          "source": "LeadDev"
+        },
+        {
+          "title": "How GitHub used secret scanning to reach inbox zero",
+          "url": "https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero/",
+          "source": "The GitHub Blog"
+        }
+      ]
+    },
     {
       "date": "2026-06-29",
       "title": "The Management Layer — 2026-06-29",
