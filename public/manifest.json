@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-07-06T08:34:00.178Z",
+  "generated_at_utc": "2026-07-13T10:26:52.552Z",
   "version": 1,
   "latest": {
-    "date": "2026-07-06",
+    "date": "2026-07-13",
     "paths": {
-      "markdown": "reports/2026-07-06.management-layer.md",
-      "telegram": "telegram/2026-07-06.management-layer.telegram.md",
-      "json": "data/2026-07-06.management-layer.json"
+      "markdown": "reports/2026-07-13.management-layer.md",
+      "telegram": "telegram/2026-07-13.management-layer.telegram.md",
+      "json": "data/2026-07-13.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-07-13",
+      "title": "The Management Layer — 2026-07-13",
+      "paths": {
+        "markdown": "reports/2026-07-13.management-layer.md",
+        "telegram": "telegram/2026-07-13.management-layer.telegram.md",
+        "json": "data/2026-07-13.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 13 luglio 2026, sono stati analizzati 18 articoli, con un focus sull'impatto dell'intelligenza artificiale nelle pratiche di sviluppo software e sulla governance del codice. I c...",
+      "topLinks": [
+        {
+          "title": "AI-coding agents spread through peer pressure, not mandates",
+          "url": "https://leaddev.com/ai/ai-coding-agents-spread-through-peer-pressure-not-mandates",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Unlocking the future of video data: March Networks cloud storage on AWS",
+          "url": "https://aws.amazon.com/blogs/architecture/unlocking-the-future-of-video-data-march-networks-cloud-storage-on-aws/",
+          "source": "AWS Architecture Blog"
+        },
+        {
+          "title": "How MAPFRE USA modernized fraud claims with Amazon EMR Serverless",
+          "url": "https://aws.amazon.com/blogs/architecture/how-mapfre-usa-modernized-fraud-claims-with-amazon-emr-serverless/",
+          "source": "AWS Architecture Blog"
+        },
+        {
+          "title": "Better tools made Copilot code review worse. Here’s how we actually improved it.",
+          "url": "https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "S&P Global’s innovative disaster recovery strategy using Amazon FSx for NetApp ONTAP snapshots",
+          "url": "https://aws.amazon.com/blogs/architecture/sp-globals-innovative-disaster-recovery-strategy-using-amazon-fsx-for-netapp-ontap-snapshots/",
+          "source": "AWS Architecture Blog"
+        }
+      ]
+    },
     {
       "date": "2026-07-06",
       "title": "The Management Layer — 2026-07-06",
