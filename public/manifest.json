@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-07-13T10:26:52.552Z",
+  "generated_at_utc": "2026-07-20T10:11:31.850Z",
   "version": 1,
   "latest": {
-    "date": "2026-07-13",
+    "date": "2026-07-20",
     "paths": {
-      "markdown": "reports/2026-07-13.management-layer.md",
-      "telegram": "telegram/2026-07-13.management-layer.telegram.md",
-      "json": "data/2026-07-13.management-layer.json"
+      "markdown": "reports/2026-07-20.management-layer.md",
+      "telegram": "telegram/2026-07-20.management-layer.telegram.md",
+      "json": "data/2026-07-20.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-07-20",
+      "title": "The Management Layer — 2026-07-20",
+      "paths": {
+        "markdown": "reports/2026-07-20.management-layer.md",
+        "telegram": "telegram/2026-07-20.management-layer.telegram.md",
+        "json": "data/2026-07-20.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 20 luglio 2026, sono stati analizzati 18 articoli, con un focus predominante sul ruolo del CTO e sulle sfide legate alla gestione delle aspettative crescenti nei team di ingegne...",
+      "topLinks": [
+        {
+          "title": "The reality of being a CTO",
+          "url": "https://leaddev.com/leadership/the-reality-of-being-a-cto",
+          "source": "LeadDev"
+        },
+        {
+          "title": "The cost of saying yes has changed",
+          "url": "https://github.blog/engineering/the-cost-of-saying-yes-has-changed/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "Eclipse Dataspace Components on AWS: Cost optimization strategies",
+          "url": "https://aws.amazon.com/blogs/architecture/eclipse-dataspace-components-on-aws-cost-optimization-strategies/",
+          "source": "AWS Architecture Blog"
+        },
+        {
+          "title": "Eclipse Dataspace Components on AWS: Architecture patterns in production",
+          "url": "https://aws.amazon.com/blogs/architecture/eclipse-dataspace-components-on-aws-architecture-patterns-in-production/",
+          "source": "AWS Architecture Blog"
+        },
+        {
+          "title": "Eclipse Dataspace Components on AWS: Data sharing fundamentals",
+          "url": "https://aws.amazon.com/blogs/architecture/eclipse-dataspace-components-on-aws-data-sharing-fundamentals/",
+          "source": "AWS Architecture Blog"
+        }
+      ]
+    },
     {
       "date": "2026-07-13",
       "title": "The Management Layer — 2026-07-13",

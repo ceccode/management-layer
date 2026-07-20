@@ -1,0 +1,302 @@
+{
+  "date": "2026-07-20",
+  "title": "The Management Layer — 2026-07-20",
+  "counts": {
+    "articles": 18,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "fe4fa50a0791f9682d92b80f03e2a378",
+      "title": "The reality of being a CTO",
+      "url": "https://leaddev.com/leadership/the-reality-of-being-a-cto",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-20T07:32:58.000Z",
+      "type": "article",
+      "score": 3.8,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "8b9324c10ae1c882a4afb25f60d0dbbf",
+      "title": "The cost of saying yes has changed",
+      "url": "https://github.blog/engineering/the-cost-of-saying-yes-has-changed/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-07-17T16:46:47.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "4205b751cad7151480456cbd897c6f28",
+      "title": "Eclipse Dataspace Components on AWS: Cost optimization strategies",
+      "url": "https://aws.amazon.com/blogs/architecture/eclipse-dataspace-components-on-aws-cost-optimization-strategies/",
+      "source": "AWS Architecture Blog",
+      "publishedAt": "2026-07-17T16:03:47.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "architecture",
+        "systems"
+      ]
+    },
+    {
+      "id": "d68d3359b598d26a37e88b35579fb912",
+      "title": "Eclipse Dataspace Components on AWS: Architecture patterns in production",
+      "url": "https://aws.amazon.com/blogs/architecture/eclipse-dataspace-components-on-aws-architecture-patterns-in-production/",
+      "source": "AWS Architecture Blog",
+      "publishedAt": "2026-07-17T16:03:44.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "architecture",
+        "systems"
+      ]
+    },
+    {
+      "id": "e198614e3092561807abb48365a557ca",
+      "title": "Eclipse Dataspace Components on AWS: Data sharing fundamentals",
+      "url": "https://aws.amazon.com/blogs/architecture/eclipse-dataspace-components-on-aws-data-sharing-fundamentals/",
+      "source": "AWS Architecture Blog",
+      "publishedAt": "2026-07-17T16:03:40.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "architecture",
+        "systems"
+      ]
+    },
+    {
+      "id": "d95815add99524869102af1f64baed86",
+      "title": "In-House LLM Serving at Netflix",
+      "url": "https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c",
+      "source": "Netflix TechBlog (Medium)",
+      "publishedAt": "2026-07-17T21:32:39.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "systems",
+        "reliability"
+      ]
+    },
+    {
+      "id": "c394a9bbedf52836abe65c7c7ba85c3b",
+      "title": "It’s time to rethink how we measure engineering productivity",
+      "url": "https://leaddev.com/reporting/its-time-to-rethink-how-we-measure-engineering-productivity",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-16T07:36:38.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "a40a0075e1633f41c5de3ef573860486",
+      "title": "Microservice dogma nearly tanked our seed round",
+      "url": "https://leaddev.com/technical-direction/microservice-dogma-nearly-tanked-our-seed-round",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-15T07:20:52.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "0629e0b966dc0a0db2312cde6d0f6465",
+      "title": "How to hire engineers for strong judgment and taste",
+      "url": "https://leaddev.com/hiring/how-to-hire-engineers-for-strong-judgment-and-taste",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-14T07:09:44.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "8c66f3691a8d60fc4a21d5865eb7ecf6",
+      "title": "Engineering managers are paying the price of rising expectations",
+      "url": "https://leaddev.com/leadership/engineering-managers-are-paying-the-price-of-rising-expectations",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-13T10:31:35.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "fe4fa50a0791f9682d92b80f03e2a378",
+      "title": "The reality of being a CTO",
+      "url": "https://leaddev.com/leadership/the-reality-of-being-a-cto",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-20T07:32:58.000Z",
+      "type": "article",
+      "score": 3.8,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "8b9324c10ae1c882a4afb25f60d0dbbf",
+      "title": "The cost of saying yes has changed",
+      "url": "https://github.blog/engineering/the-cost-of-saying-yes-has-changed/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-07-17T16:46:47.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "4205b751cad7151480456cbd897c6f28",
+      "title": "Eclipse Dataspace Components on AWS: Cost optimization strategies",
+      "url": "https://aws.amazon.com/blogs/architecture/eclipse-dataspace-components-on-aws-cost-optimization-strategies/",
+      "source": "AWS Architecture Blog",
+      "publishedAt": "2026-07-17T16:03:47.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "architecture",
+        "systems"
+      ]
+    },
+    {
+      "id": "d68d3359b598d26a37e88b35579fb912",
+      "title": "Eclipse Dataspace Components on AWS: Architecture patterns in production",
+      "url": "https://aws.amazon.com/blogs/architecture/eclipse-dataspace-components-on-aws-architecture-patterns-in-production/",
+      "source": "AWS Architecture Blog",
+      "publishedAt": "2026-07-17T16:03:44.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "architecture",
+        "systems"
+      ]
+    },
+    {
+      "id": "e198614e3092561807abb48365a557ca",
+      "title": "Eclipse Dataspace Components on AWS: Data sharing fundamentals",
+      "url": "https://aws.amazon.com/blogs/architecture/eclipse-dataspace-components-on-aws-data-sharing-fundamentals/",
+      "source": "AWS Architecture Blog",
+      "publishedAt": "2026-07-17T16:03:40.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "architecture",
+        "systems"
+      ]
+    },
+    {
+      "id": "d95815add99524869102af1f64baed86",
+      "title": "In-House LLM Serving at Netflix",
+      "url": "https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c",
+      "source": "Netflix TechBlog (Medium)",
+      "publishedAt": "2026-07-17T21:32:39.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "systems",
+        "reliability"
+      ]
+    },
+    {
+      "id": "c394a9bbedf52836abe65c7c7ba85c3b",
+      "title": "It’s time to rethink how we measure engineering productivity",
+      "url": "https://leaddev.com/reporting/its-time-to-rethink-how-we-measure-engineering-productivity",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-16T07:36:38.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "a40a0075e1633f41c5de3ef573860486",
+      "title": "Microservice dogma nearly tanked our seed round",
+      "url": "https://leaddev.com/technical-direction/microservice-dogma-nearly-tanked-our-seed-round",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-15T07:20:52.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "0629e0b966dc0a0db2312cde6d0f6465",
+      "title": "How to hire engineers for strong judgment and taste",
+      "url": "https://leaddev.com/hiring/how-to-hire-engineers-for-strong-judgment-and-taste",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-14T07:09:44.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "8c66f3691a8d60fc4a21d5865eb7ecf6",
+      "title": "Engineering managers are paying the price of rising expectations",
+      "url": "https://leaddev.com/leadership/engineering-managers-are-paying-the-price-of-rising-expectations",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-13T10:31:35.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 20 luglio 2026, sono stati analizzati 18 articoli, con un focus predominante sul ruolo del CTO e sulle sfide legate alla gestione delle aspettative crescenti nei team di ingegneria. I contenuti evidenziano tensioni tra la necessità di innovazione e la sostenibilità delle pratiche di lavoro, con particolare attenzione alle dinamiche di assunzione e alla misurazione della produttività. Emergono anche considerazioni sulla governance del codice e sull'impatto delle decisioni strategiche sulla qualità del lavoro degli ingegneri.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'evoluzione delle aspettative nei confronti dei CTO potrebbe portare a una ridefinizione delle competenze richieste per il ruolo.",
+      "L'attenzione crescente verso pratiche di misurazione della produttività più olistiche potrebbe influenzare le politiche aziendali e le dinamiche di team.",
+      "Le scelte architetturali e strategiche fatte dai team di ingegneria potrebbero avere effetti a lungo termine sulle opportunità di finanziamento e crescita delle startup."
+    ],
+    "divergences": [
+      "Gli articoli tendono a concentrarsi su sfide specifiche e pratiche di gestione, mentre le discussioni su Reddit mancano di un'analisi approfondita, risultando più orientate a esperienze personali.",
+      "Le riflessioni sulle metriche di produttività sono più sviluppate negli articoli, mentre su Reddit si osserva una maggiore enfasi su esperienze pratiche e aneddoti.",
+      "La governance del codice e le sue implicazioni strategiche sono trattate in modo più analitico negli articoli, rispetto a un approccio più narrativo e soggettivo nelle discussioni su Reddit."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-07-20.management-layer.md",
+    "telegram": "telegram/2026-07-20.management-layer.telegram.md",
+    "json": "data/2026-07-20.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}
