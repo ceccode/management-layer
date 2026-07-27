@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-07-20T10:11:31.850Z",
+  "generated_at_utc": "2026-07-27T10:42:54.941Z",
   "version": 1,
   "latest": {
-    "date": "2026-07-20",
+    "date": "2026-07-27",
     "paths": {
-      "markdown": "reports/2026-07-20.management-layer.md",
-      "telegram": "telegram/2026-07-20.management-layer.telegram.md",
-      "json": "data/2026-07-20.management-layer.json"
+      "markdown": "reports/2026-07-27.management-layer.md",
+      "telegram": "telegram/2026-07-27.management-layer.telegram.md",
+      "json": "data/2026-07-27.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-07-27",
+      "title": "The Management Layer — 2026-07-27",
+      "paths": {
+        "markdown": "reports/2026-07-27.management-layer.md",
+        "telegram": "telegram/2026-07-27.management-layer.telegram.md",
+        "json": "data/2026-07-27.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 27 luglio 2026, sono stati analizzati 15 articoli, con un focus predominante sulle sfide legate alla misurazione della produttività ingegneristica e sul ruolo emergente degli in...",
+      "topLinks": [
+        {
+          "title": "The reality of being a senior engineer",
+          "url": "https://leaddev.com/career-development/the-reality-of-being-a-senior-engineer",
+          "source": "LeadDev"
+        },
+        {
+          "title": "The rise of the forward-deployed engineer (FDE)",
+          "url": "https://leaddev.com/career-development/the-rise-of-the-forward-deployed-engineer-fde",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Your LLM inference benchmark is lying to you",
+          "url": "https://leaddev.com/ai/your-llm-inference-benchmark-is-lying-to-you",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Measuring engineering productivity is harder than ever",
+          "url": "https://leaddev.com/reporting/measuring-engineering-productivity-is-harder-than-ever",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Fragments: July 21",
+          "url": "https://martinfowler.com/fragments/2026-07-21.html",
+          "source": "Martin Fowler"
+        }
+      ]
+    },
     {
       "date": "2026-07-20",
       "title": "The Management Layer — 2026-07-20",

@@ -1,0 +1,302 @@
+{
+  "date": "2026-07-27",
+  "title": "The Management Layer — 2026-07-27",
+  "counts": {
+    "articles": 15,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "1f777675d3e2e4ac090b2012b2434eec",
+      "title": "The reality of being a senior engineer",
+      "url": "https://leaddev.com/career-development/the-reality-of-being-a-senior-engineer",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-27T08:34:25.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "d7c23c927e4f06bd63c5ad49df0c2593",
+      "title": "The rise of the forward-deployed engineer (FDE)",
+      "url": "https://leaddev.com/career-development/the-rise-of-the-forward-deployed-engineer-fde",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-23T07:16:53.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "20b581aec513957e83d60a57d2515a55",
+      "title": "Your LLM inference benchmark is lying to you",
+      "url": "https://leaddev.com/ai/your-llm-inference-benchmark-is-lying-to-you",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-22T07:36:03.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "79c074065bc3045673a7b7662595c503",
+      "title": "Measuring engineering productivity is harder than ever",
+      "url": "https://leaddev.com/reporting/measuring-engineering-productivity-is-harder-than-ever",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-21T07:30:28.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "f91402a59a1d8c3ba170752d4c404ce7",
+      "title": "Fragments: July 21",
+      "url": "https://martinfowler.com/fragments/2026-07-21.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-07-21T13:13:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "03e281020db08184ed5e100748c9b136",
+      "title": "The case for a cooldown: Why Dependabot now waits before issuing version updates",
+      "url": "https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-07-23T16:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "f41ed678dbb916066aa9b69735bf2f56",
+      "title": "Copilot vs. raw API access: What are you actually paying for?",
+      "url": "https://github.blog/ai-and-ml/github-copilot/copilot-vs-raw-api-access-what-are-you-actually-paying-for/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-07-22T19:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "6c23fae05e9479be57c90219f5710582",
+      "title": "Next chapter: Restructuring GitHub’s bug bounty program",
+      "url": "https://github.blog/security/next-chapter-restructuring-githubs-bug-bounty-program/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-07-22T16:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "07db7588b99d6eb8cd721f8e7a26676d",
+      "title": "How to build interactive experiences with canvases",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-build-interactive-experiences-with-canvases/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-07-21T16:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "129202d28a2d975527a405baaf3aaa8d",
+      "title": "$100 million for open source: A milestone built by the community",
+      "url": "https://github.blog/open-source/maintainers/100-million-for-open-source-a-milestone-built-by-the-community/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-07-20T16:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "1f777675d3e2e4ac090b2012b2434eec",
+      "title": "The reality of being a senior engineer",
+      "url": "https://leaddev.com/career-development/the-reality-of-being-a-senior-engineer",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-27T08:34:25.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "d7c23c927e4f06bd63c5ad49df0c2593",
+      "title": "The rise of the forward-deployed engineer (FDE)",
+      "url": "https://leaddev.com/career-development/the-rise-of-the-forward-deployed-engineer-fde",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-23T07:16:53.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "20b581aec513957e83d60a57d2515a55",
+      "title": "Your LLM inference benchmark is lying to you",
+      "url": "https://leaddev.com/ai/your-llm-inference-benchmark-is-lying-to-you",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-22T07:36:03.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "79c074065bc3045673a7b7662595c503",
+      "title": "Measuring engineering productivity is harder than ever",
+      "url": "https://leaddev.com/reporting/measuring-engineering-productivity-is-harder-than-ever",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-21T07:30:28.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "f91402a59a1d8c3ba170752d4c404ce7",
+      "title": "Fragments: July 21",
+      "url": "https://martinfowler.com/fragments/2026-07-21.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-07-21T13:13:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "03e281020db08184ed5e100748c9b136",
+      "title": "The case for a cooldown: Why Dependabot now waits before issuing version updates",
+      "url": "https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-07-23T16:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "f41ed678dbb916066aa9b69735bf2f56",
+      "title": "Copilot vs. raw API access: What are you actually paying for?",
+      "url": "https://github.blog/ai-and-ml/github-copilot/copilot-vs-raw-api-access-what-are-you-actually-paying-for/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-07-22T19:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "6c23fae05e9479be57c90219f5710582",
+      "title": "Next chapter: Restructuring GitHub’s bug bounty program",
+      "url": "https://github.blog/security/next-chapter-restructuring-githubs-bug-bounty-program/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-07-22T16:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "07db7588b99d6eb8cd721f8e7a26676d",
+      "title": "How to build interactive experiences with canvases",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-build-interactive-experiences-with-canvases/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-07-21T16:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "129202d28a2d975527a405baaf3aaa8d",
+      "title": "$100 million for open source: A milestone built by the community",
+      "url": "https://github.blog/open-source/maintainers/100-million-for-open-source-a-milestone-built-by-the-community/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-07-20T16:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 27 luglio 2026, sono stati analizzati 15 articoli, con un focus predominante sulle sfide legate alla misurazione della produttività ingegneristica e sul ruolo emergente degli ingegneri \"forward-deployed\". I contenuti evidenziano tensioni tra le aspettative di innovazione e la sostenibilità delle pratiche di lavoro, con particolare attenzione alla qualità del codice e all'impatto delle tecnologie emergenti come i modelli di linguaggio. Si osserva un crescente interesse verso le pratiche di governance e le dinamiche di team, suggerendo una necessità di adattamento alle nuove realtà tecnologiche.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'evoluzione delle pratiche di misurazione della produttività potrebbe influenzare le dinamiche di team e le politiche aziendali.",
+      "L'adozione degli ingegneri forward-deployed potrebbe portare a una ridefinizione delle competenze richieste nei team di ingegneria.",
+      "Le preoccupazioni sulla qualità del codice generato da tecnologie emergenti potrebbero riflettersi in cambiamenti nelle pratiche di governance."
+    ],
+    "divergences": [
+      "Gli articoli tendono a enfatizzare le sfide pratiche nella misurazione della produttività, mentre le discussioni su Reddit si concentrano maggiormente su esperienze personali e opinioni soggettive.",
+      "Mentre gli articoli offrono una visione analitica del ruolo degli ingegneri forward-deployed, le conversazioni su Reddit esplorano casi specifici e aneddoti, evidenziando variazioni nelle esperienze.",
+      "Le preoccupazioni sulla qualità del codice sono trattate in modo più tecnico negli articoli, mentre su Reddit emergono discussioni più emotive e soggettive riguardo all'impatto sulla carriera degli sviluppatori."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-07-27.management-layer.md",
+    "telegram": "telegram/2026-07-27.management-layer.telegram.md",
+    "json": "data/2026-07-27.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}
