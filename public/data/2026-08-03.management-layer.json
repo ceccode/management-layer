@@ -1,0 +1,302 @@
+{
+  "date": "2026-08-03",
+  "title": "The Management Layer — 2026-08-03",
+  "counts": {
+    "articles": 20,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "82d5b71896fd33c93fc2922353b16dc7",
+      "title": "Your junior engineers don’t need an office. They need you",
+      "url": "https://leaddev.com/management/your-junior-engineers-dont-need-an-office-they-need-you",
+      "source": "LeadDev",
+      "publishedAt": "2026-08-03T07:45:13.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "ba20f13c7edf31401545a6b53a30feef",
+      "title": "The Conductor Developer",
+      "url": "https://martinfowler.com/rachels-ramblings/conductor-developer.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-07-31T13:48:00.000Z",
+      "type": "article",
+      "score": 2.3,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "8aee2f67f5f7cbb34927696018d84732",
+      "title": "Don’t stop early: Case-folding source code at memory speed",
+      "url": "https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-07-31T16:00:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "b0c01d11e2cd2dff9c545a0cf738f6bb",
+      "title": "Modeling Device Capabilities for Analytics",
+      "url": "https://netflixtechblog.com/modeling-device-capabilities-for-analytics-e7607acebde8",
+      "source": "Netflix TechBlog (Medium)",
+      "publishedAt": "2026-07-31T16:01:02.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "systems",
+        "reliability"
+      ]
+    },
+    {
+      "id": "5acbebe46d97d213dfad0a932d7e9823",
+      "title": "The Economic Benefit of Refactoring",
+      "url": "https://martinfowler.com/articles/exploring-gen-ai/refactoring-economic-benefit.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-07-30T13:04:00.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "3f0b3620bc9d199e4e2990bd9f1f3283",
+      "title": "AI-first banking: From strategic intent to enterprise execution",
+      "url": "https://www.thoughtworks.com/insights/articles/ai-first-banking-from-strategic-intent-to-enterprise-execution",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-07-30T00:00:00.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    },
+    {
+      "id": "12dc32e1bd79c016b8ec1eb60f865a5f",
+      "title": "AI productivity gains are closer to 10% than 10x",
+      "url": "https://leaddev.com/reporting/ai-productivity-gains-are-closer-to-10-than-10x",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-29T08:33:05.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "259b99847adb1b6fc8c616e3b35dee6f",
+      "title": "How to avoid knowledge decay in software engineering",
+      "url": "https://leaddev.com/ai/how-to-avoid-knowledge-decay-in-software-engineering",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-29T07:36:50.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "adb7020fe67ba3b920a9f955c87f3f24",
+      "title": "AI-coding agents kill team collaboration",
+      "url": "https://leaddev.com/ai/ai-coding-agents-kill-team-collaboration",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-28T07:31:36.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "88103fc7bf5393ae60b4f57e832ab6ec",
+      "title": "Engineering managers have a new job description",
+      "url": "https://leaddev.com/management/engineering-managers-have-a-new-job-description",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-27T10:44:02.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "82d5b71896fd33c93fc2922353b16dc7",
+      "title": "Your junior engineers don’t need an office. They need you",
+      "url": "https://leaddev.com/management/your-junior-engineers-dont-need-an-office-they-need-you",
+      "source": "LeadDev",
+      "publishedAt": "2026-08-03T07:45:13.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "ba20f13c7edf31401545a6b53a30feef",
+      "title": "The Conductor Developer",
+      "url": "https://martinfowler.com/rachels-ramblings/conductor-developer.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-07-31T13:48:00.000Z",
+      "type": "article",
+      "score": 2.3,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "8aee2f67f5f7cbb34927696018d84732",
+      "title": "Don’t stop early: Case-folding source code at memory speed",
+      "url": "https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-07-31T16:00:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "b0c01d11e2cd2dff9c545a0cf738f6bb",
+      "title": "Modeling Device Capabilities for Analytics",
+      "url": "https://netflixtechblog.com/modeling-device-capabilities-for-analytics-e7607acebde8",
+      "source": "Netflix TechBlog (Medium)",
+      "publishedAt": "2026-07-31T16:01:02.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "systems",
+        "reliability"
+      ]
+    },
+    {
+      "id": "5acbebe46d97d213dfad0a932d7e9823",
+      "title": "The Economic Benefit of Refactoring",
+      "url": "https://martinfowler.com/articles/exploring-gen-ai/refactoring-economic-benefit.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-07-30T13:04:00.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "3f0b3620bc9d199e4e2990bd9f1f3283",
+      "title": "AI-first banking: From strategic intent to enterprise execution",
+      "url": "https://www.thoughtworks.com/insights/articles/ai-first-banking-from-strategic-intent-to-enterprise-execution",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-07-30T00:00:00.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    },
+    {
+      "id": "12dc32e1bd79c016b8ec1eb60f865a5f",
+      "title": "AI productivity gains are closer to 10% than 10x",
+      "url": "https://leaddev.com/reporting/ai-productivity-gains-are-closer-to-10-than-10x",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-29T08:33:05.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "259b99847adb1b6fc8c616e3b35dee6f",
+      "title": "How to avoid knowledge decay in software engineering",
+      "url": "https://leaddev.com/ai/how-to-avoid-knowledge-decay-in-software-engineering",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-29T07:36:50.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "adb7020fe67ba3b920a9f955c87f3f24",
+      "title": "AI-coding agents kill team collaboration",
+      "url": "https://leaddev.com/ai/ai-coding-agents-kill-team-collaboration",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-28T07:31:36.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "88103fc7bf5393ae60b4f57e832ab6ec",
+      "title": "Engineering managers have a new job description",
+      "url": "https://leaddev.com/management/engineering-managers-have-a-new-job-description",
+      "source": "LeadDev",
+      "publishedAt": "2026-07-27T10:44:02.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 3 agosto 2026, sono stati analizzati 20 articoli, con un focus sull'interazione tra ingegneri junior e leadership, l'impatto dell'IA sulla produttività e le nuove responsabilità degli engineering manager. I contenuti evidenziano tensioni tra la necessità di supporto diretto ai team e l'adozione di tecnologie emergenti, con implicazioni significative per la governance e la qualità del codice. Si osserva una crescente attenzione verso la sostenibilità delle pratiche di lavoro e la necessità di adattamento alle nuove dinamiche del settore.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'evoluzione delle pratiche di supporto ai junior engineer potrebbe influenzare le strategie di retention e sviluppo del talento.",
+      "Le reazioni alle problematiche di qualità del codice generate dall'IA potrebbero portare a cambiamenti significativi nelle politiche di governance.",
+      "L'attenzione crescente verso il benessere degli sviluppatori potrebbe riflettersi in nuove pratiche di team building e gestione delle risorse umane."
+    ],
+    "divergences": [
+      "Gli articoli tendono a enfatizzare il supporto diretto e le responsabilità dei manager, mentre le discussioni su Reddit potrebbero esprimere preoccupazioni più ampie riguardo alla cultura aziendale.",
+      "Mentre gli articoli analizzano l'impatto dell'IA in modo pragmatico, le conversazioni su Reddit potrebbero focalizzarsi su esperienze personali e percezioni soggettive.",
+      "Gli articoli propongono una visione più strutturata delle nuove responsabilità dei manager, mentre le discussioni su Reddit possono riflettere una varietà di opinioni e approcci informali."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-08-03.management-layer.md",
+    "telegram": "telegram/2026-08-03.management-layer.telegram.md",
+    "json": "data/2026-08-03.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}

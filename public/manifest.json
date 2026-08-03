@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-07-27T10:42:54.941Z",
+  "generated_at_utc": "2026-08-03T10:42:32.561Z",
   "version": 1,
   "latest": {
-    "date": "2026-07-27",
+    "date": "2026-08-03",
     "paths": {
-      "markdown": "reports/2026-07-27.management-layer.md",
-      "telegram": "telegram/2026-07-27.management-layer.telegram.md",
-      "json": "data/2026-07-27.management-layer.json"
+      "markdown": "reports/2026-08-03.management-layer.md",
+      "telegram": "telegram/2026-08-03.management-layer.telegram.md",
+      "json": "data/2026-08-03.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-08-03",
+      "title": "The Management Layer — 2026-08-03",
+      "paths": {
+        "markdown": "reports/2026-08-03.management-layer.md",
+        "telegram": "telegram/2026-08-03.management-layer.telegram.md",
+        "json": "data/2026-08-03.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 3 agosto 2026, sono stati analizzati 20 articoli, con un focus sull'interazione tra ingegneri junior e leadership, l'impatto dell'IA sulla produttività e le nuove responsabilità...",
+      "topLinks": [
+        {
+          "title": "Your junior engineers don’t need an office. They need you",
+          "url": "https://leaddev.com/management/your-junior-engineers-dont-need-an-office-they-need-you",
+          "source": "LeadDev"
+        },
+        {
+          "title": "The Conductor Developer",
+          "url": "https://martinfowler.com/rachels-ramblings/conductor-developer.html",
+          "source": "Martin Fowler"
+        },
+        {
+          "title": "Don’t stop early: Case-folding source code at memory speed",
+          "url": "https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "Modeling Device Capabilities for Analytics",
+          "url": "https://netflixtechblog.com/modeling-device-capabilities-for-analytics-e7607acebde8",
+          "source": "Netflix TechBlog (Medium)"
+        },
+        {
+          "title": "The Economic Benefit of Refactoring",
+          "url": "https://martinfowler.com/articles/exploring-gen-ai/refactoring-economic-benefit.html",
+          "source": "Martin Fowler"
+        }
+      ]
+    },
     {
       "date": "2026-07-27",
       "title": "The Management Layer — 2026-07-27",
