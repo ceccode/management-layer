@@ -1,0 +1,302 @@
+{
+  "date": "2026-08-24",
+  "title": "The Management Layer — 2026-08-24",
+  "counts": {
+    "articles": 21,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "ac7cb9658bd359f107a91ed102343b1f",
+      "title": "How to redesign a broken delivery flow",
+      "url": "https://leaddev.com/technical-direction/how-to-redesign-a-broken-delivery-flow",
+      "source": "LeadDev",
+      "publishedAt": "2026-08-24T07:09:46.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "794905c40c048c5e6ae40c9bfdafa423",
+      "title": "Build a unified AI agent architecture with DynamoDB and Bedrock",
+      "url": "https://aws.amazon.com/blogs/architecture/build-a-unified-ai-agent-architecture-with-dynamodb-and-bedrock/",
+      "source": "AWS Architecture Blog",
+      "publishedAt": "2026-08-21T18:19:23.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "architecture",
+        "systems"
+      ]
+    },
+    {
+      "id": "03d871a9bde1d06bd03b30f6a0154b38",
+      "title": "How AgentFlo built AI sales agents with Amazon Bedrock AgentCore – Part 2",
+      "url": "https://aws.amazon.com/blogs/architecture/how-agentflo-built-ai-sales-agents-with-amazon-bedrock-agentcore-part-2/",
+      "source": "AWS Architecture Blog",
+      "publishedAt": "2026-08-21T10:01:18.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "architecture",
+        "systems"
+      ]
+    },
+    {
+      "id": "61d64ccf7248622d687ee9e842e5faca",
+      "title": "A Tale of Two Flink Autoscalers",
+      "url": "https://netflixtechblog.com/a-tale-of-two-flink-autoscalers-e9f6a1b1492b",
+      "source": "Netflix TechBlog (Medium)",
+      "publishedAt": "2026-08-21T16:01:01.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "systems",
+        "reliability"
+      ]
+    },
+    {
+      "id": "155e56d28be30bd16b607fdb237b48fc",
+      "title": "Your incident response wasn’t built for AI",
+      "url": "https://leaddev.com/ai/your-incident-response-wasnt-built-for-ai",
+      "source": "LeadDev",
+      "publishedAt": "2026-08-19T08:42:41.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "55610cef8bb36267158518a4038dec08",
+      "title": "Staff+ engineers must rebuild team culture",
+      "url": "https://leaddev.com/leadership/staff-engineers-must-rebuild-team-culture",
+      "source": "LeadDev",
+      "publishedAt": "2026-08-18T07:12:10.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "0691890d6b9651669b163fcf2b9fa41f",
+      "title": "AI code is correct and still costs you more",
+      "url": "https://leaddev.com/ai/ai-code-is-correct-and-still-costs-you-more",
+      "source": "LeadDev",
+      "publishedAt": "2026-08-20T07:01:37.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "bb050e2fdb138e34412416d77e0feadd",
+      "title": "What 15 million Gemini conversations tell us about AI at work",
+      "url": "https://leaddev.com/ai/what-15-million-gemini-conversations-tell-us-about-ai-at-work",
+      "source": "LeadDev",
+      "publishedAt": "2026-08-17T10:35:48.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "f77a0f6e769a5b32239ee51d46d2216d",
+      "title": "Citizens Build, Agents Execute, Experts Govern",
+      "url": "https://martinfowler.com/rachels-ramblings/citizens-agents-experts.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-08-19T18:30:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "c21b90ed6eb04298aa840226818bc3df",
+      "title": "Practitioner Voice: The Writing Category Nobody has Named Yet",
+      "url": "https://martinfowler.com/articles/practitioner-voice.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-08-19T18:15:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "ac7cb9658bd359f107a91ed102343b1f",
+      "title": "How to redesign a broken delivery flow",
+      "url": "https://leaddev.com/technical-direction/how-to-redesign-a-broken-delivery-flow",
+      "source": "LeadDev",
+      "publishedAt": "2026-08-24T07:09:46.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "794905c40c048c5e6ae40c9bfdafa423",
+      "title": "Build a unified AI agent architecture with DynamoDB and Bedrock",
+      "url": "https://aws.amazon.com/blogs/architecture/build-a-unified-ai-agent-architecture-with-dynamodb-and-bedrock/",
+      "source": "AWS Architecture Blog",
+      "publishedAt": "2026-08-21T18:19:23.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "architecture",
+        "systems"
+      ]
+    },
+    {
+      "id": "03d871a9bde1d06bd03b30f6a0154b38",
+      "title": "How AgentFlo built AI sales agents with Amazon Bedrock AgentCore – Part 2",
+      "url": "https://aws.amazon.com/blogs/architecture/how-agentflo-built-ai-sales-agents-with-amazon-bedrock-agentcore-part-2/",
+      "source": "AWS Architecture Blog",
+      "publishedAt": "2026-08-21T10:01:18.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "architecture",
+        "systems"
+      ]
+    },
+    {
+      "id": "61d64ccf7248622d687ee9e842e5faca",
+      "title": "A Tale of Two Flink Autoscalers",
+      "url": "https://netflixtechblog.com/a-tale-of-two-flink-autoscalers-e9f6a1b1492b",
+      "source": "Netflix TechBlog (Medium)",
+      "publishedAt": "2026-08-21T16:01:01.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "systems",
+        "reliability"
+      ]
+    },
+    {
+      "id": "155e56d28be30bd16b607fdb237b48fc",
+      "title": "Your incident response wasn’t built for AI",
+      "url": "https://leaddev.com/ai/your-incident-response-wasnt-built-for-ai",
+      "source": "LeadDev",
+      "publishedAt": "2026-08-19T08:42:41.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "55610cef8bb36267158518a4038dec08",
+      "title": "Staff+ engineers must rebuild team culture",
+      "url": "https://leaddev.com/leadership/staff-engineers-must-rebuild-team-culture",
+      "source": "LeadDev",
+      "publishedAt": "2026-08-18T07:12:10.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "0691890d6b9651669b163fcf2b9fa41f",
+      "title": "AI code is correct and still costs you more",
+      "url": "https://leaddev.com/ai/ai-code-is-correct-and-still-costs-you-more",
+      "source": "LeadDev",
+      "publishedAt": "2026-08-20T07:01:37.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "bb050e2fdb138e34412416d77e0feadd",
+      "title": "What 15 million Gemini conversations tell us about AI at work",
+      "url": "https://leaddev.com/ai/what-15-million-gemini-conversations-tell-us-about-ai-at-work",
+      "source": "LeadDev",
+      "publishedAt": "2026-08-17T10:35:48.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "f77a0f6e769a5b32239ee51d46d2216d",
+      "title": "Citizens Build, Agents Execute, Experts Govern",
+      "url": "https://martinfowler.com/rachels-ramblings/citizens-agents-experts.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-08-19T18:30:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "c21b90ed6eb04298aa840226818bc3df",
+      "title": "Practitioner Voice: The Writing Category Nobody has Named Yet",
+      "url": "https://martinfowler.com/articles/practitioner-voice.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-08-19T18:15:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 24 agosto 2026, sono stati analizzati 21 articoli, con un focus sull'integrazione dell'intelligenza artificiale nei flussi di lavoro e sulla gestione delle culture aziendali in evoluzione. I contenuti evidenziano tensioni tra l'adozione di nuove tecnologie e la necessità di mantenere standard di qualità e coesione nei team. Si osserva anche un crescente interesse per le pratiche di incident response in un contesto dominato dall'IA, suggerendo che le organizzazioni stanno cercando di adattarsi a sfide emergenti.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'evoluzione delle pratiche di incident response potrebbe indicare un cambiamento nelle priorità aziendali in relazione alla sicurezza informatica.",
+      "Le dinamiche di team influenzate dall'IA potrebbero portare a nuove forme di collaborazione e comunicazione tra i membri.",
+      "Le preoccupazioni sulla qualità del codice generato dall'IA potrebbero spingere le aziende a rivedere le loro politiche di governance e assunzione."
+    ],
+    "divergences": [
+      "Gli articoli tendono a focalizzarsi sulle sfide strutturali e di governance, mentre le discussioni su Reddit potrebbero enfatizzare esperienze personali e pratiche quotidiane.",
+      "Mentre gli articoli analizzano l'impatto economico dell'IA, le conversazioni su Reddit potrebbero riflettere una maggiore preoccupazione per il benessere degli sviluppatori.",
+      "Gli articoli propongono una visione più strategica e a lungo termine, mentre le discussioni su Reddit possono essere più orientate a soluzioni immediate e pratiche."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-08-24.management-layer.md",
+    "telegram": "telegram/2026-08-24.management-layer.telegram.md",
+    "json": "data/2026-08-24.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}

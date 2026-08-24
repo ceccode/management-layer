@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-08-03T10:42:32.561Z",
+  "generated_at_utc": "2026-08-24T07:57:26.114Z",
   "version": 1,
   "latest": {
-    "date": "2026-08-03",
+    "date": "2026-08-24",
     "paths": {
-      "markdown": "reports/2026-08-03.management-layer.md",
-      "telegram": "telegram/2026-08-03.management-layer.telegram.md",
-      "json": "data/2026-08-03.management-layer.json"
+      "markdown": "reports/2026-08-24.management-layer.md",
+      "telegram": "telegram/2026-08-24.management-layer.telegram.md",
+      "json": "data/2026-08-24.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-08-24",
+      "title": "The Management Layer — 2026-08-24",
+      "paths": {
+        "markdown": "reports/2026-08-24.management-layer.md",
+        "telegram": "telegram/2026-08-24.management-layer.telegram.md",
+        "json": "data/2026-08-24.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 24 agosto 2026, sono stati analizzati 21 articoli, con un focus sull'integrazione dell'intelligenza artificiale nei flussi di lavoro e sulla gestione delle culture aziendali in ...",
+      "topLinks": [
+        {
+          "title": "How to redesign a broken delivery flow",
+          "url": "https://leaddev.com/technical-direction/how-to-redesign-a-broken-delivery-flow",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Build a unified AI agent architecture with DynamoDB and Bedrock",
+          "url": "https://aws.amazon.com/blogs/architecture/build-a-unified-ai-agent-architecture-with-dynamodb-and-bedrock/",
+          "source": "AWS Architecture Blog"
+        },
+        {
+          "title": "How AgentFlo built AI sales agents with Amazon Bedrock AgentCore – Part 2",
+          "url": "https://aws.amazon.com/blogs/architecture/how-agentflo-built-ai-sales-agents-with-amazon-bedrock-agentcore-part-2/",
+          "source": "AWS Architecture Blog"
+        },
+        {
+          "title": "A Tale of Two Flink Autoscalers",
+          "url": "https://netflixtechblog.com/a-tale-of-two-flink-autoscalers-e9f6a1b1492b",
+          "source": "Netflix TechBlog (Medium)"
+        },
+        {
+          "title": "Your incident response wasn’t built for AI",
+          "url": "https://leaddev.com/ai/your-incident-response-wasnt-built-for-ai",
+          "source": "LeadDev"
+        }
+      ]
+    },
     {
       "date": "2026-08-03",
       "title": "The Management Layer — 2026-08-03",
