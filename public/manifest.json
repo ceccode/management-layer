@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-08-24T07:57:26.114Z",
+  "generated_at_utc": "2026-08-31T14:53:01.083Z",
   "version": 1,
   "latest": {
-    "date": "2026-08-24",
+    "date": "2026-08-31",
     "paths": {
-      "markdown": "reports/2026-08-24.management-layer.md",
-      "telegram": "telegram/2026-08-24.management-layer.telegram.md",
-      "json": "data/2026-08-24.management-layer.json"
+      "markdown": "reports/2026-08-31.management-layer.md",
+      "telegram": "telegram/2026-08-31.management-layer.telegram.md",
+      "json": "data/2026-08-31.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-08-31",
+      "title": "The Management Layer — 2026-08-31",
+      "paths": {
+        "markdown": "reports/2026-08-31.management-layer.md",
+        "telegram": "telegram/2026-08-31.management-layer.telegram.md",
+        "json": "data/2026-08-31.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 31 agosto 2026, sono stati analizzati 18 articoli, evidenziando un crescente interesse per l'integrazione dell'intelligenza artificiale nelle pratiche di leadership ingegneristi...",
+      "topLinks": [
+        {
+          "title": "AI made me a better engineering leader",
+          "url": "https://leaddev.com/ai/ai-made-me-a-better-engineering-leader",
+          "source": "LeadDev"
+        },
+        {
+          "title": "MAPS: Netflix’s Multimodal Asset Personalization at Scale",
+          "url": "https://netflixtechblog.com/maps-netflixs-multimodal-asset-personalization-at-scale-32f96320785e",
+          "source": "Netflix TechBlog (Medium)"
+        },
+        {
+          "title": "Inside Shopify’s high-intensity engineering culture",
+          "url": "https://leaddev.com/culture/inside-shopifys-high-intensity-engineering-culture",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Staff engineers shift from solving problems to shaping systems",
+          "url": "https://leaddev.com/career-development/staff-engineers-shift-from-solving-problems-to-shaping-systems",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Junior engineers are skipping straight to architect-level thinking",
+          "url": "https://leaddev.com/career-development/junior-engineers-are-skipping-straight-to-architect-level-thinking",
+          "source": "LeadDev"
+        }
+      ]
+    },
     {
       "date": "2026-08-24",
       "title": "The Management Layer — 2026-08-24",

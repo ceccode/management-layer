@@ -1,0 +1,302 @@
+{
+  "date": "2026-08-31",
+  "title": "The Management Layer — 2026-08-31",
+  "counts": {
+    "articles": 18,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "92d3cfb2b4fe149f5c0015150e607dc0",
+      "title": "AI made me a better engineering leader",
+      "url": "https://leaddev.com/ai/ai-made-me-a-better-engineering-leader",
+      "source": "LeadDev",
+      "publishedAt": "2026-08-31T09:15:00.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "fbcebcb0a23ad54cb8267c6a34d90de9",
+      "title": "MAPS: Netflix’s Multimodal Asset Personalization at Scale",
+      "url": "https://netflixtechblog.com/maps-netflixs-multimodal-asset-personalization-at-scale-32f96320785e",
+      "source": "Netflix TechBlog (Medium)",
+      "publishedAt": "2026-08-28T16:01:02.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "systems",
+        "reliability"
+      ]
+    },
+    {
+      "id": "4d37d7ec1368da81495ca923b895911c",
+      "title": "Inside Shopify’s high-intensity engineering culture",
+      "url": "https://leaddev.com/culture/inside-shopifys-high-intensity-engineering-culture",
+      "source": "LeadDev",
+      "publishedAt": "2026-08-27T07:26:24.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "80c7fda2ca30f3550c5d889dd94f511c",
+      "title": "Staff engineers shift from solving problems to shaping systems",
+      "url": "https://leaddev.com/career-development/staff-engineers-shift-from-solving-problems-to-shaping-systems",
+      "source": "LeadDev",
+      "publishedAt": "2026-08-26T07:46:41.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "e1e7713eb05b6c9353a864a798a09199",
+      "title": "Junior engineers are skipping straight to architect-level thinking",
+      "url": "https://leaddev.com/career-development/junior-engineers-are-skipping-straight-to-architect-level-thinking",
+      "source": "LeadDev",
+      "publishedAt": "2026-08-25T09:33:33.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "8a6c306e55d371d15735deaced4cfffd",
+      "title": "You didn’t create more bugs, you just found them faster",
+      "url": "https://leaddev.com/software-quality/you-didnt-create-more-bugs-you-just-found-them-faster",
+      "source": "LeadDev",
+      "publishedAt": "2026-08-25T07:04:29.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "ddc7b119b75ee145515365ab28f43bdb",
+      "title": "Making Your Data Ready for Agentic AI",
+      "url": "https://martinfowler.com/articles/making-data-ready-for-agentic-ai.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-08-27T13:11:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "fa06b0726854699c10645385eeb078c0",
+      "title": "Fragments: August 24",
+      "url": "https://martinfowler.com/fragments/2026-08-24.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-08-24T15:29:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "e79c2086fd1ae2a80840fd545ef22baf",
+      "title": "The agentic frontier: Modernizing commodities trading through AI ecosystems",
+      "url": "https://www.thoughtworks.com/insights/blog/legacy-modernization/the-agentic-frontier-modernizing-commodities-trading-through-ai-ecosystems",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-08-27T00:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    },
+    {
+      "id": "38e9e898f2abebbd42978ab21802f4d9",
+      "title": "The agentic wealth advantage",
+      "url": "https://www.thoughtworks.com/insights/blog/machine-learning-and-ai/the-agentic-wealth-advantage",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-08-27T00:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "92d3cfb2b4fe149f5c0015150e607dc0",
+      "title": "AI made me a better engineering leader",
+      "url": "https://leaddev.com/ai/ai-made-me-a-better-engineering-leader",
+      "source": "LeadDev",
+      "publishedAt": "2026-08-31T09:15:00.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "fbcebcb0a23ad54cb8267c6a34d90de9",
+      "title": "MAPS: Netflix’s Multimodal Asset Personalization at Scale",
+      "url": "https://netflixtechblog.com/maps-netflixs-multimodal-asset-personalization-at-scale-32f96320785e",
+      "source": "Netflix TechBlog (Medium)",
+      "publishedAt": "2026-08-28T16:01:02.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "systems",
+        "reliability"
+      ]
+    },
+    {
+      "id": "4d37d7ec1368da81495ca923b895911c",
+      "title": "Inside Shopify’s high-intensity engineering culture",
+      "url": "https://leaddev.com/culture/inside-shopifys-high-intensity-engineering-culture",
+      "source": "LeadDev",
+      "publishedAt": "2026-08-27T07:26:24.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "80c7fda2ca30f3550c5d889dd94f511c",
+      "title": "Staff engineers shift from solving problems to shaping systems",
+      "url": "https://leaddev.com/career-development/staff-engineers-shift-from-solving-problems-to-shaping-systems",
+      "source": "LeadDev",
+      "publishedAt": "2026-08-26T07:46:41.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "e1e7713eb05b6c9353a864a798a09199",
+      "title": "Junior engineers are skipping straight to architect-level thinking",
+      "url": "https://leaddev.com/career-development/junior-engineers-are-skipping-straight-to-architect-level-thinking",
+      "source": "LeadDev",
+      "publishedAt": "2026-08-25T09:33:33.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "8a6c306e55d371d15735deaced4cfffd",
+      "title": "You didn’t create more bugs, you just found them faster",
+      "url": "https://leaddev.com/software-quality/you-didnt-create-more-bugs-you-just-found-them-faster",
+      "source": "LeadDev",
+      "publishedAt": "2026-08-25T07:04:29.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "ddc7b119b75ee145515365ab28f43bdb",
+      "title": "Making Your Data Ready for Agentic AI",
+      "url": "https://martinfowler.com/articles/making-data-ready-for-agentic-ai.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-08-27T13:11:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "fa06b0726854699c10645385eeb078c0",
+      "title": "Fragments: August 24",
+      "url": "https://martinfowler.com/fragments/2026-08-24.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-08-24T15:29:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "e79c2086fd1ae2a80840fd545ef22baf",
+      "title": "The agentic frontier: Modernizing commodities trading through AI ecosystems",
+      "url": "https://www.thoughtworks.com/insights/blog/legacy-modernization/the-agentic-frontier-modernizing-commodities-trading-through-ai-ecosystems",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-08-27T00:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    },
+    {
+      "id": "38e9e898f2abebbd42978ab21802f4d9",
+      "title": "The agentic wealth advantage",
+      "url": "https://www.thoughtworks.com/insights/blog/machine-learning-and-ai/the-agentic-wealth-advantage",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-08-27T00:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 31 agosto 2026, sono stati analizzati 18 articoli, evidenziando un crescente interesse per l'integrazione dell'intelligenza artificiale nelle pratiche di leadership ingegneristica e nella cultura aziendale. I contenuti mostrano tensioni tra l'adozione di tecnologie avanzate e la necessità di mantenere standard qualitativi, con particolare attenzione al ruolo degli ingegneri senior e alle sfide associate alla governance del codice. Si osserva anche un cambiamento nelle dinamiche di team, con ingegneri junior che si avvicinano a un pensiero architetturale più maturo.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'adozione di strumenti di IA per la gestione dei progetti potrebbe influenzare le dinamiche di team e la produttività.",
+      "L'evoluzione delle competenze richieste per gli ingegneri senior potrebbe riflettersi in cambiamenti nei percorsi di carriera e nelle politiche di assunzione.",
+      "Le preoccupazioni sulla qualità del codice generato dall'IA potrebbero portare a un aumento delle pratiche di testing e validazione nel ciclo di sviluppo."
+    ],
+    "divergences": [
+      "Gli articoli tendono a enfatizzare l'aspetto positivo dell'IA come strumento di supporto, mentre le discussioni su Reddit mostrano preoccupazioni più marcate riguardo ai rischi associati all'adozione dell'IA.",
+      "Mentre gli articoli evidenziano l'evoluzione del ruolo degli ingegneri senior, le conversazioni su Reddit si concentrano maggiormente sulle sfide pratiche quotidiane che questi professionisti affrontano.",
+      "Le fonti analizzate mettono in luce innovazioni nella governance del codice, mentre le discussioni su Reddit tendono a riflettere una visione più scettica e critica riguardo all'efficacia di tali innovazioni."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-08-31.management-layer.md",
+    "telegram": "telegram/2026-08-31.management-layer.telegram.md",
+    "json": "data/2026-08-31.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}
