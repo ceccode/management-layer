@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-08-31T14:53:01.083Z",
+  "generated_at_utc": "2026-09-07T13:19:10.005Z",
   "version": 1,
   "latest": {
-    "date": "2026-08-31",
+    "date": "2026-09-07",
     "paths": {
-      "markdown": "reports/2026-08-31.management-layer.md",
-      "telegram": "telegram/2026-08-31.management-layer.telegram.md",
-      "json": "data/2026-08-31.management-layer.json"
+      "markdown": "reports/2026-09-07.management-layer.md",
+      "telegram": "telegram/2026-09-07.management-layer.telegram.md",
+      "json": "data/2026-09-07.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-09-07",
+      "title": "The Management Layer — 2026-09-07",
+      "paths": {
+        "markdown": "reports/2026-09-07.management-layer.md",
+        "telegram": "telegram/2026-09-07.management-layer.telegram.md",
+        "json": "data/2026-09-07.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 7 settembre 2026, sono stati analizzati 22 articoli, evidenziando un focus sull'efficienza dei processi ingegneristici e sull'integrazione dell'intelligenza artificiale nelle pr...",
+      "topLinks": [
+        {
+          "title": "We halved our continuous integration pipeline",
+          "url": "https://leaddev.com/technical-direction/we-halved-our-continuous-integration-pipeline",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Meta tried to shrink engineering teams around AI",
+          "url": "https://leaddev.com/ai/meta-tried-to-shrink-engineering-teams-around-ai",
+          "source": "LeadDev"
+        },
+        {
+          "title": "AI that works: How Thoughtworks combines AI/works™ with AWS Transform to modernize legacy systems for the AI era",
+          "url": "https://www.thoughtworks.com/insights/articles/thoughtworks-combines-ai-works-with-aws-transform-to-modernize-legacy-systems-for-the-ai-era",
+          "source": "Thoughtworks Insights"
+        },
+        {
+          "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
+          "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "The autonomous codebase",
+          "url": "https://leaddev.com/software-quality/the-autonomous-codebase",
+          "source": "LeadDev"
+        }
+      ]
+    },
     {
       "date": "2026-08-31",
       "title": "The Management Layer — 2026-08-31",
