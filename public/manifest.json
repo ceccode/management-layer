@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-09-07T13:19:10.005Z",
+  "generated_at_utc": "2026-09-14T13:41:57.962Z",
   "version": 1,
   "latest": {
-    "date": "2026-09-07",
+    "date": "2026-09-14",
     "paths": {
-      "markdown": "reports/2026-09-07.management-layer.md",
-      "telegram": "telegram/2026-09-07.management-layer.telegram.md",
-      "json": "data/2026-09-07.management-layer.json"
+      "markdown": "reports/2026-09-14.management-layer.md",
+      "telegram": "telegram/2026-09-14.management-layer.telegram.md",
+      "json": "data/2026-09-14.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-09-14",
+      "title": "The Management Layer — 2026-09-14",
+      "paths": {
+        "markdown": "reports/2026-09-14.management-layer.md",
+        "telegram": "telegram/2026-09-14.management-layer.telegram.md",
+        "json": "data/2026-09-14.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 14 settembre 2026, sono stati analizzati 18 articoli, con un focus sull'interazione tra leadership tecnica e pratiche di sviluppo software, in particolare nell'ambito dell'intel...",
+      "topLinks": [
+        {
+          "title": "How to lead a technical discussion",
+          "url": "https://leaddev.com/communication/how-to-lead-a-technical-discussion",
+          "source": "LeadDev"
+        },
+        {
+          "title": "AI-ready data: The anthology - Part 1 of 2",
+          "url": "https://www.thoughtworks.com/insights/blog/machine-learning-and-ai/ai-ready-data-part-1",
+          "source": "Thoughtworks Insights"
+        },
+        {
+          "title": "Marketing ops as code: Automating events from planning to follow-up on GitHub",
+          "url": "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "From zero-shot forecast to purchase order with Amazon Bedrock AgentCore",
+          "url": "https://aws.amazon.com/blogs/architecture/from-zero-shot-forecast-to-purchase-order-with-amazon-bedrock-agentcore/",
+          "source": "AWS Architecture Blog"
+        },
+        {
+          "title": "The engineer’s guide to building a software factory",
+          "url": "https://leaddev.com/software-quality/the-engineers-guide-to-building-a-software-factory",
+          "source": "LeadDev"
+        }
+      ]
+    },
     {
       "date": "2026-09-07",
       "title": "The Management Layer — 2026-09-07",

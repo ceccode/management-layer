@@ -1,0 +1,302 @@
+{
+  "date": "2026-09-14",
+  "title": "The Management Layer — 2026-09-14",
+  "counts": {
+    "articles": 18,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "6e51b4f6dfc1e6b4980e360edfdaca6c",
+      "title": "How to lead a technical discussion",
+      "url": "https://leaddev.com/communication/how-to-lead-a-technical-discussion",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-14T08:00:00.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "4268798d6265bfd994ff0f8a7cbe9c27",
+      "title": "AI-ready data: The anthology - Part 1 of 2",
+      "url": "https://www.thoughtworks.com/insights/blog/machine-learning-and-ai/ai-ready-data-part-1",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-09-14T00:00:00.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    },
+    {
+      "id": "d57ca14be6e5d3b260415ddba45f2784",
+      "title": "Marketing ops as code: Automating events from planning to follow-up on GitHub",
+      "url": "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-09-11T18:26:10.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "d8370a73dcfe121dad2cacbd16b890c0",
+      "title": "From zero-shot forecast to purchase order with Amazon Bedrock AgentCore",
+      "url": "https://aws.amazon.com/blogs/architecture/from-zero-shot-forecast-to-purchase-order-with-amazon-bedrock-agentcore/",
+      "source": "AWS Architecture Blog",
+      "publishedAt": "2026-09-11T14:08:01.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "architecture",
+        "systems"
+      ]
+    },
+    {
+      "id": "a0271bf25c27da5bf9a3e1b5f7c84b18",
+      "title": "The engineer’s guide to building a software factory",
+      "url": "https://leaddev.com/software-quality/the-engineers-guide-to-building-a-software-factory",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-10T15:16:57.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "a0dae083f4c2a90abecd87e4040ae541",
+      "title": "Returning to the IC track in the age of AI",
+      "url": "https://leaddev.com/career-development/returning-to-the-ic-track-in-the-age-of-ai",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-10T06:34:25.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "f8284803f821217b034306e19da89263",
+      "title": "We’re on call for code nobody wrote",
+      "url": "https://leaddev.com/software-quality/were-on-call-for-code-nobody-wrote",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-09T06:45:27.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "79bb37790c017ab5840d55598b4eedce",
+      "title": "Cut AI-coding costs without slowing down",
+      "url": "https://leaddev.com/ai/cut-ai-coding-costs-without-slowing-down",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-08T09:46:45.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "9e93d38ccbb767a2a48f1acb92f9dd61",
+      "title": "28x more AI spend. Zero new innovation",
+      "url": "https://leaddev.com/ai/28x-more-ai-spend-zero-new-innovation",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-08T08:04:12.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "e95ab447f52145d916a772105832ec1b",
+      "title": "Social Media Engagement: summer 2026",
+      "url": "https://martinfowler.com/articles/2026-social-traffic.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-09-09T16:21:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "6e51b4f6dfc1e6b4980e360edfdaca6c",
+      "title": "How to lead a technical discussion",
+      "url": "https://leaddev.com/communication/how-to-lead-a-technical-discussion",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-14T08:00:00.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "4268798d6265bfd994ff0f8a7cbe9c27",
+      "title": "AI-ready data: The anthology - Part 1 of 2",
+      "url": "https://www.thoughtworks.com/insights/blog/machine-learning-and-ai/ai-ready-data-part-1",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-09-14T00:00:00.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    },
+    {
+      "id": "d57ca14be6e5d3b260415ddba45f2784",
+      "title": "Marketing ops as code: Automating events from planning to follow-up on GitHub",
+      "url": "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-09-11T18:26:10.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "d8370a73dcfe121dad2cacbd16b890c0",
+      "title": "From zero-shot forecast to purchase order with Amazon Bedrock AgentCore",
+      "url": "https://aws.amazon.com/blogs/architecture/from-zero-shot-forecast-to-purchase-order-with-amazon-bedrock-agentcore/",
+      "source": "AWS Architecture Blog",
+      "publishedAt": "2026-09-11T14:08:01.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "architecture",
+        "systems"
+      ]
+    },
+    {
+      "id": "a0271bf25c27da5bf9a3e1b5f7c84b18",
+      "title": "The engineer’s guide to building a software factory",
+      "url": "https://leaddev.com/software-quality/the-engineers-guide-to-building-a-software-factory",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-10T15:16:57.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "a0dae083f4c2a90abecd87e4040ae541",
+      "title": "Returning to the IC track in the age of AI",
+      "url": "https://leaddev.com/career-development/returning-to-the-ic-track-in-the-age-of-ai",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-10T06:34:25.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "f8284803f821217b034306e19da89263",
+      "title": "We’re on call for code nobody wrote",
+      "url": "https://leaddev.com/software-quality/were-on-call-for-code-nobody-wrote",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-09T06:45:27.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "79bb37790c017ab5840d55598b4eedce",
+      "title": "Cut AI-coding costs without slowing down",
+      "url": "https://leaddev.com/ai/cut-ai-coding-costs-without-slowing-down",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-08T09:46:45.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "9e93d38ccbb767a2a48f1acb92f9dd61",
+      "title": "28x more AI spend. Zero new innovation",
+      "url": "https://leaddev.com/ai/28x-more-ai-spend-zero-new-innovation",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-08T08:04:12.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "e95ab447f52145d916a772105832ec1b",
+      "title": "Social Media Engagement: summer 2026",
+      "url": "https://martinfowler.com/articles/2026-social-traffic.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-09-09T16:21:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 14 settembre 2026, sono stati analizzati 18 articoli, con un focus sull'interazione tra leadership tecnica e pratiche di sviluppo software, in particolare nell'ambito dell'intelligenza artificiale. I contenuti evidenziano tensioni tra la necessità di guidare discussioni tecniche efficaci e le sfide legate alla qualità del codice, soprattutto in contesti in cui l'IA gioca un ruolo crescente. Si osserva anche un'interessante evoluzione nel modo in cui le organizzazioni stanno affrontando la governance del codice e le pratiche di testing.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'adozione di strumenti di testing automatizzati potrebbe aumentare in risposta alle sfide di qualità del codice generate dall'IA.",
+      "Le dinamiche di team potrebbero cambiare ulteriormente, con una maggiore enfasi sulla collaborazione tra ingegneri di diversi livelli di esperienza.",
+      "La crescente attenzione alla governance del codice potrebbe portare a nuove pratiche e politiche che influenzeranno la cultura aziendale."
+    ],
+    "divergences": [
+      "Gli articoli tendono a focalizzarsi sull'importanza delle soft skills nella leadership tecnica, mentre le discussioni su Reddit mostrano una maggiore preoccupazione per le competenze tecniche specifiche.",
+      "Mentre gli articoli analizzano le sfide della qualità del codice in modo sistematico, le conversazioni su Reddit evidenziano esperienze personali e aneddoti legati all'adozione dell'IA.",
+      "Gli articoli offrono una visione più strategica sulla governance del codice, mentre le discussioni su Reddit tendono a concentrarsi su problematiche pratiche e immediate riscontrate dagli ingegneri."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-09-14.management-layer.md",
+    "telegram": "telegram/2026-09-14.management-layer.telegram.md",
+    "json": "data/2026-09-14.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}
