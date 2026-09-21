@@ -1,0 +1,302 @@
+{
+  "date": "2026-09-21",
+  "title": "The Management Layer — 2026-09-21",
+  "counts": {
+    "articles": 21,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "0f2e5c7db939165eb3f9f3ad17d6b705",
+      "title": "Meet the developers rejecting AI",
+      "url": "https://leaddev.com/ai/meet-the-developers-rejecting-ai",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-21T10:12:12.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "cb4bbfc17a805778c0e02a8593cbe949",
+      "title": "AI widens the gender gap",
+      "url": "https://leaddev.com/ai/ai-widens-the-gender-gap",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-21T07:18:36.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "9f75719aa1d3f8fde0f63579eebf670d",
+      "title": "Should you read the code, is RAG dead, and did Skills kill MCP?",
+      "url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-09-18T15:00:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "1985c47b90a6b0bffc5d934997fa079b",
+      "title": "ReadyOn’s Four Walls of tenant isolation on Amazon EKS",
+      "url": "https://aws.amazon.com/blogs/architecture/readyons-four-walls-of-tenant-isolation-on-amazon-eks/",
+      "source": "AWS Architecture Blog",
+      "publishedAt": "2026-09-18T21:33:13.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "architecture",
+        "systems"
+      ]
+    },
+    {
+      "id": "ec5919197f87b44f1d010b21627207fc",
+      "title": "How CSIRO built scalable, cost-optimized genomic variant querying on AWS",
+      "url": "https://aws.amazon.com/blogs/architecture/how-csiro-built-scalable-cost-optimized-genomic-variant-querying-on-aws/",
+      "source": "AWS Architecture Blog",
+      "publishedAt": "2026-09-18T14:35:42.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "architecture",
+        "systems"
+      ]
+    },
+    {
+      "id": "208eda5c293150a3cf8aab88f11d7d08",
+      "title": "Leave the Class Path in the Rearview Mirror",
+      "url": "https://netflixtechblog.com/leave-the-class-path-in-the-rearview-mirror-67a85b15b6be",
+      "source": "Netflix TechBlog (Medium)",
+      "publishedAt": "2026-09-18T16:01:02.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "systems",
+        "reliability"
+      ]
+    },
+    {
+      "id": "921b21503435e91c06eb0d8be93d2e47",
+      "title": "Stop asking engineers how many machines they need",
+      "url": "https://leaddev.com/technical-direction/stop-asking-engineers-how-many-machines-they-need",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-16T08:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "96900e1842f6875605a0d01b167c398d",
+      "title": "We built the platform. Nobody used it",
+      "url": "https://leaddev.com/technical-direction/we-built-the-platform-nobody-used-it",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-15T08:05:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "b594014fc0a384b85085754db7e6020f",
+      "title": "I don't like LLMs",
+      "url": "https://martinfowler.com/articles/2026-dont-like-llms.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-09-17T13:50:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "5330596396bdd25f120bcbe1e6ee8fdb",
+      "title": "Fragments: September 16",
+      "url": "https://martinfowler.com/fragments/2026-09-16.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-09-16T20:05:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "0f2e5c7db939165eb3f9f3ad17d6b705",
+      "title": "Meet the developers rejecting AI",
+      "url": "https://leaddev.com/ai/meet-the-developers-rejecting-ai",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-21T10:12:12.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "cb4bbfc17a805778c0e02a8593cbe949",
+      "title": "AI widens the gender gap",
+      "url": "https://leaddev.com/ai/ai-widens-the-gender-gap",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-21T07:18:36.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "9f75719aa1d3f8fde0f63579eebf670d",
+      "title": "Should you read the code, is RAG dead, and did Skills kill MCP?",
+      "url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-09-18T15:00:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "1985c47b90a6b0bffc5d934997fa079b",
+      "title": "ReadyOn’s Four Walls of tenant isolation on Amazon EKS",
+      "url": "https://aws.amazon.com/blogs/architecture/readyons-four-walls-of-tenant-isolation-on-amazon-eks/",
+      "source": "AWS Architecture Blog",
+      "publishedAt": "2026-09-18T21:33:13.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "architecture",
+        "systems"
+      ]
+    },
+    {
+      "id": "ec5919197f87b44f1d010b21627207fc",
+      "title": "How CSIRO built scalable, cost-optimized genomic variant querying on AWS",
+      "url": "https://aws.amazon.com/blogs/architecture/how-csiro-built-scalable-cost-optimized-genomic-variant-querying-on-aws/",
+      "source": "AWS Architecture Blog",
+      "publishedAt": "2026-09-18T14:35:42.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "architecture",
+        "systems"
+      ]
+    },
+    {
+      "id": "208eda5c293150a3cf8aab88f11d7d08",
+      "title": "Leave the Class Path in the Rearview Mirror",
+      "url": "https://netflixtechblog.com/leave-the-class-path-in-the-rearview-mirror-67a85b15b6be",
+      "source": "Netflix TechBlog (Medium)",
+      "publishedAt": "2026-09-18T16:01:02.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "systems",
+        "reliability"
+      ]
+    },
+    {
+      "id": "921b21503435e91c06eb0d8be93d2e47",
+      "title": "Stop asking engineers how many machines they need",
+      "url": "https://leaddev.com/technical-direction/stop-asking-engineers-how-many-machines-they-need",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-16T08:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "96900e1842f6875605a0d01b167c398d",
+      "title": "We built the platform. Nobody used it",
+      "url": "https://leaddev.com/technical-direction/we-built-the-platform-nobody-used-it",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-15T08:05:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "b594014fc0a384b85085754db7e6020f",
+      "title": "I don't like LLMs",
+      "url": "https://martinfowler.com/articles/2026-dont-like-llms.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-09-17T13:50:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "5330596396bdd25f120bcbe1e6ee8fdb",
+      "title": "Fragments: September 16",
+      "url": "https://martinfowler.com/fragments/2026-09-16.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-09-16T20:05:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 21 settembre 2026, sono stati analizzati 21 articoli, con un focus sulle tensioni emergenti tra l'adozione dell'intelligenza artificiale e le pratiche di sviluppo software. I contenuti evidenziano una crescente preoccupazione per la qualità del codice, in particolare in relazione all'uso di strumenti di IA. Inoltre, si osserva un dibattito attivo sul ruolo degli ingegneri e sulla governance del codice, suggerendo un'evoluzione nelle dinamiche dei team e nelle aspettative professionali.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'adozione di strumenti di testing automatizzati potrebbe aumentare in risposta alle sfide di qualità del codice generate dall'IA.",
+      "L'evoluzione delle dinamiche di team potrebbe portare a nuove pratiche di collaborazione e comunicazione, influenzando la produttività.",
+      "Le preoccupazioni etiche e pratiche riguardo all'IA potrebbero spingere le aziende a rivedere le loro politiche di assunzione e formazione."
+    ],
+    "divergences": [
+      "Gli articoli evidenziano una crescente resistenza all'IA da parte degli sviluppatori, mentre le discussioni su Reddit non mostrano un dibattito attivo su questo tema.",
+      "Le preoccupazioni sulla governance del codice sono ampiamente trattate negli articoli, ma mancano discussioni su Reddit che esplorino soluzioni pratiche.",
+      "Mentre gli articoli si concentrano sulle esperienze negative con nuove piattaforme, le conversazioni su Reddit tendono a sottovalutare l'impatto di queste esperienze sulla cultura aziendale."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-09-21.management-layer.md",
+    "telegram": "telegram/2026-09-21.management-layer.telegram.md",
+    "json": "data/2026-09-21.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}
