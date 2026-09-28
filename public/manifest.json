@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-09-21T13:41:06.554Z",
+  "generated_at_utc": "2026-09-28T14:59:57.299Z",
   "version": 1,
   "latest": {
-    "date": "2026-09-21",
+    "date": "2026-09-28",
     "paths": {
-      "markdown": "reports/2026-09-21.management-layer.md",
-      "telegram": "telegram/2026-09-21.management-layer.telegram.md",
-      "json": "data/2026-09-21.management-layer.json"
+      "markdown": "reports/2026-09-28.management-layer.md",
+      "telegram": "telegram/2026-09-28.management-layer.telegram.md",
+      "json": "data/2026-09-28.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-09-28",
+      "title": "The Management Layer — 2026-09-28",
+      "paths": {
+        "markdown": "reports/2026-09-28.management-layer.md",
+        "telegram": "telegram/2026-09-28.management-layer.telegram.md",
+        "json": "data/2026-09-28.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 28 settembre 2026, sono stati analizzati 18 articoli, con un focus sulle interazioni tra pratiche di sviluppo software e l'adozione di tecnologie emergenti, in particolare l'int...",
+      "topLinks": [
+        {
+          "title": "Your agent loop is not a production system",
+          "url": "https://leaddev.com/ai/your-agent-loop-is-not-a-production-system",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Developers want more sustainable AI",
+          "url": "https://leaddev.com/ai/developers-want-more-sustainable-ai",
+          "source": "LeadDev"
+        },
+        {
+          "title": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "Improving site performance by shipping more CSS",
+          "url": "https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "Trading a Cloud Identity for Your Own: Workload Attestation on Managed Compute",
+          "url": "https://netflixtechblog.com/trading-a-cloud-identity-for-your-own-workload-attestation-on-managed-compute-516d5a29b252",
+          "source": "Netflix TechBlog (Medium)"
+        }
+      ]
+    },
     {
       "date": "2026-09-21",
       "title": "The Management Layer — 2026-09-21",

@@ -1,0 +1,302 @@
+{
+  "date": "2026-09-28",
+  "title": "The Management Layer — 2026-09-28",
+  "counts": {
+    "articles": 18,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "7ed90bf3cdb865d423898e7a9153a4e1",
+      "title": "Your agent loop is not a production system",
+      "url": "https://leaddev.com/ai/your-agent-loop-is-not-a-production-system",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-28T09:42:13.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "823966d558e945002f0ffefeb9f2a75b",
+      "title": "Developers want more sustainable AI",
+      "url": "https://leaddev.com/ai/developers-want-more-sustainable-ai",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-28T07:23:00.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "1feb84b6f88b85a63321c05e73509bb1",
+      "title": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-09-25T18:00:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "bc03436c39e85ae59ade4fb1d680cd2d",
+      "title": "Improving site performance by shipping more CSS",
+      "url": "https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-09-25T15:00:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "20b37a5675782a29de73ebcdc6c36c1c",
+      "title": "Trading a Cloud Identity for Your Own: Workload Attestation on Managed Compute",
+      "url": "https://netflixtechblog.com/trading-a-cloud-identity-for-your-own-workload-attestation-on-managed-compute-516d5a29b252",
+      "source": "Netflix TechBlog (Medium)",
+      "publishedAt": "2026-09-25T16:01:03.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "systems",
+        "reliability"
+      ]
+    },
+    {
+      "id": "1cdfc65b36c7e0d5c2127e6b50b13fd6",
+      "title": "Build an engineering team people want to come back to",
+      "url": "https://leaddev.com/culture/build-an-engineering-team-people-want-to-come-back-to",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-24T07:39:26.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "e1e11fa2597b2e4162ca2fb5c5eb499f",
+      "title": "How I’d start my engineering career today",
+      "url": "https://leaddev.com/career-development/how-id-start-my-engineering-career-today",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-23T07:40:55.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "219358038984ec2961d187c4db1ed85c",
+      "title": "How engineering managers actually get rated",
+      "url": "https://leaddev.com/management/how-engineering-managers-actually-get-rated",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-22T07:19:55.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "c2f7e94e9f988629730592358d523c34",
+      "title": "Fragments: September 24",
+      "url": "https://martinfowler.com/fragments/2026-09-24.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-09-24T15:35:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "200cdd3b79109be87b9b7d7a7d9e894b",
+      "title": "Healthy Feedback",
+      "url": "https://martinfowler.com/articles/healthy-peer-feedback.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-09-24T14:10:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "7ed90bf3cdb865d423898e7a9153a4e1",
+      "title": "Your agent loop is not a production system",
+      "url": "https://leaddev.com/ai/your-agent-loop-is-not-a-production-system",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-28T09:42:13.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "823966d558e945002f0ffefeb9f2a75b",
+      "title": "Developers want more sustainable AI",
+      "url": "https://leaddev.com/ai/developers-want-more-sustainable-ai",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-28T07:23:00.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "1feb84b6f88b85a63321c05e73509bb1",
+      "title": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-09-25T18:00:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "bc03436c39e85ae59ade4fb1d680cd2d",
+      "title": "Improving site performance by shipping more CSS",
+      "url": "https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-09-25T15:00:00.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "20b37a5675782a29de73ebcdc6c36c1c",
+      "title": "Trading a Cloud Identity for Your Own: Workload Attestation on Managed Compute",
+      "url": "https://netflixtechblog.com/trading-a-cloud-identity-for-your-own-workload-attestation-on-managed-compute-516d5a29b252",
+      "source": "Netflix TechBlog (Medium)",
+      "publishedAt": "2026-09-25T16:01:03.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "systems",
+        "reliability"
+      ]
+    },
+    {
+      "id": "1cdfc65b36c7e0d5c2127e6b50b13fd6",
+      "title": "Build an engineering team people want to come back to",
+      "url": "https://leaddev.com/culture/build-an-engineering-team-people-want-to-come-back-to",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-24T07:39:26.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "e1e11fa2597b2e4162ca2fb5c5eb499f",
+      "title": "How I’d start my engineering career today",
+      "url": "https://leaddev.com/career-development/how-id-start-my-engineering-career-today",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-23T07:40:55.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "219358038984ec2961d187c4db1ed85c",
+      "title": "How engineering managers actually get rated",
+      "url": "https://leaddev.com/management/how-engineering-managers-actually-get-rated",
+      "source": "LeadDev",
+      "publishedAt": "2026-09-22T07:19:55.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "c2f7e94e9f988629730592358d523c34",
+      "title": "Fragments: September 24",
+      "url": "https://martinfowler.com/fragments/2026-09-24.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-09-24T15:35:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "200cdd3b79109be87b9b7d7a7d9e894b",
+      "title": "Healthy Feedback",
+      "url": "https://martinfowler.com/articles/healthy-peer-feedback.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-09-24T14:10:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 28 settembre 2026, sono stati analizzati 18 articoli, con un focus sulle interazioni tra pratiche di sviluppo software e l'adozione di tecnologie emergenti, in particolare l'intelligenza artificiale. I contenuti evidenziano una crescente attenzione alla sostenibilità delle pratiche di sviluppo e alle dinamiche di team, suggerendo un'evoluzione nelle aspettative professionali degli ingegneri. Inoltre, si osservano tensioni tra l'innovazione tecnologica e la necessità di mantenere standard qualitativi elevati.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'adozione di pratiche di sviluppo sostenibili potrebbe influenzare le decisioni strategiche delle organizzazioni tecnologiche.",
+      "Le dinamiche di team potrebbero evolversi ulteriormente, con un aumento della collaborazione tra ingegneri di diversi livelli di esperienza.",
+      "Le preoccupazioni sulla qualità del codice generato dall'IA potrebbero portare a un incremento nell'uso di strumenti di testing automatizzati."
+    ],
+    "divergences": [
+      "Gli articoli tendono a focalizzarsi su aspetti tecnici e pratici della sostenibilità, mentre le discussioni su Reddit potrebbero esplorare più a fondo le implicazioni etiche e sociali.",
+      "Le pubblicazioni evidenziano principalmente la necessità di migliorare le dinamiche di team, mentre le conversazioni su Reddit possono riflettere esperienze personali e sfide quotidiane degli ingegneri.",
+      "Mentre gli articoli discutono la governance del codice in termini di pratiche e strumenti, le discussioni su Reddit potrebbero mettere in luce le frustrazioni e le aspettative degli ingegneri riguardo a queste pratiche."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-09-28.management-layer.md",
+    "telegram": "telegram/2026-09-28.management-layer.telegram.md",
+    "json": "data/2026-09-28.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}
