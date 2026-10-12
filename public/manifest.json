@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-10-05T15:36:19.049Z",
+  "generated_at_utc": "2026-10-12T16:32:03.779Z",
   "version": 1,
   "latest": {
-    "date": "2026-10-05",
+    "date": "2026-10-12",
     "paths": {
-      "markdown": "reports/2026-10-05.management-layer.md",
-      "telegram": "telegram/2026-10-05.management-layer.telegram.md",
-      "json": "data/2026-10-05.management-layer.json"
+      "markdown": "reports/2026-10-12.management-layer.md",
+      "telegram": "telegram/2026-10-12.management-layer.telegram.md",
+      "json": "data/2026-10-12.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-10-12",
+      "title": "The Management Layer — 2026-10-12",
+      "paths": {
+        "markdown": "reports/2026-10-12.management-layer.md",
+        "telegram": "telegram/2026-10-12.management-layer.telegram.md",
+        "json": "data/2026-10-12.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 12 ottobre 2026, sono stati analizzati 22 articoli, con un focus sulle sfide emergenti nella gestione delle strategie ingegneristiche e sull'impatto della tecnologia sull'organi...",
+      "topLinks": [
+        {
+          "title": "Your engineering strategy has a new failure mode",
+          "url": "https://leaddev.com/leadership/your-engineering-strategy-has-a-new-failure-mode",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Mislabelled: Why retail calls its strategic failures execution problems",
+          "url": "https://www.thoughtworks.com/insights/blog/technology-strategy/mislabelled-why-retail-calls-its-strategic-failures-execution-problems",
+          "source": "Thoughtworks Insights"
+        },
+        {
+          "title": "AI code causes real world production outages",
+          "url": "https://leaddev.com/ai/ai-code-causes-real-world-production-outages",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Why agentic payments require an executable model of organizational authority",
+          "url": "https://www.thoughtworks.com/insights/blog/generative-ai/why-agentic-payments-require-executable-model-organizational-authority",
+          "source": "Thoughtworks Insights"
+        },
+        {
+          "title": "Decision models and the possibility of NoOps",
+          "url": "https://www.thoughtworks.com/insights/articles/decision-models-and-the-possibility-of-no-ops",
+          "source": "Thoughtworks Insights"
+        }
+      ]
+    },
     {
       "date": "2026-10-05",
       "title": "The Management Layer — 2026-10-05",
