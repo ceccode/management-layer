@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-10-19T14:23:45.257Z",
+  "generated_at_utc": "2026-10-26T13:56:21.454Z",
   "version": 1,
   "latest": {
-    "date": "2026-10-19",
+    "date": "2026-10-26",
     "paths": {
-      "markdown": "reports/2026-10-19.management-layer.md",
-      "telegram": "telegram/2026-10-19.management-layer.telegram.md",
-      "json": "data/2026-10-19.management-layer.json"
+      "markdown": "reports/2026-10-26.management-layer.md",
+      "telegram": "telegram/2026-10-26.management-layer.telegram.md",
+      "json": "data/2026-10-26.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-10-26",
+      "title": "The Management Layer — 2026-10-26",
+      "paths": {
+        "markdown": "reports/2026-10-26.management-layer.md",
+        "telegram": "telegram/2026-10-26.management-layer.telegram.md",
+        "json": "data/2026-10-26.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 26 ottobre 2026, sono stati analizzati 18 articoli, con un focus sull'impatto dell'intelligenza artificiale nelle pratiche di ingegneria e sulla governance del codice. I contenu...",
+      "topLinks": [
+        {
+          "title": "What’s next for DORA?",
+          "url": "https://leaddev.com/reporting/whats-next-for-dora",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Engineers are coding out loud",
+          "url": "https://leaddev.com/technical-direction/engineers-are-coding-out-loud",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Ethical and commercial risk regarding product development, GDR and AI",
+          "url": "https://www.thoughtworks.com/insights/blog/product-innovation/ethical-commercial-risk-regarding-product-development-gdr-ai",
+          "source": "Thoughtworks Insights"
+        },
+        {
+          "title": "Beyond API Compatibility: Building a Tool to Measure the Blast Radius of Library Changes",
+          "url": "https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90",
+          "source": "Netflix TechBlog (Medium)"
+        },
+        {
+          "title": "The unseen work of engineering management",
+          "url": "https://leaddev.com/management/the-unseen-work-of-engineering-management",
+          "source": "LeadDev"
+        }
+      ]
+    },
     {
       "date": "2026-10-19",
       "title": "The Management Layer — 2026-10-19",

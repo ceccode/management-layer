@@ -1,0 +1,302 @@
+{
+  "date": "2026-10-26",
+  "title": "The Management Layer — 2026-10-26",
+  "counts": {
+    "articles": 18,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "49aa46e76cd21a165ee01085b6cba998",
+      "title": "What’s next for DORA?",
+      "url": "https://leaddev.com/reporting/whats-next-for-dora",
+      "source": "LeadDev",
+      "publishedAt": "2026-10-26T10:23:45.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "909f7ee314eeb9590e12447749ef1048",
+      "title": "Engineers are coding out loud",
+      "url": "https://leaddev.com/technical-direction/engineers-are-coding-out-loud",
+      "source": "LeadDev",
+      "publishedAt": "2026-10-26T07:47:28.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "3aa3ab5025f237035c556c82adb93536",
+      "title": "Ethical and commercial risk regarding product development, GDR and AI",
+      "url": "https://www.thoughtworks.com/insights/blog/product-innovation/ethical-commercial-risk-regarding-product-development-gdr-ai",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    },
+    {
+      "id": "7f0e1a16c4d908051eb29e9da62b3699",
+      "title": "Beyond API Compatibility: Building a Tool to Measure the Blast Radius of Library Changes",
+      "url": "https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90",
+      "source": "Netflix TechBlog (Medium)",
+      "publishedAt": "2026-10-23T18:32:51.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "systems",
+        "reliability"
+      ]
+    },
+    {
+      "id": "28d33f47e30340e3d3cbcfc075b65588",
+      "title": "The unseen work of engineering management",
+      "url": "https://leaddev.com/management/the-unseen-work-of-engineering-management",
+      "source": "LeadDev",
+      "publishedAt": "2026-10-21T07:41:49.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "3b925a615937d81a20b9dcdf7809aa67",
+      "title": "Fragments: October 21",
+      "url": "https://martinfowler.com/fragments/2026-10-21.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-10-21T10:51:00.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "70d9b4d9113ec9643c1a2afbbb3e3e5d",
+      "title": "Engineers lose 17+ days a year to AI rework",
+      "url": "https://leaddev.com/ai/engineers-lose-17-days-a-year-to-ai-rework",
+      "source": "LeadDev",
+      "publishedAt": "2026-10-20T13:01:34.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "a0515ea664fe4fb951fadcafde1c7160",
+      "title": "AI buries engineering teams in security fixes",
+      "url": "https://leaddev.com/ai/ai-buries-engineering-teams-in-security-fixes",
+      "source": "LeadDev",
+      "publishedAt": "2026-10-20T07:05:25.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "6b08bd6b9d037ad377f3c3d0a6b93e11",
+      "title": "The agentic control tower: From supply chain visibility to action",
+      "url": "https://www.thoughtworks.com/insights/articles/the-agentic-control-tower-supply-chain",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    },
+    {
+      "id": "d562e7175d0566228d54a7a42255539d",
+      "title": "How Sensible Harness can help teams create an AI-first delivery environment",
+      "url": "https://www.thoughtworks.com/insights/blog/generative-ai/how-sensible-harness-help-teams-create-ai-first-delivery-environment",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-10-22T00:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "49aa46e76cd21a165ee01085b6cba998",
+      "title": "What’s next for DORA?",
+      "url": "https://leaddev.com/reporting/whats-next-for-dora",
+      "source": "LeadDev",
+      "publishedAt": "2026-10-26T10:23:45.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "909f7ee314eeb9590e12447749ef1048",
+      "title": "Engineers are coding out loud",
+      "url": "https://leaddev.com/technical-direction/engineers-are-coding-out-loud",
+      "source": "LeadDev",
+      "publishedAt": "2026-10-26T07:47:28.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "3aa3ab5025f237035c556c82adb93536",
+      "title": "Ethical and commercial risk regarding product development, GDR and AI",
+      "url": "https://www.thoughtworks.com/insights/blog/product-innovation/ethical-commercial-risk-regarding-product-development-gdr-ai",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    },
+    {
+      "id": "7f0e1a16c4d908051eb29e9da62b3699",
+      "title": "Beyond API Compatibility: Building a Tool to Measure the Blast Radius of Library Changes",
+      "url": "https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90",
+      "source": "Netflix TechBlog (Medium)",
+      "publishedAt": "2026-10-23T18:32:51.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "systems",
+        "reliability"
+      ]
+    },
+    {
+      "id": "28d33f47e30340e3d3cbcfc075b65588",
+      "title": "The unseen work of engineering management",
+      "url": "https://leaddev.com/management/the-unseen-work-of-engineering-management",
+      "source": "LeadDev",
+      "publishedAt": "2026-10-21T07:41:49.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "3b925a615937d81a20b9dcdf7809aa67",
+      "title": "Fragments: October 21",
+      "url": "https://martinfowler.com/fragments/2026-10-21.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-10-21T10:51:00.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "70d9b4d9113ec9643c1a2afbbb3e3e5d",
+      "title": "Engineers lose 17+ days a year to AI rework",
+      "url": "https://leaddev.com/ai/engineers-lose-17-days-a-year-to-ai-rework",
+      "source": "LeadDev",
+      "publishedAt": "2026-10-20T13:01:34.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "a0515ea664fe4fb951fadcafde1c7160",
+      "title": "AI buries engineering teams in security fixes",
+      "url": "https://leaddev.com/ai/ai-buries-engineering-teams-in-security-fixes",
+      "source": "LeadDev",
+      "publishedAt": "2026-10-20T07:05:25.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "6b08bd6b9d037ad377f3c3d0a6b93e11",
+      "title": "The agentic control tower: From supply chain visibility to action",
+      "url": "https://www.thoughtworks.com/insights/articles/the-agentic-control-tower-supply-chain",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    },
+    {
+      "id": "d562e7175d0566228d54a7a42255539d",
+      "title": "How Sensible Harness can help teams create an AI-first delivery environment",
+      "url": "https://www.thoughtworks.com/insights/blog/generative-ai/how-sensible-harness-help-teams-create-ai-first-delivery-environment",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-10-22T00:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 26 ottobre 2026, sono stati analizzati 18 articoli, con un focus sull'impatto dell'intelligenza artificiale nelle pratiche di ingegneria e sulla governance del codice. I contenuti evidenziano tensioni tra l'adozione di strumenti innovativi e le problematiche di qualità, nonché un crescente interesse verso le implicazioni etiche delle tecnologie emergenti. Si osserva anche una continua evoluzione nelle dinamiche di team e nelle aspettative professionali degli ingegneri.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'adozione di pratiche di testing automatizzate potrebbe aumentare in risposta alle sfide di qualità del codice generate dall'IA.",
+      "Le politiche aziendali riguardo alla governance del codice potrebbero subire cambiamenti significativi, influenzando la cultura organizzativa.",
+      "Le dinamiche di team potrebbero continuare a evolversi, portando a nuove modalità di collaborazione e comunicazione tra ingegneri."
+    ],
+    "divergences": [
+      "Gli articoli si concentrano su analisi approfondite dei rischi etici, mentre le discussioni su Reddit mancano di un focus simile, evidenziando una differente attenzione ai temi.",
+      "Le pubblicazioni analizzano l'impatto dell'IA sulla produttività con dati specifici, mentre su Reddit ci sono più opinioni personali e aneddoti, senza supporto empirico.",
+      "I contenuti raccolti mostrano una visione più strutturata delle dinamiche di team, mentre le discussioni su Reddit tendono a essere più informali e soggettive."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-10-26.management-layer.md",
+    "telegram": "telegram/2026-10-26.management-layer.telegram.md",
+    "json": "data/2026-10-26.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}
