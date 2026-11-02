@@ -1,0 +1,302 @@
+{
+  "date": "2026-11-02",
+  "title": "The Management Layer — 2026-11-02",
+  "counts": {
+    "articles": 24,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "d979d7b497206ebe005a508528e0923f",
+      "title": "The second language of engineering leadership",
+      "url": "https://leaddev.com/culture/the-second-language-of-engineering-leadership",
+      "source": "LeadDev",
+      "publishedAt": "2026-11-02T10:13:07.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "d4ce38af596311ad46bb0fcf120aeb34",
+      "title": "5 skills that make you a better engineering leader",
+      "url": "https://leaddev.com/leadership/5-skills-that-make-you-a-better-engineering-leader",
+      "source": "LeadDev",
+      "publishedAt": "2026-11-02T07:46:48.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "244e2687914452045de762cf042c18db",
+      "title": "Game Off 2026: The theme is SHIFT",
+      "url": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-11-01T21:36:00.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "aaac7d12b2c931bce63dedaf7beb7617",
+      "title": "Fragments: October 28",
+      "url": "https://martinfowler.com/fragments/2026-10-28.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-10-28T12:55:00.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "15af19e409ff20be7440b73d1411c1e8",
+      "title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
+      "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-10-28T16:07:40.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "d92037a5a536826db14c6329f739f98b",
+      "title": "Cheap AI tokens are running out",
+      "url": "https://leaddev.com/ai/cheap-ai-tokens-are-running-out",
+      "source": "LeadDev",
+      "publishedAt": "2026-10-29T07:50:23.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "5ee61289af19cf6361fc80603754251d",
+      "title": "AI’s time savings are disappearing into code review",
+      "url": "https://leaddev.com/ai/ais-time-savings-are-disappearing-into-code-review",
+      "source": "LeadDev",
+      "publishedAt": "2026-10-28T07:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "306c6f97d0d2076e9e72752c1e5a78d6",
+      "title": "Are technical design reviews disappearing?",
+      "url": "https://leaddev.com/test-pattern/are-technical-design-reviews-disappearing",
+      "source": "LeadDev",
+      "publishedAt": "2026-10-27T08:01:03.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "e58642a94bbadda3c057bf7fc8379a81",
+      "title": "Bliki: LLM Voice",
+      "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-10-29T14:28:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "e7511c803d9cea712edd4e553edbd861",
+      "title": "Why are good developers so wary of agentic development?",
+      "url": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-10-29T13:50:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "d979d7b497206ebe005a508528e0923f",
+      "title": "The second language of engineering leadership",
+      "url": "https://leaddev.com/culture/the-second-language-of-engineering-leadership",
+      "source": "LeadDev",
+      "publishedAt": "2026-11-02T10:13:07.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "d4ce38af596311ad46bb0fcf120aeb34",
+      "title": "5 skills that make you a better engineering leader",
+      "url": "https://leaddev.com/leadership/5-skills-that-make-you-a-better-engineering-leader",
+      "source": "LeadDev",
+      "publishedAt": "2026-11-02T07:46:48.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "244e2687914452045de762cf042c18db",
+      "title": "Game Off 2026: The theme is SHIFT",
+      "url": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-11-01T21:36:00.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "aaac7d12b2c931bce63dedaf7beb7617",
+      "title": "Fragments: October 28",
+      "url": "https://martinfowler.com/fragments/2026-10-28.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-10-28T12:55:00.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "15af19e409ff20be7440b73d1411c1e8",
+      "title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
+      "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-10-28T16:07:40.000Z",
+      "type": "article",
+      "score": 1.3,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "d92037a5a536826db14c6329f739f98b",
+      "title": "Cheap AI tokens are running out",
+      "url": "https://leaddev.com/ai/cheap-ai-tokens-are-running-out",
+      "source": "LeadDev",
+      "publishedAt": "2026-10-29T07:50:23.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "5ee61289af19cf6361fc80603754251d",
+      "title": "AI’s time savings are disappearing into code review",
+      "url": "https://leaddev.com/ai/ais-time-savings-are-disappearing-into-code-review",
+      "source": "LeadDev",
+      "publishedAt": "2026-10-28T07:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "306c6f97d0d2076e9e72752c1e5a78d6",
+      "title": "Are technical design reviews disappearing?",
+      "url": "https://leaddev.com/test-pattern/are-technical-design-reviews-disappearing",
+      "source": "LeadDev",
+      "publishedAt": "2026-10-27T08:01:03.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "e58642a94bbadda3c057bf7fc8379a81",
+      "title": "Bliki: LLM Voice",
+      "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-10-29T14:28:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "e7511c803d9cea712edd4e553edbd861",
+      "title": "Why are good developers so wary of agentic development?",
+      "url": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-10-29T13:50:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 2 novembre 2026, sono stati analizzati 24 articoli, con un focus sull'evoluzione delle pratiche di leadership ingegneristica e sull'impatto dell'intelligenza artificiale nel contesto dello sviluppo software. I contenuti evidenziano tensioni tra le competenze richieste per una leadership efficace e le sfide legate all'adozione di tecnologie emergenti. Si osserva un crescente interesse verso le modalità di collaborazione nei team, nonché la necessità di affrontare le problematiche di governance legate all'IA.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'adozione di pratiche di testing automatizzate potrebbe continuare a crescere in risposta alle sfide di qualità del codice generate dall'IA.",
+      "Le politiche aziendali riguardo alla governance del codice e all'etica dell'IA potrebbero diventare sempre più centrali nelle strategie di sviluppo.",
+      "La resistenza all'adozione di nuovi strumenti da parte di alcuni sviluppatori potrebbe influenzare l'implementazione di pratiche innovative."
+    ],
+    "divergences": [
+      "Gli articoli tendono a enfatizzare le competenze trasversali necessarie per la leadership, mentre le discussioni su Reddit potrebbero focalizzarsi maggiormente su esperienze pratiche e sfide quotidiane.",
+      "Mentre gli articoli analizzano l'impatto dell'IA in modo teorico, le conversazioni su Reddit potrebbero rivelare preoccupazioni più concrete e immediate legate all'implementazione.",
+      "Gli articoli suggeriscono un'evoluzione positiva delle dinamiche di team, mentre le opinioni su Reddit potrebbero evidenziare resistenze e difficoltà reali nel cambiamento delle pratiche lavorative."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-11-02.management-layer.md",
+    "telegram": "telegram/2026-11-02.management-layer.telegram.md",
+    "json": "data/2026-11-02.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}

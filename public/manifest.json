@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-10-26T13:56:21.454Z",
+  "generated_at_utc": "2026-11-02T16:51:35.938Z",
   "version": 1,
   "latest": {
-    "date": "2026-10-26",
+    "date": "2026-11-02",
     "paths": {
-      "markdown": "reports/2026-10-26.management-layer.md",
-      "telegram": "telegram/2026-10-26.management-layer.telegram.md",
-      "json": "data/2026-10-26.management-layer.json"
+      "markdown": "reports/2026-11-02.management-layer.md",
+      "telegram": "telegram/2026-11-02.management-layer.telegram.md",
+      "json": "data/2026-11-02.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-11-02",
+      "title": "The Management Layer — 2026-11-02",
+      "paths": {
+        "markdown": "reports/2026-11-02.management-layer.md",
+        "telegram": "telegram/2026-11-02.management-layer.telegram.md",
+        "json": "data/2026-11-02.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 2 novembre 2026, sono stati analizzati 24 articoli, con un focus sull'evoluzione delle pratiche di leadership ingegneristica e sull'impatto dell'intelligenza artificiale nel con...",
+      "topLinks": [
+        {
+          "title": "The second language of engineering leadership",
+          "url": "https://leaddev.com/culture/the-second-language-of-engineering-leadership",
+          "source": "LeadDev"
+        },
+        {
+          "title": "5 skills that make you a better engineering leader",
+          "url": "https://leaddev.com/leadership/5-skills-that-make-you-a-better-engineering-leader",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Game Off 2026: The theme is SHIFT",
+          "url": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "Fragments: October 28",
+          "url": "https://martinfowler.com/fragments/2026-10-28.html",
+          "source": "Martin Fowler"
+        },
+        {
+          "title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
+          "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/",
+          "source": "The GitHub Blog"
+        }
+      ]
+    },
     {
       "date": "2026-10-26",
       "title": "The Management Layer — 2026-10-26",
