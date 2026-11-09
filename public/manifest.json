@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-11-02T16:51:35.938Z",
+  "generated_at_utc": "2026-11-09T17:12:34.178Z",
   "version": 1,
   "latest": {
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "paths": {
-      "markdown": "reports/2026-11-02.management-layer.md",
-      "telegram": "telegram/2026-11-02.management-layer.telegram.md",
-      "json": "data/2026-11-02.management-layer.json"
+      "markdown": "reports/2026-11-09.management-layer.md",
+      "telegram": "telegram/2026-11-09.management-layer.telegram.md",
+      "json": "data/2026-11-09.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-11-09",
+      "title": "The Management Layer — 2026-11-09",
+      "paths": {
+        "markdown": "reports/2026-11-09.management-layer.md",
+        "telegram": "telegram/2026-11-09.management-layer.telegram.md",
+        "json": "data/2026-11-09.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 9 novembre 2026, sono stati analizzati 27 articoli, con un focus sull'evoluzione delle pratiche di leadership ingegneristica e sull'impatto dell'intelligenza artificiale nel con...",
+      "topLinks": [
+        {
+          "title": "Stop measuring developer productivity",
+          "url": "https://leaddev.com/reporting/stop-measuring-developer-productivity",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Beyond the award: The people behind our onboarding experience",
+          "url": "https://www.thoughtworks.com/insights/blog/careers-at-thoughtworks/the-people-behind-our-onboarding-experience",
+          "source": "Thoughtworks Insights"
+        },
+        {
+          "title": "Fact-Checking at Scale: Building a More Accurate and Efficient Synopsis Factuality System",
+          "url": "https://netflixtechblog.com/fact-checking-at-scale-building-a-more-accurate-and-efficient-synopsis-factuality-system-d7d85859d808",
+          "source": "Netflix TechBlog (Medium)"
+        },
+        {
+          "title": "Beyond code generation: A developer’s guide to agentic engineering",
+          "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
+          "source": "The GitHub Blog"
+        },
+        {
+          "title": "You can lead AI without building it",
+          "url": "https://leaddev.com/leadership/you-can-lead-ai-without-building-it",
+          "source": "LeadDev"
+        }
+      ]
+    },
     {
       "date": "2026-11-02",
       "title": "The Management Layer — 2026-11-02",

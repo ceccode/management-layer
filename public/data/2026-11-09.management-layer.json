@@ -1,0 +1,302 @@
+{
+  "date": "2026-11-09",
+  "title": "The Management Layer — 2026-11-09",
+  "counts": {
+    "articles": 27,
+    "reddit": 0,
+    "feeds": 11,
+    "subreddits": 6
+  },
+  "itemsTopOverall": [
+    {
+      "id": "901f9ccd8ba45efeae54f37cfd879fd8",
+      "title": "Stop measuring developer productivity",
+      "url": "https://leaddev.com/reporting/stop-measuring-developer-productivity",
+      "source": "LeadDev",
+      "publishedAt": "2026-11-09T06:11:17.000Z",
+      "type": "article",
+      "score": 3.8,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "0a46b849e156ab1fb9a4881d67ec48d4",
+      "title": "Beyond the award: The people behind our onboarding experience",
+      "url": "https://www.thoughtworks.com/insights/blog/careers-at-thoughtworks/the-people-behind-our-onboarding-experience",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    },
+    {
+      "id": "5dd2e2217bcebc3e8f4bd7beb8efd336",
+      "title": "Fact-Checking at Scale: Building a More Accurate and Efficient Synopsis Factuality System",
+      "url": "https://netflixtechblog.com/fact-checking-at-scale-building-a-more-accurate-and-efficient-synopsis-factuality-system-d7d85859d808",
+      "source": "Netflix TechBlog (Medium)",
+      "publishedAt": "2026-11-09T17:01:02.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "systems",
+        "reliability"
+      ]
+    },
+    {
+      "id": "3f0658da8b3b8ddcba03ae556555814a",
+      "title": "Beyond code generation: A developer’s guide to agentic engineering",
+      "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-11-06T22:15:59.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "e983b0069112614b680637c2298a5f5e",
+      "title": "You can lead AI without building it",
+      "url": "https://leaddev.com/leadership/you-can-lead-ai-without-building-it",
+      "source": "LeadDev",
+      "publishedAt": "2026-11-05T08:10:54.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "50d53b2b4993cf946947a95723309340",
+      "title": "Agile matters more in the AI era",
+      "url": "https://leaddev.com/ai/agile-matters-more-in-the-ai-era",
+      "source": "LeadDev",
+      "publishedAt": "2026-11-04T08:24:48.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "009a0ba732c0e0ce4801172f8798f18e",
+      "title": "AI turned tech leads into architects",
+      "url": "https://leaddev.com/leadership/ai-turned-tech-leads-into-architects",
+      "source": "LeadDev",
+      "publishedAt": "2026-11-03T07:56:35.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "6c2f750976a221bd8a4299981510bf22",
+      "title": "The Data Product Platform Navigator",
+      "url": "https://martinfowler.com/articles/data-product-platform-nav.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-11-05T14:11:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "027268958251b95511f77d33aab2950d",
+      "title": "Closing the context gap is what banking AI needs",
+      "url": "https://www.thoughtworks.com/insights/blog/data-strategy/closing-the-context-gap-is-what-banking-ai-needs",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-11-06T00:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    },
+    {
+      "id": "fb630ed759df61b79bca73bf4b7e8672",
+      "title": "Why a language model misses fraud in your transaction data",
+      "url": "https://www.thoughtworks.com/insights/blog/why-a-language-model-misses-fraud-in-your-transaction-data",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-11-06T00:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    }
+  ],
+  "itemsTopReddit": [],
+  "itemsTopArticles": [
+    {
+      "id": "901f9ccd8ba45efeae54f37cfd879fd8",
+      "title": "Stop measuring developer productivity",
+      "url": "https://leaddev.com/reporting/stop-measuring-developer-productivity",
+      "source": "LeadDev",
+      "publishedAt": "2026-11-09T06:11:17.000Z",
+      "type": "article",
+      "score": 3.8,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "0a46b849e156ab1fb9a4881d67ec48d4",
+      "title": "Beyond the award: The people behind our onboarding experience",
+      "url": "https://www.thoughtworks.com/insights/blog/careers-at-thoughtworks/the-people-behind-our-onboarding-experience",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    },
+    {
+      "id": "5dd2e2217bcebc3e8f4bd7beb8efd336",
+      "title": "Fact-Checking at Scale: Building a More Accurate and Efficient Synopsis Factuality System",
+      "url": "https://netflixtechblog.com/fact-checking-at-scale-building-a-more-accurate-and-efficient-synopsis-factuality-system-d7d85859d808",
+      "source": "Netflix TechBlog (Medium)",
+      "publishedAt": "2026-11-09T17:01:02.000Z",
+      "type": "article",
+      "score": 3,
+      "tags": [
+        "systems",
+        "reliability"
+      ]
+    },
+    {
+      "id": "3f0658da8b3b8ddcba03ae556555814a",
+      "title": "Beyond code generation: A developer’s guide to agentic engineering",
+      "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
+      "source": "The GitHub Blog",
+      "publishedAt": "2026-11-06T22:15:59.000Z",
+      "type": "article",
+      "score": 1.5,
+      "tags": [
+        "dev-productivity",
+        "engineering-culture"
+      ]
+    },
+    {
+      "id": "e983b0069112614b680637c2298a5f5e",
+      "title": "You can lead AI without building it",
+      "url": "https://leaddev.com/leadership/you-can-lead-ai-without-building-it",
+      "source": "LeadDev",
+      "publishedAt": "2026-11-05T08:10:54.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "50d53b2b4993cf946947a95723309340",
+      "title": "Agile matters more in the AI era",
+      "url": "https://leaddev.com/ai/agile-matters-more-in-the-ai-era",
+      "source": "LeadDev",
+      "publishedAt": "2026-11-04T08:24:48.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "009a0ba732c0e0ce4801172f8798f18e",
+      "title": "AI turned tech leads into architects",
+      "url": "https://leaddev.com/leadership/ai-turned-tech-leads-into-architects",
+      "source": "LeadDev",
+      "publishedAt": "2026-11-03T07:56:35.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "engineering-management",
+        "leadership"
+      ]
+    },
+    {
+      "id": "6c2f750976a221bd8a4299981510bf22",
+      "title": "The Data Product Platform Navigator",
+      "url": "https://martinfowler.com/articles/data-product-platform-nav.html",
+      "source": "Martin Fowler",
+      "publishedAt": "2026-11-05T14:11:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "architecture",
+        "technical-leadership"
+      ]
+    },
+    {
+      "id": "027268958251b95511f77d33aab2950d",
+      "title": "Closing the context gap is what banking AI needs",
+      "url": "https://www.thoughtworks.com/insights/blog/data-strategy/closing-the-context-gap-is-what-banking-ai-needs",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-11-06T00:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    },
+    {
+      "id": "fb630ed759df61b79bca73bf4b7e8672",
+      "title": "Why a language model misses fraud in your transaction data",
+      "url": "https://www.thoughtworks.com/insights/blog/why-a-language-model-misses-fraud-in-your-transaction-data",
+      "source": "Thoughtworks Insights",
+      "publishedAt": "2026-11-06T00:00:00.000Z",
+      "type": "article",
+      "score": 0.5,
+      "tags": [
+        "technology-strategy",
+        "org-design"
+      ]
+    }
+  ],
+  "llm": {
+    "executiveSummary": "Nella settimana del 9 novembre 2026, sono stati analizzati 27 articoli, con un focus sull'evoluzione delle pratiche di leadership ingegneristica e sull'impatto dell'intelligenza artificiale nel contesto dello sviluppo software. Si osservano tensioni tra l'adozione di nuove tecnologie e le pratiche consolidate, con un crescente interesse verso la governance del codice e le implicazioni etiche legate all'IA. Inoltre, emergono nuove dinamiche nei team di sviluppo, influenzate dalla necessità di integrazione delle tecnologie emergenti.",
+    "themes": [
+      "Engineering Management e Leadership",
+      "Pratiche e Processi",
+      "Cultura e Organizzazione"
+    ],
+    "signals": [
+      "L'interesse verso pratiche di onboarding strutturate potrebbe aumentare, influenzando le strategie di assunzione e integrazione dei team.",
+      "La discussione sulla misurazione della produttività degli sviluppatori potrebbe portare a nuove pratiche di valutazione e gestione del lavoro.",
+      "L'evoluzione del ruolo dei leader tecnici in risposta all'IA potrebbe richiedere un ripensamento delle competenze richieste per la leadership ingegneristica."
+    ],
+    "divergences": [
+      "Gli articoli tendono a focalizzarsi su approcci strategici e metodologici, mentre le discussioni Reddit potrebbero enfatizzare esperienze pratiche e aneddotiche.",
+      "Le pubblicazioni analizzano le implicazioni a lungo termine delle pratiche di onboarding, mentre le conversazioni su Reddit possono riflettere preoccupazioni immediate e personali degli sviluppatori.",
+      "Gli articoli offrono una visione più teorica sulla misurazione della produttività, mentre le discussioni Reddit potrebbero evidenziare frustrazioni pratiche legate a metriche specifiche."
+    ]
+  },
+  "paths": {
+    "markdown": "reports/2026-11-09.management-layer.md",
+    "telegram": "telegram/2026-11-09.management-layer.telegram.md",
+    "json": "data/2026-11-09.management-layer.json"
+  },
+  "methodology": {
+    "lookbackDays": 7,
+    "scoringVersion": "1.0.0"
+  }
+}
