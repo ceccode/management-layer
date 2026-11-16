@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-11-09T17:12:34.178Z",
+  "generated_at_utc": "2026-11-16T16:47:40.861Z",
   "version": 1,
   "latest": {
-    "date": "2026-11-09",
+    "date": "2026-11-16",
     "paths": {
-      "markdown": "reports/2026-11-09.management-layer.md",
-      "telegram": "telegram/2026-11-09.management-layer.telegram.md",
-      "json": "data/2026-11-09.management-layer.json"
+      "markdown": "reports/2026-11-16.management-layer.md",
+      "telegram": "telegram/2026-11-16.management-layer.telegram.md",
+      "json": "data/2026-11-16.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-11-16",
+      "title": "The Management Layer — 2026-11-16",
+      "paths": {
+        "markdown": "reports/2026-11-16.management-layer.md",
+        "telegram": "telegram/2026-11-16.management-layer.telegram.md",
+        "json": "data/2026-11-16.management-layer.json"
+      },
+      "excerpt": "Nella settimana del 16 novembre 2026, sono stati analizzati 25 articoli, con un focus sull'impatto dell'intelligenza artificiale nelle pratiche di ingegneria e sulla governance del codice. Si osser...",
+      "topLinks": [
+        {
+          "title": "Systems thinking outlasts frameworks",
+          "url": "https://leaddev.com/technical-direction/systems-thinking-outlasts-frameworks",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Everyone’s a software engineer now",
+          "url": "https://leaddev.com/management/everyones-a-software-engineer-now",
+          "source": "LeadDev"
+        },
+        {
+          "title": "How Thermo Fisher Scientific built AI-powered patient matching on AWS",
+          "url": "https://aws.amazon.com/blogs/architecture/how-thermo-fisher-scientific-built-ai-powered-patient-matching-on-aws/",
+          "source": "AWS Architecture Blog"
+        },
+        {
+          "title": "AI adoption has left strategy behind",
+          "url": "https://leaddev.com/ai/ai-adoption-has-left-strategy-behind",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Long-horizon agents and durable execution",
+          "url": "https://martinfowler.com/articles/durable-execution-agents.html",
+          "source": "Martin Fowler"
+        }
+      ]
+    },
     {
       "date": "2026-11-09",
       "title": "The Management Layer — 2026-11-09",
