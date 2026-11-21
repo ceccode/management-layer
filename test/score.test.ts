@@ -41,6 +41,22 @@ describe('keywords', () => {
     expect(scoreOf(item, ['strategy', 'ownership', 'hiring'])).toBeCloseTo(1.6);
   });
 
+  it('does not match a keyword buried inside another word', () => {
+    const item = anArticle({ title: 'The AI factory stack', publishedAt: old });
+
+    expect(scoreOf(item, ['cto'])).toBe(0);
+  });
+
+  it('matches a keyword at the start of a word, plurals included', () => {
+    expect(scoreOf(anArticle({ title: 'What CTOs get wrong', publishedAt: old }), ['cto'])).toBeCloseTo(0.8);
+    expect(scoreOf(anArticle({ title: 'Why platform teams fail', publishedAt: old }), ['platform team'])).toBeCloseTo(0.8);
+  });
+
+  it('treats punctuation in a keyword literally', () => {
+    expect(scoreOf(anArticle({ title: 'Scaling C++ teams', publishedAt: old }), ['c++'])).toBeCloseTo(0.8);
+    expect(scoreOf(anArticle({ title: 'Scaling C teams', publishedAt: old }), ['c++'])).toBe(0);
+  });
+
   it('adds nothing when no keyword matches', () => {
     expect(scoreOf(anArticle({ title: 'Kubernetes 2.0', publishedAt: old }), ['strategy'])).toBe(0);
   });
@@ -146,5 +162,29 @@ describe('selectTopItems', () => {
     selectTopItems(items, 3, 5);
 
     expect(items[0].id).toBe('a1');
+  });
+
+  describe('with a limit per source', () => {
+    const prolific = [5, 4, 3, 2].map(score => anArticle({ id: `hbr-${score}`, source: 'HBR', score }));
+    const other = anArticle({ id: 'leaddev-1', source: 'LeadDev', score: 1 });
+
+    it('takes only the best items of a source and makes room for the others', () => {
+      const { topOverall, topArticles } = selectTopItems([...prolific, other], 10, 5, 3);
+
+      expect(topOverall.map(item => item.id)).toEqual(['hbr-5', 'hbr-4', 'hbr-3', 'leaddev-1']);
+      expect(topArticles.map(item => item.id)).toEqual(['hbr-5', 'hbr-4', 'hbr-3', 'leaddev-1']);
+    });
+
+    it('still keeps the ranking by score', () => {
+      const strong = anArticle({ id: 'leaddev-9', source: 'LeadDev', score: 4.5 });
+
+      const { topOverall } = selectTopItems([...prolific, strong], 3, 5, 2);
+
+      expect(topOverall.map(item => item.id)).toEqual(['hbr-5', 'leaddev-9', 'hbr-4']);
+    });
+
+    it('does not limit sources unless asked to', () => {
+      expect(selectTopItems(prolific).topOverall).toHaveLength(4);
+    });
   });
 });

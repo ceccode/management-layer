@@ -25,9 +25,18 @@ function recencyScore(publishedAt: string, now: Date): number {
   return bracket ? bracket.score : 0;
 }
 
+/**
+ * A keyword matches where a word of the title starts with it: "cto" matches
+ * "CTO" and "CTOs", but not "factory".
+ */
+function mentions(title: string, keyword: string): boolean {
+  const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+  return new RegExp(`(?<![\\p{L}\\p{N}])${escaped}`, 'iu').test(title);
+}
+
 function keywordScore(title: string, keywords: string[]): number {
-  const titleLower = title.toLowerCase();
-  const matches = keywords.filter(keyword => titleLower.includes(keyword.toLowerCase()));
+  const matches = keywords.filter(keyword => mentions(title, keyword));
 
   return matches.length * KEYWORD_MATCH_SCORE;
 }
@@ -63,13 +72,44 @@ export function scoreItems(items: Item[], keywords: string[], now: Date): Item[]
   return scoredItems;
 }
 
-export function selectTopItems(items: Item[], topN = 10, topRedditN = 5): SelectedItems {
+/** The best `limit` items of a ranking, taking at most `maxPerSource` from each source. */
+function topItems(ranked: Item[], limit: number, maxPerSource: number): Item[] {
+  const takenFrom = new Map<string, number>();
+  const top: Item[] = [];
+
+  for (const item of ranked) {
+    if (top.length === limit) {
+      break;
+    }
+
+    const taken = takenFrom.get(item.source) ?? 0;
+
+    if (taken < maxPerSource) {
+      takenFrom.set(item.source, taken + 1);
+      top.push(item);
+    }
+  }
+
+  return top;
+}
+
+/**
+ * `maxPerSource` keeps a prolific source from crowding the others out of a list.
+ */
+export function selectTopItems(
+  items: Item[],
+  topN = 10,
+  topRedditN = 5,
+  maxPerSource = Infinity
+): SelectedItems {
   const ranked = [...items].sort((a, b) => b.score - a.score);
+  const redditPosts = ranked.filter(item => item.type === 'reddit');
+  const articles = ranked.filter(item => item.type === 'article');
 
   const selected = {
-    topOverall: ranked.slice(0, topN),
-    topReddit: ranked.filter(item => item.type === 'reddit').slice(0, topRedditN),
-    topArticles: ranked.filter(item => item.type === 'article').slice(0, topN),
+    topOverall: topItems(ranked, topN, maxPerSource),
+    topReddit: topItems(redditPosts, topRedditN, maxPerSource),
+    topArticles: topItems(articles, topN, maxPerSource),
   };
 
   log(

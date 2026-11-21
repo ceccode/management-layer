@@ -17,6 +17,7 @@ import { log } from './utils/logging.js';
 
 const TOP_ITEMS = 10;
 const TOP_REDDIT_ITEMS = 5;
+const MAX_ITEMS_PER_SOURCE = 3;
 
 function applyCliOverrides(config: Config, options: CLIOptions): Config {
   if (options.noReddit) {
@@ -81,7 +82,7 @@ async function buildReport(options: CLIOptions, config: Config): Promise<Report>
   const scoredItems = scoreItems(items, config.keywords.keywords, options.referenceTime);
 
   log('info', 'Selecting top items...');
-  const selected = selectTopItems(scoredItems, TOP_ITEMS, TOP_REDDIT_ITEMS);
+  const selected = selectTopItems(scoredItems, TOP_ITEMS, TOP_REDDIT_ITEMS, MAX_ITEMS_PER_SOURCE);
 
   log('info', 'Building RAG context...');
   const ragContext = await buildRAGContext(config.llm.ragWeeks, config.llm.maxRagWords);
@@ -141,8 +142,8 @@ async function main(): Promise<void> {
   log('info', `Top items selected: ${report.selected.topOverall.length}`);
 }
 
-// Exit explicitly: rss-parser can leave a connection open after a redirect,
-// which would keep the process alive long after the report is written.
+// Exit explicitly, so that a connection left open by a feed cannot keep the
+// process alive after the report is written.
 main().then(
   () => process.exit(0),
   error => {

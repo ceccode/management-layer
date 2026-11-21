@@ -9,7 +9,7 @@
     },
     {
       "name": "Harvard Business Review",
-      "url": "https://www.feeds.hbr.org/",
+      "url": "https://hbr.org/resources/xml/atom/latest-abridged.xml",
       "weight": 1.10,
       "tags": ["management", "leadership"]
     },
@@ -45,13 +45,13 @@
     },
     {
       "name": "Google Cloud Blog",
-      "url": "https://cloud.google.com/blog/rss",
+      "url": "https://cloudblog.withgoogle.com/rss/",
       "weight": 0.80,
       "tags": ["cloud", "scale"]
     },
     {
       "name": "InfoQ Articles",
-      "url": "https://www.infoq.com/RSS/articles/",
+      "url": "https://feed.infoq.com/articles/",
       "weight": 0.85,
       "tags": ["software-delivery", "org"]
     },

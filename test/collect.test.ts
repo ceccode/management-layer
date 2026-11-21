@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { recentItemsOf } from '../src/collect/rss.js';
+import Parser from 'rss-parser';
+import { recentItemsOf, withUnprefixedAtom } from '../src/collect/rss.js';
 
 const NOW = new Date('2026-11-16T12:00:00.000Z');
 const feed = { name: 'LeadDev', url: 'https://leaddev.com/rss.xml', weight: 1.25, tags: ['leadership'] };
@@ -17,6 +18,14 @@ describe('recentItemsOf', () => {
         weight: 1.25,
       },
     ]);
+  });
+
+  it('resolves a relative link against the address of the feed', () => {
+    const hbr = { ...feed, url: 'https://hbr.org/resources/xml/atom/latest-abridged.xml' };
+
+    const [item] = recentItemsOf(hbr, [{ ...entry, link: '/2026/11/moving-fast' }], 7, NOW);
+
+    expect(item.link).toBe('https://hbr.org/2026/11/moving-fast');
   });
 
   it('falls back to pubDate when the entry has no ISO date', () => {
@@ -40,5 +49,46 @@ describe('recentItemsOf', () => {
 
     expect(recentItemsOf(feed, [old], 7, NOW)).toEqual([]);
     expect(recentItemsOf(feed, [old], 30, NOW)).toHaveLength(1);
+  });
+});
+
+describe('withUnprefixedAtom', () => {
+  const prefixedAtom = `<?xml version="1.0" encoding="UTF-8"?>
+<ns6:feed xmlns:ns6="http://www.w3.org/2005/Atom" xmlns:hbr="http://hbr.org/2014/HbrAtom">
+  <ns6:title>HBR CMS</ns6:title>
+  <ns6:entry>
+    <ns6:title>Moving fast</ns6:title>
+    <ns6:link href="/2026/11/moving-fast" rel="alternate" type="text/html"/>
+    <ns6:published>2026-11-15T08:00:00Z</ns6:published>
+    <hbr:kicker>Strategy</hbr:kicker>
+  </ns6:entry>
+</ns6:feed>`;
+
+  it('makes a namespace-prefixed Atom feed readable by the parser', async () => {
+    const parsed = await new Parser().parseString(withUnprefixedAtom(prefixedAtom));
+
+    expect(parsed.items).toHaveLength(1);
+    expect(parsed.items[0]).toMatchObject({
+      title: 'Moving fast',
+      link: '/2026/11/moving-fast',
+      isoDate: '2026-11-15T08:00:00.000Z',
+    });
+  });
+
+  it('leaves the elements of other namespaces alone', () => {
+    expect(withUnprefixedAtom(prefixedAtom)).toContain('<hbr:kicker>Strategy</hbr:kicker>');
+  });
+
+  it('leaves an RSS feed that merely uses Atom links untouched', () => {
+    const rss = `<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>
+<atom:link href="https://example.com/feed" rel="self"/><item><title>A</title></item></channel></rss>`;
+
+    expect(withUnprefixedAtom(rss)).toBe(rss);
+  });
+
+  it('leaves a plain Atom feed untouched', () => {
+    const atom = '<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>A</title></entry></feed>';
+
+    expect(withUnprefixedAtom(atom)).toBe(atom);
   });
 });
