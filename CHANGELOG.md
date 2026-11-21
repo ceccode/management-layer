@@ -9,10 +9,15 @@
 - Past themes and divergences never reached the historical (RAG) context
 - Reddit posts with no comments got no engagement score
 - The methodology section always said "7 giorni" whatever `lookbackDays` was
+- Keywords matched inside unrelated words ("cto" in "factory")
+- Three of the eleven feeds failed on every run: Harvard Business Review and
+  Google Cloud Blog had moved, InfoQ rejected the request headers
+- Atom feeds with a namespace prefix and feeds with relative links are now read
 
 ### Changed
 - Source `weight` now multiplies the score of an item (it was configured but ignored);
   items in the JSON report carry their `weight`, and `scoringVersion` is `2.0.0`
+- The top lists take at most 3 items from the same source
 - `ragWeeks` in `config/llm.json` now sets the RAG lookback; `--rag-k` overrides it
 - `--date` now also sets the instant recency and lookback are measured from
 - Invalid `--date` and `--rag-k` values are rejected instead of silently accepted

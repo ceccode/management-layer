@@ -182,9 +182,12 @@ score = (recency + keyword matches + reddit engagement) × source weight
 ```
 
 - **Recency**: 3 if published in the last 24 hours, 1.5 in the last 3 days, 0.5 in the last 7 days
-- **Keyword matches**: 0.8 for each keyword of `config/keywords.json` found in the title
+- **Keyword matches**: 0.8 for each keyword of `config/keywords.json` that starts a word of the title (`cto` matches "CTOs", not "factory")
 - **Reddit engagement**: upvotes / 50 + comments / 20, capped at 5
 - **Source weight**: the `weight` of the feed or subreddit the item comes from
+
+The top lists take at most 3 items from the same source, so that a prolific
+source cannot crowd the others out.
 
 ### Adjust Keywords
 
