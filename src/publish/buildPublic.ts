@@ -1,8 +1,10 @@
 import { mkdir, writeFile, copyFile } from 'fs/promises';
 import { join } from 'path';
-import { existsSync } from 'fs';
+import { reportPaths } from '../report/report.js';
 import { log } from '../utils/logging.js';
-import { buildManifest } from './manifest.js';
+import { buildManifest, type Manifest } from './manifest.js';
+
+const RECENT_REPORTS = 10;
 
 interface PublishData {
   weekDate: string;
@@ -11,70 +13,51 @@ interface PublishData {
   jsonContent: string;
 }
 
+async function writePublicFile(publicDir: string, relativePath: string, content: string): Promise<string> {
+  const path = join(publicDir, relativePath);
+  await mkdir(join(path, '..'), { recursive: true });
+  await writeFile(path, content, 'utf-8');
+  log('success', `Written: ${path}`);
+  return path;
+}
+
 export async function buildPublicDirectory(data: PublishData): Promise<void> {
   const publicDir = join(process.cwd(), 'public');
-  
-  const dirs = [
-    publicDir,
-    join(publicDir, 'reports'),
-    join(publicDir, 'telegram'),
-    join(publicDir, 'data'),
-  ];
-  
-  for (const dir of dirs) {
-    if (!existsSync(dir)) {
-      await mkdir(dir, { recursive: true });
-    }
-  }
-  
-  const basename = `${data.weekDate}.management-layer`;
-  
-  const reportPath = join(publicDir, 'reports', `${basename}.md`);
-  await writeFile(reportPath, data.markdownContent, 'utf-8');
-  log('success', `Written report: ${reportPath}`);
-  
-  const telegramPath = join(publicDir, 'telegram', `${basename}.telegram.md`);
-  await writeFile(telegramPath, data.telegramContent, 'utf-8');
-  log('success', `Written telegram: ${telegramPath}`);
-  
-  const jsonPath = join(publicDir, 'data', `${basename}.json`);
-  await writeFile(jsonPath, data.jsonContent, 'utf-8');
-  log('success', `Written JSON: ${jsonPath}`);
-  
-  await buildManifest(publicDir);
-  
-  await generateIndexHtml(publicDir);
-  
+  const paths = reportPaths(data.weekDate);
+
+  const reportPath = await writePublicFile(publicDir, paths.markdown, data.markdownContent);
+  await writePublicFile(publicDir, paths.telegram, data.telegramContent);
+  await writePublicFile(publicDir, paths.json, data.jsonContent);
+
+  const manifest = await buildManifest(publicDir);
+  await writePublicFile(publicDir, 'index.html', renderIndexHtml(manifest));
+
   const archiveDir = join(process.cwd(), 'reports');
-  if (!existsSync(archiveDir)) {
-    await mkdir(archiveDir, { recursive: true });
-  }
-  const archivePath = join(archiveDir, `${basename}.md`);
+  await mkdir(archiveDir, { recursive: true });
+  const archivePath = join(archiveDir, `${data.weekDate}.management-layer.md`);
   await copyFile(reportPath, archivePath);
   log('info', `Archived report to: ${archivePath}`);
 }
 
-async function generateIndexHtml(publicDir: string): Promise<void> {
-  const manifestPath = join(publicDir, 'manifest.json');
-  
-  if (!existsSync(manifestPath)) {
-    log('warn', 'No manifest found, skipping index.html generation');
-    return;
-  }
-  
-  const manifestContent = await readFile(manifestPath, 'utf-8');
-  const manifest = JSON.parse(manifestContent);
-  
-  const latestReport = manifest.latest 
-    ? `<p><strong>Latest Report:</strong> <a href="${manifest.latest.paths.markdown}">${manifest.latest.date}</a></p>`
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+export function renderIndexHtml(manifest: Manifest): string {
+  const latestReport = manifest.latest
+    ? `<p><strong>Latest Report:</strong> <a href="${escapeHtml(manifest.latest.paths.markdown)}">${escapeHtml(manifest.latest.date)}</a></p>`
     : '<p>No reports available yet.</p>';
-  
+
   const reportsList = manifest.reports
-    .slice(0, 10)
-    .map((report: any) => `<li><a href="${report.paths.markdown}">${report.date}</a> - ${report.title}</li>`)
+    .slice(0, RECENT_REPORTS)
+    .map(report => `<li><a href="${escapeHtml(report.paths.markdown)}">${escapeHtml(report.date)}</a> - ${escapeHtml(report.title)}</li>`)
     .join('\n      ');
-  
-  const html = `<!DOCTYPE html>
+
+  return `<!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
@@ -145,10 +128,4 @@ async function generateIndexHtml(publicDir: string): Promise<void> {
   </footer>
 </body>
 </html>`;
-  
-  const indexPath = join(publicDir, 'index.html');
-  await writeFile(indexPath, html, 'utf-8');
-  log('success', 'Generated index.html');
 }
-
-import { readFile } from 'fs/promises';

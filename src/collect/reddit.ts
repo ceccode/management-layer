@@ -10,7 +10,7 @@ interface RedditPost {
   num_comments: number;
 }
 
-interface RawRedditItem {
+export interface RawRedditItem {
   title: string;
   url: string;
   publishedAt: string;

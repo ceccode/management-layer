@@ -47,6 +47,7 @@ export const ItemSchema = z.object({
   publishedAt: z.string(),
   type: z.enum(['article', 'reddit']),
   score: z.number(),
+  weight: z.number(),
   tags: z.array(z.string()),
   subreddit: z.string().optional(),
   upvotes: z.number().optional(),

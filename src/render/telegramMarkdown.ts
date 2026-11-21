@@ -1,22 +1,20 @@
-import type { Item } from '../config/schema.js';
+import type { Report } from '../report/report.js';
 import { truncateText } from '../utils/truncate.js';
 
-interface TelegramData {
-  weekDate: string;
-  topOverall: Item[];
-  topReddit: Item[];
-}
+const MAX_MESSAGE_LENGTH = 1200;
 
-export function generateTelegramMarkdown(data: TelegramData): string {
-  const header = `*The Management Layer — ${data.weekDate}*\n\n`;
+export function generateTelegramMarkdown(report: Report): string {
+  const { topOverall, topReddit } = report.selected;
+
+  const header = `*${report.title}*\n\n`;
   
-  const topContents = `*Top contenuti*\n${data.topOverall.slice(0, 5).map((item, i) => {
+  const topContents = `*Top contenuti*\n${topOverall.slice(0, 5).map((item, i) => {
     const title = truncateText(item.title, 80);
     return `${i + 1}. [${title}](${item.url}) — ${item.source}`;
   }).join('\n')}\n\n`;
   
-  const redditSection = data.topReddit.length > 0 
-    ? `*Reddit*\n${data.topReddit.slice(0, 3).map(item => {
+  const redditSection = topReddit.length > 0 
+    ? `*Reddit*\n${topReddit.slice(0, 3).map(item => {
         const title = truncateText(item.title, 70);
         return `• r/${item.subreddit} — [${title}](${item.url}) (↑${item.upvotes} 💬${item.commentsCount})`;
       }).join('\n')}\n\n`
@@ -28,9 +26,9 @@ export function generateTelegramMarkdown(data: TelegramData): string {
   
   const content = header + topContents + redditSection + summary + disclaimer;
   
-  if (content.length > 1200) {
+  if (content.length > MAX_MESSAGE_LENGTH) {
     const reduced = header + 
-      `*Top contenuti*\n${data.topOverall.slice(0, 3).map((item, i) => {
+      `*Top contenuti*\n${topOverall.slice(0, 3).map((item, i) => {
         const title = truncateText(item.title, 60);
         return `${i + 1}. [${title}](${item.url})`;
       }).join('\n')}\n\n` +

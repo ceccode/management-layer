@@ -1,5 +1,27 @@
 # Changelog
 
+## [Unreleased]
+
+### Fixed
+- "Temi della settimana" was empty in every LLM-generated report: the section
+  parser stopped at the first `###` sub-heading
+- JSON reports listed three hard-coded themes instead of the ones of the week
+- Past themes and divergences never reached the historical (RAG) context
+- Reddit posts with no comments got no engagement score
+- The methodology section always said "7 giorni" whatever `lookbackDays` was
+
+### Changed
+- Source `weight` now multiplies the score of an item (it was configured but ignored);
+  items in the JSON report carry their `weight`, and `scoringVersion` is `2.0.0`
+- `ragWeeks` in `config/llm.json` now sets the RAG lookback; `--rag-k` overrides it
+- `--date` now also sets the instant recency and lookback are measured from
+- Invalid `--date` and `--rag-k` values are rejected instead of silently accepted
+- LLM requests time out after two minutes
+- Report titles are HTML-escaped in `index.html`
+
+### Added
+- Vitest test suite (`npm test`), run in CI before a report is generated
+
 ## [1.0.0] - 2024-12-31
 
 ### Added
