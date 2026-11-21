@@ -1,35 +1,13 @@
 import type { Item } from '../config/schema.js';
+import { reportPaths, type Report, type ReportCounts, type ReportPaths } from '../report/report.js';
 
-interface JsonReportData {
-  weekDate: string;
-  title: string;
-  counts: {
-    articles: number;
-    reddit: number;
-    feeds: number;
-    subreddits: number;
-  };
-  topOverall: Item[];
-  topReddit: Item[];
-  topArticles: Item[];
-  llmContent: {
-    executiveSummary: string;
-    themes: string;
-    signals: string;
-    divergences: string;
-  };
-  lookbackDays: number;
-}
+const SCORING_VERSION = '2.0.0';
+const MAX_THEMES = 3;
 
-interface JsonReport {
+export interface JsonReport {
   date: string;
   title: string;
-  counts: {
-    articles: number;
-    reddit: number;
-    feeds: number;
-    subreddits: number;
-  };
+  counts: ReportCounts;
   itemsTopOverall: Item[];
   itemsTopReddit: Item[];
   itemsTopArticles: Item[];
@@ -39,11 +17,7 @@ interface JsonReport {
     signals: string[];
     divergences: string[];
   };
-  paths: {
-    markdown: string;
-    telegram: string;
-    json: string;
-  };
+  paths: ReportPaths;
   methodology: {
     lookbackDays: number;
     scoringVersion: string;
@@ -58,41 +32,34 @@ function parseListItems(text: string): string[] {
     .filter(line => line.length > 0);
 }
 
-function parseThemes(themesText: string): string[] {
+/** The titles of the `### n) Title` sub-headings of the themes section. */
+function parseThemeTitles(themesText: string): string[] {
   const themePattern = /###\s+\d+\)\s+(.+?)(?=###|\n-|\n•|$)/gs;
   const matches = [...themesText.matchAll(themePattern)];
   
-  if (matches.length > 0) {
-    return matches.map(m => m[1].trim()).slice(0, 3);
-  }
-  
-  return ['Engineering Management e Leadership', 'Pratiche e Processi', 'Cultura e Organizzazione'];
+  return matches.map(match => match[1].trim()).slice(0, MAX_THEMES);
 }
 
-export function generateReportJson(data: JsonReportData): JsonReport {
-  const basename = `${data.weekDate}.management-layer`;
-  
+export function generateReportJson(report: Report): JsonReport {
+  const { analysis, selected } = report;
+
   return {
-    date: data.weekDate,
-    title: data.title,
-    counts: data.counts,
-    itemsTopOverall: data.topOverall,
-    itemsTopReddit: data.topReddit,
-    itemsTopArticles: data.topArticles,
+    date: report.weekDate,
+    title: report.title,
+    counts: report.counts,
+    itemsTopOverall: selected.topOverall,
+    itemsTopReddit: selected.topReddit,
+    itemsTopArticles: selected.topArticles,
     llm: {
-      executiveSummary: data.llmContent.executiveSummary,
-      themes: parseThemes(data.llmContent.themes),
-      signals: parseListItems(data.llmContent.signals),
-      divergences: parseListItems(data.llmContent.divergences),
+      executiveSummary: analysis.executiveSummary,
+      themes: parseThemeTitles(analysis.themes),
+      signals: parseListItems(analysis.signals),
+      divergences: parseListItems(analysis.divergences),
     },
-    paths: {
-      markdown: `reports/${basename}.md`,
-      telegram: `telegram/${basename}.telegram.md`,
-      json: `data/${basename}.json`,
-    },
+    paths: reportPaths(report.weekDate),
     methodology: {
-      lookbackDays: data.lookbackDays,
-      scoringVersion: '1.0.0',
+      lookbackDays: report.lookbackDays,
+      scoringVersion: SCORING_VERSION,
     },
   };
 }

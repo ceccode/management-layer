@@ -1,54 +1,38 @@
-import type { Item } from '../config/schema.js';
-import { formatDate } from '../utils/date.js';
+import type { Report } from '../report/report.js';
+import { SECTION_TITLES } from '../report/sections.js';
 
-interface ReportData {
-  weekDate: string;
-  counts: {
-    articles: number;
-    reddit: number;
-    feeds: number;
-    subreddits: number;
-  };
-  topOverall: Item[];
-  topReddit: Item[];
-  llmContent: {
-    executiveSummary: string;
-    themes: string;
-    signals: string;
-    divergences: string;
-  };
-}
+export function generateReportMarkdown(report: Report): string {
+  const { counts, analysis, selected } = report;
 
-export function generateReportMarkdown(data: ReportData): string {
   const frontmatter = `---
-title: "The Management Layer — ${data.weekDate}"
-date: ${data.weekDate}
+title: "${report.title}"
+date: ${report.weekDate}
 scope: "Leadership & Engineering Management"
 sources_count:
-  articles: ${data.counts.articles}
-  reddit: ${data.counts.reddit}
-  feeds: ${data.counts.feeds}
-  subreddits: ${data.counts.subreddits}
+  articles: ${counts.articles}
+  reddit: ${counts.reddit}
+  feeds: ${counts.feeds}
+  subreddits: ${counts.subreddits}
 disclaimer: "Contenuto informativo. Non costituisce consulenza professionale o manageriale."
 ---
 
 `;
 
-  const header = `# The Management Layer — ${data.weekDate}
+  const header = `# ${report.title}
 
 **How technology is actually led**
 
 `;
 
-  const executiveSummary = `## Executive Summary
+  const executiveSummary = `## ${SECTION_TITLES.executiveSummary}
 
-${data.llmContent.executiveSummary}
+${analysis.executiveSummary}
 
 `;
 
   const topContents = `## Top contenuti della settimana
 
-${data.topOverall.map((item, i) => {
+${selected.topOverall.map((item, i) => {
   const date = new Date(item.publishedAt).toLocaleDateString('it-IT', { 
     day: 'numeric', 
     month: 'short', 
@@ -59,29 +43,29 @@ ${data.topOverall.map((item, i) => {
 
 `;
 
-  const topRedditSection = data.topReddit.length > 0 ? `## Top discussioni Reddit
+  const topRedditSection = selected.topReddit.length > 0 ? `## Top discussioni Reddit
 
-${data.topReddit.map(item => {
+${selected.topReddit.map(item => {
   return `- **r/${item.subreddit}**: [${item.title}](${item.url})  \n  ↑ ${item.upvotes} • 💬 ${item.commentsCount}`;
 }).join('\n\n')}
 
 ` : '';
 
-  const themes = `## Temi della settimana
+  const themes = `## ${SECTION_TITLES.themes}
 
-${data.llmContent.themes}
-
-`;
-
-  const signals = `## Segnali da monitorare
-
-${data.llmContent.signals}
+${analysis.themes}
 
 `;
 
-  const divergences = data.llmContent.divergences ? `## Divergenze (Articoli vs Reddit)
+  const signals = `## ${SECTION_TITLES.signals}
 
-${data.llmContent.divergences}
+${analysis.signals}
+
+`;
+
+  const divergences = analysis.divergences ? `## ${SECTION_TITLES.divergences}
+
+${analysis.divergences}
 
 ` : '';
 
@@ -91,7 +75,7 @@ Questo report è generato attraverso:
 - **Raccolta dati**: Analisi di feed RSS da fonti editoriali selezionate e discussioni da subreddit rilevanti
 - **Scoring deterministico**: Algoritmo basato su recency, keyword matching e engagement (per Reddit)
 - **Analisi LLM**: Sintesi e individuazione pattern attraverso modello linguistico
-- **Lookback**: Ultimi ${data.counts.feeds} feed RSS e ${data.counts.subreddits} subreddit negli ultimi 7 giorni
+- **Lookback**: ${counts.feeds} feed RSS e ${counts.subreddits} subreddit negli ultimi ${report.lookbackDays} giorni
 
 **Limitazioni**:
 - Il campione è limitato alle fonti configurate

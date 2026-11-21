@@ -1,17 +1,18 @@
 import { readdir, readFile, writeFile } from 'fs/promises';
 import { join } from 'path';
 import { existsSync } from 'fs';
+import type { JsonReport } from '../render/reportJson.js';
+import type { ReportPaths } from '../report/report.js';
 import { log } from '../utils/logging.js';
 import { truncateText } from '../utils/truncate.js';
 
-interface ReportEntry {
+const TOP_LINKS = 5;
+const EXCERPT_LENGTH = 200;
+
+export interface ReportEntry {
   date: string;
   title: string;
-  paths: {
-    markdown: string;
-    telegram: string;
-    json: string;
-  };
+  paths: ReportPaths;
   excerpt: string;
   topLinks: Array<{
     title: string;
@@ -20,90 +21,72 @@ interface ReportEntry {
   }>;
 }
 
-interface Manifest {
+export interface Manifest {
   generated_at_utc: string;
   version: number;
   latest: {
     date: string;
-    paths: {
-      markdown: string;
-      telegram: string;
-      json: string;
-    };
+    paths: ReportPaths;
   } | null;
   reports: ReportEntry[];
 }
 
-async function extractReportMetadata(jsonPath: string): Promise<ReportEntry | null> {
-  try {
-    const content = await readFile(jsonPath, 'utf-8');
-    const data = JSON.parse(content);
-    
-    const topLinks = data.itemsTopOverall.slice(0, 5).map((item: any) => ({
+export function toReportEntry(report: JsonReport): ReportEntry {
+  return {
+    date: report.date,
+    title: report.title,
+    paths: report.paths,
+    excerpt: truncateText(report.llm.executiveSummary, EXCERPT_LENGTH),
+    topLinks: report.itemsTopOverall.slice(0, TOP_LINKS).map(item => ({
       title: item.title,
       url: item.url,
       source: item.source,
-    }));
-    
-    const excerpt = truncateText(data.llm.executiveSummary, 200);
-    
-    return {
-      date: data.date,
-      title: data.title,
-      paths: data.paths,
-      excerpt,
-      topLinks,
-    };
+    })),
+  };
+}
+
+/** Lists the reports newest first; `latest` points at the first one. */
+export function manifestOf(entries: ReportEntry[], generatedAt: Date): Manifest {
+  const reports = [...entries].sort((a, b) => b.date.localeCompare(a.date));
+  const [latest] = reports;
+
+  return {
+    generated_at_utc: generatedAt.toISOString(),
+    version: 1,
+    latest: latest ? { date: latest.date, paths: latest.paths } : null,
+    reports,
+  };
+}
+
+async function readReportEntry(jsonPath: string): Promise<ReportEntry | null> {
+  try {
+    const report = JSON.parse(await readFile(jsonPath, 'utf-8')) as JsonReport;
+    return toReportEntry(report);
   } catch (error) {
     log('warn', `Failed to extract metadata from ${jsonPath}:`, error);
     return null;
   }
 }
 
-export async function buildManifest(publicDir: string): Promise<void> {
-  const dataDir = join(publicDir, 'data');
-  
+async function readReportEntries(dataDir: string): Promise<ReportEntry[]> {
   if (!existsSync(dataDir)) {
     log('warn', 'No data directory found, creating empty manifest');
-    const emptyManifest: Manifest = {
-      generated_at_utc: new Date().toISOString(),
-      version: 1,
-      latest: null,
-      reports: [],
-    };
-    
-    const manifestPath = join(publicDir, 'manifest.json');
-    await writeFile(manifestPath, JSON.stringify(emptyManifest, null, 2), 'utf-8');
-    return;
+    return [];
   }
-  
+
   const files = await readdir(dataDir);
-  const jsonFiles = files.filter(f => f.endsWith('.management-layer.json')).sort().reverse();
-  
-  const reports: ReportEntry[] = [];
-  
-  for (const file of jsonFiles) {
-    const jsonPath = join(dataDir, file);
-    const metadata = await extractReportMetadata(jsonPath);
-    if (metadata) {
-      reports.push(metadata);
-    }
-  }
-  
-  reports.sort((a, b) => b.date.localeCompare(a.date));
-  
-  const manifest: Manifest = {
-    generated_at_utc: new Date().toISOString(),
-    version: 1,
-    latest: reports.length > 0 ? {
-      date: reports[0].date,
-      paths: reports[0].paths,
-    } : null,
-    reports,
-  };
-  
-  const manifestPath = join(publicDir, 'manifest.json');
-  await writeFile(manifestPath, JSON.stringify(manifest, null, 2), 'utf-8');
-  
-  log('success', `Generated manifest with ${reports.length} reports`);
+  const jsonFiles = files.filter(file => file.endsWith('.management-layer.json'));
+  const entries = await Promise.all(jsonFiles.map(file => readReportEntry(join(dataDir, file))));
+
+  return entries.filter((entry): entry is ReportEntry => entry !== null);
+}
+
+export async function buildManifest(publicDir: string): Promise<Manifest> {
+  const entries = await readReportEntries(join(publicDir, 'data'));
+  const manifest = manifestOf(entries, new Date());
+
+  await writeFile(join(publicDir, 'manifest.json'), JSON.stringify(manifest, null, 2), 'utf-8');
+  log('success', `Generated manifest with ${manifest.reports.length} reports`);
+
+  return manifest;
 }

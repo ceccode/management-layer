@@ -5,10 +5,6 @@ export function formatDate(date: Date): string {
   return `${year}-${month}-${day}`;
 }
 
-export function parseDate(dateStr: string): Date {
-  return new Date(dateStr);
-}
-
 export function getDateDaysAgo(days: number, fromDate: Date = new Date()): Date {
   const date = new Date(fromDate);
   date.setUTCDate(date.getUTCDate() - days);
@@ -16,7 +12,7 @@ export function getDateDaysAgo(days: number, fromDate: Date = new Date()): Date 
 }
 
 export function isWithinDays(dateStr: string, days: number, fromDate: Date = new Date()): boolean {
-  const targetDate = parseDate(dateStr);
+  const targetDate = new Date(dateStr);
   const cutoffDate = getDateDaysAgo(days, fromDate);
   return targetDate >= cutoffDate;
 }

@@ -61,8 +61,20 @@ npm run generate -- --date 2024-12-31
 # Generate without LLM (deterministic fallback)
 npm run generate -- --no-llm
 
-# Custom RAG lookback (default 4 weeks)
+# Custom RAG lookback (default: ragWeeks in config/llm.json)
 npm run generate -- --rag-k 8
+```
+
+`--date` sets both the name of the report and the instant recency and the
+lookback window are measured from (the end of that day), so a past date is
+ranked the same way every time.
+
+### Test
+
+```bash
+npm test            # run the test suite once
+npm run test:watch  # re-run on change
+npm run typecheck   # type-check sources and tests
 ```
 
 ### Output
@@ -116,8 +128,12 @@ src/
   llm/                # LLM integration (Italian prompts)
   render/             # Report generators
   publish/            # Manifest and public directory
+  report/             # Report model and its analysis sections
   utils/              # Utilities
-  main.ts             # CLI entry point
+  cli.ts              # Command-line options
+  main.ts             # Pipeline entry point
+
+test/                 # Vitest test suite
 
 public/               # Generated output (GitHub Pages)
   reports/
@@ -158,6 +174,17 @@ Edit `config/feeds.json` or `config/subreddits.json`:
   "tags": ["tag1", "tag2"]
 }
 ```
+
+### How Items Are Scored
+
+```
+score = (recency + keyword matches + reddit engagement) × source weight
+```
+
+- **Recency**: 3 if published in the last 24 hours, 1.5 in the last 3 days, 0.5 in the last 7 days
+- **Keyword matches**: 0.8 for each keyword of `config/keywords.json` found in the title
+- **Reddit engagement**: upvotes / 50 + comments / 20, capped at 5
+- **Source weight**: the `weight` of the feed or subreddit the item comes from
 
 ### Adjust Keywords
 

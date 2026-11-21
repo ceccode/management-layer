@@ -1,13 +1,13 @@
 import type { LLMConfig } from '../config/schema.js';
-import { SYSTEM_PROMPT_IT, buildUserPrompt, type LLMInputData } from './prompt_it.js';
+import { parseAnalysis, type Analysis } from '../report/sections.js';
+import { SYSTEM_PROMPT_IT, buildUserPrompt, sourcesCount, type AnalysisInput } from './prompt_it.js';
 import { log } from '../utils/logging.js';
 
-interface LLMResponse {
-  executiveSummary: string;
-  themes: string;
-  signals: string;
-  divergences: string;
-  fullContent: string;
+const DEFAULT_API_URL = 'https://api.openai.com/v1/chat/completions';
+const REQUEST_TIMEOUT_MS = 120_000;
+
+interface ChatCompletion {
+  choices?: Array<{ message?: { content?: string } }>;
 }
 
 async function callLLMAPI(
@@ -16,12 +16,12 @@ async function callLLMAPI(
   config: LLMConfig
 ): Promise<string> {
   const apiKey = process.env.LLM_API_KEY;
-  const apiUrl = process.env.LLM_API_URL || 'https://api.openai.com/v1/chat/completions';
-  
+  const apiUrl = process.env.LLM_API_URL || DEFAULT_API_URL;
+
   if (!apiKey) {
     throw new Error('LLM_API_KEY not found');
   }
-  
+
   const response = await fetch(apiUrl, {
     method: 'POST',
     headers: {
@@ -37,62 +37,53 @@ async function callLLMAPI(
       max_tokens: config.maxTokens,
       temperature: config.temperature,
     }),
+    signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
   });
-  
+
   if (!response.ok) {
     const errorText = await response.text();
     throw new Error(`LLM API error: ${response.status} ${errorText}`);
   }
-  
-  const data = await response.json() as {
-    choices: Array<{ message: { content: string } }>;
-  };
-  
-  return data.choices[0].message.content;
-}
 
-function parseLLMResponse(content: string): LLMResponse {
-  const executiveSummaryMatch = content.match(/## Executive Summary\s*([\s\S]*?)(?=##|$)/i);
-  const themesMatch = content.match(/## Temi della settimana\s*([\s\S]*?)(?=##|$)/i);
-  const signalsMatch = content.match(/## Segnali da monitorare\s*([\s\S]*?)(?=##|$)/i);
-  const divergencesMatch = content.match(/## Divergenze \(Articoli vs Reddit\)\s*([\s\S]*?)(?=##|$)/i);
-  
-  return {
-    executiveSummary: executiveSummaryMatch ? executiveSummaryMatch[1].trim() : '',
-    themes: themesMatch ? themesMatch[1].trim() : '',
-    signals: signalsMatch ? signalsMatch[1].trim() : '',
-    divergences: divergencesMatch ? divergencesMatch[1].trim() : '',
-    fullContent: content,
-  };
+  const completion = await response.json() as ChatCompletion;
+  const content = completion.choices?.[0]?.message?.content;
+
+  if (!content) {
+    throw new Error('LLM API returned no content');
+  }
+
+  return content;
 }
 
 export async function generateLLMContent(
-  data: LLMInputData,
+  input: AnalysisInput,
   config: LLMConfig
-): Promise<LLMResponse> {
+): Promise<Analysis> {
   if (!config.enabled) {
     log('info', 'LLM disabled, using fallback content');
-    return generateFallbackContent(data);
+    return generateFallbackContent(input);
   }
-  
+
   try {
     log('info', 'Calling LLM API...');
-    const userPrompt = buildUserPrompt(data);
-    const content = await callLLMAPI(SYSTEM_PROMPT_IT, userPrompt, config);
-    const parsed = parseLLMResponse(content);
-    
+    const content = await callLLMAPI(SYSTEM_PROMPT_IT, buildUserPrompt(input), config);
+    const analysis = parseAnalysis(content);
+
     log('success', 'LLM content generated successfully');
-    return parsed;
+    return analysis;
   } catch (error) {
     log('error', 'LLM generation failed, using fallback:', error);
-    return generateFallbackContent(data);
+    return generateFallbackContent(input);
   }
 }
 
-function generateFallbackContent(data: LLMInputData): LLMResponse {
-  const executiveSummary = `Questa settimana sono stati analizzati ${data.counts.articles} articoli e ${data.counts.reddit} discussioni Reddit da ${data.counts.sources} fonti diverse. I contenuti raccolti coprono tematiche di leadership tecnologica, engineering management e organizzazione dei team di sviluppo.`;
-  
-  const themes = `### 1) Engineering Management e Leadership
+export function generateFallbackContent(input: AnalysisInput): Analysis {
+  const { counts } = input;
+
+  return {
+    executiveSummary: `Questa settimana sono stati analizzati ${counts.articles} articoli e ${counts.reddit} discussioni Reddit da ${sourcesCount(counts)} fonti diverse. I contenuti raccolti coprono tematiche di leadership tecnologica, engineering management e organizzazione dei team di sviluppo.`,
+
+    themes: `### 1) Engineering Management e Leadership
 - Discussioni sulla gestione di team distribuiti e ownership
 - Tematiche legate alla delivery velocity e developer productivity
 - Pattern organizzativi emergenti
@@ -105,21 +96,14 @@ function generateFallbackContent(data: LLMInputData): LLMResponse {
 ### 3) Cultura e Organizzazione
 - Team topology e platform team
 - Hiring e onboarding
-- Reliability e operational excellence`;
-  
-  const signals = `- Crescente attenzione a developer productivity e delivery metrics
+- Reliability e operational excellence`,
+
+    signals: `- Crescente attenzione a developer productivity e delivery metrics
 - Discussioni su ownership e decision making distribuito
-- Focus su reliability e incident response`;
-  
-  const divergences = `- Le discussioni Reddit tendono a enfatizzare aspetti operativi quotidiani
+- Focus su reliability e incident response`,
+
+    divergences: `- Le discussioni Reddit tendono a enfatizzare aspetti operativi quotidiani
 - Gli articoli editoriali privilegiano visioni strategiche di lungo periodo
-- Differenze di prospettiva tra individual contributor e manager`;
-  
-  return {
-    executiveSummary,
-    themes,
-    signals,
-    divergences,
-    fullContent: `## Executive Summary\n${executiveSummary}\n\n## Temi della settimana\n${themes}\n\n## Segnali da monitorare\n${signals}\n\n## Divergenze (Articoli vs Reddit)\n${divergences}`,
+- Differenze di prospettiva tra individual contributor e manager`,
   };
 }

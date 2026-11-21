@@ -1,3 +1,7 @@
+import type { Item } from '../config/schema.js';
+import type { ReportCounts } from '../report/report.js';
+import { SECTION_TITLES } from '../report/sections.js';
+
 export const SYSTEM_PROMPT_IT = `Sei un analista editoriale specializzato in leadership, engineering management e organizzazioni tecnologiche.
 
 Scrivi per:
@@ -16,44 +20,31 @@ Vincoli:
 Stile: analitico, sobrio, concreto, orientato a evidenze.
 Lingua: italiano.`;
 
-export interface LLMInputData {
+export interface AnalysisInput {
   weekDate: string;
-  counts: {
-    articles: number;
-    reddit: number;
-    sources: number;
-  };
-  topOverall: Array<{
-    title: string;
-    url: string;
-    source: string;
-    publishedAt: string;
-    type: string;
-  }>;
-  topReddit: Array<{
-    title: string;
-    url: string;
-    subreddit: string;
-    upvotes: number;
-    commentsCount: number;
-  }>;
-  scoringNotes: string;
+  counts: ReportCounts;
+  topOverall: Item[];
+  topReddit: Item[];
   ragContext: string;
 }
 
-export function buildUserPrompt(data: LLMInputData): string {
+export function sourcesCount(counts: ReportCounts): number {
+  return counts.feeds + counts.subreddits;
+}
+
+export function buildUserPrompt(data: AnalysisInput): string {
   return `# Analisi della settimana: ${data.weekDate}
 
 ## Dati raccolti
 - Articoli: ${data.counts.articles}
 - Discussioni Reddit: ${data.counts.reddit}
-- Fonti totali: ${data.counts.sources}
+- Fonti totali: ${sourcesCount(data.counts)}
 
 ## Top contenuti overall
 ${data.topOverall.map((item, i) => `${i + 1}. "${item.title}" (${item.source})`).join('\n')}
 
 ## Top discussioni Reddit
-${data.topReddit.map((item, i) => `${i + 1}. r/${item.subreddit}: "${item.title}" (↑${item.upvotes} 💬${item.commentsCount})`).join('\n')}
+${data.topReddit.map((item, i) => `${i + 1}. r/${item.subreddit ?? ''}: "${item.title}" (↑${item.upvotes ?? 0} 💬${item.commentsCount ?? 0})`).join('\n')}
 
 ## Contesto storico (settimane precedenti)
 ${data.ragContext || 'Nessun contesto storico disponibile.'}
@@ -62,10 +53,10 @@ ${data.ragContext || 'Nessun contesto storico disponibile.'}
 
 Produci un'analisi strutturata seguendo ESATTAMENTE questo formato:
 
-## Executive Summary
+## ${SECTION_TITLES.executiveSummary}
 (5–7 righe che sintetizzano la settimana)
 
-## Temi della settimana
+## ${SECTION_TITLES.themes}
 ### 1) <Titolo tema>
 - bullet punto concreto
 - bullet punto concreto
@@ -81,12 +72,12 @@ Produci un'analisi strutturata seguendo ESATTAMENTE questo formato:
 - bullet punto concreto
 - bullet punto concreto
 
-## Segnali da monitorare
+## ${SECTION_TITLES.signals}
 - bullet punto concreto
 - bullet punto concreto
 - bullet punto concreto
 
-## Divergenze (Articoli vs Reddit)
+## ${SECTION_TITLES.divergences}
 - bullet: differenza di prospettiva
 - bullet: differenza di prospettiva
 - bullet: differenza di prospettiva
