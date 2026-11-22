@@ -1,5 +1,5 @@
 import type { Report } from '../report/report.js';
-import { SECTION_TITLES, divergencesHeading } from '../report/sections.js';
+import { SECTION_TITLES, divergencesHeading, hasFindings } from '../report/sections.js';
 
 export function generateReportMarkdown(report: Report): string {
   const { counts, analysis, selected } = report;
@@ -52,17 +52,17 @@ ${selected.topDiscussions.map(item => {
 
 ` : '';
 
-  const themes = `## ${SECTION_TITLES.themes}
+  const themes = analysis.themes ? `## ${SECTION_TITLES.themes}
 
 ${analysis.themes}
 
-`;
+` : '';
 
-  const signals = `## ${SECTION_TITLES.signals}
+  const signals = analysis.signals ? `## ${SECTION_TITLES.signals}
 
 ${analysis.signals}
 
-`;
+` : '';
 
   const divergences = analysis.divergences ? `## ${divergencesHeading(hasDiscussions)}
 
@@ -75,15 +75,13 @@ ${analysis.divergences}
 Questo report è generato attraverso:
 - **Raccolta dati**: Analisi di feed RSS da fonti editoriali selezionate e discussioni da community (Reddit, Hacker News)
 - **Scoring deterministico**: Algoritmo basato su recency, keyword matching e engagement (per le discussioni), con un massimo di 3 contenuti per fonte
-- **Analisi LLM**: Sintesi e individuazione pattern attraverso modello linguistico
-- **Lookback**: ${counts.feeds} feed RSS e ${counts.communities} community negli ultimi ${report.lookbackDays} giorni
+${hasFindings(analysis) ? '- **Analisi LLM**: Sintesi e individuazione pattern attraverso modello linguistico\n' : '- **Analisi LLM**: non disponibile per questa edizione\n'}- **Lookback**: ${counts.feeds} feed RSS e ${counts.communities} community negli ultimi ${report.lookbackDays} giorni
 
 **Limitazioni**:
 - Il campione è limitato alle fonti configurate
 - Possibili bias nella selezione editoriale delle fonti
 - Le discussioni delle community riflettono la prospettiva delle community tech anglofone
-- L'analisi LLM può contenere interpretazioni soggettive
-
+${hasFindings(analysis) ? "- L'analisi LLM può contenere interpretazioni soggettive\n" : ''}
 `;
 
   const footer = `---

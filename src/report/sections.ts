@@ -70,3 +70,17 @@ export function renderAnalysis(analysis: Analysis): string {
     .map(name => `## ${SECTION_TITLES[name]}\n${analysis[name]}`)
     .join('\n\n');
 }
+
+const MAX_THEMES = 3;
+
+/** The titles of the `### n) Title` sub-headings of the themes section. */
+export function themeTitles(themes: string): string[] {
+  const themePattern = /###\s+\d+\)\s+(.+?)(?=###|\n-|\n•|$)/gs;
+
+  return [...themes.matchAll(themePattern)].map(match => match[1].trim()).slice(0, MAX_THEMES);
+}
+
+/** Whether the analysis says anything beyond its summary. */
+export function hasFindings(analysis: Analysis): boolean {
+  return Boolean(analysis.themes || analysis.signals || analysis.divergences);
+}

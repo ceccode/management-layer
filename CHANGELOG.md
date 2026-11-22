@@ -15,6 +15,12 @@
 - Atom feeds with a namespace prefix and feeds with relative links are now read
 
 ### Changed
+- Without an LLM analysis (disabled, failed, or an answer with none of the
+  expected sections) the report says so and lists what was collected. It no
+  longer publishes generic themes, signals and divergences as if they were
+  the week's analysis; empty sections are left out
+- The Telegram message lists the week's theme titles instead of three fixed
+  lines, and tries shorter layouts before dropping the community section
 - Reddit posts and Hacker News stories are "discussions": in the JSON report
   `type` is `discussion`, `subreddit` became `community`, `itemsTopReddit`
   became `itemsTopDiscussions`, `counts.reddit`/`counts.subreddits` became
