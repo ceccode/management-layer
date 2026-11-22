@@ -1,52 +1,15 @@
 {
-  "generated_at_utc": "2026-11-22T10:09:05.264Z",
+  "generated_at_utc": "2026-11-16T16:47:40.861Z",
   "version": 1,
   "latest": {
-    "date": "2026-11-22",
+    "date": "2026-11-16",
     "paths": {
-      "markdown": "reports/2026-11-22.management-layer.md",
-      "telegram": "telegram/2026-11-22.management-layer.telegram.md",
-      "json": "data/2026-11-22.management-layer.json"
+      "markdown": "reports/2026-11-16.management-layer.md",
+      "telegram": "telegram/2026-11-16.management-layer.telegram.md",
+      "json": "data/2026-11-16.management-layer.json"
     }
   },
   "reports": [
-    {
-      "date": "2026-11-22",
-      "title": "The Management Layer — 2026-11-22",
-      "paths": {
-        "markdown": "reports/2026-11-22.management-layer.md",
-        "telegram": "telegram/2026-11-22.management-layer.telegram.md",
-        "json": "data/2026-11-22.management-layer.json"
-      },
-      "excerpt": "La raccolta del 22 novembre comprende 65 articoli e 7 discussioni da 12 fonti; l’analisi si basa sui titoli e sui dati di interazione riportati.  \nTra gli articoli in evidenza, il controllo dei sis...",
-      "topLinks": [
-        {
-          "title": "Article: Building Reliability Into the Cloud: Observability as the Control Plane for Multi-Region Failover",
-          "url": "https://www.infoq.com/articles/observability-control-plane-failover/",
-          "source": "InfoQ Articles"
-        },
-        {
-          "title": "Fragments: November 20",
-          "url": "https://martinfowler.com/fragments/2026-11-20.html",
-          "source": "Martin Fowler"
-        },
-        {
-          "title": "We’re Seeing the Costs of Moving Fast",
-          "url": "https://hbr.org/2026/11/were-seeing-the-costs-of-moving-fast",
-          "source": "Harvard Business Review"
-        },
-        {
-          "title": "A Better Way to Foster Rigorous Debate in the Boardroom",
-          "url": "https://hbr.org/2026/11/a-better-way-to-foster-rigorous-debate-in-the-boardroom",
-          "source": "Harvard Business Review"
-        },
-        {
-          "title": "The Case for “Small AI”",
-          "url": "https://hbr.org/2026/11/the-case-for-small-ai",
-          "source": "Harvard Business Review"
-        }
-      ]
-    },
     {
       "date": "2026-11-16",
       "title": "The Management Layer — 2026-11-16",
