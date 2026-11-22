@@ -66,6 +66,78 @@
       "url": "https://netflixtechblog.com/feed",
       "weight": 0.70,
       "tags": ["systems", "reliability"]
+    },
+    {
+      "name": "The Pragmatic Engineer",
+      "url": "https://newsletter.pragmaticengineer.com/feed",
+      "weight": 1.25,
+      "tags": ["engineering-management", "industry"]
+    },
+    {
+      "name": "Irrational Exuberance (Will Larson)",
+      "url": "https://lethain.com/feeds/",
+      "weight": 1.20,
+      "tags": ["engineering-management", "strategy"]
+    },
+    {
+      "name": "The Engineering Manager (James Stanier)",
+      "url": "https://www.theengineeringmanager.com/feed/",
+      "weight": 1.20,
+      "tags": ["engineering-management"]
+    },
+    {
+      "name": "Rands in Repose",
+      "url": "https://randsinrepose.com/feed/",
+      "weight": 1.15,
+      "tags": ["leadership", "management"]
+    },
+    {
+      "name": "charity.wtf (Charity Majors)",
+      "url": "https://charity.wtf/feed/",
+      "weight": 1.15,
+      "tags": ["engineering-management", "leadership"]
+    },
+    {
+      "name": "Refactoring (Luca Rossi)",
+      "url": "https://refactoring.fm/feed",
+      "weight": 1.15,
+      "tags": ["engineering-management", "teams"]
+    },
+    {
+      "name": "Engineering Leadership (Gregor Ojstersek)",
+      "url": "https://newsletter.eng-leadership.com/feed",
+      "weight": 1.10,
+      "tags": ["engineering-management", "leadership"]
+    },
+    {
+      "name": "Tidy First? (Kent Beck)",
+      "url": "https://tidyfirst.substack.com/feed",
+      "weight": 1.10,
+      "tags": ["software-design", "engineering-practices"]
+    },
+    {
+      "name": "Jacob Kaplan-Moss",
+      "url": "https://jacobian.org/index.xml",
+      "weight": 1.10,
+      "tags": ["engineering-management", "hiring"]
+    },
+    {
+      "name": "InfoQ Culture & Methods",
+      "url": "https://feed.infoq.com/culture-methods/",
+      "weight": 1.10,
+      "tags": ["culture", "org"]
+    },
+    {
+      "name": "MIT Sloan Management Review",
+      "url": "https://sloanreview.mit.edu/feed/",
+      "weight": 1.00,
+      "tags": ["management", "strategy"]
+    },
+    {
+      "name": "Stack Overflow Blog",
+      "url": "https://stackoverflow.blog/feed/",
+      "weight": 0.90,
+      "tags": ["engineering-culture", "dev-productivity"]
     }
   ]
 }
