@@ -43,7 +43,8 @@ export const LLMConfigSchema = z.object({
   provider: z.string(),
   model: z.string(),
   maxTokens: z.number(),
-  temperature: z.number(),
+  /** Left out for models that only accept their default temperature. */
+  temperature: z.number().optional(),
   ragWeeks: z.number(),
   maxRagWords: z.number(),
 });

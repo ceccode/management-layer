@@ -7,7 +7,7 @@ const DEFAULT_API_URL = 'https://api.openai.com/v1/chat/completions';
 const REQUEST_TIMEOUT_MS = 120_000;
 
 interface ChatCompletion {
-  choices?: Array<{ message?: { content?: string } }>;
+  choices?: Array<{ message?: { content?: string }; finish_reason?: string }>;
 }
 
 async function callLLMAPI(
@@ -34,8 +34,8 @@ async function callLLMAPI(
         { role: 'system', content: systemPrompt },
         { role: 'user', content: userPrompt },
       ],
-      max_tokens: config.maxTokens,
-      temperature: config.temperature,
+      max_completion_tokens: config.maxTokens,
+      ...(config.temperature === undefined ? {} : { temperature: config.temperature }),
     }),
     signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
   });
@@ -46,10 +46,15 @@ async function callLLMAPI(
   }
 
   const completion = await response.json() as ChatCompletion;
-  const content = completion.choices?.[0]?.message?.content;
+  const choice = completion.choices?.[0];
+  const content = choice?.message?.content;
 
   if (!content) {
     throw new Error('LLM API returned no content');
+  }
+
+  if (choice?.finish_reason === 'length') {
+    log('warn', `LLM answer was cut off at ${config.maxTokens} tokens: the last section may be incomplete. Raise maxTokens in config/llm.json.`);
   }
 
   return content;
