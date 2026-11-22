@@ -6,6 +6,7 @@ export interface CLIOptions {
   /** The instant recency and the lookback window are measured from. */
   referenceTime: Date;
   noReddit: boolean;
+  noHackerNews: boolean;
   noLlm: boolean;
   /** How many past reports feed the historical context; the config decides when omitted. */
   ragK?: number;
@@ -45,6 +46,7 @@ function referenceTimeFor(date: string, now: Date): Date {
 export function parseArgs(args: string[], now: Date): CLIOptions {
   let date = formatDate(now);
   let noReddit = false;
+  let noHackerNews = false;
   let noLlm = false;
   let ragK: number | undefined;
 
@@ -55,6 +57,8 @@ export function parseArgs(args: string[], now: Date): CLIOptions {
       date = parseReportDate(args[++i]);
     } else if (arg === '--no-reddit') {
       noReddit = true;
+    } else if (arg === '--no-hn') {
+      noHackerNews = true;
     } else if (arg === '--no-llm') {
       noLlm = true;
     } else if (arg === '--rag-k' && i + 1 < args.length) {
@@ -62,5 +66,5 @@ export function parseArgs(args: string[], now: Date): CLIOptions {
     }
   }
 
-  return { date, referenceTime: referenceTimeFor(date, now), noReddit, noLlm, ragK };
+  return { date, referenceTime: referenceTimeFor(date, now), noReddit, noHackerNews, noLlm, ragK };
 }

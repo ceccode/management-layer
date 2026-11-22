@@ -3,7 +3,8 @@ import { loadAllConfigs, type Config } from './config/loadConfig.js';
 import type { Item } from './config/schema.js';
 import { collectRSS } from './collect/rss.js';
 import { collectReddit } from './collect/reddit.js';
-import { normalizeRSSItems, normalizeRedditItems } from './normalize/normalize.js';
+import { collectHackerNews } from './collect/hackernews.js';
+import { normalizeRSSItems, normalizeDiscussions } from './normalize/normalize.js';
 import { deduplicateItems } from './normalize/dedupe.js';
 import { scoreItems, selectTopItems } from './score/score.js';
 import { buildRAGContext } from './rag/buildRag.js';
@@ -16,12 +17,16 @@ import { buildPublicDirectory } from './publish/buildPublic.js';
 import { log } from './utils/logging.js';
 
 const TOP_ITEMS = 10;
-const TOP_REDDIT_ITEMS = 5;
+const TOP_DISCUSSIONS = 5;
 const MAX_ITEMS_PER_SOURCE = 3;
 
 function applyCliOverrides(config: Config, options: CLIOptions): Config {
   if (options.noReddit) {
     log('info', 'Reddit collection disabled via CLI flag');
+  }
+
+  if (options.noHackerNews) {
+    log('info', 'Hacker News collection disabled via CLI flag');
   }
 
   if (options.noLlm) {
@@ -31,6 +36,7 @@ function applyCliOverrides(config: Config, options: CLIOptions): Config {
   return {
     ...config,
     subreddits: { ...config.subreddits, enabled: config.subreddits.enabled && !options.noReddit },
+    hackerNews: { ...config.hackerNews, enabled: config.hackerNews.enabled && !options.noHackerNews },
     llm: {
       ...config.llm,
       enabled: config.llm.enabled && !options.noLlm,
@@ -41,33 +47,48 @@ function applyCliOverrides(config: Config, options: CLIOptions): Config {
 
 interface Collected {
   articles: Item[];
-  redditPosts: Item[];
+  discussions: Item[];
 }
 
 async function collect(config: Config, now: Date): Promise<Collected> {
   log('info', 'Collecting RSS feeds...');
   const rssItems = await collectRSS(config.feeds, now);
 
-  log('info', 'Collecting Reddit posts...');
-  const redditItems = config.subreddits.enabled ? await collectReddit(config.subreddits) : [];
+  const { lookbackDays } = config.feeds;
 
-  if (rssItems.length === 0 && redditItems.length === 0) {
+  log('info', 'Collecting Reddit discussions...');
+  const redditPosts = await collectReddit(config.subreddits, lookbackDays, now);
+
+  log('info', 'Collecting Hacker News discussions...');
+  const hackerNewsStories = await collectHackerNews(config.hackerNews, lookbackDays, now);
+
+  const discussions = [...redditPosts, ...hackerNewsStories];
+
+  if (rssItems.length === 0 && discussions.length === 0) {
     throw new Error('No items collected from any source');
   }
 
   log('info', 'Normalizing items...');
   return {
     articles: normalizeRSSItems(rssItems),
-    redditPosts: normalizeRedditItems(redditItems),
+    discussions: normalizeDiscussions(discussions),
   };
+}
+
+/** Communities that are switched on: every subreddit counts as one, Hacker News as one. */
+function communitiesRead(config: Config): number {
+  const subreddits = config.subreddits.enabled ? config.subreddits.subreddits.length : 0;
+  const hackerNews = config.hackerNews.enabled ? 1 : 0;
+
+  return subreddits + hackerNews;
 }
 
 function countSources(collected: Collected, config: Config): ReportCounts {
   return {
     articles: collected.articles.length,
-    reddit: collected.redditPosts.length,
+    discussions: collected.discussions.length,
     feeds: config.feeds.feeds.length,
-    subreddits: config.subreddits.subreddits.length,
+    communities: communitiesRead(config),
   };
 }
 
@@ -76,13 +97,13 @@ async function buildReport(options: CLIOptions, config: Config): Promise<Report>
   const counts = countSources(collected, config);
 
   log('info', 'Deduplicating items...');
-  const items = deduplicateItems([...collected.articles, ...collected.redditPosts]);
+  const items = deduplicateItems([...collected.articles, ...collected.discussions]);
 
   log('info', 'Scoring items...');
   const scoredItems = scoreItems(items, config.keywords.keywords, options.referenceTime);
 
   log('info', 'Selecting top items...');
-  const selected = selectTopItems(scoredItems, TOP_ITEMS, TOP_REDDIT_ITEMS, MAX_ITEMS_PER_SOURCE);
+  const selected = selectTopItems(scoredItems, TOP_ITEMS, TOP_DISCUSSIONS, MAX_ITEMS_PER_SOURCE);
 
   log('info', 'Building RAG context...');
   const ragContext = await buildRAGContext(config.llm.ragWeeks, config.llm.maxRagWords);
@@ -92,8 +113,8 @@ async function buildReport(options: CLIOptions, config: Config): Promise<Report>
     {
       weekDate: options.date,
       counts,
-      topOverall: selected.topOverall,
-      topReddit: selected.topReddit,
+      topArticles: selected.topArticles,
+      topDiscussions: selected.topDiscussions,
       ragContext,
     },
     config.llm
@@ -138,8 +159,8 @@ async function main(): Promise<void> {
 
   log('success', '=== Report generation completed successfully ===');
   log('info', `Report generated for: ${report.weekDate}`);
-  log('info', `Total items processed: ${report.counts.articles + report.counts.reddit}`);
-  log('info', `Top items selected: ${report.selected.topOverall.length}`);
+  log('info', `Total items processed: ${report.counts.articles + report.counts.discussions}`);
+  log('info', `Top articles selected: ${report.selected.topArticles.length}`);
 }
 
 // Exit explicitly, so that a connection left open by a feed cannot keep the

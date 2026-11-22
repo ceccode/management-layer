@@ -9,15 +9,16 @@ describe('parseArgs', () => {
       date: '2026-11-21',
       referenceTime: NOW,
       noReddit: false,
+      noHackerNews: false,
       noLlm: false,
       ragK: undefined,
     });
   });
 
   it('reads the flags', () => {
-    const options = parseArgs(['--no-reddit', '--no-llm', '--rag-k', '8'], NOW);
+    const options = parseArgs(['--no-reddit', '--no-hn', '--no-llm', '--rag-k', '8'], NOW);
 
-    expect(options).toMatchObject({ noReddit: true, noLlm: true, ragK: 8 });
+    expect(options).toMatchObject({ noReddit: true, noHackerNews: true, noLlm: true, ragK: 8 });
   });
 
   it('measures a report for a past date from the end of that day', () => {

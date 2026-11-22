@@ -3,11 +3,11 @@ import { generateReportJson } from '../src/render/reportJson.js';
 import { generateReportMarkdown } from '../src/render/reportMarkdown.js';
 import { generateTelegramMarkdown } from '../src/render/telegramMarkdown.js';
 import { parseAnalysis } from '../src/report/sections.js';
-import { anArticle, aRedditPost, aReport } from './fixtures.js';
+import { anArticle, aDiscussion, aReport } from './fixtures.js';
 
 const article = anArticle({ title: 'Systems thinking', url: 'https://example.com/systems', source: 'LeadDev' });
-const post = aRedditPost({ title: 'A thread', subreddit: 'ExperiencedDevs', upvotes: 120, commentsCount: 30 });
-const selected = { topOverall: [article], topReddit: [post], topArticles: [article] };
+const post = aDiscussion({ title: 'A thread', community: 'r/ExperiencedDevs', upvotes: 120, commentsCount: 30 });
+const selected = { topDiscussions: [post], topArticles: [article] };
 
 describe('generateReportJson', () => {
   const json = generateReportJson(aReport({ selected }));
@@ -37,8 +37,9 @@ describe('generateReportJson', () => {
 
   it('carries the selected items and the counts', () => {
     expect(json.itemsTopOverall).toEqual([article]);
-    expect(json.itemsTopReddit).toEqual([post]);
-    expect(json.counts).toEqual({ articles: 25, reddit: 0, feeds: 11, subreddits: 6 });
+    expect(json.itemsTopArticles).toEqual([article]);
+    expect(json.itemsTopDiscussions).toEqual([post]);
+    expect(json.counts).toEqual({ articles: 25, discussions: 0, feeds: 11, communities: 6 });
     expect(json.methodology.lookbackDays).toBe(7);
   });
 });
@@ -60,14 +61,23 @@ describe('generateReportMarkdown', () => {
     expect(markdown).toContain('## Executive Summary\n\nSintesi della settimana.');
     expect(markdown).toContain('## Temi della settimana\n\n### 1) Governance del codice');
     expect(markdown).toContain('## Segnali da monitorare\n\n- primo segnale');
-    expect(markdown).toContain('## Divergenze (Articoli vs Reddit)\n\n• una divergenza');
+    expect(markdown).toContain('## Divergenze (Articoli vs Community)\n\n• una divergenza');
   });
 
-  it('shows reddit discussions only when there are some', () => {
+  it('shows community discussions only when there are some', () => {
+    expect(markdown).toContain('## Top discussioni delle community');
     expect(markdown).toContain('- **r/ExperiencedDevs**: [A thread]');
 
-    const withoutReddit = generateReportMarkdown(aReport({ selected: { ...selected, topReddit: [] } }));
-    expect(withoutReddit).not.toContain('## Top discussioni Reddit');
+    const withoutReddit = generateReportMarkdown(aReport({ selected: { ...selected, topDiscussions: [] } }));
+    expect(withoutReddit).not.toContain('## Top discussioni');
+  });
+
+  it('compares the sources with each other when there are no discussions to compare with', () => {
+    const withoutDiscussions = generateReportMarkdown(aReport({ selected: { ...selected, topDiscussions: [] } }));
+
+    expect(withoutDiscussions).toContain('## Divergenze tra le fonti\n\n• una divergenza');
+    expect(withoutDiscussions).not.toContain('Articoli vs');
+    expect(parseAnalysis(withoutDiscussions).divergences).toBe('• una divergenza');
   });
 
   it('states the configured lookback window', () => {
@@ -82,10 +92,17 @@ describe('generateReportMarkdown', () => {
 });
 
 describe('generateTelegramMarkdown', () => {
+  it('lists up to three discussions with their community and engagement', () => {
+    const message = generateTelegramMarkdown(aReport({ selected }));
+
+    expect(message).toContain('*Community*\n• r/ExperiencedDevs — [A thread]');
+    expect(message).toContain('(↑120 💬30)');
+  });
+
   it('lists at most five top items with their source', () => {
     const items = Array.from({ length: 7 }, (_, i) => anArticle({ title: `Item ${i + 1}` }));
 
-    const message = generateTelegramMarkdown(aReport({ selected: { topOverall: items, topReddit: [], topArticles: items } }));
+    const message = generateTelegramMarkdown(aReport({ selected: { topDiscussions: [], topArticles: items } }));
 
     expect(message).toContain('*The Management Layer — 2026-11-16*');
     expect(message).toContain('5. [Item 5](https://example.com/article) — Example');
@@ -97,7 +114,7 @@ describe('generateTelegramMarkdown', () => {
     const longUrl = `https://example.com/${'y'.repeat(200)}`;
     const items = Array.from({ length: 5 }, () => anArticle({ title: longTitle, url: longUrl }));
 
-    const message = generateTelegramMarkdown(aReport({ selected: { topOverall: items, topReddit: [], topArticles: items } }));
+    const message = generateTelegramMarkdown(aReport({ selected: { topDiscussions: [], topArticles: items } }));
 
     expect(message.match(/\]\(https/g)).toHaveLength(3);
     expect(message).not.toContain('— Example');

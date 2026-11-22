@@ -2,11 +2,12 @@
 
 **How technology is actually led**
 
-A weekly automated report aggregating high-signal content on leadership, engineering management, and tech organizations from curated RSS feeds, analyzed through LLM to identify patterns and weak signals.
+A weekly automated report aggregating high-signal content on leadership, engineering management, and tech organizations from curated RSS feeds and community discussions (Reddit, Hacker News), analyzed through LLM to identify patterns and weak signals.
 
 ## Features
 
 - **Editorial source aggregation**: RSS feeds from 11 curated high-quality sources
+- **Community discussions**: Hacker News stories and, when credentials are set, Reddit posts
 - **Deterministic scoring**: Recency, keyword matching, and engagement-based ranking
 - **RAG-powered analysis**: Historical context from previous reports
 - **Italian editorial content**: LLM-generated analysis in Italian (non-prescriptive, analytical)
@@ -44,7 +45,25 @@ LLM_API_KEY=your_openai_api_key
 LLM_API_URL=https://api.openai.com/v1/chat/completions
 ```
 
-**Note**: Reddit API access is currently disabled due to Reddit's restrictive API policies. The application works excellently with RSS feeds only.
+### Reddit (optional)
+
+Reddit is read through its official API, authenticating as an app (no Reddit
+username or password):
+
+1. Request API access from Reddit. Since November 2025 (Responsible Builder
+   Policy) new apps need Reddit's approval: creating one at
+   https://www.reddit.com/prefs/apps without it fails, for example with
+   "Max clients have been reached". The request goes through Reddit's
+   developer support form
+2. Once approved, create a **script** app and put its id and secret in `.env` (and in the repository secrets for GitHub Actions):
+
+```bash
+REDDIT_CLIENT_ID=your_app_id
+REDDIT_CLIENT_SECRET=your_app_secret
+```
+
+Without them Reddit is skipped and the report is built from the other sources.
+Hacker News needs no credentials.
 
 ### Build and Run
 
@@ -60,6 +79,9 @@ npm run generate -- --date 2024-12-31
 
 # Generate without LLM (deterministic fallback)
 npm run generate -- --no-llm
+
+# Skip a community
+npm run generate -- --no-reddit --no-hn
 
 # Custom RAG lookback (default: ragWeeks in config/llm.json)
 npm run generate -- --rag-k 8
@@ -102,6 +124,10 @@ Add secrets in **Settings** → **Secrets and variables** → **Actions**:
 - `LLM_API_KEY`
 - `LLM_API_URL`
 
+**For Reddit** (optional):
+- `REDDIT_CLIENT_ID`
+- `REDDIT_CLIENT_SECRET`
+
 If not configured, the workflow will use deterministic fallback content.
 
 ### 3. Trigger
@@ -116,12 +142,13 @@ The workflow runs:
 config/
   feeds.json           # RSS feed sources
   subreddits.json      # Reddit sources
+  hackernews.json      # Hacker News search terms
   keywords.json        # Scoring keywords
   llm.json            # LLM configuration
 
 src/
   config/             # Config loading and schemas
-  collect/            # RSS and Reddit ingestion
+  collect/            # RSS, Reddit and Hacker News ingestion
   normalize/          # Deduplication and normalization
   score/              # Scoring algorithm
   rag/                # RAG context building
@@ -160,6 +187,13 @@ reports/              # Archive (optional)
 - AWS Architecture Blog
 - Netflix TechBlog
 
+### Communities
+- Hacker News: stories of the week whose title matches one of the terms in `config/hackernews.json`
+- Reddit (needs credentials): r/EngineeringManagement, r/ExperiencedDevs and the other subreddits in `config/subreddits.json`
+
+When no discussion is collected, the "Divergenze" section of the report compares
+the sources with each other instead of articles with communities.
+
 ## Customization
 
 ### Add/Remove Sources
@@ -178,16 +212,18 @@ Edit `config/feeds.json` or `config/subreddits.json`:
 ### How Items Are Scored
 
 ```
-score = (recency + keyword matches + reddit engagement) × source weight
+score = (recency + keyword matches + discussion engagement) × source weight
 ```
 
 - **Recency**: 3 if published in the last 24 hours, 1.5 in the last 3 days, 0.5 in the last 7 days
 - **Keyword matches**: 0.8 for each keyword of `config/keywords.json` that starts a word of the title (`cto` matches "CTOs", not "factory")
-- **Reddit engagement**: upvotes / 50 + comments / 20, capped at 5
+- **Discussion engagement** (Reddit, Hacker News): upvotes / 50 + comments / 20, capped at 5
 - **Source weight**: the `weight` of the feed or subreddit the item comes from
 
-The top lists take at most 3 items from the same source, so that a prolific
-source cannot crowd the others out.
+Articles and discussions are ranked apart, because engagement makes their
+scores incomparable: "Top contenuti" lists articles only, and discussions have
+their own section. Each list takes at most 3 items from the same source, so
+that a prolific source cannot crowd the others out.
 
 ### Adjust Keywords
 

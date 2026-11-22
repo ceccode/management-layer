@@ -81,7 +81,7 @@ export function generateFallbackContent(input: AnalysisInput): Analysis {
   const { counts } = input;
 
   return {
-    executiveSummary: `Questa settimana sono stati analizzati ${counts.articles} articoli e ${counts.reddit} discussioni Reddit da ${sourcesCount(counts)} fonti diverse. I contenuti raccolti coprono tematiche di leadership tecnologica, engineering management e organizzazione dei team di sviluppo.`,
+    executiveSummary: `Questa settimana sono stati analizzati ${counts.articles} articoli e ${counts.discussions} discussioni delle community da ${sourcesCount(counts)} fonti diverse. I contenuti raccolti coprono tematiche di leadership tecnologica, engineering management e organizzazione dei team di sviluppo.`,
 
     themes: `### 1) Engineering Management e Leadership
 - Discussioni sulla gestione di team distribuiti e ownership
@@ -102,7 +102,7 @@ export function generateFallbackContent(input: AnalysisInput): Analysis {
 - Discussioni su ownership e decision making distribuito
 - Focus su reliability e incident response`,
 
-    divergences: `- Le discussioni Reddit tendono a enfatizzare aspetti operativi quotidiani
+    divergences: `- Le discussioni delle community tendono a enfatizzare aspetti operativi quotidiani
 - Gli articoli editoriali privilegiano visioni strategiche di lungo periodo
 - Differenze di prospettiva tra individual contributor e manager`,
   };

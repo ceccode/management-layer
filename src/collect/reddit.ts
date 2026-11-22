@@ -1,147 +1,165 @@
-import type { SubredditsConfig } from '../config/schema.js';
+import type { Subreddit, SubredditsConfig } from '../config/schema.js';
+import { isWithinDays } from '../utils/date.js';
 import { log } from '../utils/logging.js';
+import type { RawDiscussion } from './discussion.js';
 
-interface RedditPost {
+const TOKEN_URL = 'https://www.reddit.com/api/v1/access_token';
+const API_URL = 'https://oauth.reddit.com';
+const DEFAULT_USER_AGENT = 'ManagementLayer/1.0';
+const REQUEST_TIMEOUT_MS = 10_000;
+const PAUSE_BETWEEN_REQUESTS_MS = 1000;
+
+export interface RedditCredentials {
+  clientId: string;
+  clientSecret: string;
+  userAgent: string;
+}
+
+export interface RedditPost {
   title: string;
   permalink: string;
   created_utc: number;
-  subreddit: string;
   ups: number;
   num_comments: number;
 }
 
-export interface RawRedditItem {
-  title: string;
-  url: string;
-  publishedAt: string;
-  source: string;
-  subreddit: string;
-  upvotes: number;
-  commentsCount: number;
-  tags: string[];
-  weight: number;
-}
+/** The credentials of the Reddit app, or null when they are not configured. */
+export function redditCredentials(env: NodeJS.ProcessEnv = process.env): RedditCredentials | null {
+  const clientId = env.REDDIT_CLIENT_ID;
+  const clientSecret = env.REDDIT_CLIENT_SECRET;
 
-async function getRedditToken(): Promise<string | null> {
-  const clientId = process.env.REDDIT_CLIENT_ID;
-  const clientSecret = process.env.REDDIT_CLIENT_SECRET;
-  const username = process.env.REDDIT_USERNAME;
-  const password = process.env.REDDIT_PASSWORD;
-  const userAgent = process.env.REDDIT_USER_AGENT || 'ManagementLayer/1.0';
-  
-  if (!clientId || !clientSecret || !username || !password) {
-    log('warn', 'Reddit credentials missing. Skipping Reddit collection.');
+  if (!clientId || !clientSecret) {
     return null;
   }
-  
-  try {
-    const auth = Buffer.from(`${clientId}:${clientSecret}`).toString('base64');
-    const response = await fetch('https://www.reddit.com/api/v1/access_token', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Basic ${auth}`,
-        'Content-Type': 'application/x-www-form-urlencoded',
-        'User-Agent': userAgent,
-      },
-      body: new URLSearchParams({
-        grant_type: 'password',
-        username,
-        password,
-      }),
-    });
-    
-    if (!response.ok) {
-      log('error', `Reddit token request failed: ${response.status}`);
-      return null;
-    }
-    
-    const data = await response.json() as { access_token: string };
-    return data.access_token;
-  } catch (error) {
-    log('error', 'Failed to get Reddit token:', error);
-    return null;
-  }
+
+  return { clientId, clientSecret, userAgent: env.REDDIT_USER_AGENT || DEFAULT_USER_AGENT };
 }
 
-async function fetchSubredditPosts(
-  subreddit: string,
-  sortMode: string,
-  limit: number,
-  token: string,
-  userAgent: string
-): Promise<RedditPost[]> {
-  try {
-    const url = `https://oauth.reddit.com/r/${subreddit}/${sortMode}?limit=${limit}`;
-    const response = await fetch(url, {
-      headers: {
-        'Authorization': `Bearer ${token}`,
-        'User-Agent': userAgent,
-      },
-    });
-    
-    if (!response.ok) {
-      log('warn', `Failed to fetch r/${subreddit} ${sortMode}: ${response.status}`);
-      return [];
-    }
-    
-    const data = await response.json() as { data: { children: Array<{ data: RedditPost }> } };
-    return data.data.children.map(child => child.data);
-  } catch (error) {
-    log('error', `Error fetching r/${subreddit}:`, error);
-    return [];
-  }
-}
+/**
+ * Application-only OAuth: the app authenticates as itself, with no Reddit
+ * user behind it, which is all that reading public posts needs.
+ */
+async function requestAccessToken(credentials: RedditCredentials): Promise<string> {
+  const basicAuth = Buffer.from(`${credentials.clientId}:${credentials.clientSecret}`).toString('base64');
 
-export async function collectReddit(config: SubredditsConfig): Promise<RawRedditItem[]> {
-  if (!config.enabled) {
-    log('info', 'Reddit collection disabled in config');
-    return [];
+  const response = await fetch(TOKEN_URL, {
+    method: 'POST',
+    headers: {
+      'Authorization': `Basic ${basicAuth}`,
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'User-Agent': credentials.userAgent,
+    },
+    body: new URLSearchParams({ grant_type: 'client_credentials' }),
+    signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
+  });
+
+  if (!response.ok) {
+    throw new Error(`Reddit token request failed: ${response.status}`);
   }
-  
-  const token = await getRedditToken();
+
+  const { access_token: token } = await response.json() as { access_token?: string };
+
   if (!token) {
+    throw new Error('Reddit token request returned no token');
+  }
+
+  return token;
+}
+
+/** `top_week` is the week's best posts; any other mode is a Reddit listing name (`hot`, `new`). */
+export function listingUrl(subreddit: string, sortMode: string, limit: number): string {
+  const path = `${API_URL}/r/${encodeURIComponent(subreddit)}`;
+
+  return sortMode === 'top_week'
+    ? `${path}/top?t=week&limit=${limit}`
+    : `${path}/${encodeURIComponent(sortMode)}?limit=${limit}`;
+}
+
+async function fetchPosts(url: string, token: string, userAgent: string): Promise<RedditPost[]> {
+  const response = await fetch(url, {
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'User-Agent': userAgent,
+    },
+    signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
+  });
+
+  if (!response.ok) {
+    throw new Error(`Status code ${response.status}`);
+  }
+
+  const listing = await response.json() as { data?: { children?: Array<{ data: RedditPost }> } };
+  return (listing.data?.children ?? []).map(child => child.data);
+}
+
+/** Keeps the posts of a subreddit published inside the lookback window. */
+export function recentDiscussionsOf(
+  subreddit: Subreddit,
+  posts: RedditPost[],
+  lookbackDays: number,
+  now: Date
+): RawDiscussion[] {
+  return posts
+    .map(post => ({
+      title: post.title,
+      url: `https://www.reddit.com${post.permalink}`,
+      publishedAt: new Date(post.created_utc * 1000).toISOString(),
+      source: `reddit:r/${subreddit.name}`,
+      community: `r/${subreddit.name}`,
+      upvotes: post.ups,
+      commentsCount: post.num_comments,
+      tags: [...subreddit.tags],
+      weight: subreddit.weight,
+    }))
+    .filter(discussion => isWithinDays(discussion.publishedAt, lookbackDays, now));
+}
+
+function withoutRepeats(discussions: RawDiscussion[]): RawDiscussion[] {
+  return [...new Map(discussions.map(discussion => [discussion.url, discussion])).values()];
+}
+
+function pause(): Promise<void> {
+  return new Promise(resolve => setTimeout(resolve, PAUSE_BETWEEN_REQUESTS_MS));
+}
+
+export async function collectReddit(
+  config: SubredditsConfig,
+  lookbackDays: number,
+  now: Date
+): Promise<RawDiscussion[]> {
+  const credentials = redditCredentials();
+
+  if (!config.enabled || !credentials) {
     return [];
   }
-  
-  const userAgent = process.env.REDDIT_USER_AGENT || 'ManagementLayer/1.0';
-  const allItems: RawRedditItem[] = [];
-  const seenPermalinks = new Set<string>();
-  
+
+  let token: string;
+  try {
+    token = await requestAccessToken(credentials);
+  } catch (error) {
+    log('error', 'Failed to authenticate with Reddit:', error);
+    return [];
+  }
+
+  const discussions: RawDiscussion[] = [];
+
   for (const subreddit of config.subreddits) {
     for (const sortMode of config.sortModes) {
-      const posts = await fetchSubredditPosts(
-        subreddit.name,
-        sortMode === 'top_week' ? 'top' : sortMode,
-        config.limitPerSubreddit,
-        token,
-        userAgent
-      );
-      
-      for (const post of posts) {
-        if (seenPermalinks.has(post.permalink)) {
-          continue;
-        }
-        seenPermalinks.add(post.permalink);
-        
-        allItems.push({
-          title: post.title,
-          url: `https://www.reddit.com${post.permalink}`,
-          publishedAt: new Date(post.created_utc * 1000).toISOString(),
-          source: `reddit:r/${subreddit.name}`,
-          subreddit: subreddit.name,
-          upvotes: post.ups,
-          commentsCount: post.num_comments,
-          tags: [...subreddit.tags],
-          weight: subreddit.weight,
-        });
+      try {
+        const url = listingUrl(subreddit.name, sortMode, config.limitPerSubreddit);
+        const posts = await fetchPosts(url, token, credentials.userAgent);
+        discussions.push(...recentDiscussionsOf(subreddit, posts, lookbackDays, now));
+      } catch (error) {
+        log('error', `Failed to fetch r/${subreddit.name} (${sortMode}):`, error);
       }
-      
-      await new Promise(resolve => setTimeout(resolve, 1000));
+
+      await pause();
     }
-    
+
     log('success', `Collected posts from r/${subreddit.name}`);
   }
-  
-  log('info', `Total Reddit items collected: ${allItems.length}`);
-  return allItems;
+
+  const unique = withoutRepeats(discussions);
+  log('info', `Total Reddit discussions collected: ${unique.length}`);
+  return unique;
 }

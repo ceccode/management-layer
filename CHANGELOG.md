@@ -15,6 +15,19 @@
 - Atom feeds with a namespace prefix and feeds with relative links are now read
 
 ### Changed
+- Reddit posts and Hacker News stories are "discussions": in the JSON report
+  `type` is `discussion`, `subreddit` became `community`, `itemsTopReddit`
+  became `itemsTopDiscussions`, `counts.reddit`/`counts.subreddits` became
+  `counts.discussions`/`counts.communities`
+- The divergences section is "Divergenze (Articoli vs Community)" when
+  discussions were collected and "Divergenze tra le fonti" otherwise; the LLM
+  is no longer asked to compare articles with discussions that were never read
+- "Top contenuti" lists articles only; discussions have their own section and
+  no longer compete with articles (`itemsTopOverall` now equals `itemsTopArticles`,
+  `scoringVersion` is `2.2.0`)
+- `counts.communities` counts only the communities actually switched on
+- Reddit's weekly listing asks for the top posts of the week (it asked for the day's)
+- URLs keep the parameters that identify a page; only tracking ones are dropped
 - Source `weight` now multiplies the score of an item (it was configured but ignored);
   items in the JSON report carry their `weight`, and `scoringVersion` is `2.0.0`
 - The top lists take at most 3 items from the same source
@@ -25,11 +38,19 @@
 - Report titles are HTML-escaped in `index.html`
 
 ### Added
+- Hacker News as a community source: stories of the week whose title matches
+  the terms in `config/hackernews.json` (`--no-hn` skips it)
+- Reddit is read again, through application-only OAuth: it needs
+  `REDDIT_CLIENT_ID` and `REDDIT_CLIENT_SECRET`, no username or password
 - Vitest test suite (`npm test`), run in CI before a report is generated
 
 ## [1.0.0] - 2024-12-31
 
 ### Added
+- Hacker News as a community source: stories of the week whose title matches
+  the terms in `config/hackernews.json` (`--no-hn` skips it)
+- Reddit is read again, through application-only OAuth: it needs
+  `REDDIT_CLIENT_ID` and `REDDIT_CLIENT_SECRET`, no username or password
 - Initial implementation of The Management Layer
 - RSS feed collection from 11 editorial sources
 - Reddit API integration for 6 subreddits

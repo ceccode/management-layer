@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { normalizeRSSItems, normalizeRedditItems } from '../src/normalize/normalize.js';
+import { normalizeRSSItems, normalizeDiscussions } from '../src/normalize/normalize.js';
 import { deduplicateItems } from '../src/normalize/dedupe.js';
 import { anArticle } from './fixtures.js';
 
@@ -17,7 +17,7 @@ const rawPost = {
   url: 'https://www.reddit.com/r/test/comments/1/?ref=share',
   publishedAt: '2026-11-11T08:00:00.000Z',
   source: 'reddit:r/test',
-  subreddit: 'test',
+  community: 'r/test',
   upvotes: 42,
   commentsCount: 7,
   tags: ['career'],
@@ -55,6 +55,16 @@ describe('normalizeRSSItems', () => {
     expect(a.id).not.toBe(b.id);
   });
 
+  it('keeps the parameters that identify a page', () => {
+    const [a, b] = normalizeRSSItems([
+      { ...rawArticle, link: 'https://news.ycombinator.com/item?id=1&utm_source=rss' },
+      { ...rawArticle, link: 'https://news.ycombinator.com/item?id=2' },
+    ]);
+
+    expect(a.url).toBe('https://news.ycombinator.com/item?id=1');
+    expect(a.id).not.toBe(b.id);
+  });
+
   it('keeps a link it cannot parse as it is', () => {
     const [item] = normalizeRSSItems([{ ...rawArticle, link: 'not a url' }]);
 
@@ -62,17 +72,17 @@ describe('normalizeRSSItems', () => {
   });
 });
 
-describe('normalizeRedditItems', () => {
-  it('turns a post into an unscored reddit item keeping its engagement', () => {
-    const [item] = normalizeRedditItems([rawPost]);
+describe('normalizeDiscussions', () => {
+  it('turns a post into an unscored discussion keeping its engagement', () => {
+    const [item] = normalizeDiscussions([rawPost]);
 
     expect(item).toMatchObject({
       title: 'A thread',
       url: 'https://www.reddit.com/r/test/comments/1/',
-      type: 'reddit',
+      type: 'discussion',
       score: 0,
       weight: 1.1,
-      subreddit: 'test',
+      community: 'r/test',
       upvotes: 42,
       commentsCount: 7,
     });

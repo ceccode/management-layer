@@ -12,7 +12,7 @@ const RECENCY_SCORES = [
 
 const KEYWORD_MATCH_SCORE = 0.8;
 
-const REDDIT_ENGAGEMENT = {
+const DISCUSSION_ENGAGEMENT = {
   upvotesPerPoint: 50,
   commentsPerPoint: 20,
   cap: 5.0,
@@ -41,19 +41,19 @@ function keywordScore(title: string, keywords: string[]): number {
   return matches.length * KEYWORD_MATCH_SCORE;
 }
 
-function redditEngagementScore(item: Item): number {
-  if (item.type !== 'reddit') {
+function discussionEngagementScore(item: Item): number {
+  if (item.type !== 'discussion') {
     return 0;
   }
 
-  const upvoteScore = (item.upvotes ?? 0) / REDDIT_ENGAGEMENT.upvotesPerPoint;
-  const commentScore = (item.commentsCount ?? 0) / REDDIT_ENGAGEMENT.commentsPerPoint;
+  const upvoteScore = (item.upvotes ?? 0) / DISCUSSION_ENGAGEMENT.upvotesPerPoint;
+  const commentScore = (item.commentsCount ?? 0) / DISCUSSION_ENGAGEMENT.commentsPerPoint;
 
-  return Math.min(upvoteScore + commentScore, REDDIT_ENGAGEMENT.cap);
+  return Math.min(upvoteScore + commentScore, DISCUSSION_ENGAGEMENT.cap);
 }
 
 /**
- * score = (recency + keyword matches + reddit engagement) × source weight
+ * score = (recency + keyword matches + discussion engagement) × source weight
  *
  * `now` is the instant the report refers to, so that a report for a past
  * date ranks its items the same way every time it is generated.
@@ -63,7 +63,7 @@ export function scoreItems(items: Item[], keywords: string[], now: Date): Item[]
     const relevance =
       recencyScore(item.publishedAt, now) +
       keywordScore(item.title, keywords) +
-      redditEngagementScore(item);
+      discussionEngagementScore(item);
 
     return { ...item, score: relevance * item.weight };
   });
@@ -99,22 +99,21 @@ function topItems(ranked: Item[], limit: number, maxPerSource: number): Item[] {
 export function selectTopItems(
   items: Item[],
   topN = 10,
-  topRedditN = 5,
+  topDiscussionsN = 5,
   maxPerSource = Infinity
 ): SelectedItems {
   const ranked = [...items].sort((a, b) => b.score - a.score);
-  const redditPosts = ranked.filter(item => item.type === 'reddit');
+  const discussions = ranked.filter(item => item.type === 'discussion');
   const articles = ranked.filter(item => item.type === 'article');
 
   const selected = {
-    topOverall: topItems(ranked, topN, maxPerSource),
-    topReddit: topItems(redditPosts, topRedditN, maxPerSource),
+    topDiscussions: topItems(discussions, topDiscussionsN, maxPerSource),
     topArticles: topItems(articles, topN, maxPerSource),
   };
 
   log(
     'info',
-    `Selected top ${selected.topOverall.length} overall, ${selected.topReddit.length} reddit, ${selected.topArticles.length} articles`
+    `Selected top ${selected.topArticles.length} articles, ${selected.topDiscussions.length} discussions`
   );
 
   return selected;

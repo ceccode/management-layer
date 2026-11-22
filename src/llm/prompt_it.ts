@@ -1,6 +1,6 @@
 import type { Item } from '../config/schema.js';
 import type { ReportCounts } from '../report/report.js';
-import { SECTION_TITLES } from '../report/sections.js';
+import { SECTION_TITLES, divergencesHeading } from '../report/sections.js';
 
 export const SYSTEM_PROMPT_IT = `Sei un analista editoriale specializzato in leadership, engineering management e organizzazioni tecnologiche.
 
@@ -23,28 +23,47 @@ Lingua: italiano.`;
 export interface AnalysisInput {
   weekDate: string;
   counts: ReportCounts;
-  topOverall: Item[];
-  topReddit: Item[];
+  topArticles: Item[];
+  topDiscussions: Item[];
   ragContext: string;
 }
 
 export function sourcesCount(counts: ReportCounts): number {
-  return counts.feeds + counts.subreddits;
+  return counts.feeds + counts.communities;
+}
+
+function discussionLine(item: Item, index: number): string {
+  return `${index + 1}. ${item.community ?? item.source}: "${item.title}" (↑${item.upvotes ?? 0} 💬${item.commentsCount ?? 0})`;
+}
+
+/**
+ * Without discussions there is nothing to set the articles against, so the
+ * model is asked how the sources diverge from each other instead of being
+ * left to imagine what a community might have said.
+ */
+function divergencesRequest(hasDiscussions: boolean): string {
+  const bullet = hasDiscussions
+    ? '- bullet: differenza di prospettiva tra articoli e discussioni delle community'
+    : '- bullet: punto su cui le fonti raccolte divergono o si contraddicono';
+
+  return [`## ${divergencesHeading(hasDiscussions)}`, bullet, bullet, bullet].join('\n');
 }
 
 export function buildUserPrompt(data: AnalysisInput): string {
+  const hasDiscussions = data.topDiscussions.length > 0;
+
   return `# Analisi della settimana: ${data.weekDate}
 
 ## Dati raccolti
 - Articoli: ${data.counts.articles}
-- Discussioni Reddit: ${data.counts.reddit}
+- Discussioni delle community: ${data.counts.discussions}
 - Fonti totali: ${sourcesCount(data.counts)}
 
-## Top contenuti overall
-${data.topOverall.map((item, i) => `${i + 1}. "${item.title}" (${item.source})`).join('\n')}
+## Top articoli
+${data.topArticles.map((item, i) => `${i + 1}. "${item.title}" (${item.source})`).join('\n')}
 
-## Top discussioni Reddit
-${data.topReddit.map((item, i) => `${i + 1}. r/${item.subreddit ?? ''}: "${item.title}" (↑${item.upvotes ?? 0} 💬${item.commentsCount ?? 0})`).join('\n')}
+## Top discussioni delle community
+${hasDiscussions ? data.topDiscussions.map(discussionLine).join('\n') : 'Nessuna discussione raccolta questa settimana.'}
 
 ## Contesto storico (settimane precedenti)
 ${data.ragContext || 'Nessun contesto storico disponibile.'}
@@ -77,14 +96,12 @@ Produci un'analisi strutturata seguendo ESATTAMENTE questo formato:
 - bullet punto concreto
 - bullet punto concreto
 
-## ${SECTION_TITLES.divergences}
-- bullet: differenza di prospettiva
-- bullet: differenza di prospettiva
-- bullet: differenza di prospettiva
+${divergencesRequest(hasDiscussions)}
 
 Note:
 - Usa evidenze dai contenuti raccolti
 - Non essere prescrittivo
 - Massimo 3 temi
-- Bullet concreti e specifici, non generici`;
+- Bullet concreti e specifici, non generici
+- Non attribuire a una fonte o a una community contenuti che non compaiono nei dati raccolti`;
 }

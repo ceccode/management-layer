@@ -3,14 +3,16 @@ import type { Analysis } from './sections.js';
 
 export interface ReportCounts {
   articles: number;
-  reddit: number;
+  /** Community discussions collected (Reddit posts, Hacker News stories). */
+  discussions: number;
   feeds: number;
-  subreddits: number;
+  /** Communities that were read: each subreddit counts as one, Hacker News as one. */
+  communities: number;
 }
 
+/** Articles and discussions are ranked apart: engagement makes their scores incomparable. */
 export interface SelectedItems {
-  topOverall: Item[];
-  topReddit: Item[];
+  topDiscussions: Item[];
   topArticles: Item[];
 }
 
