@@ -32,6 +32,7 @@ To enable LLM features:
 2. Go to Settings → Pages → Source: GitHub Actions
 3. (Optional) Add LLM secret: Settings → Secrets and variables → Actions
    - `LLM_API_KEY`
+   - `REDDIT_CLIENT_ID` and `REDDIT_CLIENT_SECRET` (optional, to read Reddit)
 4. Run workflow manually or wait for Monday 7 AM UTC
 
 ## Common Commands
@@ -43,8 +44,8 @@ npm run generate
 # Generate for specific date
 npm run generate -- --date 2024-12-31
 
-# Generate without Reddit (RSS-only)
-npm run generate -- --no-reddit
+# Generate without communities (RSS-only)
+npm run generate -- --no-reddit --no-hn
 
 # Generate without LLM (deterministic fallback)
 npm run generate -- --no-llm

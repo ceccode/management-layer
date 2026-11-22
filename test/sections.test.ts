@@ -44,7 +44,7 @@ describe('extractLLMSections', () => {
 
     expect(extracted).toContain('## Executive Summary\nUna settimana dedicata all\'IA.');
     expect(extracted).toContain('## Segnali da monitorare\n- un segnale');
-    expect(extracted).toContain('## Divergenze (Articoli vs Reddit)\n- una divergenza');
+    expect(extracted).toContain('## Divergenze\n- una divergenza');
     expect(extracted).not.toContain('Top contenuti');
     expect(extracted).not.toContain('Metodologia');
   });
@@ -78,6 +78,12 @@ describe('extractSection', () => {
 
   it('matches the heading whatever its case', () => {
     expect(extractSection('## EXECUTIVE SUMMARY\nTesto.', 'Executive Summary')).toBe('Testo.');
+  });
+
+  it('reads the divergences under any of the headings the section has had', () => {
+    for (const heading of ['Divergenze (Articoli vs Reddit)', 'Divergenze (Articoli vs Community)', 'Divergenze tra le fonti']) {
+      expect(parseAnalysis(`## ${heading}\n- una divergenza`).divergences).toBe('- una divergenza');
+    }
   });
 
   it('is empty when the section is missing', () => {

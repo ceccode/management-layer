@@ -7,8 +7,19 @@ export const SECTION_TITLES = {
   executiveSummary: 'Executive Summary',
   themes: 'Temi della settimana',
   signals: 'Segnali da monitorare',
-  divergences: 'Divergenze (Articoli vs Reddit)',
+  divergences: 'Divergenze',
 } as const;
+
+/**
+ * The divergences section compares articles with community discussions when
+ * there are some, and the sources with each other otherwise. Both headings
+ * start with the title above, so either is read back as the same section.
+ */
+export function divergencesHeading(hasDiscussions: boolean): string {
+  return hasDiscussions
+    ? `${SECTION_TITLES.divergences} (Articoli vs Community)`
+    : `${SECTION_TITLES.divergences} tra le fonti`;
+}
 
 export type SectionName = keyof typeof SECTION_TITLES;
 

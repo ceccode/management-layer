@@ -1,5 +1,5 @@
 {
-  "enabled": false,
+  "enabled": true,
   "limitPerSubreddit": 25,
   "sortModes": ["top_week", "hot"],
   "subreddits": [

@@ -25,6 +25,15 @@ export const SubredditsConfigSchema = z.object({
   subreddits: z.array(SubredditSchema),
 });
 
+export const HackerNewsConfigSchema = z.object({
+  enabled: z.boolean(),
+  weight: z.number(),
+  tags: z.array(z.string()),
+  minPoints: z.number(),
+  hitsPerQuery: z.number(),
+  queries: z.array(z.string()),
+});
+
 export const KeywordsConfigSchema = z.object({
   keywords: z.array(z.string()),
 });
@@ -45,11 +54,11 @@ export const ItemSchema = z.object({
   url: z.string(),
   source: z.string(),
   publishedAt: z.string(),
-  type: z.enum(['article', 'reddit']),
+  type: z.enum(['article', 'discussion']),
   score: z.number(),
   weight: z.number(),
   tags: z.array(z.string()),
-  subreddit: z.string().optional(),
+  community: z.string().optional(),
   upvotes: z.number().optional(),
   commentsCount: z.number().optional(),
 });
@@ -58,6 +67,7 @@ export type Feed = z.infer<typeof FeedSchema>;
 export type FeedsConfig = z.infer<typeof FeedsConfigSchema>;
 export type Subreddit = z.infer<typeof SubredditSchema>;
 export type SubredditsConfig = z.infer<typeof SubredditsConfigSchema>;
+export type HackerNewsConfig = z.infer<typeof HackerNewsConfigSchema>;
 export type KeywordsConfig = z.infer<typeof KeywordsConfigSchema>;
 export type LLMConfig = z.infer<typeof LLMConfigSchema>;
 export type Item = z.infer<typeof ItemSchema>;

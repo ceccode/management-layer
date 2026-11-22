@@ -1,15 +1,16 @@
 import type { Item } from '../config/schema.js';
 import { reportPaths, type Report, type ReportCounts, type ReportPaths } from '../report/report.js';
 
-const SCORING_VERSION = '2.0.0';
+const SCORING_VERSION = '2.2.0';
 const MAX_THEMES = 3;
 
 export interface JsonReport {
   date: string;
   title: string;
   counts: ReportCounts;
+  /** The items of "Top contenuti": articles only since scoring 2.2.0, kept under this name for readers of older reports. */
   itemsTopOverall: Item[];
-  itemsTopReddit: Item[];
+  itemsTopDiscussions: Item[];
   itemsTopArticles: Item[];
   llm: {
     executiveSummary: string;
@@ -47,8 +48,8 @@ export function generateReportJson(report: Report): JsonReport {
     date: report.weekDate,
     title: report.title,
     counts: report.counts,
-    itemsTopOverall: selected.topOverall,
-    itemsTopReddit: selected.topReddit,
+    itemsTopOverall: selected.topArticles,
+    itemsTopDiscussions: selected.topDiscussions,
     itemsTopArticles: selected.topArticles,
     llm: {
       executiveSummary: analysis.executiveSummary,

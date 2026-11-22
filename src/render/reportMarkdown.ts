@@ -1,8 +1,9 @@
 import type { Report } from '../report/report.js';
-import { SECTION_TITLES } from '../report/sections.js';
+import { SECTION_TITLES, divergencesHeading } from '../report/sections.js';
 
 export function generateReportMarkdown(report: Report): string {
   const { counts, analysis, selected } = report;
+  const hasDiscussions = selected.topDiscussions.length > 0;
 
   const frontmatter = `---
 title: "${report.title}"
@@ -10,9 +11,9 @@ date: ${report.weekDate}
 scope: "Leadership & Engineering Management"
 sources_count:
   articles: ${counts.articles}
-  reddit: ${counts.reddit}
+  discussions: ${counts.discussions}
   feeds: ${counts.feeds}
-  subreddits: ${counts.subreddits}
+  communities: ${counts.communities}
 disclaimer: "Contenuto informativo. Non costituisce consulenza professionale o manageriale."
 ---
 
@@ -32,7 +33,7 @@ ${analysis.executiveSummary}
 
   const topContents = `## Top contenuti della settimana
 
-${selected.topOverall.map((item, i) => {
+${selected.topArticles.map((item, i) => {
   const date = new Date(item.publishedAt).toLocaleDateString('it-IT', { 
     day: 'numeric', 
     month: 'short', 
@@ -43,10 +44,10 @@ ${selected.topOverall.map((item, i) => {
 
 `;
 
-  const topRedditSection = selected.topReddit.length > 0 ? `## Top discussioni Reddit
+  const topDiscussionsSection = hasDiscussions ? `## Top discussioni delle community
 
-${selected.topReddit.map(item => {
-  return `- **r/${item.subreddit}**: [${item.title}](${item.url})  \n  ↑ ${item.upvotes} • 💬 ${item.commentsCount}`;
+${selected.topDiscussions.map(item => {
+  return `- **${item.community}**: [${item.title}](${item.url})  \n  ↑ ${item.upvotes} • 💬 ${item.commentsCount}`;
 }).join('\n\n')}
 
 ` : '';
@@ -63,7 +64,7 @@ ${analysis.signals}
 
 `;
 
-  const divergences = analysis.divergences ? `## ${SECTION_TITLES.divergences}
+  const divergences = analysis.divergences ? `## ${divergencesHeading(hasDiscussions)}
 
 ${analysis.divergences}
 
@@ -72,15 +73,15 @@ ${analysis.divergences}
   const methodology = `## Metodologia e limitazioni
 
 Questo report è generato attraverso:
-- **Raccolta dati**: Analisi di feed RSS da fonti editoriali selezionate e discussioni da subreddit rilevanti
-- **Scoring deterministico**: Algoritmo basato su recency, keyword matching e engagement (per Reddit)
+- **Raccolta dati**: Analisi di feed RSS da fonti editoriali selezionate e discussioni da community (Reddit, Hacker News)
+- **Scoring deterministico**: Algoritmo basato su recency, keyword matching e engagement (per le discussioni), con un massimo di 3 contenuti per fonte
 - **Analisi LLM**: Sintesi e individuazione pattern attraverso modello linguistico
-- **Lookback**: ${counts.feeds} feed RSS e ${counts.subreddits} subreddit negli ultimi ${report.lookbackDays} giorni
+- **Lookback**: ${counts.feeds} feed RSS e ${counts.communities} community negli ultimi ${report.lookbackDays} giorni
 
 **Limitazioni**:
 - Il campione è limitato alle fonti configurate
 - Possibili bias nella selezione editoriale delle fonti
-- Le discussioni Reddit riflettono la prospettiva delle community tech anglofone
+- Le discussioni delle community riflettono la prospettiva delle community tech anglofone
 - L'analisi LLM può contenere interpretazioni soggettive
 
 `;
@@ -91,5 +92,5 @@ Questo report è generato attraverso:
 
 `;
 
-  return frontmatter + header + executiveSummary + topContents + topRedditSection + themes + signals + divergences + methodology + footer;
+  return frontmatter + header + executiveSummary + topContents + topDiscussionsSection + themes + signals + divergences + methodology + footer;
 }

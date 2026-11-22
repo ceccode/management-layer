@@ -16,14 +16,14 @@ export function anArticle(overrides: Partial<Item> = {}): Item {
   };
 }
 
-export function aRedditPost(overrides: Partial<Item> = {}): Item {
+export function aDiscussion(overrides: Partial<Item> = {}): Item {
   return anArticle({
     id: 'reddit-1',
     title: 'A discussion',
     url: 'https://www.reddit.com/r/test/1',
     source: 'reddit:r/test',
-    type: 'reddit',
-    subreddit: 'test',
+    type: 'discussion',
+    community: 'r/test',
     upvotes: 0,
     commentsCount: 0,
     ...overrides,
@@ -34,8 +34,8 @@ export function aReport(overrides: Partial<Report> = {}): Report {
   return {
     weekDate: '2026-11-16',
     title: 'The Management Layer — 2026-11-16',
-    counts: { articles: 25, reddit: 0, feeds: 11, subreddits: 6 },
-    selected: { topOverall: [], topReddit: [], topArticles: [] },
+    counts: { articles: 25, discussions: 0, feeds: 11, communities: 6 },
+    selected: { topDiscussions: [], topArticles: [] },
     analysis: {
       executiveSummary: 'Sintesi della settimana.',
       themes: '### 1) Governance del codice\n- primo punto\n\n### 2) Produttività\n- secondo punto',

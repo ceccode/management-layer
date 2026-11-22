@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "weight": 1.0,
+  "tags": ["community"],
+  "minPoints": 10,
+  "hitsPerQuery": 20,
+  "queries": [
+    "engineering manager",
+    "engineering management",
+    "engineering leadership",
+    "tech lead",
+    "staff engineer",
+    "CTO",
+    "career",
+    "hiring",
+    "layoffs",
+    "burnout",
+    "developer productivity",
+    "engineering culture"
+  ]
+}

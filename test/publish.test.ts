@@ -14,7 +14,7 @@ describe('toReportEntry', () => {
   it('summarises a report with a short excerpt and its first five links', () => {
     const items = Array.from({ length: 7 }, (_, i) => anArticle({ title: `Item ${i + 1}` }));
     const analysis = { ...aReport().analysis, executiveSummary: 'x'.repeat(300) };
-    const report = aReport({ analysis, selected: { topOverall: items, topReddit: [], topArticles: items } });
+    const report = aReport({ analysis, selected: { topDiscussions: [], topArticles: items } });
 
     const entry = toReportEntry(generateReportJson(report));
 

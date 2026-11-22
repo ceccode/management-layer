@@ -4,13 +4,16 @@ import type { z } from 'zod';
 import {
   FeedsConfigSchema,
   SubredditsConfigSchema,
+  HackerNewsConfigSchema,
   KeywordsConfigSchema,
   LLMConfigSchema,
   type FeedsConfig,
   type SubredditsConfig,
+  type HackerNewsConfig,
   type KeywordsConfig,
   type LLMConfig,
 } from './schema.js';
+import { redditCredentials } from '../collect/reddit.js';
 import { log } from '../utils/logging.js';
 
 const CONFIG_DIR = join(process.cwd(), 'config');
@@ -34,20 +37,33 @@ async function loadLLMConfig(): Promise<LLMConfig> {
   return config;
 }
 
+async function loadSubredditsConfig(): Promise<SubredditsConfig> {
+  const config = await loadConfigFile('subreddits.json', SubredditsConfigSchema);
+
+  if (config.enabled && !redditCredentials()) {
+    log('warn', 'REDDIT_CLIENT_ID or REDDIT_CLIENT_SECRET not found in environment. Reddit will be skipped.');
+    return { ...config, enabled: false };
+  }
+
+  return config;
+}
+
 export interface Config {
   feeds: FeedsConfig;
   subreddits: SubredditsConfig;
+  hackerNews: HackerNewsConfig;
   keywords: KeywordsConfig;
   llm: LLMConfig;
 }
 
 export async function loadAllConfigs(): Promise<Config> {
-  const [feeds, subreddits, keywords, llm] = await Promise.all([
+  const [feeds, subreddits, hackerNews, keywords, llm] = await Promise.all([
     loadConfigFile('feeds.json', FeedsConfigSchema),
-    loadConfigFile('subreddits.json', SubredditsConfigSchema),
+    loadSubredditsConfig(),
+    loadConfigFile('hackernews.json', HackerNewsConfigSchema),
     loadConfigFile('keywords.json', KeywordsConfigSchema),
     loadLLMConfig(),
   ]);
 
-  return { feeds, subreddits, keywords, llm };
+  return { feeds, subreddits, hackerNews, keywords, llm };
 }

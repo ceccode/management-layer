@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { scoreItems, selectTopItems } from '../src/score/score.js';
-import { anArticle, aRedditPost } from './fixtures.js';
+import { anArticle, aDiscussion } from './fixtures.js';
 
 const NOW = new Date('2026-11-16T12:00:00.000Z');
 
@@ -62,23 +62,23 @@ describe('keywords', () => {
   });
 });
 
-describe('reddit engagement', () => {
+describe('discussion engagement', () => {
   const old = hoursAgo(1000);
 
   it('adds upvotes/50 plus comments/20', () => {
-    const post = aRedditPost({ publishedAt: old, upvotes: 100, commentsCount: 20 });
+    const post = aDiscussion({ publishedAt: old, upvotes: 100, commentsCount: 20 });
 
     expect(scoreOf(post)).toBe(3);
   });
 
   it('is capped at 5', () => {
-    const post = aRedditPost({ publishedAt: old, upvotes: 10_000, commentsCount: 10_000 });
+    const post = aDiscussion({ publishedAt: old, upvotes: 10_000, commentsCount: 10_000 });
 
     expect(scoreOf(post)).toBe(5);
   });
 
   it('counts upvotes even when nobody commented', () => {
-    const post = aRedditPost({ publishedAt: old, upvotes: 100, commentsCount: 0 });
+    const post = aDiscussion({ publishedAt: old, upvotes: 100, commentsCount: 0 });
 
     expect(scoreOf(post)).toBe(2);
   });
@@ -102,9 +102,9 @@ describe('source weight', () => {
     const light = anArticle({ id: 'light', publishedAt: hoursAgo(1), weight: 1.0 });
     const heavy = anArticle({ id: 'heavy', publishedAt: hoursAgo(1), weight: 1.25 });
 
-    const { topOverall } = selectTopItems(scoreItems([light, heavy], [], NOW));
+    const { topArticles } = selectTopItems(scoreItems([light, heavy], [], NOW));
 
-    expect(topOverall.map(item => item.id)).toEqual(['heavy', 'light']);
+    expect(topArticles.map(item => item.id)).toEqual(['heavy', 'light']);
   });
 });
 
@@ -118,7 +118,7 @@ describe('scoreItems', () => {
   });
 
   it('sums recency, keywords and engagement without mutating the input', () => {
-    const post = aRedditPost({
+    const post = aDiscussion({
       title: 'Strategy thread',
       publishedAt: hoursAgo(1),
       upvotes: 50,
@@ -132,29 +132,38 @@ describe('scoreItems', () => {
   });
 
   it('keeps every item', () => {
-    expect(scoreItems([anArticle(), aRedditPost()], [], NOW)).toHaveLength(2);
+    expect(scoreItems([anArticle(), aDiscussion()], [], NOW)).toHaveLength(2);
   });
 });
 
 describe('selectTopItems', () => {
   const items = [
     anArticle({ id: 'a1', score: 1 }),
-    aRedditPost({ id: 'r1', score: 5 }),
+    aDiscussion({ id: 'r1', score: 5 }),
     anArticle({ id: 'a2', score: 4 }),
-    aRedditPost({ id: 'r2', score: 2 }),
+    aDiscussion({ id: 'r2', score: 2 }),
     anArticle({ id: 'a3', score: 3 }),
   ];
 
-  it('ranks all items by descending score and keeps the top N', () => {
-    const { topOverall } = selectTopItems(items, 3, 5);
+  it('ranks articles by descending score and keeps the top N', () => {
+    const { topArticles } = selectTopItems(items, 2, 5);
 
-    expect(topOverall.map(item => item.id)).toEqual(['r1', 'a2', 'a3']);
+    expect(topArticles.map(item => item.id)).toEqual(['a2', 'a3']);
   });
 
-  it('ranks reddit posts and articles separately', () => {
-    const { topReddit, topArticles } = selectTopItems(items, 2, 1);
+  it('keeps discussions out of the article ranking, however high they score', () => {
+    const viral = aDiscussion({ id: 'viral', score: 99 });
 
-    expect(topReddit.map(item => item.id)).toEqual(['r1']);
+    const { topArticles, topDiscussions } = selectTopItems([...items, viral], 10, 5);
+
+    expect(topArticles.map(item => item.type)).toEqual(['article', 'article', 'article']);
+    expect(topDiscussions[0].id).toBe('viral');
+  });
+
+  it('ranks discussions and articles separately', () => {
+    const { topDiscussions, topArticles } = selectTopItems(items, 2, 1);
+
+    expect(topDiscussions.map(item => item.id)).toEqual(['r1']);
     expect(topArticles.map(item => item.id)).toEqual(['a2', 'a3']);
   });
 
@@ -169,22 +178,21 @@ describe('selectTopItems', () => {
     const other = anArticle({ id: 'leaddev-1', source: 'LeadDev', score: 1 });
 
     it('takes only the best items of a source and makes room for the others', () => {
-      const { topOverall, topArticles } = selectTopItems([...prolific, other], 10, 5, 3);
+      const { topArticles } = selectTopItems([...prolific, other], 10, 5, 3);
 
-      expect(topOverall.map(item => item.id)).toEqual(['hbr-5', 'hbr-4', 'hbr-3', 'leaddev-1']);
       expect(topArticles.map(item => item.id)).toEqual(['hbr-5', 'hbr-4', 'hbr-3', 'leaddev-1']);
     });
 
     it('still keeps the ranking by score', () => {
       const strong = anArticle({ id: 'leaddev-9', source: 'LeadDev', score: 4.5 });
 
-      const { topOverall } = selectTopItems([...prolific, strong], 3, 5, 2);
+      const { topArticles } = selectTopItems([...prolific, strong], 3, 5, 2);
 
-      expect(topOverall.map(item => item.id)).toEqual(['hbr-5', 'leaddev-9', 'hbr-4']);
+      expect(topArticles.map(item => item.id)).toEqual(['hbr-5', 'leaddev-9', 'hbr-4']);
     });
 
     it('does not limit sources unless asked to', () => {
-      expect(selectTopItems(prolific).topOverall).toHaveLength(4);
+      expect(selectTopItems(prolific).topArticles).toHaveLength(4);
     });
   });
 });
