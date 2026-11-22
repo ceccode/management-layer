@@ -130,8 +130,32 @@ function topItems(ranked: Item[], limit: number, maxPerSource: number): Item[] {
   return top;
 }
 
+function byScore(a: Item, b: Item): number {
+  return b.score - a.score;
+}
+
+/** Judged relevance first, keyword score to break ties; unjudged items rank by score alone. */
+function byRelevanceThenScore(a: Item, b: Item): number {
+  return (b.relevance ?? 0) - (a.relevance ?? 0) || byScore(a, b);
+}
+
+function isOffTopic(item: Item): boolean {
+  return item.relevance === 0;
+}
+
+/**
+ * The best-scored articles, for a closer look at their relevance. A wider
+ * per-source limit than the final list leaves room to discard some.
+ */
+export function shortlistArticles(items: Item[], limit: number, maxPerSource: number): Item[] {
+  const articles = items.filter(item => item.type === 'article').sort(byScore);
+
+  return topItems(articles, limit, maxPerSource);
+}
+
 /**
  * `maxPerSource` keeps a prolific source from crowding the others out of a list.
+ * Articles judged off topic are left out, even if that makes the list shorter.
  */
 export function selectTopItems(
   items: Item[],
@@ -139,9 +163,10 @@ export function selectTopItems(
   topDiscussionsN = 5,
   maxPerSource = Infinity
 ): SelectedItems {
-  const ranked = [...items].sort((a, b) => b.score - a.score);
-  const discussions = ranked.filter(item => item.type === 'discussion');
-  const articles = ranked.filter(item => item.type === 'article');
+  const discussions = items.filter(item => item.type === 'discussion').sort(byScore);
+  const articles = items
+    .filter(item => item.type === 'article' && !isOffTopic(item))
+    .sort(byRelevanceThenScore);
 
   const selected = {
     topDiscussions: topItems(discussions, topDiscussionsN, maxPerSource),

@@ -4,5 +4,6 @@
   "model": "gpt-6.2-sol",
   "maxTokens": 2000,
   "ragWeeks": 4,
-  "maxRagWords": 2000
+  "maxRagWords": 2000,
+  "rerankCandidates": 30
 }

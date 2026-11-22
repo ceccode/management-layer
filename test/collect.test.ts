@@ -67,6 +67,15 @@ describe('recentItemsOf', () => {
     expect(recentItemsOf(feed, incomplete, 7, NOW)).toEqual([]);
   });
 
+  it('skips sponsored entries, marked in the address or in a category', () => {
+    const paidByLink = { ...entry, link: 'https://hbr.org/sponsored/2026/11/ai-without-certainty' };
+    const paidByCategory = { ...entry, categories: ['Sponsored Content'] };
+    const unrelated = { ...entry, link: 'https://example.com/unsponsored-thoughts' };
+
+    expect(recentItemsOf(feed, [paidByLink, paidByCategory], 7, NOW)).toEqual([]);
+    expect(recentItemsOf(feed, [unrelated], 7, NOW)).toHaveLength(1);
+  });
+
   it('skips entries older than the lookback window', () => {
     const old = { ...entry, isoDate: '2026-11-01T08:00:00.000Z' };
 

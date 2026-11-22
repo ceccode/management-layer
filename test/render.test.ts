@@ -89,6 +89,22 @@ describe('generateReportMarkdown', () => {
     expect(parseAnalysis(withoutDiscussions).divergences).toBe('• una divergenza');
   });
 
+  it('says in the methodology when the articles were judged for relevance', () => {
+    const judged = { ...selected, topArticles: [{ ...article, relevance: 3, relevanceReason: 'Pertinente.' }] };
+
+    expect(generateReportMarkdown(aReport({ selected: judged }))).toContain('- **Selezione degli articoli**');
+    expect(markdown).not.toContain('- **Selezione degli articoli**');
+  });
+
+  it('publishes the verdict and its reason in the JSON, for audit', () => {
+    const judged = { ...selected, topArticles: [{ ...article, relevance: 3, relevanceReason: 'Pertinente.' }] };
+
+    expect(generateReportJson(aReport({ selected: judged })).itemsTopArticles[0]).toMatchObject({
+      relevance: 3,
+      relevanceReason: 'Pertinente.',
+    });
+  });
+
   describe('without an analysis', () => {
     const unavailable = { executiveSummary: 'Analisi non disponibile.', themes: '', signals: '', divergences: '' };
     const bare = generateReportMarkdown(aReport({ selected, analysis: unavailable }));

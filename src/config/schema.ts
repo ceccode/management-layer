@@ -47,6 +47,8 @@ export const LLMConfigSchema = z.object({
   temperature: z.number().optional(),
   ragWeeks: z.number(),
   maxRagWords: z.number(),
+  /** How many of the best-scored articles the LLM judges for relevance; 0 keeps the keyword ranking. */
+  rerankCandidates: z.number().int().min(0).default(30),
 });
 
 export const ItemSchema = z.object({
@@ -63,6 +65,9 @@ export const ItemSchema = z.object({
   /** What the source says the item is about; read for relevance and by the LLM, never published. */
   summary: z.string().optional(),
   categories: z.array(z.string()).optional(),
+  /** The LLM's verdict on how relevant the article is to the newsletter, 0 (off topic) to 3. */
+  relevance: z.number().optional(),
+  relevanceReason: z.string().optional(),
   upvotes: z.number().optional(),
   commentsCount: z.number().optional(),
 });

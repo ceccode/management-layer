@@ -63,7 +63,14 @@ function absoluteLink(link: string, feedUrl: string): string {
   }
 }
 
-/** Keeps the entries of a feed that have a title, a link and a date inside the lookback window. */
+/** Publishers mark paid content in the address (`/sponsored/`) or in a category. */
+function isSponsored(entry: FeedEntry): boolean {
+  const marked = /(^|[^a-z])sponsored([^a-z]|$)/i;
+
+  return marked.test(entry.link ?? '') || categoriesOf(entry).some(category => marked.test(category));
+}
+
+/** Keeps the entries of a feed that have a title, a link and a date inside the lookback window, leaving out sponsored ones. */
 export function recentItemsOf(
   feed: Feed,
   entries: FeedEntry[],
@@ -79,7 +86,7 @@ export function recentItemsOf(
       continue;
     }
 
-    if (!isWithinDays(publishedAt, lookbackDays, now)) {
+    if (!isWithinDays(publishedAt, lookbackDays, now) || isSponsored(entry)) {
       continue;
     }
 

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { scoreItems, selectTopItems } from '../src/score/score.js';
+import { scoreItems, selectTopItems, shortlistArticles } from '../src/score/score.js';
 import { anArticle, aDiscussion } from './fixtures.js';
 
 const NOW = new Date('2026-11-16T12:00:00.000Z');
@@ -248,5 +248,52 @@ describe('selectTopItems', () => {
     it('does not limit sources unless asked to', () => {
       expect(selectTopItems(prolific).topArticles).toHaveLength(4);
     });
+  });
+});
+
+describe('shortlistArticles', () => {
+  const items = [
+    anArticle({ id: 'a1', source: 'A', score: 1 }),
+    anArticle({ id: 'a2', source: 'A', score: 3 }),
+    anArticle({ id: 'a3', source: 'A', score: 2 }),
+    anArticle({ id: 'b1', source: 'B', score: 2.5 }),
+    aDiscussion({ id: 'd1', score: 9 }),
+  ];
+
+  it('takes the best-scored articles, leaving discussions out', () => {
+    expect(shortlistArticles(items, 3, 10).map(item => item.id)).toEqual(['a2', 'b1', 'a3']);
+  });
+
+  it('limits how many come from one source', () => {
+    expect(shortlistArticles(items, 10, 2).map(item => item.id)).toEqual(['a2', 'b1', 'a3']);
+  });
+});
+
+describe('selectTopItems with relevance verdicts', () => {
+  it('ranks by the verdict first and by score among equals', () => {
+    const items = [
+      anArticle({ id: 'weak-high-score', source: 'A', score: 5, relevance: 1 }),
+      anArticle({ id: 'strong-low-score', source: 'B', score: 1, relevance: 3 }),
+      anArticle({ id: 'strong-high-score', source: 'C', score: 2, relevance: 3 }),
+    ];
+
+    const { topArticles } = selectTopItems(items);
+
+    expect(topArticles.map(item => item.id)).toEqual(['strong-high-score', 'strong-low-score', 'weak-high-score']);
+  });
+
+  it('leaves out articles judged off topic, even if the list gets shorter', () => {
+    const items = [
+      anArticle({ id: 'on-topic', source: 'A', score: 1, relevance: 2 }),
+      anArticle({ id: 'off-topic', source: 'B', score: 9, relevance: 0 }),
+    ];
+
+    expect(selectTopItems(items, 10).topArticles.map(item => item.id)).toEqual(['on-topic']);
+  });
+
+  it('still limits how many come from one source', () => {
+    const items = [3, 3, 3, 3].map((relevance, i) => anArticle({ id: `a${i}`, source: 'A', score: 4 - i, relevance }));
+
+    expect(selectTopItems(items, 10, 5, 3).topArticles.map(item => item.id)).toEqual(['a0', 'a1', 'a2']);
   });
 });
