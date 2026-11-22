@@ -8,6 +8,10 @@ export interface RawRSSItem {
   link: string;
   publishedAt: string;
   source: string;
+  /** The opening of the entry's own description, as plain text. */
+  summary: string;
+  /** The categories the feed files the entry under. */
+  categories: string[];
   tags: string[];
   weight: number;
 }
@@ -17,6 +21,37 @@ export interface FeedEntry {
   link?: string;
   isoDate?: string;
   pubDate?: string;
+  contentSnippet?: string;
+  summary?: string;
+  content?: string;
+  categories?: unknown[];
+}
+
+const SUMMARY_LENGTH = 400;
+
+function plainText(text: string): string {
+  return text.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+function summaryOf(entry: FeedEntry): string {
+  const text = plainText(entry.contentSnippet || entry.summary || entry.content || '');
+
+  return text.length > SUMMARY_LENGTH ? `${text.slice(0, SUMMARY_LENGTH).trimEnd()}…` : text;
+}
+
+/** Feeds give categories as plain strings (RSS) or as elements with a `term` (Atom). */
+function categoriesOf(entry: FeedEntry): string[] {
+  return (entry.categories ?? [])
+    .map(category => {
+      if (typeof category === 'string') {
+        return category;
+      }
+
+      const element = category as { _?: unknown; $?: { term?: unknown } } | null;
+      return element?._ ?? element?.$?.term ?? '';
+    })
+    .filter((name): name is string => typeof name === 'string' && name.trim() !== '')
+    .map(name => name.trim());
 }
 
 /** Feeds may link their entries relative to their own address. */
@@ -53,6 +88,8 @@ export function recentItemsOf(
       link: absoluteLink(entry.link, feed.url),
       publishedAt,
       source: feed.name,
+      summary: summaryOf(entry),
+      categories: categoriesOf(entry),
       tags: [...feed.tags],
       weight: feed.weight,
     });

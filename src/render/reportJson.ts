@@ -2,7 +2,12 @@ import type { Item } from '../config/schema.js';
 import { themeTitles } from '../report/sections.js';
 import { reportPaths, type Report, type ReportCounts, type ReportPaths } from '../report/report.js';
 
-const SCORING_VERSION = '2.2.0';
+const SCORING_VERSION = '3.0.0';
+
+/** Summaries and categories belong to their sources: they inform the ranking but are not republished. */
+function publishable(items: Item[]): Item[] {
+  return items.map(({ summary, categories, ...item }) => item);
+}
 
 export interface JsonReport {
   date: string;
@@ -40,9 +45,9 @@ export function generateReportJson(report: Report): JsonReport {
     date: report.weekDate,
     title: report.title,
     counts: report.counts,
-    itemsTopOverall: selected.topArticles,
-    itemsTopDiscussions: selected.topDiscussions,
-    itemsTopArticles: selected.topArticles,
+    itemsTopOverall: publishable(selected.topArticles),
+    itemsTopDiscussions: publishable(selected.topDiscussions),
+    itemsTopArticles: publishable(selected.topArticles),
     llm: {
       executiveSummary: analysis.executiveSummary,
       themes: themeTitles(analysis.themes),

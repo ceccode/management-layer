@@ -14,10 +14,33 @@ describe('recentItemsOf', () => {
         link: 'https://leaddev.com/systems',
         publishedAt: '2026-11-15T08:00:00.000Z',
         source: 'LeadDev',
+        summary: '',
+        categories: [],
         tags: ['leadership'],
         weight: 1.25,
       },
     ]);
+  });
+
+  it('keeps the opening of the description as plain text', () => {
+    const described = { ...entry, contentSnippet: '  Systems   thinking\noutlasts frameworks. ' };
+    const marked = { ...entry, contentSnippet: undefined, content: '<p>Why <em>teams</em> matter</p>' };
+    const long = { ...entry, contentSnippet: 'x'.repeat(1000) };
+
+    const [a, b, c] = recentItemsOf(feed, [described, marked, long], 7, NOW);
+
+    expect(a.summary).toBe('Systems thinking outlasts frameworks.');
+    expect(b.summary).toBe('Why teams matter');
+    expect(c.summary).toHaveLength(401);
+    expect(c.summary.endsWith('…')).toBe(true);
+  });
+
+  it('reads categories given as text or as Atom terms', () => {
+    const categorised = { ...entry, categories: ['Leadership', { $: { term: 'Career' } }, { _: 'Management' }, '', null] };
+
+    const [item] = recentItemsOf(feed, [categorised], 7, NOW);
+
+    expect(item.categories).toEqual(['Leadership', 'Career', 'Management']);
   });
 
   it('resolves a relative link against the address of the feed', () => {

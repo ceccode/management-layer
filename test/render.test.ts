@@ -35,6 +35,15 @@ describe('generateReportJson', () => {
     });
   });
 
+  it('does not republish the summaries and categories collected from the sources', () => {
+    const described = anArticle({ summary: 'Text from the source.', categories: ['Leadership'] });
+    const published = generateReportJson(aReport({ selected: { topArticles: [described], topDiscussions: [] } }));
+
+    expect(published.itemsTopArticles[0]).not.toHaveProperty('summary');
+    expect(published.itemsTopArticles[0]).not.toHaveProperty('categories');
+    expect(published.itemsTopArticles[0].title).toBe('An article');
+  });
+
   it('carries the selected items and the counts', () => {
     expect(json.itemsTopOverall).toEqual([article]);
     expect(json.itemsTopArticles).toEqual([article]);

@@ -6,7 +6,7 @@ A weekly automated report aggregating high-signal content on leadership, enginee
 
 ## Features
 
-- **Editorial source aggregation**: RSS feeds from 11 curated high-quality sources
+- **Editorial source aggregation**: RSS feeds from 23 curated sources
 - **Community discussions**: Hacker News stories and, when credentials are set, Reddit posts
 - **Deterministic scoring**: Recency, keyword matching, and engagement-based ranking
 - **RAG-powered analysis**: Historical context from previous reports
@@ -174,16 +174,34 @@ reports/              # Archive (optional)
 
 ## Content Sources
 
-### RSS Feeds (11 sources)
+### RSS Feeds (23 sources)
+
+Dedicated to engineering management and leadership:
 - LeadDev
+- The Pragmatic Engineer
+- Irrational Exuberance (Will Larson)
+- The Engineering Manager (James Stanier)
+- Rands in Repose
+- charity.wtf (Charity Majors)
+- Refactoring (Luca Rossi)
+- Engineering Leadership (Gregor Ojstersek)
+- Jacob Kaplan-Moss
+- InfoQ Culture & Methods
+
+Management and software practice at large:
 - Harvard Business Review
+- MIT Sloan Management Review
 - Martin Fowler
+- Tidy First? (Kent Beck)
 - Thoughtworks Insights
-- GitHub Blog
+- Stack Overflow Blog
+- InfoQ Articles
+
+Engineering blogs:
+- The GitHub Blog
 - Engineering@Microsoft
 - Stripe Blog
 - Google Cloud Blog
-- InfoQ Articles
 - AWS Architecture Blog
 - Netflix TechBlog
 
@@ -215,10 +233,13 @@ Edit `config/feeds.json` or `config/subreddits.json`:
 score = (recency + keyword matches + discussion engagement) × source weight
 ```
 
-- **Recency**: 3 if published in the last 24 hours, 1.5 in the last 3 days, 0.5 in the last 7 days
-- **Keyword matches**: 0.8 for each keyword of `config/keywords.json` that starts a word of the title (`cto` matches "CTOs", not "factory")
+- **Keyword matches**: 1 for each keyword of `config/keywords.json` that starts a word of the title (`cto` matches "CTOs", not "factory"). A keyword found only in the item's description (its summary, its feed categories, the `tags` of its source) adds 0.5, and all description matches together add at most 1. Capped at 3
+- **Recency**: 1 if published in the last 3 days, 0.7 in the rest of the week
 - **Discussion engagement** (Reddit, Hacker News): upvotes / 50 + comments / 20, capped at 5
 - **Source weight**: the `weight` of the feed or subreddit the item comes from
+
+What an item is about counts for more than the day it came out: keyword
+matches carry up to three times the weight of recency.
 
 Articles and discussions are ranked apart, because engagement makes their
 scores incomparable: "Top contenuti" lists articles only, and discussions have

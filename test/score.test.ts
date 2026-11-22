@@ -13,18 +13,14 @@ function scoreOf(item: ReturnType<typeof anArticle>, keywords: string[] = []): n
 }
 
 describe('recency', () => {
-  it('scores 3 when published less than a day ago', () => {
-    expect(scoreOf(anArticle({ publishedAt: hoursAgo(23) }))).toBe(3);
+  it('scores 1 in the three days before the report', () => {
+    expect(scoreOf(anArticle({ publishedAt: hoursAgo(1) }))).toBe(1);
+    expect(scoreOf(anArticle({ publishedAt: hoursAgo(71) }))).toBe(1);
   });
 
-  it('scores 1.5 when published less than three days ago', () => {
-    expect(scoreOf(anArticle({ publishedAt: hoursAgo(24) }))).toBe(1.5);
-    expect(scoreOf(anArticle({ publishedAt: hoursAgo(71) }))).toBe(1.5);
-  });
-
-  it('scores 0.5 when published less than a week ago', () => {
-    expect(scoreOf(anArticle({ publishedAt: hoursAgo(72) }))).toBe(0.5);
-    expect(scoreOf(anArticle({ publishedAt: hoursAgo(167) }))).toBe(0.5);
+  it('scores 0.7 in the rest of the week', () => {
+    expect(scoreOf(anArticle({ publishedAt: hoursAgo(72) }))).toBe(0.7);
+    expect(scoreOf(anArticle({ publishedAt: hoursAgo(167) }))).toBe(0.7);
   });
 
   it('scores nothing when a week old or more', () => {
@@ -35,10 +31,10 @@ describe('recency', () => {
 describe('keywords', () => {
   const old = hoursAgo(1000);
 
-  it('adds 0.8 for each keyword found in the title, ignoring case', () => {
+  it('adds 1 for each keyword found in the title, ignoring case', () => {
     const item = anArticle({ title: 'Strategy and OWNERSHIP in platform teams', publishedAt: old });
 
-    expect(scoreOf(item, ['strategy', 'ownership', 'hiring'])).toBeCloseTo(1.6);
+    expect(scoreOf(item, ['strategy', 'ownership', 'hiring'])).toBe(2);
   });
 
   it('does not match a keyword buried inside another word', () => {
@@ -48,17 +44,75 @@ describe('keywords', () => {
   });
 
   it('matches a keyword at the start of a word, plurals included', () => {
-    expect(scoreOf(anArticle({ title: 'What CTOs get wrong', publishedAt: old }), ['cto'])).toBeCloseTo(0.8);
-    expect(scoreOf(anArticle({ title: 'Why platform teams fail', publishedAt: old }), ['platform team'])).toBeCloseTo(0.8);
+    expect(scoreOf(anArticle({ title: 'What CTOs get wrong', publishedAt: old }), ['cto'])).toBe(1);
+    expect(scoreOf(anArticle({ title: 'Why platform teams fail', publishedAt: old }), ['platform team'])).toBe(1);
   });
 
   it('treats punctuation in a keyword literally', () => {
-    expect(scoreOf(anArticle({ title: 'Scaling C++ teams', publishedAt: old }), ['c++'])).toBeCloseTo(0.8);
+    expect(scoreOf(anArticle({ title: 'Scaling C++ teams', publishedAt: old }), ['c++'])).toBe(1);
     expect(scoreOf(anArticle({ title: 'Scaling C teams', publishedAt: old }), ['c++'])).toBe(0);
   });
 
   it('adds nothing when no keyword matches', () => {
     expect(scoreOf(anArticle({ title: 'Kubernetes 2.0', publishedAt: old }), ['strategy'])).toBe(0);
+  });
+
+  it('never adds more than 3, however many keywords match', () => {
+    const item = anArticle({ title: 'Hiring, strategy, culture, career and burnout', publishedAt: old });
+
+    expect(scoreOf(item, ['hiring', 'strategy', 'culture', 'career', 'burnout'])).toBe(3);
+  });
+});
+
+describe('keywords beyond the title', () => {
+  const old = hoursAgo(1000);
+
+  it('adds 0.5 for a keyword found only in the summary', () => {
+    const item = anArticle({ title: 'A quiet week', summary: 'Notes on hiring.', publishedAt: old });
+
+    expect(scoreOf(item, ['hiring'])).toBe(0.5);
+  });
+
+  it('reads the categories the feed files the item under', () => {
+    const item = anArticle({ title: 'A quiet week', categories: ['Career development', 'Leadership'], publishedAt: old });
+
+    expect(scoreOf(item, ['career', 'leadership'])).toBe(1);
+  });
+
+  it("reads the topics its source is filed under in the config", () => {
+    const item = anArticle({ title: 'A quiet week', tags: ['engineering-management'], publishedAt: old });
+
+    expect(scoreOf(item, ['engineering management'])).toBe(0.5);
+  });
+
+  it('counts a keyword once, in the title, when it is in both places', () => {
+    const item = anArticle({ title: 'Hiring well', summary: 'Hiring is hard.', publishedAt: old });
+
+    expect(scoreOf(item, ['hiring'])).toBe(1);
+  });
+
+  it('gives all description matches together no more weight than one title match', () => {
+    const wordy = anArticle({
+      title: 'Unified access policies',
+      summary: 'Access management for your organization, with velocity and strategy.',
+      publishedAt: old,
+    });
+    const onTopic = anArticle({ title: 'Management tips', publishedAt: old });
+    const keywords = ['management', 'organization', 'velocity', 'strategy'];
+
+    expect(scoreOf(wordy, keywords)).toBe(1);
+    expect(scoreOf(onTopic, keywords)).toBe(1);
+  });
+});
+
+describe('relevance against recency', () => {
+  it('ranks an older article on the topic above a fresh one that is not', () => {
+    const onTopic = anArticle({ id: 'on-topic', title: 'Coaching new managers', publishedAt: hoursAgo(150) });
+    const fresh = anArticle({ id: 'fresh', title: 'What is new in Spark 4.0', publishedAt: hoursAgo(2) });
+
+    const { topArticles } = selectTopItems(scoreItems([fresh, onTopic], ['manager'], NOW));
+
+    expect(topArticles.map(item => item.id)).toEqual(['on-topic', 'fresh']);
   });
 });
 
@@ -94,8 +148,8 @@ describe('source weight', () => {
   it('multiplies the score of an item by the weight of its source', () => {
     const fresh = hoursAgo(1);
 
-    expect(scoreOf(anArticle({ publishedAt: fresh, weight: 1.25 }))).toBeCloseTo(3.75);
-    expect(scoreOf(anArticle({ publishedAt: fresh, weight: 0.5 }))).toBeCloseTo(1.5);
+    expect(scoreOf(anArticle({ publishedAt: fresh, weight: 1.25 }))).toBeCloseTo(1.25);
+    expect(scoreOf(anArticle({ publishedAt: fresh, weight: 0.5 }))).toBeCloseTo(0.5);
   });
 
   it('ranks a heavier source above a lighter one, all else being equal', () => {
@@ -114,7 +168,7 @@ describe('scoreItems', () => {
 
     const [scored] = scoreItems([item], [], new Date('2024-12-31T00:00:00.000Z'));
 
-    expect(scored.score).toBe(3);
+    expect(scored.score).toBe(1);
   });
 
   it('sums recency, keywords and engagement without mutating the input', () => {
@@ -127,7 +181,7 @@ describe('scoreItems', () => {
 
     const [scored] = scoreItems([post], ['strategy'], NOW);
 
-    expect(scored.score).toBeCloseTo(3 + 0.8 + 2);
+    expect(scored.score).toBeCloseTo(1 + 1 + 2);
     expect(post.score).toBe(0);
   });
 

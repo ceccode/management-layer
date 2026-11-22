@@ -60,6 +60,9 @@ export const ItemSchema = z.object({
   weight: z.number(),
   tags: z.array(z.string()),
   community: z.string().optional(),
+  /** What the source says the item is about; read for relevance and by the LLM, never published. */
+  summary: z.string().optional(),
+  categories: z.array(z.string()).optional(),
   upvotes: z.number().optional(),
   commentsCount: z.number().optional(),
 });

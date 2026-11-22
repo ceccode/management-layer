@@ -8,6 +8,8 @@ const rawArticle = {
   link: 'https://example.com/post?utm_source=rss#comments',
   publishedAt: '2026-11-10T08:00:00.000Z',
   source: 'Example',
+  summary: 'How systems outlast frameworks.',
+  categories: ['Leadership'],
   tags: ['leadership'],
   weight: 1.2,
 };
@@ -37,6 +39,8 @@ describe('normalizeRSSItems', () => {
       score: 0,
       weight: 1.2,
       tags: ['leadership'],
+      summary: 'How systems outlast frameworks.',
+      categories: ['Leadership'],
     });
   });
 

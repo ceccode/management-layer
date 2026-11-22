@@ -4,13 +4,26 @@ import { log } from '../utils/logging.js';
 
 const HOUR_MS = 60 * 60 * 1000;
 
+/**
+ * Recency only separates this half of the week from the other: in a weekly
+ * digest it should break ties, not decide the ranking.
+ */
 const RECENCY_SCORES = [
-  { youngerThanHours: 24, score: 3.0 },
-  { youngerThanHours: 72, score: 1.5 },
-  { youngerThanHours: 168, score: 0.5 },
+  { youngerThanHours: 72, score: 1.0 },
+  { youngerThanHours: 168, score: 0.7 },
 ];
 
-const KEYWORD_MATCH_SCORE = 0.8;
+/**
+ * A keyword in the title says more about an item than one in its description.
+ * Descriptions are long and full of generic words ("access management",
+ * "organization policy"), so together they count for no more than one title match.
+ */
+const KEYWORD_SCORES = {
+  inTitle: 1.0,
+  inDescription: 0.5,
+  descriptionCap: 1.0,
+  cap: 3.0,
+};
 
 const DISCUSSION_ENGAGEMENT = {
   upvotesPerPoint: 50,
@@ -26,19 +39,40 @@ function recencyScore(publishedAt: string, now: Date): number {
 }
 
 /**
- * A keyword matches where a word of the title starts with it: "cto" matches
+ * A keyword matches where a word of the text starts with it: "cto" matches
  * "CTO" and "CTOs", but not "factory".
  */
-function mentions(title: string, keyword: string): boolean {
+function mentions(text: string, keyword: string): boolean {
   const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
-  return new RegExp(`(?<![\\p{L}\\p{N}])${escaped}`, 'iu').test(title);
+  return new RegExp(`(?<![\\p{L}\\p{N}])${escaped}`, 'iu').test(text);
 }
 
-function keywordScore(title: string, keywords: string[]): number {
-  const matches = keywords.filter(keyword => mentions(title, keyword));
+/**
+ * What is known about the item beyond its title: its own summary and
+ * categories, and the topics its source is filed under in the config
+ * (`engineering-management` reads as "engineering management").
+ */
+function descriptionOf(item: Item): string {
+  const sourceTopics = item.tags.map(tag => tag.replace(/-/g, ' '));
 
-  return matches.length * KEYWORD_MATCH_SCORE;
+  return [item.summary ?? '', ...(item.categories ?? []), ...sourceTopics].join('\n');
+}
+
+function keywordScore(item: Item, keywords: string[]): number {
+  const description = descriptionOf(item);
+  const inTitle = keywords.filter(keyword => mentions(item.title, keyword));
+  const inDescriptionOnly = keywords.filter(
+    keyword => !inTitle.includes(keyword) && mentions(description, keyword)
+  );
+
+  const titleScore = inTitle.length * KEYWORD_SCORES.inTitle;
+  const descriptionScore = Math.min(
+    inDescriptionOnly.length * KEYWORD_SCORES.inDescription,
+    KEYWORD_SCORES.descriptionCap
+  );
+
+  return Math.min(titleScore + descriptionScore, KEYWORD_SCORES.cap);
 }
 
 function discussionEngagementScore(item: Item): number {
@@ -55,6 +89,9 @@ function discussionEngagementScore(item: Item): number {
 /**
  * score = (recency + keyword matches + discussion engagement) × source weight
  *
+ * Keyword matches carry up to three times the weight of recency, so that what
+ * an item is about counts for more than the day it came out.
+ *
  * `now` is the instant the report refers to, so that a report for a past
  * date ranks its items the same way every time it is generated.
  */
@@ -62,7 +99,7 @@ export function scoreItems(items: Item[], keywords: string[], now: Date): Item[]
   const scoredItems = items.map(item => {
     const relevance =
       recencyScore(item.publishedAt, now) +
-      keywordScore(item.title, keywords) +
+      keywordScore(item, keywords) +
       discussionEngagementScore(item);
 
     return { ...item, score: relevance * item.weight };

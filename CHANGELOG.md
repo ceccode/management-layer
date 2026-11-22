@@ -15,6 +15,14 @@
 - Atom feeds with a namespace prefix and feeds with relative links are now read
 
 ### Changed
+- Relevance now outweighs recency (`scoringVersion` `3.0.0`). Only 1 article
+  in 65 matched a keyword, so the ranking was "the newest from the heaviest
+  sources". Keywords are also matched against the item's summary, its feed
+  categories and the `tags` of its source (which were configured and never
+  used); a title match is worth 1, description matches 0.5 each and 1 in all,
+  capped at 3. Recency is 1 in the last three days and 0.7 in the rest of the week
+- 36 keywords added (management, leadership, coaching, career, velocity, …)
+- The LLM reads the summary of each top article, not only its title
 - The analysis is written by `gpt-6.2-sol` instead of `gpt-4o-mini`. The request
   sends `max_completion_tokens` (the newer models reject `max_tokens`), the
   budget is 2000 tokens, and `temperature` is optional and no longer set
@@ -48,6 +56,13 @@
 - Report titles are HTML-escaped in `index.html`
 
 ### Added
+- Twelve sources on engineering management and leadership: The Pragmatic
+  Engineer, Irrational Exuberance, The Engineering Manager, Rands in Repose,
+  charity.wtf, Refactoring, Engineering Leadership, Tidy First?, Jacob
+  Kaplan-Moss, InfoQ Culture & Methods, MIT Sloan Management Review, Stack
+  Overflow Blog
+- Articles carry the summary and categories their feed gives them. They are
+  read for relevance and given to the LLM, and are not republished in the JSON
 - Hacker News as a community source: stories of the week whose title matches
   the terms in `config/hackernews.json` (`--no-hn` skips it)
 - Reddit is read again, through application-only OAuth: it needs
@@ -57,6 +72,13 @@
 ## [1.0.0] - 2024-12-31
 
 ### Added
+- Twelve sources on engineering management and leadership: The Pragmatic
+  Engineer, Irrational Exuberance, The Engineering Manager, Rands in Repose,
+  charity.wtf, Refactoring, Engineering Leadership, Tidy First?, Jacob
+  Kaplan-Moss, InfoQ Culture & Methods, MIT Sloan Management Review, Stack
+  Overflow Blog
+- Articles carry the summary and categories their feed gives them. They are
+  read for relevance and given to the LLM, and are not republished in the JSON
 - Hacker News as a community source: stories of the week whose title matches
   the terms in `config/hackernews.json` (`--no-hn` skips it)
 - Reddit is read again, through application-only OAuth: it needs
