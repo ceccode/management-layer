@@ -15,6 +15,10 @@
 - Atom feeds with a namespace prefix and feeds with relative links are now read
 
 ### Changed
+- The analysis is written by `gpt-6.2-sol` instead of `gpt-4o-mini`. The request
+  sends `max_completion_tokens` (the newer models reject `max_tokens`), the
+  budget is 2000 tokens, and `temperature` is optional and no longer set
+- A warning is logged when the LLM answer is cut off at the token budget
 - Without an LLM analysis (disabled, failed, or an answer with none of the
   expected sections) the report says so and lists what was collected. It no
   longer publishes generic themes, signals and divergences as if they were

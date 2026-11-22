@@ -15,9 +15,8 @@ const input: AnalysisInput = {
 const disabled = {
   enabled: false,
   provider: 'openai_compatible',
-  model: 'gpt-4o-mini',
-  maxTokens: 900,
-  temperature: 0.4,
+  model: 'gpt-6.2-sol',
+  maxTokens: 2000,
   ragWeeks: 4,
   maxRagWords: 2000,
 };
@@ -102,8 +101,21 @@ describe('generateLLMContent', () => {
 
     const [, request] = vi.mocked(fetchMock).mock.calls[0];
     const body = JSON.parse(request?.body as string);
-    expect(body).toMatchObject({ model: 'gpt-4o-mini', max_tokens: 900, temperature: 0.4 });
+    expect(body).toMatchObject({ model: 'gpt-6.2-sol', max_completion_tokens: 2000 });
+    expect(body).not.toHaveProperty('max_tokens');
     expect(body.messages.map((message: { role: string }) => message.role)).toEqual(['system', 'user']);
+  });
+
+  it('sends a temperature only when one is configured', async () => {
+    const fetchMock = answering('## Executive Summary\nSintesi.');
+    vi.stubGlobal('fetch', fetchMock);
+
+    await generateLLMContent(input, enabled);
+    await generateLLMContent(input, { ...enabled, temperature: 0.4 });
+
+    const bodies = vi.mocked(fetchMock).mock.calls.map(([, request]) => JSON.parse(request?.body as string));
+    expect(bodies[0]).not.toHaveProperty('temperature');
+    expect(bodies[1].temperature).toBe(0.4);
   });
 
   describe('when there is no analysis', () => {

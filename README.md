@@ -235,11 +235,13 @@ Edit `config/llm.json`:
 
 ```json
 {
-  "model": "gpt-4o-mini",
-  "maxTokens": 900,
-  "temperature": 0.4
+  "model": "gpt-6.2-sol",
+  "maxTokens": 2000
 }
 ```
+
+`maxTokens` is sent as `max_completion_tokens`. `temperature` is optional: leave
+it out for models that only accept their default (the GPT-6 family does).
 
 ## Architecture Decisions
 
