@@ -47,7 +47,7 @@ npm run generate -- --date 2024-12-31
 # Generate without communities (RSS-only)
 npm run generate -- --no-reddit --no-hn
 
-# Generate without LLM (deterministic fallback)
+# Generate without LLM (contents only, no analysis)
 npm run generate -- --no-llm
 
 # Clean and rebuild
@@ -66,7 +66,7 @@ npm run clean && npm run build
 
 **LLM not working?**
 - Check `LLM_API_KEY` in `.env`
-- Pipeline will fall back to deterministic content (this is normal)
+- Without it the report lists the selected contents and says that the analysis is not available
 
 ## Project Structure
 

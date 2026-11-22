@@ -80,6 +80,24 @@ describe('generateReportMarkdown', () => {
     expect(parseAnalysis(withoutDiscussions).divergences).toBe('• una divergenza');
   });
 
+  describe('without an analysis', () => {
+    const unavailable = { executiveSummary: 'Analisi non disponibile.', themes: '', signals: '', divergences: '' };
+    const bare = generateReportMarkdown(aReport({ selected, analysis: unavailable }));
+
+    it('leaves out the sections it has nothing to say in', () => {
+      expect(bare).toContain('## Executive Summary\n\nAnalisi non disponibile.');
+      expect(bare).not.toContain('## Temi della settimana');
+      expect(bare).not.toContain('## Segnali da monitorare');
+      expect(bare).not.toContain('## Divergenze');
+    });
+
+    it('says in the methodology that the analysis is missing', () => {
+      expect(bare).toContain('- **Analisi LLM**: non disponibile per questa edizione');
+      expect(bare).not.toContain("L'analisi LLM può contenere interpretazioni soggettive");
+      expect(markdown).toContain('- **Analisi LLM**: Sintesi e individuazione pattern');
+    });
+  });
+
   it('states the configured lookback window', () => {
     const report = aReport({ selected, lookbackDays: 14 });
 
@@ -92,31 +110,60 @@ describe('generateReportMarkdown', () => {
 });
 
 describe('generateTelegramMarkdown', () => {
-  it('lists up to three discussions with their community and engagement', () => {
+  const longUrl = (i: number) => `https://example.com/${i}/${'y'.repeat(300)}`;
+
+  it('carries the title, the top articles, the discussions and the themes of the week', () => {
     const message = generateTelegramMarkdown(aReport({ selected }));
 
-    expect(message).toContain('*Community*\n• r/ExperiencedDevs — [A thread]');
-    expect(message).toContain('(↑120 💬30)');
+    expect(message).toBe([
+      '*The Management Layer — 2026-11-16*',
+      '*Top contenuti*\n1. [Systems thinking](https://example.com/systems) — LeadDev',
+      '*Community*\n• r/ExperiencedDevs — [A thread](https://www.reddit.com/r/test/1) (↑120 💬30)',
+      '*Temi della settimana*\n• Governance del codice\n• Produttività',
+      '_Disclaimer: contenuto informativo. Nessuna consulenza._',
+    ].join('\n\n'));
   });
 
-  it('lists at most five top items with their source', () => {
-    const items = Array.from({ length: 7 }, (_, i) => anArticle({ title: `Item ${i + 1}` }));
+  it('lists at most five articles and three discussions', () => {
+    const articles = Array.from({ length: 7 }, (_, i) => anArticle({ title: `Item ${i + 1}` }));
+    const discussions = Array.from({ length: 5 }, (_, i) => aDiscussion({ title: `Thread ${i + 1}` }));
 
-    const message = generateTelegramMarkdown(aReport({ selected: { topDiscussions: [], topArticles: items } }));
+    const message = generateTelegramMarkdown(aReport({ selected: { topArticles: articles, topDiscussions: discussions } }));
 
-    expect(message).toContain('*The Management Layer — 2026-11-16*');
     expect(message).toContain('5. [Item 5](https://example.com/article) — Example');
     expect(message).not.toContain('Item 6');
+    expect(message).toContain('Thread 3');
+    expect(message).not.toContain('Thread 4');
   });
 
-  it('falls back to three items without sources when the message is too long', () => {
-    const longTitle = 'x'.repeat(200);
-    const longUrl = `https://example.com/${'y'.repeat(200)}`;
-    const items = Array.from({ length: 5 }, () => anArticle({ title: longTitle, url: longUrl }));
+  it('has no themes section when the report has no analysis', () => {
+    const analysis = { executiveSummary: 'Analisi non disponibile.', themes: '', signals: '', divergences: '' };
 
-    const message = generateTelegramMarkdown(aReport({ selected: { topDiscussions: [], topArticles: items } }));
+    const message = generateTelegramMarkdown(aReport({ selected, analysis }));
 
-    expect(message.match(/\]\(https/g)).toHaveLength(3);
+    expect(message).not.toContain('Temi della settimana');
+    expect(message).not.toContain('In sintesi');
+  });
+
+  it('drops sources and shortens titles before it drops the discussions', () => {
+    const articles = Array.from({ length: 5 }, (_, i) =>
+      anArticle({ title: 'x'.repeat(100), url: `https://example.com/${i}/${'y'.repeat(100)}` })
+    );
+
+    const message = generateTelegramMarkdown(aReport({ selected: { topArticles: articles, topDiscussions: [post] } }));
+
+    expect(message.length).toBeLessThanOrEqual(1200);
     expect(message).not.toContain('— Example');
+    expect(message).toContain('*Community*');
+  });
+
+  it('falls back to three articles alone when nothing else fits', () => {
+    const articles = Array.from({ length: 5 }, (_, i) => anArticle({ title: 'x'.repeat(200), url: longUrl(i) }));
+
+    const message = generateTelegramMarkdown(aReport({ selected: { topArticles: articles, topDiscussions: [post] } }));
+
+    expect(message.match(/\]\(https:\/\/example/g)).toHaveLength(3);
+    expect(message).not.toContain('*Community*');
+    expect(message).toContain('*Temi della settimana*');
   });
 });

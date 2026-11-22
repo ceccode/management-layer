@@ -1,6 +1,6 @@
 import type { LLMConfig } from '../config/schema.js';
-import { parseAnalysis, type Analysis } from '../report/sections.js';
-import { SYSTEM_PROMPT_IT, buildUserPrompt, sourcesCount, type AnalysisInput } from './prompt_it.js';
+import { hasFindings, parseAnalysis, type Analysis } from '../report/sections.js';
+import { SYSTEM_PROMPT_IT, buildUserPrompt, type AnalysisInput } from './prompt_it.js';
 import { log } from '../utils/logging.js';
 
 const DEFAULT_API_URL = 'https://api.openai.com/v1/chat/completions';
@@ -60,8 +60,8 @@ export async function generateLLMContent(
   config: LLMConfig
 ): Promise<Analysis> {
   if (!config.enabled) {
-    log('info', 'LLM disabled, using fallback content');
-    return generateFallbackContent(input);
+    log('info', 'LLM disabled, the report will carry no analysis');
+    return analysisUnavailable(input);
   }
 
   try {
@@ -69,41 +69,34 @@ export async function generateLLMContent(
     const content = await callLLMAPI(SYSTEM_PROMPT_IT, buildUserPrompt(input), config);
     const analysis = parseAnalysis(content);
 
+    if (!analysis.executiveSummary && !hasFindings(analysis)) {
+      throw new Error('LLM answer has none of the expected sections');
+    }
+
     log('success', 'LLM content generated successfully');
     return analysis;
   } catch (error) {
-    log('error', 'LLM generation failed, using fallback:', error);
-    return generateFallbackContent(input);
+    log('error', 'LLM generation failed, the report will carry no analysis:', error);
+    return analysisUnavailable(input);
   }
 }
 
-export function generateFallbackContent(input: AnalysisInput): Analysis {
+/**
+ * What a report says when there is no LLM analysis: the facts of the
+ * collection, and plainly that the analysis is missing. Themes, signals and
+ * divergences are left empty rather than filled with generic text.
+ */
+export function analysisUnavailable(input: AnalysisInput): Analysis {
   const { counts } = input;
 
+  const collected = counts.discussions > 0
+    ? `${counts.articles} articoli da ${counts.feeds} feed e ${counts.discussions} discussioni da ${counts.communities} community`
+    : `${counts.articles} articoli da ${counts.feeds} feed`;
+
   return {
-    executiveSummary: `Questa settimana sono stati analizzati ${counts.articles} articoli e ${counts.discussions} discussioni delle community da ${sourcesCount(counts)} fonti diverse. I contenuti raccolti coprono tematiche di leadership tecnologica, engineering management e organizzazione dei team di sviluppo.`,
-
-    themes: `### 1) Engineering Management e Leadership
-- Discussioni sulla gestione di team distribuiti e ownership
-- Tematiche legate alla delivery velocity e developer productivity
-- Pattern organizzativi emergenti
-
-### 2) Pratiche e Processi
-- Performance review e career ladder
-- On-call e incident management
-- Comunicazione e alignment organizzativo
-
-### 3) Cultura e Organizzazione
-- Team topology e platform team
-- Hiring e onboarding
-- Reliability e operational excellence`,
-
-    signals: `- Crescente attenzione a developer productivity e delivery metrics
-- Discussioni su ownership e decision making distribuito
-- Focus su reliability e incident response`,
-
-    divergences: `- Le discussioni delle community tendono a enfatizzare aspetti operativi quotidiani
-- Gli articoli editoriali privilegiano visioni strategiche di lungo periodo
-- Differenze di prospettiva tra individual contributor e manager`,
+    executiveSummary: `Questa settimana sono stati raccolti ${collected}. L'analisi automatica non è disponibile per questa edizione: il report riporta i contenuti selezionati, senza sintesi dei temi.`,
+    themes: '',
+    signals: '',
+    divergences: '',
   };
 }

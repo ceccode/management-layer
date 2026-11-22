@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { generateLLMContent } from '../src/llm/generate.js';
 import { buildUserPrompt, type AnalysisInput } from '../src/llm/prompt_it.js';
 import { parseAnalysis, SECTION_TITLES } from '../src/report/sections.js';
@@ -66,12 +66,81 @@ describe('buildUserPrompt', () => {
 });
 
 describe('generateLLMContent', () => {
-  it('uses the fallback content, with the real counts, when the LLM is disabled', async () => {
-    const analysis = await generateLLMContent(input, disabled);
+  const enabled = { ...disabled, enabled: true };
 
-    expect(analysis.executiveSummary).toContain('25 articoli e 0 discussioni delle community da 17 fonti');
-    expect(analysis.themes).toContain('### 1) Engineering Management e Leadership');
-    expect(analysis.signals).not.toBe('');
-    expect(analysis.divergences).not.toBe('');
+  function answering(content: string | undefined, status = 200): typeof fetch {
+    return vi.fn(async () =>
+      new Response(JSON.stringify({ choices: [{ message: { content } }] }), { status })
+    ) as unknown as typeof fetch;
+  }
+
+  beforeEach(() => {
+    vi.stubEnv('LLM_API_KEY', 'test-key');
+  });
+
+  afterEach(() => {
+    vi.unstubAllEnvs();
+    vi.unstubAllGlobals();
+  });
+
+  it('returns the sections the LLM wrote', async () => {
+    vi.stubGlobal('fetch', answering('## Executive Summary\nSintesi.\n\n## Temi della settimana\n### 1) Tema\n- punto\n\n## Segnali da monitorare\n- segnale\n\n## Divergenze tra le fonti\n- divergenza'));
+
+    expect(await generateLLMContent(input, enabled)).toEqual({
+      executiveSummary: 'Sintesi.',
+      themes: '### 1) Tema\n- punto',
+      signals: '- segnale',
+      divergences: '- divergenza',
+    });
+  });
+
+  it('sends the model, the limits and both prompts', async () => {
+    const fetchMock = answering('## Executive Summary\nSintesi.');
+    vi.stubGlobal('fetch', fetchMock);
+
+    await generateLLMContent(input, enabled);
+
+    const [, request] = vi.mocked(fetchMock).mock.calls[0];
+    const body = JSON.parse(request?.body as string);
+    expect(body).toMatchObject({ model: 'gpt-4o-mini', max_tokens: 900, temperature: 0.4 });
+    expect(body.messages.map((message: { role: string }) => message.role)).toEqual(['system', 'user']);
+  });
+
+  describe('when there is no analysis', () => {
+    it('says so and states only what was collected, when the LLM is disabled', async () => {
+      const analysis = await generateLLMContent(input, disabled);
+
+      expect(analysis.executiveSummary).toContain('25 articoli da 11 feed');
+      expect(analysis.executiveSummary).toContain("L'analisi automatica non è disponibile");
+      expect(analysis).toMatchObject({ themes: '', signals: '', divergences: '' });
+    });
+
+    it('counts the discussions when some were collected', async () => {
+      const counts = { articles: 25, discussions: 6, feeds: 11, communities: 1 };
+
+      const analysis = await generateLLMContent({ ...input, counts }, disabled);
+
+      expect(analysis.executiveSummary).toContain('25 articoli da 11 feed e 6 discussioni da 1 community');
+    });
+
+    it('does not invent themes when the LLM request fails', async () => {
+      vi.stubGlobal('fetch', answering('rate limited', 429));
+
+      expect(await generateLLMContent(input, enabled)).toMatchObject({ themes: '', signals: '', divergences: '' });
+    });
+
+    it('does not publish an answer that has none of the expected sections', async () => {
+      vi.stubGlobal('fetch', answering('Mi dispiace, non posso aiutarti.'));
+
+      const analysis = await generateLLMContent(input, enabled);
+
+      expect(analysis.executiveSummary).toContain("L'analisi automatica non è disponibile");
+    });
+
+    it('does not publish an empty answer', async () => {
+      vi.stubGlobal('fetch', answering(undefined));
+
+      expect((await generateLLMContent(input, enabled)).themes).toBe('');
+    });
   });
 });

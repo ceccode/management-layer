@@ -1,8 +1,8 @@
 import type { Item } from '../config/schema.js';
+import { themeTitles } from '../report/sections.js';
 import { reportPaths, type Report, type ReportCounts, type ReportPaths } from '../report/report.js';
 
 const SCORING_VERSION = '2.2.0';
-const MAX_THEMES = 3;
 
 export interface JsonReport {
   date: string;
@@ -33,14 +33,6 @@ function parseListItems(text: string): string[] {
     .filter(line => line.length > 0);
 }
 
-/** The titles of the `### n) Title` sub-headings of the themes section. */
-function parseThemeTitles(themesText: string): string[] {
-  const themePattern = /###\s+\d+\)\s+(.+?)(?=###|\n-|\n•|$)/gs;
-  const matches = [...themesText.matchAll(themePattern)];
-  
-  return matches.map(match => match[1].trim()).slice(0, MAX_THEMES);
-}
-
 export function generateReportJson(report: Report): JsonReport {
   const { analysis, selected } = report;
 
@@ -53,7 +45,7 @@ export function generateReportJson(report: Report): JsonReport {
     itemsTopArticles: selected.topArticles,
     llm: {
       executiveSummary: analysis.executiveSummary,
-      themes: parseThemeTitles(analysis.themes),
+      themes: themeTitles(analysis.themes),
       signals: parseListItems(analysis.signals),
       divergences: parseListItems(analysis.divergences),
     },

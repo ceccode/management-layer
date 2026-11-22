@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { extractLLMSections } from '../src/rag/extractSections.js';
-import { extractSection, parseAnalysis } from '../src/report/sections.js';
+import { extractSection, parseAnalysis, themeTitles } from '../src/report/sections.js';
 
 const report = `---
 title: "The Management Layer"
@@ -114,5 +114,17 @@ describe('parseAnalysis', () => {
       signals: '- segnale',
       divergences: '- divergenza',
     });
+  });
+});
+
+describe('themeTitles', () => {
+  it('lists the titles of the numbered themes, at most three', () => {
+    const themes = ['### 1) Primo', '- a', '', '### 2) Secondo', '- b', '', '### 3) Terzo', '- c', '', '### 4) Quarto', '- d'].join('\n');
+
+    expect(themeTitles(themes)).toEqual(['Primo', 'Secondo', 'Terzo']);
+  });
+
+  it('lists none when there are no themes', () => {
+    expect(themeTitles('')).toEqual([]);
   });
 });

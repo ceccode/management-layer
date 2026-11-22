@@ -40,7 +40,7 @@ cp .env.example .env
 Edit `.env` and add your credentials (optional):
 
 ```bash
-# LLM API (optional - if missing, fallback to deterministic content)
+# LLM API (optional - if missing, the report carries no analysis)
 LLM_API_KEY=your_openai_api_key
 LLM_API_URL=https://api.openai.com/v1/chat/completions
 ```
@@ -77,7 +77,7 @@ npm run generate
 # Generate report for specific date
 npm run generate -- --date 2024-12-31
 
-# Generate without LLM (deterministic fallback)
+# Generate without LLM (the report lists the contents, with no analysis)
 npm run generate -- --no-llm
 
 # Skip a community
@@ -128,7 +128,7 @@ Add secrets in **Settings** → **Secrets and variables** → **Actions**:
 - `REDDIT_CLIENT_ID`
 - `REDDIT_CLIENT_SECRET`
 
-If not configured, the workflow will use deterministic fallback content.
+If not configured, the report lists the selected contents and says that the analysis is not available.
 
 ### 3. Trigger
 
