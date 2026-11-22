@@ -56,6 +56,12 @@
 - Report titles are HTML-escaped in `index.html`
 
 ### Added
+- The LLM judges the relevance of the 30 best-scored articles (0 to 3, with a
+  reason) and the final list follows its grades; off-topic articles are left
+  out. Grades and reasons are published in the JSON. The keyword ranking is
+  kept when the LLM is off, fails or answers incompletely (`rerankCandidates`
+  in `config/llm.json`, 0 to disable)
+- Sponsored feed entries are skipped
 - Twelve sources on engineering management and leadership: The Pragmatic
   Engineer, Irrational Exuberance, The Engineering Manager, Rands in Repose,
   charity.wtf, Refactoring, Engineering Leadership, Tidy First?, Jacob
@@ -72,6 +78,12 @@
 ## [1.0.0] - 2024-12-31
 
 ### Added
+- The LLM judges the relevance of the 30 best-scored articles (0 to 3, with a
+  reason) and the final list follows its grades; off-topic articles are left
+  out. Grades and reasons are published in the JSON. The keyword ranking is
+  kept when the LLM is off, fails or answers incompletely (`rerankCandidates`
+  in `config/llm.json`, 0 to disable)
+- Sponsored feed entries are skipped
 - Twelve sources on engineering management and leadership: The Pragmatic
   Engineer, Irrational Exuberance, The Engineering Manager, Rands in Repose,
   charity.wtf, Refactoring, Engineering Leadership, Tidy First?, Jacob

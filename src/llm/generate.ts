@@ -2,63 +2,8 @@ import type { LLMConfig } from '../config/schema.js';
 import { hasFindings, parseAnalysis, type Analysis } from '../report/sections.js';
 import { SYSTEM_PROMPT_IT, buildUserPrompt, type AnalysisInput } from './prompt_it.js';
 import { log } from '../utils/logging.js';
+import { completeChat } from './chat.js';
 
-const DEFAULT_API_URL = 'https://api.openai.com/v1/chat/completions';
-const REQUEST_TIMEOUT_MS = 120_000;
-
-interface ChatCompletion {
-  choices?: Array<{ message?: { content?: string }; finish_reason?: string }>;
-}
-
-async function callLLMAPI(
-  systemPrompt: string,
-  userPrompt: string,
-  config: LLMConfig
-): Promise<string> {
-  const apiKey = process.env.LLM_API_KEY;
-  const apiUrl = process.env.LLM_API_URL || DEFAULT_API_URL;
-
-  if (!apiKey) {
-    throw new Error('LLM_API_KEY not found');
-  }
-
-  const response = await fetch(apiUrl, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${apiKey}`,
-    },
-    body: JSON.stringify({
-      model: config.model,
-      messages: [
-        { role: 'system', content: systemPrompt },
-        { role: 'user', content: userPrompt },
-      ],
-      max_completion_tokens: config.maxTokens,
-      ...(config.temperature === undefined ? {} : { temperature: config.temperature }),
-    }),
-    signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
-  });
-
-  if (!response.ok) {
-    const errorText = await response.text();
-    throw new Error(`LLM API error: ${response.status} ${errorText}`);
-  }
-
-  const completion = await response.json() as ChatCompletion;
-  const choice = completion.choices?.[0];
-  const content = choice?.message?.content;
-
-  if (!content) {
-    throw new Error('LLM API returned no content');
-  }
-
-  if (choice?.finish_reason === 'length') {
-    log('warn', `LLM answer was cut off at ${config.maxTokens} tokens: the last section may be incomplete. Raise maxTokens in config/llm.json.`);
-  }
-
-  return content;
-}
 
 export async function generateLLMContent(
   input: AnalysisInput,
@@ -71,7 +16,10 @@ export async function generateLLMContent(
 
   try {
     log('info', 'Calling LLM API...');
-    const content = await callLLMAPI(SYSTEM_PROMPT_IT, buildUserPrompt(input), config);
+    const content = await completeChat(
+      { system: SYSTEM_PROMPT_IT, user: buildUserPrompt(input), maxTokens: config.maxTokens },
+      config
+    );
     const analysis = parseAnalysis(content);
 
     if (!analysis.executiveSummary && !hasFindings(analysis)) {

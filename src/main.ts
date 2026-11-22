@@ -6,9 +6,10 @@ import { collectReddit } from './collect/reddit.js';
 import { collectHackerNews } from './collect/hackernews.js';
 import { normalizeRSSItems, normalizeDiscussions } from './normalize/normalize.js';
 import { deduplicateItems } from './normalize/dedupe.js';
-import { scoreItems, selectTopItems } from './score/score.js';
+import { scoreItems, selectTopItems, shortlistArticles } from './score/score.js';
 import { buildRAGContext } from './rag/buildRag.js';
 import { generateLLMContent } from './llm/generate.js';
+import { judgeRelevance } from './llm/relevance.js';
 import { reportTitle, type Report, type ReportCounts } from './report/report.js';
 import { generateReportMarkdown } from './render/reportMarkdown.js';
 import { generateTelegramMarkdown } from './render/telegramMarkdown.js';
@@ -19,6 +20,7 @@ import { log } from './utils/logging.js';
 const TOP_ITEMS = 10;
 const TOP_DISCUSSIONS = 5;
 const MAX_ITEMS_PER_SOURCE = 3;
+const MAX_CANDIDATES_PER_SOURCE = 6;
 
 function applyCliOverrides(config: Config, options: CLIOptions): Config {
   if (options.noReddit) {
@@ -92,6 +94,22 @@ function countSources(collected: Collected, config: Config): ReportCounts {
   };
 }
 
+/**
+ * Keywords shortlist the articles and the LLM judges how relevant each one is.
+ * With a verdict, only the shortlisted articles stay eligible; without one
+ * (LLM off or failed) every article does, ranked by keywords as before.
+ */
+async function withJudgedArticles(scoredItems: Item[], config: Config): Promise<Item[]> {
+  const shortlist = shortlistArticles(scoredItems, config.llm.rerankCandidates, MAX_CANDIDATES_PER_SOURCE);
+  const judged = await judgeRelevance(shortlist, config.llm);
+
+  if (!judged) {
+    return scoredItems;
+  }
+
+  return [...judged, ...scoredItems.filter(item => item.type === 'discussion')];
+}
+
 async function buildReport(options: CLIOptions, config: Config): Promise<Report> {
   const collected = await collect(config, options.referenceTime);
   const counts = countSources(collected, config);
@@ -103,7 +121,8 @@ async function buildReport(options: CLIOptions, config: Config): Promise<Report>
   const scoredItems = scoreItems(items, config.keywords.keywords, options.referenceTime);
 
   log('info', 'Selecting top items...');
-  const selected = selectTopItems(scoredItems, TOP_ITEMS, TOP_DISCUSSIONS, MAX_ITEMS_PER_SOURCE);
+  const eligible = await withJudgedArticles(scoredItems, config);
+  const selected = selectTopItems(eligible, TOP_ITEMS, TOP_DISCUSSIONS, MAX_ITEMS_PER_SOURCE);
 
   log('info', 'Building RAG context...');
   const ragContext = await buildRAGContext(config.llm.ragWeeks, config.llm.maxRagWords);

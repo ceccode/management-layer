@@ -241,6 +241,21 @@ score = (recency + keyword matches + discussion engagement) × source weight
 What an item is about counts for more than the day it came out: keyword
 matches carry up to three times the weight of recency.
 
+### Relevance judged by the LLM
+
+Keywords cannot tell what an article is about. So the 30 best-scored articles
+(`rerankCandidates` in `config/llm.json`, at most 6 per source) are given to the
+LLM with their summaries, and it grades each from 0 (off topic) to 3 with a
+one-line reason. The final list is ordered by grade, then by score; articles
+graded 0 are left out, even if the list gets shorter. Grades and reasons are
+published in the JSON report (`relevance`, `relevanceReason`).
+
+If the LLM is off, fails, or leaves an article ungraded, the keyword ranking
+is used as it is. Set `rerankCandidates` to 0 to always use it.
+
+Sponsored entries (marked in their address or in a category) are skipped at
+collection.
+
 Articles and discussions are ranked apart, because engagement makes their
 scores incomparable: "Top contenuti" lists articles only, and discussions have
 their own section. Each list takes at most 3 items from the same source, so

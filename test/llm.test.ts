@@ -19,6 +19,7 @@ const disabled = {
   maxTokens: 2000,
   ragWeeks: 4,
   maxRagWords: 2000,
+  rerankCandidates: 30,
 };
 
 describe('buildUserPrompt', () => {

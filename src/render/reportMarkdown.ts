@@ -74,8 +74,8 @@ ${analysis.divergences}
 
 Questo report è generato attraverso:
 - **Raccolta dati**: Analisi di feed RSS da fonti editoriali selezionate e discussioni da community (Reddit, Hacker News)
-- **Scoring deterministico**: Algoritmo basato su recency, keyword matching e engagement (per le discussioni), con un massimo di 3 contenuti per fonte
-${hasFindings(analysis) ? '- **Analisi LLM**: Sintesi e individuazione pattern attraverso modello linguistico\n' : '- **Analisi LLM**: non disponibile per questa edizione\n'}- **Lookback**: ${counts.feeds} feed RSS e ${counts.communities} community negli ultimi ${report.lookbackDays} giorni
+- **Scoring deterministico**: Algoritmo basato su keyword matching, recency e engagement (per le discussioni), con un massimo di 3 contenuti per fonte
+${selected.topArticles.some(item => item.relevance !== undefined) ? '- **Selezione degli articoli**: i contenuti con punteggio più alto sono valutati per pertinenza dal modello linguistico; quelli fuori tema sono esclusi\n' : ''}${hasFindings(analysis) ? '- **Analisi LLM**: Sintesi e individuazione pattern attraverso modello linguistico\n' : '- **Analisi LLM**: non disponibile per questa edizione\n'}- **Lookback**: ${counts.feeds} feed RSS e ${counts.communities} community negli ultimi ${report.lookbackDays} giorni
 
 **Limitazioni**:
 - Il campione è limitato alle fonti configurate
