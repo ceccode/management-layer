@@ -31,6 +31,14 @@ describe('buildUserPrompt', () => {
     expect(prompt).toContain('1. "Systems thinking" (LeadDev)');
   });
 
+  it('gives the summary of an article under its title, when there is one', () => {
+    const described = anArticle({ title: 'Flat velocity', source: 'LeadDev', summary: 'Why tools are not the bottleneck.' });
+
+    const withSummary = buildUserPrompt({ ...input, topArticles: [described] });
+
+    expect(withSummary).toContain('1. "Flat velocity" (LeadDev)\n   Why tools are not the bottleneck.');
+  });
+
   it('says when there is no historical context', () => {
     expect(prompt).toContain('Nessun contesto storico disponibile.');
   });

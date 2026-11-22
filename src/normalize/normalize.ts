@@ -49,6 +49,8 @@ export function normalizeRSSItems(rawItems: RawRSSItem[]): Item[] {
       score: 0,
       weight: item.weight,
       tags: item.tags,
+      summary: item.summary,
+      categories: item.categories,
     };
   });
 }

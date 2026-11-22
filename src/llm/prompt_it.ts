@@ -32,6 +32,12 @@ export function sourcesCount(counts: ReportCounts): number {
   return counts.feeds + counts.communities;
 }
 
+function articleLine(item: Item, index: number): string {
+  const heading = `${index + 1}. "${item.title}" (${item.source})`;
+
+  return item.summary ? `${heading}\n   ${item.summary}` : heading;
+}
+
 function discussionLine(item: Item, index: number): string {
   return `${index + 1}. ${item.community ?? item.source}: "${item.title}" (↑${item.upvotes ?? 0} 💬${item.commentsCount ?? 0})`;
 }
@@ -60,7 +66,7 @@ export function buildUserPrompt(data: AnalysisInput): string {
 - Fonti totali: ${sourcesCount(data.counts)}
 
 ## Top articoli
-${data.topArticles.map((item, i) => `${i + 1}. "${item.title}" (${item.source})`).join('\n')}
+${data.topArticles.map(articleLine).join('\n')}
 
 ## Top discussioni delle community
 ${hasDiscussions ? data.topDiscussions.map(discussionLine).join('\n') : 'Nessuna discussione raccolta questa settimana.'}
