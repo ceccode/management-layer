@@ -1,15 +1,52 @@
 {
-  "generated_at_utc": "2026-11-16T16:47:40.861Z",
+  "generated_at_utc": "2026-11-23T19:01:52.451Z",
   "version": 1,
   "latest": {
-    "date": "2026-11-16",
+    "date": "2026-11-23",
     "paths": {
-      "markdown": "reports/2026-11-16.management-layer.md",
-      "telegram": "telegram/2026-11-16.management-layer.telegram.md",
-      "json": "data/2026-11-16.management-layer.json"
+      "markdown": "reports/2026-11-23.management-layer.md",
+      "telegram": "telegram/2026-11-23.management-layer.telegram.md",
+      "json": "data/2026-11-23.management-layer.json"
     }
   },
   "reports": [
+    {
+      "date": "2026-11-23",
+      "title": "The Management Layer — 2026-11-23",
+      "paths": {
+        "markdown": "reports/2026-11-23.management-layer.md",
+        "telegram": "telegram/2026-11-23.management-layer.telegram.md",
+        "json": "data/2026-11-23.management-layer.json"
+      },
+      "excerpt": "La raccolta del 23 novembre comprende 90 articoli e 7 discussioni da 24 fonti; l’analisi si basa sui 10 articoli e sui 3 thread in evidenza.  \nLa produttività ingegneristica resta un tema ricorrent...",
+      "topLinks": [
+        {
+          "title": "Our Favorite Management Tips on Managing Change Fatigue",
+          "url": "https://hbr.org/2026/11/our-favorite-management-tips-on-managing-change-fatigue",
+          "source": "Harvard Business Review"
+        },
+        {
+          "title": "How to coach engineers from different backgrounds",
+          "url": "https://leaddev.com/career-development/how-to-coach-engineers-from-different-backgrounds",
+          "source": "LeadDev"
+        },
+        {
+          "title": "Stop blaming AI tools for flat velocity",
+          "url": "https://leaddev.com/velocity/stop-blaming-ai-tools-for-flat-velocity",
+          "source": "LeadDev"
+        },
+        {
+          "title": "The Pulse: Is Amazon’s writing culture collapsing because of AI?",
+          "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-is-amazons-writing-culture",
+          "source": "The Pragmatic Engineer"
+        },
+        {
+          "title": "How AWS’s Tech Lead Works and Uses AI",
+          "url": "https://newsletter.eng-leadership.com/p/how-awss-tech-lead-works-and-uses",
+          "source": "Engineering Leadership (Gregor Ojstersek)"
+        }
+      ]
+    },
     {
       "date": "2026-11-16",
       "title": "The Management Layer — 2026-11-16",
